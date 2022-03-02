@@ -1,0 +1,459 @@
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+
+
+###- Server Settings
+
+server_name QRR Training Server
+server_welcome_message Welcome to XMG custom melee
+server_region europe
+server_admin_password Internal
+server_password 5050
+
+mods_installed 2272056234 #comp melee
+
+###- Bandwidth & Memory Settings
+
+network_broadcast_mode Realtime
+
+
+# GPII
+!map_rotation start
+map_name Grassyplainsiv
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 122
+
+
+######## TRAINING PROGRAM ########
+
+rc delayed 1170 teleport 2 371.62,11.15,229.55
+rc delayed 1170 teleport 3 371.2,11.15,229.82
+rc delayed 1170 teleport 4 370.78,11.15,230.09
+rc delayed 1170 teleport 5 370.36,11.15,230.37
+rc delayed 1170 teleport 6 369.94,11.15,230.64
+rc delayed 1170 teleport 7 369.52,11.15,230.91
+rc delayed 1170 teleport 8 369.1,11.15,231.18
+rc delayed 1170 teleport 9 368.68,11.15,231.45
+rc delayed 1170 teleport 10 368.26,11.15,231.72
+rc delayed 1170 teleport 11 367.84,11.15,232.0
+rc delayed 1170 teleport 12 367.42,11.15,232.27
+rc delayed 1170 teleport 12 400.97,9.13,287.3
+rc delayed 1170 teleport 13 400.47,9.13,287.25
+rc delayed 1170 teleport 14 399.98,9.13,287.19
+rc delayed 1170 teleport 15 399.48,9.13,287.14
+rc delayed 1170 teleport 16 398.98,9.13,287.08
+rc delayed 1170 teleport 17 398.48,9.13,287.03
+rc delayed 1170 teleport 18 397.99,9.13,286.98
+rc delayed 1170 teleport 19 397.49,9.13,286.92
+rc delayed 1170 teleport 20 396.99,9.13,286.87
+rc delayed 1170 teleport 21 396.5,9.13,286.81
+rc delayed 1170 teleport 22 396.0,9.13,286.76
+rc delayed 1170 teleport 22 344.92,12.55,303.57
+rc delayed 1170 teleport 23 345.41,12.55,303.68
+rc delayed 1170 teleport 24 345.9,12.55,303.78
+rc delayed 1170 teleport 25 346.39,12.55,303.89
+rc delayed 1170 teleport 26 346.87,12.55,304.0
+rc delayed 1170 teleport 27 347.36,12.55,304.1
+rc delayed 1170 teleport 28 347.85,12.55,304.21
+rc delayed 1170 teleport 29 348.34,12.55,304.32
+rc delayed 1170 teleport 30 348.83,12.55,304.42
+rc delayed 1170 teleport 31 349.32,12.55,304.53
+rc delayed 1170 teleport 32 349.8,12.55,304.64
+rc delayed 1170 teleport 32 354.55,12.9,329.94
+rc delayed 1170 teleport 33 354.07,12.9,330.1
+rc delayed 1170 teleport 34 353.6,12.9,330.25
+rc delayed 1170 teleport 35 353.12,12.9,330.41
+rc delayed 1170 teleport 36 352.65,12.9,330.56
+rc delayed 1170 teleport 37 352.17,12.9,330.72
+rc delayed 1170 teleport 38 351.7,12.9,330.88
+rc delayed 1170 teleport 39 351.22,12.9,331.03
+rc delayed 1170 teleport 40 350.75,12.9,331.19
+rc delayed 1170 teleport 41 350.27,12.9,331.34
+rc delayed 1170 teleport 42 349.8,12.9,331.5
+rc delayed 1170 teleport 42 370.37,9.43,369.62
+rc delayed 1170 teleport 43 369.89,9.43,369.47
+rc delayed 1170 teleport 44 369.42,9.43,369.32
+rc delayed 1170 teleport 45 368.94,9.43,369.17
+rc delayed 1170 teleport 46 368.46,9.43,369.02
+rc delayed 1170 teleport 47 367.98,9.43,368.88
+rc delayed 1170 teleport 48 367.51,9.43,368.73
+rc delayed 1170 teleport 49 367.03,9.43,368.58
+rc delayed 1170 teleport 50 366.55,9.43,368.43
+rc delayed 1170 teleport 51 366.07,9.43,368.28
+rc delayed 1170 teleport 52 365.6,9.43,368.13
+rc delayed 1170 teleport 52 336.69,10.42,388.73
+rc delayed 1170 teleport 53 337.19,10.42,388.76
+rc delayed 1170 teleport 54 337.69,10.42,388.79
+rc delayed 1170 teleport 55 338.19,10.42,388.82
+rc delayed 1170 teleport 56 338.69,10.42,388.84
+rc delayed 1170 teleport 57 339.19,10.42,388.87
+rc delayed 1170 teleport 58 339.69,10.42,388.9
+rc delayed 1170 teleport 59 340.18,10.42,388.93
+rc delayed 1170 teleport 60 340.68,10.42,388.96
+rc delayed 1170 teleport 61 341.18,10.42,388.99
+rc delayed 1170 teleport 62 341.68,10.42,389.02
+rc delayed 1170 teleport 62 291.96,7.4,342.03
+rc delayed 1170 teleport 63 292.19,7.4,341.59
+rc delayed 1170 teleport 64 292.42,7.4,341.14
+rc delayed 1170 teleport 65 292.66,7.4,340.7
+rc delayed 1170 teleport 66 292.89,7.4,340.26
+rc delayed 1170 teleport 67 293.12,7.4,339.82
+rc delayed 1170 teleport 68 293.35,7.4,339.37
+rc delayed 1170 teleport 69 293.59,7.4,338.93
+rc delayed 1170 teleport 70 293.82,7.4,338.49
+rc delayed 1170 teleport 71 294.05,7.4,338.05
+rc delayed 1170 teleport 72 294.28,7.4,337.6
+rc delayed 1170 teleport 72 274.49,8.2,301.69
+rc delayed 1170 teleport 73 274.56,8.2,301.19
+rc delayed 1170 teleport 74 274.62,8.2,300.7
+rc delayed 1170 teleport 75 274.69,8.2,300.2
+rc delayed 1170 teleport 76 274.76,8.2,299.71
+rc delayed 1170 teleport 77 274.83,8.2,299.21
+rc delayed 1170 teleport 78 274.89,8.2,298.72
+rc delayed 1170 teleport 79 274.96,8.2,298.22
+rc delayed 1170 teleport 80 275.03,8.2,297.73
+rc delayed 1170 teleport 81 275.1,8.2,297.23
+rc delayed 1170 teleport 82 275.16,8.2,296.74
+rc delayed 1170 teleport 82 212.38,11.49,238.94
+rc delayed 1170 teleport 83 212.79,11.49,239.23
+rc delayed 1170 teleport 84 213.2,11.49,239.52
+rc delayed 1170 teleport 85 213.61,11.49,239.8
+rc delayed 1170 teleport 86 214.01,11.49,240.09
+rc delayed 1170 teleport 87 214.42,11.49,240.38
+rc delayed 1170 teleport 88 214.83,11.49,240.67
+rc delayed 1170 teleport 89 215.24,11.49,240.96
+rc delayed 1170 teleport 90 215.65,11.49,241.25
+rc delayed 1170 teleport 91 216.06,11.49,241.53
+rc delayed 1170 teleport 92 216.47,11.49,241.82
+rc delayed 1170 teleport 92 162.85,12.17,265.93
+rc delayed 1170 teleport 93 163.33,12.17,266.05
+rc delayed 1170 teleport 94 163.82,12.17,266.17
+rc delayed 1170 teleport 95 164.3,12.17,266.3
+rc delayed 1170 teleport 96 164.79,12.17,266.42
+rc delayed 1170 teleport 97 165.27,12.17,266.54
+rc delayed 1170 teleport 98 165.76,12.17,266.66
+rc delayed 1170 teleport 99 166.24,12.17,266.79
+rc delayed 1170 teleport 100 166.73,12.17,266.91
+rc delayed 1170 teleport 101 167.21,12.17,267.03
+rc delayed 1170 teleport 102 167.7,12.17,267.15
+rc delayed 1170 teleport 102 198.49,10.86,332.73
+rc delayed 1170 teleport 103 198.09,10.86,332.44
+rc delayed 1170 teleport 104 197.68,10.86,332.14
+rc delayed 1170 teleport 105 197.28,10.86,331.85
+rc delayed 1170 teleport 106 196.87,10.86,331.55
+rc delayed 1170 teleport 107 196.47,10.86,331.26
+rc delayed 1170 teleport 108 196.06,10.86,330.97
+rc delayed 1170 teleport 109 195.66,10.86,330.67
+rc delayed 1170 teleport 110 195.25,10.86,330.38
+rc delayed 1170 teleport 111 194.85,10.86,330.08
+rc delayed 1170 teleport 112 194.44,10.86,329.79
+rc delayed 1170 teleport 112 252.82,11.33,438.67
+rc delayed 1170 teleport 113 252.39,11.33,438.42
+rc delayed 1170 teleport 114 251.96,11.33,438.16
+rc delayed 1170 teleport 115 251.53,11.33,437.91
+rc delayed 1170 teleport 116 251.09,11.33,437.66
+rc delayed 1170 teleport 117 250.66,11.33,437.41
+rc delayed 1170 teleport 118 250.23,11.33,437.15
+rc delayed 1170 teleport 119 249.8,11.33,436.9
+rc delayed 1170 teleport 120 249.37,11.33,436.65
+rc delayed 1170 teleport 121 248.94,11.33,436.4
+rc delayed 1170 teleport 122 248.51,11.33,436.14
+
+!map_rotation end
+
+#Rotation 2 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+server_round_rule ArmyInfantryOfficer | This is a test | and another
+
+#Promotion area flags
+objects_override FlagBritish 563.65 11.03 416.67 0.00 165.41 0.00
+objects_override FlagBritish 565.36 11.03 412.18 0.00 73.52 0.00
+objects_override FlagBritish 586.09 9.93 425.62 0.00 247.12 0.00
+objects_override FlagBritish 588.00 9.93 420.24 0.00 105.06 0.00
+
+objects_override CannonFieldGun9PDR 584.73 10.53 416.91 0.00 240.68 0.00
+objects_override CannonAmmoboxLarge 587.64 10.53 416.92 0.00 243.99 0.00
+
+objects_override BarrelStack_Group 560.53 9.93 425.16 0.00 88.35 0.00
+
+objects_override MusketStack 583.32 10.53 423.07 0.00 155.54 0.00
+objects_override MusketStack 584.27 10.53 420.70 0.00 335.63 0.00
+objects_override MusketStack 570.97 10.53 420.52 0.00 150.39 0.00
+objects_override MusketStack 573.65 10.53 414.23 0.00 338.97 0.00
+objects_override Piano2 566.32 9.93 426.71 0.00 111.58 0.00
+
+objects_override MusketStack 577.41 10.53 417.96 0.00 247.38 0.00
+objects_override MusketStack 576.42 10.53 420.35 0.00 250.20 0.00
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending british
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+rc set idleToStrikeTransitionDelayMeleeWeapons 0.285
+rc set blockingStrikeTransitionDelayMeleeWeapons 0.285
+rc set characterBlockGraceTime 0.03
+
+#starting_weapons_override British ArmyLineInfantry 3 3 Musket_SeaServiceBrownBess Pistol_XIII Unarmed
+#starting_weapons_override French ArmyLineInfantry 3 3 Musket_SeaServiceBrownBess Pistol_XIII Unarmed
+
+#firearm_ammo_override British ArmyLineInfantry Pistol_XIII 99 99 99
+#firearm_ammo_override French ArmyLineInfantry Pistol_XIII 99 99 99
+
+#firearm_ammo_override British ArmyLineInfantry Musket_SeaServiceBrownBess 0 0 1
+#firearm_ammo_override French ArmyLineInfantry Musket_SeaServiceBrownBess 0 0 1
+
+
+load_mod 2272056234 #comp map
+
+!map_rotation end
+
+
+#training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending prussian
+artillery_fieldgun_respawn_timer 30
+!map_rotation end
+
+
+# Tahir
+!map_rotation start
+map_name Egypt
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 122
+
+
+### INITIAL ANNOUCEMENT ###
+
+rc delayed 1170 broadcast Live at 19:00
+rc delayed 1155 broadcast Welcome to the 2nd-Bat Training Shooting program!
+rc delayed 1150 broadcast Move around the map and kill ALL enemy players 
+rc delayed 1145 broadcast Record your time and compare!
+rc delayed 1140 broadcast LIVE!
+
+
+!map_rotation end
+
+# Island Plains
+!map_rotation start
+map_name islandplains
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 65
+
+
+######## TRAINING PROGRAM ########
+rc delayed 1170 teleport 2 140.86,28.13,328.71
+rc delayed 1170 teleport 3 140.39,28.13,328.55
+rc delayed 1170 teleport 4 139.91,28.13,328.4
+rc delayed 1170 teleport 5 139.44,28.13,328.24
+rc delayed 1170 teleport 6 138.96,28.13,328.08
+rc delayed 1170 teleport 7 138.49,28.13,327.93
+rc delayed 1170 teleport 8 138.01,28.13,327.77
+rc delayed 1170 teleport 9 137.54,28.13,327.61
+rc delayed 1170 teleport 10 137.06,28.13,327.45
+rc delayed 1170 teleport 11 136.59,28.13,327.3
+rc delayed 1170 teleport 12 136.11,28.13,327.14
+rc delayed 1170 teleport 12 94.98,30.24,381.03
+rc delayed 1170 teleport 13 95.45,30.24,380.87
+rc delayed 1170 teleport 14 95.93,30.24,380.71
+rc delayed 1170 teleport 15 96.4,30.24,380.56
+rc delayed 1170 teleport 16 96.88,30.24,380.4
+rc delayed 1170 teleport 17 97.35,30.24,380.24
+rc delayed 1170 teleport 18 97.83,30.24,380.08
+rc delayed 1170 teleport 19 98.3,30.24,379.93
+rc delayed 1170 teleport 20 98.78,30.24,379.77
+rc delayed 1170 teleport 21 99.25,30.24,379.61
+rc delayed 1170 teleport 22 99.72,30.24,379.45
+rc delayed 1170 teleport 22 110.48,30.49,328.48
+rc delayed 1170 teleport 23 110.01,30.49,328.3
+rc delayed 1170 teleport 24 109.54,30.49,328.13
+rc delayed 1170 teleport 25 109.08,30.49,327.95
+rc delayed 1170 teleport 26 108.61,30.49,327.78
+rc delayed 1170 teleport 27 108.14,30.49,327.6
+rc delayed 1170 teleport 28 107.67,30.49,327.43
+rc delayed 1170 teleport 29 107.2,30.49,327.25
+rc delayed 1170 teleport 30 106.73,30.49,327.08
+rc delayed 1170 teleport 31 106.27,30.49,326.9
+rc delayed 1170 teleport 32 105.8,30.49,326.73
+rc delayed 1170 teleport 32 65.61,30.13,282.82
+rc delayed 1170 teleport 33 65.18,30.13,282.57
+rc delayed 1170 teleport 34 64.74,30.13,282.33
+rc delayed 1170 teleport 35 64.31,30.13,282.08
+rc delayed 1170 teleport 36 63.87,30.13,281.83
+rc delayed 1170 teleport 37 63.44,30.13,281.59
+rc delayed 1170 teleport 38 63.0,30.13,281.34
+rc delayed 1170 teleport 39 62.57,30.13,281.09
+rc delayed 1170 teleport 40 62.13,30.13,280.84
+rc delayed 1170 teleport 41 61.7,30.13,280.6
+rc delayed 1170 teleport 42 61.26,30.13,280.35
+rc delayed 1170 teleport 42 297.49,27.26,310.38
+rc delayed 1170 teleport 43 297.34,27.26,309.9
+rc delayed 1170 teleport 44 297.2,27.26,309.42
+rc delayed 1170 teleport 45 297.05,27.26,308.95
+rc delayed 1170 teleport 46 296.91,27.26,308.47
+rc delayed 1170 teleport 47 296.76,27.26,307.99
+rc delayed 1170 teleport 48 296.62,27.26,307.51
+rc delayed 1170 teleport 49 296.47,27.26,307.03
+rc delayed 1170 teleport 50 296.33,27.26,306.55
+rc delayed 1170 teleport 51 296.18,27.26,306.08
+rc delayed 1170 teleport 52 296.03,27.26,305.6
+rc delayed 1170 teleport 52 178.39,30.73,277.33
+rc delayed 1170 teleport 53 178.76,30.73,277.66
+rc delayed 1170 teleport 54 179.14,30.73,278.0
+rc delayed 1170 teleport 55 179.51,30.73,278.33
+rc delayed 1170 teleport 56 179.88,30.73,278.66
+rc delayed 1170 teleport 57 180.26,30.73,278.99
+rc delayed 1170 teleport 58 180.63,30.73,279.33
+rc delayed 1170 teleport 59 181.0,30.73,279.66
+rc delayed 1170 teleport 60 181.37,30.73,279.99
+rc delayed 1170 teleport 61 181.75,30.73,280.33
+rc delayed 1170 teleport 62 182.12,30.73,280.66
+
+
+### INITIAL ANNOUCEMENT ###
+
+rc delayed 1170 broadcast Live at 19:00
+rc delayed 1155 broadcast Welcome to the 2nd-Bat Training Shooting program!
+rc delayed 1150 broadcast Move around the map and kill ALL enemy players 
+rc delayed 1145 broadcast Record your time and compare!
+rc delayed 1140 broadcast LIVE!
+
+
+!map_rotation end

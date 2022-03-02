@@ -1,0 +1,984 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 17000
+steam_communications_port 17001
+steam_query_port 17002
+
+
+
+###- Server Settings
+
+server_name QRR | Comander
+server_welcome_message Welcome to QRR Comander server!
+server_region europe
+server_admin_password Az708
+server_password 5050
+
+#Main config
+mods_installed 2654672970
+mods_installed 2548829114
+mods_installed 2584014784
+
+map_voting_enabled true
+map_voting_duration 15
+map_voting_allow_same_map false
+map_voting_history_count 3
+map_voting_gameplay_modes ArmyAssault
+
+###- Bandwidth & Performance Settings
+
+network_broadcast_mode HighAccuracy
+
+###- Global Gameplay & Map Settings
+
+artillery_fieldgun_respawn_timer 120
+artillery_rocketlauncher_respawn_timer 120
+map_rotation_start_randomise true
+
+###- Map Rotations
+
+#1 = warmup sharpton
+!map_rotation start
+map_name sharpton
+game_mode ArmyBattlefield
+game_type Hardcore
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+wave_spawn_vehicle_time_seconds 10
+spawn_immunity_timer 2
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 9
+time_dynamic false
+weather_preset calm2
+weather_dynamic false
+friendly_fire false
+friendly_fire_melee_bounce true
+damage_split 0
+sappers_attacking_starting_materials 150
+sappers_defending_starting_materials 150
+sappers_buildlimit explosivebarrel attacking 0
+sappers_buildlimit explosivebarrel defending 0
+sappers_buildlimit palisade attacking 0
+sappers_buildlimit palisade defending 0
+sappers_buildlimit shootingplatform attacking 0
+sappers_buildlimit shootingplatform defending 0
+sappers_buildlimit swivelgun attacking 0
+sappers_buildlimit swivelgun defending 0
+officers_spawn_mounted false
+faction_attacking french
+faction_defending british
+
+starting_weapons_override French Grenadier 4 4 Musket_CharlevilleIXXII Frontlines_MillsGrenade_MKII
+
+#Automated Commands - Round Start
+rc set allowFiring true
+
+rc set characterRespawntime 1
+rc set characterVehicleRespawnTime 1
+
+rc set cannonMoverSpeedMultiplier 1
+rc set cannonMoverRotationMultiplier 1
+rc set rocketMoverSpeedMultiplier 1
+rc set rocketMoverRotationMultiplier 1
+
+#Automated Commands - Special Horses
+rc set useSpecialHorseVariants true
+
+#Automated Commands - Idle Cavalry
+#rc set secondsToPassAfterDismounted 30
+#rc set secondsSpawnedBeforeDespawn 30
+#rc set secondsToPassAfterHealthUpdated 15
+
+dynamic_capture_point_enabled false
+dynamic_capture_point_position 295.29 8.73 132.43
+dynamic_capture_point_capture_duration 360
+dynamic_capture_point_max_capture_player_count 10
+
+load_mod 2306200646
+!map_rotation end
+
+#Rotation 2 -- ISLAND PLAINS
+!map_rotation start
+map_name islandplains
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 7
+spawn_override B LightInfantry 7
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>How it`s work</color></b></size><br><br>● Form up Line (Q then 1)<br> ● Aim (Q then 2)<br> ● Fire (Q then 3)<br> ● Toggle Double Rank (Keyboard shortcut N)<br> ● Break Line (Q then 7)<br> ● Charge Buff (Q then 6)<br> ● Follow Commander (Keyboard shortcut B)<br>
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live
+
+### ARTY SPEED ### 
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+
+class_system_orders_formline_cooldown 1
+class_system_orders_breakrankandfollow_cooldown 1
+class_system_orders_fireatwill_cooldown 1
+class_system_orders_makeready_cooldown 1
+class_system_orders_fireorder_cooldown 1
+class_system_orders_ceasefire_cooldown 1
+
+load_mod 2654672970
+load_mod 2548829114
+!map_rotation end
+
+#Rotation 3 -- SnowyPlainsIII
+!map_rotation start
+map_name SnowyPlainsIII
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 7
+spawn_override B LightInfantry 7
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>How it`s work</color></b></size><br><br>● Form up Line (Q then 1)<br> ● Aim (Q then 2)<br> ● Fire (Q then 3)<br> ● Toggle Double Rank (Keyboard shortcut N)<br> ● Break Line (Q then 7)<br> ● Charge Buff (Q then 6)<br> ● Follow Commander (Keyboard shortcut B)<br>
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live
+
+### ARTY SPEED ### 
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+
+class_system_orders_formline_cooldown 1
+class_system_orders_breakrankandfollow_cooldown 1
+class_system_orders_fireatwill_cooldown 1
+class_system_orders_makeready_cooldown 1
+class_system_orders_fireorder_cooldown 1
+class_system_orders_ceasefire_cooldown 1
+
+load_mod 2654672970
+load_mod 2548829114
+!map_rotation end
+
+#Rotation 4 -- Tahir
+!map_rotation start
+map_name Egypt
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 7
+spawn_override B LightInfantry 7
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>How it`s work</color></b></size><br><br>● Form up Line (Q then 1)<br> ● Aim (Q then 2)<br> ● Fire (Q then 3)<br> ● Toggle Double Rank (Keyboard shortcut N)<br> ● Break Line (Q then 7)<br> ● Charge Buff (Q then 6)<br> ● Follow Commander (Keyboard shortcut B)<br>
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live
+
+### ARTY SPEED ### 
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+
+class_system_orders_formline_cooldown 1
+class_system_orders_breakrankandfollow_cooldown 1
+class_system_orders_fireatwill_cooldown 1
+class_system_orders_makeready_cooldown 1
+class_system_orders_fireorder_cooldown 1
+class_system_orders_ceasefire_cooldown 1
+
+load_mod 2654672970
+load_mod 2548829114
+!map_rotation end
+
+#Rotation 5 -- GrassyPlainsIII
+!map_rotation start
+map_name GrassyPlainsIII
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 7
+spawn_override B LightInfantry 7
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>How it`s work</color></b></size><br><br>● Form up Line (Q then 1)<br> ● Aim (Q then 2)<br> ● Fire (Q then 3)<br> ● Toggle Double Rank (Keyboard shortcut N)<br> ● Break Line (Q then 7)<br> ● Charge Buff (Q then 6)<br> ● Follow Commander (Keyboard shortcut B)<br>
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live
+
+### ARTY SPEED ### 
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+
+class_system_orders_formline_cooldown 1
+class_system_orders_breakrankandfollow_cooldown 1
+class_system_orders_fireatwill_cooldown 1
+class_system_orders_makeready_cooldown 1
+class_system_orders_fireorder_cooldown 1
+class_system_orders_ceasefire_cooldown 1
+
+load_mod 2654672970
+load_mod 2548829114
+!map_rotation end
+
+#Rotation 6 -- GrassyPlains
+!map_rotation start
+map_name GrassyPlains
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 7
+spawn_override B LightInfantry 7
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>How it`s work</color></b></size><br><br>● Form up Line (Q then 1)<br> ● Aim (Q then 2)<br> ● Fire (Q then 3)<br> ● Toggle Double Rank (Keyboard shortcut N)<br> ● Break Line (Q then 7)<br> ● Charge Buff (Q then 6)<br> ● Follow Commander (Keyboard shortcut B)<br>
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live
+
+### ARTY SPEED ### 
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+
+class_system_orders_formline_cooldown 1
+class_system_orders_breakrankandfollow_cooldown 1
+class_system_orders_fireatwill_cooldown 1
+class_system_orders_makeready_cooldown 1
+class_system_orders_fireorder_cooldown 1
+class_system_orders_ceasefire_cooldown 1
+
+load_mod 2654672970
+load_mod 2548829114
+!map_rotation end
+
+#Rotation 7 -- SnowyPlains
+!map_rotation start
+map_name SnowyPlains
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 7
+spawn_override B LightInfantry 7
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>How it`s work</color></b></size><br><br>● Form up Line (Q then 1)<br> ● Aim (Q then 2)<br> ● Fire (Q then 3)<br> ● Toggle Double Rank (Keyboard shortcut N)<br> ● Break Line (Q then 7)<br> ● Charge Buff (Q then 6)<br> ● Follow Commander (Keyboard shortcut B)<br>
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live
+
+### ARTY SPEED ### 
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+
+class_system_orders_formline_cooldown 1
+class_system_orders_breakrankandfollow_cooldown 1
+class_system_orders_fireatwill_cooldown 1
+class_system_orders_makeready_cooldown 1
+class_system_orders_fireorder_cooldown 1
+class_system_orders_ceasefire_cooldown 1
+
+load_mod 2654672970
+load_mod 2548829114
+!map_rotation end
+
+#Rotation 8 -- grassyplainsii
+!map_rotation start
+map_name grassyplainsii
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 7
+spawn_override B LightInfantry 7
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>How it`s work</color></b></size><br><br>● Form up Line (Q then 1)<br> ● Aim (Q then 2)<br> ● Fire (Q then 3)<br> ● Toggle Double Rank (Keyboard shortcut N)<br> ● Break Line (Q then 7)<br> ● Charge Buff (Q then 6)<br> ● Follow Commander (Keyboard shortcut B)<br>
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live
+
+### ARTY SPEED ### 
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+
+class_system_orders_formline_cooldown 1
+class_system_orders_breakrankandfollow_cooldown 1
+class_system_orders_fireatwill_cooldown 1
+class_system_orders_makeready_cooldown 1
+class_system_orders_fireorder_cooldown 1
+class_system_orders_ceasefire_cooldown 1
+
+load_mod 2654672970
+load_mod 2548829114
+!map_rotation end
+
+#Rotation 9 -- Tost`s map
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>How it`s work</color></b></size><br><br>● Form up Line (Q then 1)<br> ● Aim (Q then 2)<br> ● Fire (Q then 3)<br> ● Toggle Double Rank (Keyboard shortcut N)<br> ● Break Line (Q then 7)<br> ● Charge Buff (Q then 6)<br> ● Follow Commander (Keyboard shortcut B)<br>
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live
+
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+
+spawn_override C ArmyInfantryOfficer 20
+spawn_override D ArmyInfantryOfficer 20
+spawn_override C ArmyLineInfantry 99
+spawn_override D ArmyLineInfantry 99
+spawn_override C ArmyLineInfantry2 99
+spawn_override D ArmyLineInfantry2 99
+spawn_override C Grenadier 99
+spawn_override D Grenadier 99
+spawn_override C Guard 99
+spawn_override D Guard 99
+
+### ARTY SPEED ### 
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleGuardPattern Sword_Pattern1803FlankOfficer Unarmed
+
+class_system_orders_formline_cooldown 1
+class_system_orders_breakrankandfollow_cooldown 1
+class_system_orders_fireatwill_cooldown 1
+class_system_orders_makeready_cooldown 1
+class_system_orders_fireorder_cooldown 1
+class_system_orders_ceasefire_cooldown 1
+
+load_mod 2654672970
+load_mod 2548829114
+load_mod 2584014784
+!map_rotation end

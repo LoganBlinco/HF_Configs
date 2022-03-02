@@ -1,0 +1,178 @@
+
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+###- Server Settings
+
+server_name EU Competitive League Season 4 | S3 
+server_welcome_message <b> Welcome to the Holdfast League Season 4. This server is brought to you by bmghosting.com, Reliable – Experienced – Affordable </b>
+server_region europe
+server_admin_password Camping
+server_password Movement
+
+network_broadcast_mode Realtime
+
+mods_installed 2134163798 # competitive hills 1
+mods_installed 2134144435 # competitive hills 2
+
+
+#Rotation 1 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 6
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+game_type hardcore
+
+server_round_rule ArmyInfantryOfficer | This is a test | and another
+
+!map_rotation end
+
+
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+round_time_minutes 14.5
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+game_type hardcore
+
+## Class spawns
+spawn_override A ArmyInfantryOfficer 2
+spawn_override A ArmyLineInfantry 99
+spawn_override A FlagBearer 1
+spawn_override A Drummer 1
+spawn_override A Fifer 1
+spawn_override A Bagpiper 1
+spawn_override A Surgeon 1
+spawn_override A Cannoneer 1
+spawn_override A Rocketeer 1
+spawn_override A Guard 1
+spawn_override A Grenadier 1
+
+spawn_override B ArmyInfantryOfficer 2
+spawn_override B ArmyLineInfantry 99
+spawn_override B FlagBearer 1
+spawn_override B Drummer 1
+spawn_override B Fifer 1
+spawn_override B Bagpiper 1
+spawn_override B Surgeon 1
+spawn_override B Cannoneer 1
+spawn_override B Rocketeer 1
+spawn_override B Guard 1
+spawn_override B Grenadier 1
+
+## Class rules
+
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Cannoneer,Rocketeer,Guard,Grenadier|<size=15><b><color=\#989898>LEAGUE RULES - All must follow the rules</color></b></size><br><br>• No firing out of line (FOL) <br>• Teams require at least One Officer at the start of the round <br>• Reloading must be done in a line or column when moving <br>• 3 players required to fire <br>• Teams may split into a maximum of two lines <br>• Beware of passive behaviour as explained in the rules
+
+## Automatic commands
+rc set allowFiring false
+rc delayed 720 broadcast Live
+rc delayed 720 set allowFiring true
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2134163798 #Competitive hills 1
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+round_time_minutes 14.5
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+game_type hardcore
+
+## Class spawns
+spawn_override A ArmyInfantryOfficer 2
+spawn_override A ArmyLineInfantry 99
+spawn_override A FlagBearer 1
+spawn_override A Drummer 1
+spawn_override A Fifer 1
+spawn_override A Bagpiper 1
+spawn_override A Surgeon 1
+spawn_override A Cannoneer 1
+spawn_override A Rocketeer 1
+spawn_override A Guard 1
+spawn_override A Grenadier 1
+
+spawn_override B ArmyInfantryOfficer 2
+spawn_override B ArmyLineInfantry 99
+spawn_override B FlagBearer 1
+spawn_override B Drummer 1
+spawn_override B Fifer 1
+spawn_override B Bagpiper 1
+spawn_override B Surgeon 1
+spawn_override B Cannoneer 1
+spawn_override B Rocketeer 1
+spawn_override B Guard 1
+spawn_override B Grenadier 1
+
+## Class rules
+
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Cannoneer,Rocketeer,Guard,Grenadier|<size=15><b><color=\#989898>LEAGUE RULES - All must follow the rules</color></b></size><br><br>• No firing out of line (FOL) <br>• Teams require at least One Officer at the start of the round <br>• Reloading must be done in a line or column when moving <br>• 3 players required to fire <br>• Teams may split into a maximum of two lines <br>• Beware of passive behaviour as explained in the rules
+
+## Automatic commands
+rc set allowFiring false
+rc delayed 720 broadcast Live
+rc delayed 720 set allowFiring true
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2134144435 #Competitive hills 2
+
+!map_rotation end

@@ -1,0 +1,1960 @@
+
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+ 
+server_port 17000
+steam_communications_port 17001
+steam_query_port 17002
+
+###- Server Settings
+ 
+server_name QRRB Linebattle server | S1
+server_welcome_message Welcome!
+server_region europe
+server_admin_password BigMan
+server_password 5050
+
+#global settings
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#voting settings
+map_voting_enabled true
+map_voting_duration 13
+map_voting_allow_same_map false
+map_voting_history_count 6
+map_voting_gameplay_modes ArmyAssault
+
+mods_installed 2448643877 #kyle
+mods_installed 2231589375 #Uxbridge
+mods_installed 2548829114 #MOSCOW
+
+mods_installed 2595335467 #DCR
+
+mods_installed 2428228183 # MANIAKI Greek Officer Papaflessas
+mods_installed 2428249154 # MANIAKI Greek Line Infantry
+mods_installed 2428243387 # MANIAKI Greek Flag Bearer
+mods_installed 2245622458 # MANIAKI Greek Flag (British)
+mods_installed 2363510820 # MANIAKI Greek Priest Papagiorgis Medic
+
+mods_installed 2647621848 # MANIAKI Cav
+
+mods_installed 2139174158 # tahir desert 2
+mods_installed 2579839234  #sound mod
+
+mods_installed_server_only 2531692643 #auto admin
+
+
+###- Administrator Preset Messages
+
+admin_action_preset_reason Misc rule Break | You have broken some general rule. This preset is fastest way to slay you. Tut tut.
+admin_action_preset_reason Firing Out Of Line | Watch your Fire Out of Line. You must be standing should to shoulder before shooting your musket.
+admin_action_preset_reason Line Dropped Below 3 | Your line has dropped to 3 members. Join another line.
+admin_action_preset_reason Rambo | You must be with a line to engage fire. finds a Line.
+admin_action_preset_reason VoIP Spam | Please don't spam VoIP during the event.
+
+
+##CUSTOM ADMIN SETTINGS
+
+mod_variable 2531692643:liveTimer:1050
+mod_variable 2531692643:ArtyOnArtyTime:750
+
+mod_variable 2531692643:allChargeTimeTrigger:480
+mod_variable 2531692643:allChargeMinPercentageAlive:0.5
+mod_variable 2531692643:allChargeState:TimePercentageConstant
+
+mod_variable 2531692643:ArmyInfantryOfficer:11,6,13,1,2,25
+
+
+#Rotation 2 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes 25
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending russian
+artillery_fieldgun_respawn_timer 30
+
+
+#Promotion area flags
+objects_override FlagBritish 563.65 11.03 416.67 0.00 165.41 0.00
+objects_override FlagBritish 565.36 11.03 412.18 0.00 73.52 0.00
+objects_override FlagBritish 586.09 9.93 425.62 0.00 247.12 0.00
+objects_override FlagBritish 588.00 9.93 420.24 0.00 105.06 0.00
+
+objects_override CannonFieldGun9PDR 584.73 10.53 416.91 0.00 240.68 0.00
+objects_override CannonAmmoboxLarge 587.64 10.53 416.92 0.00 243.99 0.00
+
+objects_override BarrelStack_Group 560.53 9.93 425.16 0.00 88.35 0.00
+
+objects_override MusketStack 583.32 10.53 423.07 0.00 155.54 0.00
+objects_override MusketStack 584.27 10.53 420.70 0.00 335.63 0.00
+objects_override MusketStack 570.97 10.53 420.52 0.00 150.39 0.00
+objects_override MusketStack 573.65 10.53 414.23 0.00 338.97 0.00
+objects_override Piano2 566.32 9.93 426.71 0.00 111.58 0.00
+
+objects_override MusketStack 577.41 10.53 417.96 0.00 247.38 0.00
+objects_override MusketStack 576.42 10.53 420.35 0.00 250.20 0.00
+
+
+
+
+load_mod 2231589375 #Uxbridge
+load_mod 2448643877 #kyle
+
+load_mod 2548829114 #MOSCOWS
+
+load_mod 2595335467 #DCR
+
+load_mod 2428249154 # MANIAKI Greek Line Infantry
+load_mod 2428243387 # MANIAKI Greek Flag Bearer
+load_mod 2428228183 # MANIAKI Greek Officer Papaflessas
+load_mod 2245622458 # MANIAKI Greek Flag (British)
+load_mod 2363510820 # MANIAKI Greek Priest Papagiorgis Medic
+load_mod 2647621848 # MANIAKI Cav
+load_mod_client_only 2579839234  #custom sounds
+
+!map_rotation end
+
+
+!map_rotation start
+map_name islandplains
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 0
+spawn_override B Grenadier 0
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 14
+spawn_override B LightInfantry 14
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+### Additional Settings ###
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 10
+sappers_buildlimit Gabion attacking 10
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 1
+sappers_buildlimit ExplosiveBarrel attacking 1
+ 
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit Palisade attacking 0
+ 
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,LightInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,Grenadier,Guard|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Cannoneer,Rocketeer,Sapper|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>• Arty Cannot fire until 17:30<br>•Arty on Arty at 12:30<br>•MAXIMUM of 5  Arty crew. Only cannonners/sappers.<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.<br>•Draggons must be stationary to fire when mounted.<br>•Only Hussars may FIC<br>•Dragoons may dismount and skirm.
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1110 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1150 broadcast Live at 18:30
+rc delayed 1145 broadcast Arty can fire at 17:30 (Arty on Arty at 12:30)
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1110 broadcast Live (Arty cannot fire)
+rc delayed 1050 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 750 broadcast Arty on Arty live!
+
+### ARTY SPEED ### -- disables moving then makes it faster until live. (prevents crews with better PC's being faster)
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.25
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override French FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Russian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Prussian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Italian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+
+objects_override PalisadeWall 329.16 31.76 261.45 0.00 356.22 0.00
+objects_override PalisadeWall 352.77 32.01 265.10 0.00 335.10 0.00
+objects_override PalisadeWall 325.91 29.14 308.32 0.00 318.76 0.00
+objects_override PalisadeWall 275.94 27.10 300.48 0.00 233.66 0.00
+objects_override PalisadeWall 249.81 27.04 325.61 0.00 325.15 0.00
+objects_override PalisadeWall 250.94 28.39 361.47 0.00 10.74 0.00
+objects_override PalisadeWall 209.15 26.99 353.83 0.00 315.49 0.00
+objects_override PalisadeWall 177.19 27.99 394.00 0.00 7.17 0.00
+objects_override PalisadeWall 209.75 32.33 416.24 0.00 14.00 0.00
+objects_override PalisadeWall 280.28 33.26 430.26 0.00 327.74 0.00
+objects_override PalisadeWall 286.87 32.15 509.56 0.00 291.06 0.00
+ 
+objects_override Lantern2 241.24 31.90 103.24 0.00 42.03 0.00
+objects_override Lantern2 263.84 31.60 116.20 0.00 68.77 0.00
+objects_override Lantern2 293.52 31.90 121.52 0.00 82.73 0.00
+objects_override Lantern2 317.50 32.72 112.87 0.00 125.20 0.00
+objects_override Lantern2 259.42 32.02 115.92 0.00 346.04 0.00
+objects_override Lantern2 196.77 31.73 493.86 0.00 74.10 0.00
+objects_override Lantern2 226.18 32.73 482.21 0.00 97.57 0.00
+objects_override Lantern2 256.88 33.41 482.42 0.00 75.29 0.00 
+
+
+load_mod 2548829114 #MOSCOWS
+
+load_mod 2595335467 #DCR
+
+load_mod 2428249154 # MANIAKI Greek Line Infantry
+load_mod 2428243387 # MANIAKI Greek Flag Bearer
+load_mod 2428228183 # MANIAKI Greek Officer Papaflessas
+load_mod 2245622458 # MANIAKI Greek Flag (British)
+load_mod 2363510820 # MANIAKI Greek Priest Papagiorgis Medic
+
+load_mod_server_only 2531692643 #autoadmin
+load_mod_client_only 2579839234  #custom sounds
+
+load_mod 2647621848 # MANIAKI Cav
+
+!map_rotation end
+
+!map_rotation start
+map_name grassyplainsii
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 0
+spawn_override B Grenadier 0
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 14
+spawn_override B LightInfantry 14
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+### Additional Settings ###
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 10
+sappers_buildlimit Gabion attacking 10
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 1
+sappers_buildlimit ExplosiveBarrel attacking 1
+ 
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit Palisade attacking 0
+ 
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,LightInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,Grenadier,Guard|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Cannoneer,Rocketeer,Sapper|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>• Arty Cannot fire until 17:30<br>•Arty on Arty at 12:30<br>•MAXIMUM of 5  Arty crew. Only cannonners/sappers.<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.<br>•Draggons must be stationary to fire when mounted.<br>•Only Hussars may FIC<br>•Dragoons may dismount and skirm.
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1110 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1150 broadcast Live at 18:30
+rc delayed 1145 broadcast Arty can fire at 17:30 (Arty on Arty at 12:30)
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1110 broadcast Live (Arty cannot fire)
+rc delayed 1050 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 750 broadcast Arty on Arty live!
+
+### ARTY SPEED ### -- disables moving then makes it faster until live. (prevents crews with better PC's being faster)
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.25
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override French FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Russian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Prussian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Italian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+
+objects_override Lantern2 379.61 13.07 153.11 0.00 248.62 0.00
+objects_override Lantern2 359.62 13.62 151.06 0.00 267.77 0.00
+objects_override Lantern2 342.10 13.33 150.67 0.00 243.12 0.00
+objects_override Lantern2 329.73 12.99 141.90 0.00 80.80 0.00
+objects_override Lantern2 351.02 13.68 521.16 0.00 340.62 0.00
+objects_override Lantern2 332.30 12.84 523.56 0.00 276.02 0.00
+objects_override Lantern2 314.59 10.62 535.12 0.00 303.94 0.00
+objects_override Lantern2 378.48 11.70 523.90 0.00 76.63 0.00
+ 
+objects_override PalisadeWall 291.18 13.84 344.19 0.00 118.81 0.00
+objects_override PalisadeWall 218.22 13.70 319.86 0.00 279.80 0.00
+objects_override PalisadeWall 147.09 10.10 352.88 0.00 258.59 0.00
+objects_override PalisadeWall 147.86 11.06 272.01 0.00 242.70 0.00
+objects_override PalisadeWall 413.53 13.86 173.93 0.00 151.31 0.00
+objects_override PalisadeWall 373.03 13.62 120.10 0.00 213.09 0.00
+
+load_mod 2595335467 #DCR
+
+
+load_mod 2548829114 #MOSCOWS
+
+load_mod 2428249154 # MANIAKI Greek Line Infantry
+load_mod 2428243387 # MANIAKI Greek Flag Bearer
+load_mod 2428228183 # MANIAKI Greek Officer Papaflessas
+load_mod 2245622458 # MANIAKI Greek Flag (British)
+load_mod 2363510820 # MANIAKI Greek Priest Papagiorgis Medic
+
+load_mod_server_only 2531692643 #autoadmin
+load_mod_client_only 2579839234  #custom sounds
+
+load_mod 2647621848 # MANIAKI Cav
+
+!map_rotation end
+
+!map_rotation start
+map_name grassyplainsiii
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 0
+spawn_override B Grenadier 0
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 14
+spawn_override B LightInfantry 14
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+### Additional Settings ###
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 10
+sappers_buildlimit Gabion attacking 10
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 1
+sappers_buildlimit ExplosiveBarrel attacking 1
+ 
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit Palisade attacking 0
+ 
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,LightInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,Grenadier,Guard|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Cannoneer,Rocketeer,Sapper|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>• Arty Cannot fire until 17:30<br>•Arty on Arty at 12:30<br>•MAXIMUM of 5  Arty crew. Only cannonners/sappers.<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.<br>•Draggons must be stationary to fire when mounted.<br>•Only Hussars may FIC<br>•Dragoons may dismount and skirm.
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1110 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1150 broadcast Live at 18:30
+rc delayed 1145 broadcast Arty can fire at 17:30 (Arty on Arty at 12:30)
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1110 broadcast Live (Arty cannot fire)
+rc delayed 1050 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 750 broadcast Arty on Arty live!
+
+### ARTY SPEED ### -- disables moving then makes it faster until live. (prevents crews with better PC's being faster)
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.25
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override French FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Russian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Prussian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Italian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+
+
+load_mod 2595335467 #DCR
+
+
+load_mod 2548829114 #MOSCOWS
+
+load_mod 2428249154 # MANIAKI Greek Line Infantry
+load_mod 2428243387 # MANIAKI Greek Flag Bearer
+load_mod 2428228183 # MANIAKI Greek Officer Papaflessas
+load_mod 2245622458 # MANIAKI Greek Flag (British)
+load_mod 2363510820 # MANIAKI Greek Priest Papagiorgis Medic
+
+load_mod_server_only 2531692643 #autoadmin
+load_mod_client_only 2579839234  #custom sounds
+
+load_mod 2647621848 # MANIAKI Cav
+
+!map_rotation end
+
+!map_rotation start
+map_name grassyplainsiv
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 0
+spawn_override B Grenadier 0
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 14
+spawn_override B LightInfantry 14
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+### Additional Settings ###
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 10
+sappers_buildlimit Gabion attacking 10
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 1
+sappers_buildlimit ExplosiveBarrel attacking 1
+ 
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit Palisade attacking 0
+ 
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,LightInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,Grenadier,Guard|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Cannoneer,Rocketeer,Sapper|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>• Arty Cannot fire until 17:30<br>•Arty on Arty at 12:30<br>•MAXIMUM of 5  Arty crew. Only cannonners/sappers.<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.<br>•Draggons must be stationary to fire when mounted.<br>•Only Hussars may FIC<br>•Dragoons may dismount and skirm.
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1110 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1150 broadcast Live at 18:30
+rc delayed 1145 broadcast Arty can fire at 17:30 (Arty on Arty at 12:30)
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1110 broadcast Live (Arty cannot fire)
+rc delayed 1050 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 750 broadcast Arty on Arty live!
+
+### ARTY SPEED ### -- disables moving then makes it faster until live. (prevents crews with better PC's being faster)
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.25
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override French FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Russian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Prussian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Italian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+
+objects_override PalisadeWall 329.16 31.76 261.45 0.00 356.22 0.00
+objects_override PalisadeWall 352.77 32.01 265.10 0.00 335.10 0.00
+objects_override PalisadeWall 325.91 29.14 308.32 0.00 318.76 0.00
+objects_override PalisadeWall 275.94 27.10 300.48 0.00 233.66 0.00
+objects_override PalisadeWall 249.81 27.04 325.61 0.00 325.15 0.00
+objects_override PalisadeWall 250.94 28.39 361.47 0.00 10.74 0.00
+objects_override PalisadeWall 209.15 26.99 353.83 0.00 315.49 0.00
+objects_override PalisadeWall 177.19 27.99 394.00 0.00 7.17 0.00
+objects_override PalisadeWall 209.75 32.33 416.24 0.00 14.00 0.00
+objects_override PalisadeWall 280.28 33.26 430.26 0.00 327.74 0.00
+objects_override PalisadeWall 286.87 32.15 509.56 0.00 291.06 0.00
+ 
+objects_override Lantern2 258.58 9.93 164.19 0.00 351.44 0.00
+objects_override Lantern2 235.16 10.29 160.37 0.00 252.38 0.00
+objects_override Lantern2 279.22 9.63 170.37 0.00 76.39 0.00
+objects_override Lantern2 307.82 10.14 159.36 0.00 196.68 0.00
+objects_override Lantern2 294.94 9.84 455.31 0.00 354.23 0.00
+objects_override Lantern2 325.98 9.98 461.75 0.00 268.69 0.00
+objects_override Lantern2 265.44 10.04 453.98 0.00 261.71 0.00
+objects_override Lantern2 236.37 9.94 459.52 0.00 14.72 0.00
+
+load_mod 2595335467 #DCR
+
+
+load_mod 2548829114 #MOSCOWS
+
+load_mod_server_only 2531692643 #autoadmin
+load_mod_client_only 2579839234  #custom sounds
+
+load_mod 2647621848 # MANIAKI Cav
+
+!map_rotation end
+
+!map_rotation start
+map_name grassyplainsv
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 0
+spawn_override B Grenadier 0
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 14
+spawn_override B LightInfantry 14
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+### Additional Settings ###
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 10
+sappers_buildlimit Gabion attacking 10
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 1
+sappers_buildlimit ExplosiveBarrel attacking 1
+ 
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit Palisade attacking 0
+ 
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,LightInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,Grenadier,Guard|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Cannoneer,Rocketeer,Sapper|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>• Arty Cannot fire until 17:30<br>•Arty on Arty at 12:30<br>•MAXIMUM of 5  Arty crew. Only cannonners/sappers.<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.<br>•Draggons must be stationary to fire when mounted.<br>•Only Hussars may FIC<br>•Dragoons may dismount and skirm.
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1110 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1150 broadcast Live at 18:30
+rc delayed 1145 broadcast Arty can fire at 17:30 (Arty on Arty at 12:30)
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1110 broadcast Live (Arty cannot fire)
+rc delayed 1050 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 750 broadcast Arty on Arty live!
+
+### ARTY SPEED ### -- disables moving then makes it faster until live. (prevents crews with better PC's being faster)
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.25
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override French FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Russian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Prussian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Italian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+
+objects_override PalisadeWall 290.27 13.24 195.33 0.00 106.41 0.00
+objects_override PalisadeWall 315.61 17.10 144.73 0.00 199.89 0.00
+objects_override PalisadeWall 440.60 17.03 236.65 0.00 281.58 0.00
+objects_override PalisadeWall 409.31 18.75 283.78 0.00 307.17 0.00
+objects_override PalisadeWall 342.57 12.74 336.63 0.00 23.21 0.00
+objects_override PalisadeWall 157.02 18.46 357.61 0.00 297.06 0.00
+objects_override PalisadeWall 158.51 20.48 387.35 0.00 316.81 0.00
+objects_override PalisadeWall 355.86 13.03 445.99 0.00 228.28 0.00
+ 
+
+objects_override Lantern2 221.22 19.44 152.27 0.00 56.23 0.00
+objects_override Lantern2 235.55 19.13 159.59 0.00 63.51 0.00
+objects_override Lantern2 255.55 19.24 160.49 0.00 101.08 0.00
+objects_override Lantern2 279.11 19.80 151.39 0.00 127.37 0.00
+objects_override Lantern2 294.93 19.68 496.09 0.00 4.70 0.00
+objects_override Lantern2 315.73 20.02 497.73 0.00 84.30 0.00
+objects_override Lantern2 333.62 18.40 500.77 0.00 75.54 0.00
+objects_override Lantern2 279.15 17.71 492.93 0.00 264.15 0.00
+
+load_mod 2548829114 #MOSCOWS
+
+load_mod 2595335467 #DCR
+
+load_mod 2428249154 # MANIAKI Greek Line Infantry
+load_mod 2428243387 # MANIAKI Greek Flag Bearer
+load_mod 2428228183 # MANIAKI Greek Officer Papaflessas
+load_mod 2245622458 # MANIAKI Greek Flag (British)
+load_mod 2363510820 # MANIAKI Greek Priest Papagiorgis Medic
+
+load_mod_server_only 2531692643 #autoadmin
+load_mod_client_only 2579839234  #custom sounds
+
+load_mod 2647621848 # MANIAKI Cav
+
+!map_rotation end
+
+!map_rotation start
+map_name egypt
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 0
+spawn_override B Grenadier 0
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 14
+spawn_override B LightInfantry 14
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+### Additional Settings ###
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 10
+sappers_buildlimit Gabion attacking 10
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 1
+sappers_buildlimit ExplosiveBarrel attacking 1
+ 
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit Palisade attacking 0
+ 
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,LightInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,Grenadier,Guard|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Cannoneer,Rocketeer,Sapper|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>• Arty Cannot fire until 17:30<br>•Arty on Arty at 12:30<br>•MAXIMUM of 5  Arty crew. Only cannonners/sappers.<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.<br>•Draggons must be stationary to fire when mounted.<br>•Only Hussars may FIC<br>•Dragoons may dismount and skirm.
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1110 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1150 broadcast Live at 18:30
+rc delayed 1145 broadcast Arty can fire at 17:30 (Arty on Arty at 12:30)
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1110 broadcast Live (Arty cannot fire)
+rc delayed 1050 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 750 broadcast Arty on Arty live!
+
+### ARTY SPEED ### -- disables moving then makes it faster until live. (prevents crews with better PC's being faster)
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.25
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override French FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Russian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Prussian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Italian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+
+objects_override PalisadeWall 119.68 11.13 293.81 0.00 340.40 0.00
+objects_override PalisadeWall 105.04 6.94 247.99 0.00 164.56 0.00
+objects_override PalisadeWall 358.91 2.94 107.79 0.00 214.13 0.00
+objects_override PalisadeWall 386.68 2.81 96.52 0.00 245.76 0.00
+objects_override Ruins_Wall1 519.47 4.30 91.11 0.00 4.04 0.00
+objects_override Ruins_Wall1 470.33 4.85 164.07 0.00 354.53 0.00
+objects_override Ruins_Wall1 506.24 7.16 219.26 0.00 321.55 0.00
+objects_override Ruins_Wall1 456.87 6.41 255.41 0.00 159.81 0.00
+objects_override PalisadeWall 520.94 10.08 296.22 0.00 302.91 0.00
+objects_override PalisadeWall 309.43 9.02 333.52 0.00 87.43 0.00
+objects_override PalisadeWall 360.22 7.49 367.08 0.00 98.79 0.00
+objects_override PalisadeWall 405.61 10.77 391.66 0.00 142.01 0.00
+objects_override PalisadeWall 423.74 2.55 117.21 0.00 355.83 0.00
+objects_override PalisadeWall 362.35 3.69 31.88 0.00 259.69 0.00
+objects_override PalisadeWall 300.14 5.55 -0.40 0.00 277.21 0.00
+objects_override PalisadeWall 240.88 4.62 47.56 0.00 227.01 0.00
+objects_override PalisadeWall 196.86 1.99 105.24 0.00 0.38 0.00
+objects_override PalisadeWall 252.41 4.33 338.45 0.00 87.23 0.00
+ 
+
+objects_override Lantern2 212.55 6.32 39.52 0.00 30.67 0.00
+objects_override Lantern2 197.64 7.02 45.60 0.00 288.34 0.00
+objects_override Lantern2 181.17 6.92 49.41 0.00 299.63 0.00
+objects_override Lantern2 165.23 4.86 47.15 0.00 206.66 0.00
+objects_override Lantern2 162.22 3.92 25.79 0.00 185.12 0.00
+objects_override Lantern2 172.73 5.04 1.23 0.00 152.74 0.00
+objects_override Lantern2 169.68 4.36 -15.62 0.00 194.77 0.00
+objects_override Lantern2 223.68 6.15 34.22 0.00 137.58 0.00
+objects_override Lantern2 234.10 7.08 15.16 0.00 162.24 0.00
+objects_override Lantern2 238.61 5.00 -9.69 0.00 168.77 0.00
+objects_override Lantern2 404.73 11.41 330.21 0.00 214.33 0.00
+objects_override Lantern2 385.83 10.87 337.28 0.00 296.16 0.00
+objects_override Lantern2 370.82 10.15 358.78 0.00 322.30 0.00
+objects_override Lantern2 378.97 7.03 382.53 0.00 20.22 0.00
+objects_override Lantern2 442.84 11.11 328.86 0.00 103.83 0.00
+objects_override Lantern2 453.93 9.74 343.89 0.00 308.93 0.00
+
+load_mod 2595335467 #DCR
+
+
+load_mod 2548829114 #MOSCOWS
+
+load_mod 2428249154 # MANIAKI Greek Line Infantry
+load_mod 2428243387 # MANIAKI Greek Flag Bearer
+load_mod 2428228183 # MANIAKI Greek Officer Papaflessas
+load_mod 2245622458 # MANIAKI Greek Flag (British)
+load_mod 2363510820 # MANIAKI Greek Priest Papagiorgis Medic
+
+load_mod_server_only 2531692643 #autoadmin
+load_mod_client_only 2579839234  #custom sounds
+
+load_mod 2647621848 # MANIAKI Cav
+
+!map_rotation end
+
+!map_rotation start
+map_name snowyplainsiii
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 0
+spawn_override B Grenadier 0
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 14
+spawn_override B LightInfantry 14
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+### Additional Settings ###
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 10
+sappers_buildlimit Gabion attacking 10
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 1
+sappers_buildlimit ExplosiveBarrel attacking 1
+ 
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit Palisade attacking 0
+ 
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,LightInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,Grenadier,Guard|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Cannoneer,Rocketeer,Sapper|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>• Arty Cannot fire until 17:30<br>•Arty on Arty at 12:30<br>•MAXIMUM of 5  Arty crew. Only cannonners/sappers.<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.<br>•Draggons must be stationary to fire when mounted.<br>•Only Hussars may FIC<br>•Dragoons may dismount and skirm.
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1110 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1150 broadcast Live at 18:30
+rc delayed 1145 broadcast Arty can fire at 17:30 (Arty on Arty at 12:30)
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1110 broadcast Live (Arty cannot fire)
+rc delayed 1050 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 750 broadcast Arty on Arty live!
+
+### ARTY SPEED ### -- disables moving then makes it faster until live. (prevents crews with better PC's being faster)
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.25
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override French FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Russian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Prussian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Italian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+
+#####EXTRA OBJECTS ##########
+ 
+objects_override PalisadeWall 353.12 41.99 344.17 0.00 203.91 0.00
+objects_override PalisadeWall 285.63 41.99 356.61 0.00 345.44 0.00
+objects_override PalisadeWall 282.28 42.70 303.91 0.00 207.22 0.00
+objects_override PalisadeWall 257.35 45.77 229.72 0.00 20.68 0.00
+objects_override PalisadeWall 280.53 45.01 273.11 0.00 168.01 0.00
+objects_override PalisadeWall 360.61 44.97 283.90 0.00 37.91 0.00
+objects_override PalisadeWall 484.27 45.94 115.55 0.00 269.88 0.00
+objects_override PalisadeWall 508.52 44.97 331.45 0.00 345.76 0.00
+objects_override PalisadeWall 248.35 44.97 399.89 0.00 303.87 0.00
+objects_override PalisadeWall 195.38 44.77 438.54 0.00 206.84 0.00
+objects_override PalisadeWall 105.34 45.10 395.26 0.00 35.59 0.00
+objects_override PalisadeWall 98.66 41.97 238.35 0.00 116.93 0.00
+objects_override Pidgeoncoop 231.68 44.97 302.33 0.00 29.90 0.00
+objects_override PalisadeWall 345.70 44.97 148.61 0.00 281.85 0.00
+objects_override PalisadeWall 444.12 41.99 191.40 0.00 35.32 0.00
+ 
+ 
+### EXTRA COVER
+objects_override PalisadeWall 404.95 49.38 344.13 0.00 16.07 0.00
+objects_override PalisadeWall 398.57 47.34 347.05 0.00 30.42 0.00
+objects_override PalisadeWall 416.49 44.94 211.85 0.00 53.23 0.00
+objects_override PalisadeWall 461.15 43.83 269.80 0.00 244.10 0.00
+objects_override PalisadeWall 403.70 44.97 269.78 0.00 284.42 0.00
+objects_override PalisadeWall 478.82 44.97 353.64 0.00 22.89 0.00
+objects_override PalisadeWall 328.18 44.68 299.15 0.00 244.55 0.00
+objects_override PalisadeWall 289.63 46.21 288.81 0.00 227.25 0.00
+objects_override PalisadeWall 233.31 44.97 280.22 0.00 235.72 0.00
+objects_override PalisadeWall 123.33 49.54 481.88 0.00 285.57 0.00
+objects_override PalisadeWall 156.41 46.90 505.68 0.00 121.01 0.00
+objects_override PalisadeWall 191.75 46.73 402.47 0.00 186.82 0.00
+ 
+ 
+### LANTERNS
+ 
+objects_override Lantern2 558.95 48.98 463.60 0.00 156.56 0.00
+objects_override Lantern2 544.58 48.98 447.18 0.00 223.24 0.00
+objects_override Lantern2 517.63 48.98 452.47 0.00 296.75 0.00
+objects_override Lantern2 493.97 48.98 460.92 0.00 288.29 0.00
+objects_override Lantern2 472.94 48.86 476.48 0.00 318.88 0.00
+objects_override Lantern2 461.78 46.82 501.57 0.00 343.83 0.00
+objects_override Lantern2 469.97 46.83 524.87 0.00 16.80 0.00
+objects_override Lantern2 196.23 48.98 189.02 0.00 163.58 0.00
+objects_override Lantern2 209.13 48.98 175.43 0.00 134.77 0.00
+objects_override Lantern2 208.60 48.98 148.41 0.00 186.75 0.00
+objects_override Lantern2 205.03 46.99 120.04 0.00 184.97 0.00
+objects_override Lantern2 182.69 46.28 71.60 0.00 224.03 0.00
+objects_override Lantern2 200.14 46.99 89.31 0.00 196.11 0.00
+objects_override Lantern2 127.53 48.96 159.31 0.00 331.85 0.00
+objects_override Lantern2 127.68 48.24 189.69 0.00 12.24 0.00
+objects_override Lantern2 154.24 48.97 205.31 0.00 80.41 0.00
+objects_override Lantern2 189.13 48.98 201.88 0.00 97.34 0.00
+
+load_mod 2595335467 #DCR
+
+
+load_mod 2548829114 #MOSCOWS
+
+load_mod 2428249154 # MANIAKI Greek Line Infantry
+load_mod 2428243387 # MANIAKI Greek Flag Bearer
+load_mod 2428228183 # MANIAKI Greek Officer Papaflessas
+load_mod 2245622458 # MANIAKI Greek Flag (British)
+load_mod 2363510820 # MANIAKI Greek Priest Papagiorgis Medic
+
+load_mod_server_only 2531692643 #autoadmin
+load_mod_client_only 2579839234  #custom sounds
+
+load_mod 2647621848 # MANIAKI Cav
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 225
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking russian
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 0
+spawn_override B Grenadier 0
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 14
+spawn_override B LightInfantry 14
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+spawn_override A CoastGuard 99
+spawn_override B CoastGuard 99
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+### Additional Settings ###
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 10
+sappers_buildlimit Gabion attacking 10
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 1
+sappers_buildlimit ExplosiveBarrel attacking 1
+ 
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit Palisade attacking 0
+ 
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,LightInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,Grenadier,Guard|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Cannoneer,Rocketeer,Sapper|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>• Arty Cannot fire until 17:30<br>•Arty on Arty at 12:30<br>•MAXIMUM of 5  Arty crew. Only cannonners/sappers.<br>•Arty may be stolen by cannoneers only.
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>GENERAL EVENT RULES</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>•No Rambo<br>•Arty may be stolen by cannoneers only.<br>•Draggons must be stationary to fire when mounted.<br>•Only Hussars may FIC<br>•Dragoons may dismount and skirm.
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+### ENABLE AND DISABLE FIRING ### 
+rc set allowFiring false
+rc delayed 1110 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1150 broadcast Live at 18:30
+rc delayed 1145 broadcast Arty can fire at 17:30 (Arty on Arty at 12:30)
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1110 broadcast Live (Arty cannot fire)
+rc delayed 1050 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 750 broadcast Arty on Arty live!
+
+### ARTY SPEED ### -- disables moving then makes it faster until live. (prevents crews with better PC's being faster)
+rc set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.25
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+
+## Cav settings ##
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Drummer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Fifer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Bagpiper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian Surgeon 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Italian ArmyInfantryOfficer 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override French FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Russian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Prussian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+starting_weapons_override Italian FlagBearer 4 4 Musket_CharlevilleDragoonPattern BearingFlag Unarmed
+
+
+load_mod 2139174158 # tahir desert 2
+
+load_mod 2595335467 #DCR
+
+
+load_mod 2548829114 #MOSCOWS
+
+load_mod 2428249154 # MANIAKI Greek Line Infantry
+load_mod 2428243387 # MANIAKI Greek Flag Bearer
+load_mod 2428228183 # MANIAKI Greek Officer Papaflessas
+load_mod 2245622458 # MANIAKI Greek Flag (British)
+load_mod 2363510820 # MANIAKI Greek Priest Papagiorgis Medic
+
+load_mod_server_only 2531692643 #autoadmin
+load_mod_client_only 2579839234  #custom sounds
+
+load_mod 2647621848 # MANIAKI Cav
+
+!map_rotation end
+

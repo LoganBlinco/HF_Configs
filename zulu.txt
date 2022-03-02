@@ -1,0 +1,230 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+
+
+###- Server Settings
+
+server_name QRR | Moscow | Zulu
+server_welcome_message Wakanda Forever! AAAAAAA!!!
+server_region europe
+server_admin_password Az708
+server_password 5050
+
+
+
+###- Server Intro Message
+
+server_intro_title Zulu
+server_intro_body Greetings ladies and gentleman. Welcome to the Linebattle event! Kindly follow the rules set by the event hosts to participate. <br><br>Stick nearby a regiment and close to a line to play in glorious formations relevant to the Napoleonic era. <br><br>Come join the community on Discord. We look forward to seeing you there! <br><br><b><color=yellow>discord.gg/holdfastgame</color></b><br><br><b>Event Rules</b><br><b>1.</b> Follow other players when playing in this server.<br><b>2.</b> You must be in a line to shoot your weapon.
+
+
+
+###- Bandwidth & Performance Settings
+
+network_broadcast_mode LowBandwidth
+
+###- Player Population Settings
+
+population_low_min_players 30
+population_medium_min_players 50
+population_high_min_players 100
+
+#Mods
+mods_installed 2143590807
+mods_installed 2145978722
+mods_installed 2143251508
+mods_installed 2146009285
+mods_installed 2146123515
+
+
+
+###- Global Gameplay & Map Settings
+
+artillery_fieldgun_respawn_timer 120
+artillery_rocketlauncher_respawn_timer 120
+map_rotation_start_randomise true
+
+
+
+###- Administrator Preset Messages
+
+admin_action_preset_reason БЫТЬ ГЕЕМ - ЗАПРЕЩЕНО 
+
+
+
+###- Map Rotations
+
+#--- Rotation Group 1 --- 
+
+
+#1 = Fort Christina (Siege) - Snowy | Afternoon (15) [Pop - High]
+!map_rotation start
+map_name modmap
+game_mode ArmySiege
+round_time_minutes 20
+reinforcements_per_faction 20
+wave_spawn_time_seconds 10
+wave_spawn_vehicle_time_seconds 20
+spawn_immunity_timer 2
+faction_balancing false
+faction_balancing_discrepancy_amount 8
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 9
+time_dynamic false
+weather_preset Calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+sappers_buildlimit explosivebarrel attacking 3
+sappers_buildlimit explosivebarrel defending 0
+sappers_buildlimit palisade attacking 3
+sappers_buildlimit palisade defending 3
+sappers_buildlimit shootingplatform attacking 3
+sappers_buildlimit shootingplatform defending 3
+population_verylow_playable false
+population_low_playable false
+population_medium_playable false
+population_high_playable true
+max_accumulated_faction_points -1
+
+#Zulu weapons
+starting_weapons_override French ArmyInfantryOfficer 1 0 BoardingPike_Variation1
+starting_weapons_override French Grenadier 1 1 BoardingPike_Variation1 Musket_SeaServiceBrownBess
+starting_weapons_override French ArmyLineInfantry 1 0 BoardingPike_Variation1
+starting_weapons_override French ArmyInfantryOfficer 2 0 BoardingPike_Variation1 Carpenter_Axe
+starting_weapons_override French Grenadier 2 1 BoardingPike_Variation1 Carpenter_Axe Musket_SeaServiceBrownBess 
+starting_weapons_override French ArmyLineInfantry 2 0 BoardingPike_Variation1 Carpenter_Axe
+
+#UK spawns
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Rifleman 200
+spawn_override A Guard 200
+spawn_override A Carpenter 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Rifleman 200
+spawn_override B Guard 200
+spawn_override B Carpenter 200
+
+spawn_override F ArmyInfantryOfficer 200
+spawn_override F ArmyLineInfantry 200
+spawn_override F Rifleman 200
+spawn_override F Guard 200
+spawn_override F Carpenter 200
+
+spawn_override E ArmyInfantryOfficer 200
+spawn_override E ArmyLineInfantry 200
+spawn_override E Rifleman 200
+spawn_override E Guard 200
+spawn_override E Carpenter 200
+
+spawn_override _ ArmyInfantryOfficer 200
+spawn_override _ ArmyLineInfantry 200
+spawn_override _ Rifleman 200
+spawn_override _ Guard 200
+spawn_override _ Carpenter 200
+
+#Zulu spawns
+spawn_override C ArmyInfantryOfficer 200
+spawn_override C ArmyLineInfantry 200
+spawn_override C Grenadier 200
+
+spawn_override V ArmyInfantryOfficer 200
+spawn_override V ArmyLineInfantry 200
+spawn_override V Grenadier 200
+
+spawn_override L ArmyInfantryOfficer 200
+spawn_override L ArmyLineInfantry 200
+spawn_override L Grenadier 200
+
+spawn_override U ArmyInfantryOfficer 200
+spawn_override U ArmyLineInfantry 200
+spawn_override U Grenadier 200
+
+#RC Commands - Idle Cavalry
+rc set characterRunSpeed 1.1
+rc set characterInfiniteFirearmAmmo true
+#rc set secondsToPassAfterDismounted 30
+#rc set secondsSpawnedBeforeDespawn 30
+#rc set secondsToPassAfterHealthUpdated 15
+
+#Loaded Modification
+load_mod 2143590807
+load_mod 2145978722
+load_mod 2143251508
+load_mod 2146009285
+load_mod 2146123515
+!map_rotation end
+
+#2 = Training Grounds [Army Battlefield] - TRAINING & PROMOTIONS - Calm | Morning (8)
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+wave_spawn_vehicle_time_seconds 10
+spawn_immunity_timer 2
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+time_dynamic false
+weather_preset calm3
+weather_dynamic false
+friendly_fire false
+friendly_fire_melee_bounce true
+damage_split 0
+sappers_attacking_starting_materials 250
+sappers_defending_starting_materials 250
+sappers_buildlimit explosivebarrel attacking 0
+sappers_buildlimit explosivebarrel defending 0
+sappers_buildlimit palisade attacking 0
+sappers_buildlimit palisade defending 0
+sappers_buildlimit shootingplatform attacking 0
+sappers_buildlimit shootingplatform defending 0
+sappers_buildlimit swivelgun attacking 0
+sappers_buildlimit swivelgun defending 0
+officers_spawn_mounted false
+faction_attacking italian
+faction_defending russian
+#faction_randomiser both (Not Used)
+
+#Starting Weapon Override
+starting_weapons_override British Hussar 4 4 Unarmed Pistol_NewLandPattern Sabre_1796PatternLightCavalry BearingFlag
+starting_weapons_override British CuirassierDragoon 4 4 Unarmed Carbine_Elliot Sword_Pattern1803FlankOfficerCavalry BearingFlag
+starting_weapons_override French Hussar 4 4 Unarmed Pistol_XIII Sabre_AnXILightCavalry BearingFlag
+starting_weapons_override French CuirassierDragoon 4 4 Unarmed Carbine_CharlevilleCavalryIXXIII Sabre_AnXILightCavalry BearingFlag
+starting_weapons_override Prussian Hussar 4 4 Unarmed Pistol_XIII Sabre_AnXILightCavalry BearingFlag
+starting_weapons_override Prussian CuirassierDragoon 4 4 Unarmed Carbine_CharlevilleCavalryIXXIII Sabre_AnXILightCavalry BearingFlag
+starting_weapons_override Russian Hussar 4 4 Unarmed Pistol_Russian_1809_Pistol Sword_Russian_Hussar BearingFlag
+starting_weapons_override Russian CuirassierDragoon 4 4 Unarmed Carbine_Russian_Cuirassier Sword_Russian_Cuirassier BearingFlag
+
+#Automated Commands - Round Start
+rc set allowFiring true
+
+rc vehiclesManager cappedSpeed 1
+rc vehiclesManager forceCappedSpeed false
+
+rc set characterRespawntime 1
+rc set characterVehicleRespawnTime 1
+
+rc set cannonMoverSpeedMultiplier 1
+!map_rotation end

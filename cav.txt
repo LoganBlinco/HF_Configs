@@ -1,0 +1,170 @@
+################################################################################################################################
+Config title : Training config with all maps
+Date created : ?
+Last edit: 12/07/19 - Added training grounds to be the first map on rotation.
+Author(s) : Keth , eLF (edits)
+Config desc : Config with all maps and training grounds (1 and 23) 
+################################################################################################################################
+
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+
+
+###- Server Settings
+
+server_name QRR | What is a horse?
+server_welcome_message Welcome to the QRR public server!
+server_region europe
+server_admin_password 429753
+server_password 5050
+
+mods_installed 2133325553 # marsh
+
+
+!map_rotation start
+map_name snowyplainsiii
+game_mode ArmyAssault
+round_time_minutes 14.5
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+round_spawn_close_timer_seconds 151
+minimum_players 0
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+game_type hardcore
+
+## Class spawns
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+firearm_ammo_override British Hussar Pistol_NewLandPattern 3 1 3
+firearm_ammo_override British CuirassierDragoon Carbine_Elliot 6 1 6
+
+firearm_ammo_override French Hussar Pistol_XIII 3 1 3
+firearm_ammo_override French CuirassierDragoon Carbine_CharlevilleCavalryIXXIII 6 1 6
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+spawn_override A Hussar 99
+spawn_override A CuirassierDragoon 99
+spawn_override B Hussar 99
+spawn_override B CuirassierDragoon 99
+
+#load_mod 2133325553#Competitive hills 1
+
+!map_rotation end
+
+
+!map_rotation start
+map_name grassyplainsii
+game_mode ArmyAssault
+round_time_minutes 14.5
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+round_spawn_close_timer_seconds 151
+minimum_players 0
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+game_type hardcore
+
+## Class spawns
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+firearm_ammo_override British Hussar Pistol_NewLandPattern 3 1 3
+firearm_ammo_override British CuirassierDragoon Carbine_Elliot 6 1 6
+
+firearm_ammo_override French Hussar Pistol_XIII 3 1 3
+firearm_ammo_override French CuirassierDragoon Carbine_CharlevilleCavalryIXXIII 6 1 6
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+spawn_override A Hussar 99
+spawn_override A CuirassierDragoon 99
+spawn_override B Hussar 99
+spawn_override B CuirassierDragoon 99
+
+#load_mod 2133325553#Competitive hills 1
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+round_time_minutes 14.5
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+round_spawn_close_timer_seconds 151
+minimum_players 0
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+game_type hardcore
+
+## Class spawns
+spawn_override A Hussar 16
+spawn_override A CuirassierDragoon 16
+spawn_override B Hussar 16
+spawn_override B CuirassierDragoon 16
+
+firearm_ammo_override British Hussar Pistol_NewLandPattern 3 1 3
+firearm_ammo_override British CuirassierDragoon Carbine_Elliot 6 1 6
+
+firearm_ammo_override French Hussar Pistol_XIII 3 1 3
+firearm_ammo_override French CuirassierDragoon Carbine_CharlevilleCavalryIXXIII 6 1 6
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2133325553 #marsh
+
+!map_rotation end
+

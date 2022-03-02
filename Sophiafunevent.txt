@@ -1,0 +1,326 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+ 
+server_port 17000
+steam_communications_port 17001
+steam_query_port 17002
+
+###- Server Settings
+ 
+server_name QRR | Sophia Fun Event
+server_welcome_message Welcome!
+server_region europe
+server_admin_password BigMan
+server_password 5050
+
+#global settings
+artillery_fieldgun_respawn_timer 60
+artillery_rocketlauncher_respawn_timer 60
+
+#voting settings
+map_voting_enabled false
+map_voting_duration 13
+map_voting_allow_same_map false
+map_voting_history_count 6
+map_voting_gameplay_modes ArmyAssault
+
+#1 = Trenirovka (mnogo)
+!map_rotation start
+map_name TrainingGrounds
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+faction_attacking Russian
+faction_defending British
+minimum_players -1
+maximum_players 200
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+
+# Override Commands
+starting_weapons_override British ArmyLineInfantry2 3 4 Unarmed
+objects_override WeaponRack 562.50 9.93 426.82 0.00 337.08 0.00 Carbine_Elliot 40
+objects_override WeaponRack 561.03 9.93 426.24 0.00 338.04 0.00 BoardingPike_Variation1 40
+objects_override WeaponRack 559.74 9.93 425.72 0.00 338.04 0.00 Musket_IndiaPatternBrownBess 40
+objects_override WeaponRack 591.29 13.96 369.45 0.00 69.76 0.00 Rifle_Pattern1800Infantry 40
+objects_override WeaponRack 574.45 9.93 431.69 0.00 159.59 0.00 BearingFlag 40
+objects_override Chair3 595.31 11.39 368.14 0.00 288.08 0.00
+objects_override FlagRussian 565.36 10 412.21 0 349 0
+objects_override FlagRussian 563.67 10 416.72 0 349 0
+objects_override GuardHouse_1 586.35 9.93 426.30 0 67.53 0
+objects_override CannonFieldGun9PDR 584.47 10.53 416.68 0 216.88 0 
+objects_override TowerStaircase 487.41 11.14 566.5 0 269.61 0
+objects_override Lantern2 568.34 11.99 416.3 0 67.51 0
+objects_override Blockhouse 592.33 11.15 369.44 0 340.00 0
+objects_override PlatformLong 481.84 10.58 564.88 0 266.81 0
+objects_override TargetDummy 308.50 11.95 597.82 0.00 88 0.00
+objects_override TargetDummy 308.50 11.95 597.32 0.00 88 0.00
+objects_override TargetDummy 308.50 11.95 596.82 0.00 88 0.00
+objects_override TargetDummy 308.50 11.95 596.32 0.00 88 0.00
+objects_override TargetDummy 308.50 11.95 598.82 0.00 88 0.00
+objects_override TargetDummy 308.50 11.95 598.32 0.00 88 0.00
+objects_override TargetDummy 280.52 16.21 571.10 0.00 88 0.00
+objects_override TargetDummy 280.52 16.21 571.60 0.00 88 0.00
+objects_override TargetDummy 280.52 16.21 572.10 0.00 88 0.00
+objects_override TargetDummy 280.52 16.21 570.60 0.00 88 0.00
+objects_override TargetDummy 280.52 16.21 570.10 0.00 88 0.00
+objects_override TargetDummy 330.41 11.64 571.06 0.00 88 0.00
+objects_override TargetDummy 330.41 11.64 571.56 0.00 88 0.00
+objects_override TargetDummy 330.41 11.64 572.06 0.00 88 0.00
+objects_override TargetDummy 330.41 11.64 570.06 0.00 88 0.00
+objects_override TargetDummy 330.41 11.64 570.56 0.00 88 0.00
+objects_override TargetDummy 362.95 9.78 608.39 0.00 88 0.00
+objects_override TargetDummy 362.95 9.78 608.89 0.00 88 0.00
+objects_override TargetDummy 362.95 9.78 609.39 0.00 88 0.00
+objects_override TargetDummy 362.95 9.78 607.89 0.00 88 0.00
+objects_override TargetDummy 362.95 9.78 607.39 0.00 88 0.00
+objects_override TargetDummy 380.32 11.42 564.72 0.00 88 0.00
+objects_override TargetDummy 380.32 11.42 565.22 0.00 88 0.00
+objects_override TargetDummy 380.32 11.42 565.72 0.00 88 0.00
+objects_override TargetDummy 380.32 11.42 564.22 0.00 88 0.00
+objects_override TargetDummy 380.32 11.42 563.72 0.00 88 0.00
+objects_override TargetDummy 406.46 11.09 552.31 0.00 88 0.00
+objects_override TargetDummy 406.46 11.09 552.81 0.00 88 0.00
+objects_override TargetDummy 406.46 11.09 553.31 0.00 88 0.00
+objects_override TargetDummy 406.46 11.09 551.81 0.00 88 0.00
+objects_override TargetDummy 406.46 11.09 551.31 0.00 88 0.00
+objects_override TargetDummy 430.67 10.24 572.40 0.00 88 0.00
+objects_override TargetDummy 430.67 10.24 572.90 0.00 88 0.00
+objects_override TargetDummy 430.67 10.24 573.40 0.00 88 0.00
+objects_override TargetDummy 430.67 10.24 571.90 0.00 88 0.00
+objects_override TargetDummy 430.67 10.24 571.40 0.00 88 0.00
+objects_override TargetDummy 458.69 10 552.64 0.00 88 0.00
+objects_override TargetDummy 458.69 10 552.14 0.00 88 0.00
+objects_override TargetDummy 458.69 10 553.14 0.00 88 0.00
+objects_override TargetDummy 458.69 10 551.64 0.00 88 0.00
+objects_override TargetDummy 458.69 10 553.64 0.00 88 0.00
+objects_override SpyglassboxMoveable 485.33 10.78 561.31 0.00 304.64 0.00
+objects_override Campfire 308.10 12.25 597.82 0.00 88 0.00
+objects_override Campfire 280.12 16.51 571.10 0.00 88 0.00
+objects_override Campfire 330.01 11.94 571.60 0.00 88 0.00
+objects_override Campfire 362.55 10.08 608.39 0.00 88 0.00
+objects_override Campfire 380.02 11.72 564.72 0.00 88 0.00
+objects_override Campfire 406.16 11.39 552.31 0.00 88 0.00
+objects_override Campfire 430.27 10.54 572.40 0.00 88 0.00
+objects_override Campfire 458.29 10.30 552.64 0.00 88 0.00
+objects_override Lantern2 484.50 14.28 561.33 0.00 268.48 0.00
+objects_override Lantern2 484.17 23.10 562.78 0.00 268.39 0.00
+objects_override Lantern2 484.10 18.39 562.38 0.00 268.71 0.00
+objects_override Outhouse 561.86 10.53 419.52 0.00 67.79 0.00
+objects_override Campfire 561.64 10.84 419.45 0.00 67.31 0.00
+objects_override Bench 589.40 10.93 372.35 0.00 338.40 0.00
+objects_override Swivelgun 484.13 22.18 568.68 0.00 270.24 0.00
+objects_override CannonAmmoboxSmall 485.64 21.39 569.26 0.00 182.15 0.00
+objects_override CannonFieldGun9PDR 565.17 14.16 601.58 0.00 84.68 0.00 
+objects_override CannonAmmoboxLarge 565.16 14.17 598.04 0.00 303.48 0.00
+objects_override CannonFieldGun9PDRMoveable 718.55 11.15 654.10 0.00 200.87 0.00
+objects_override CannonAmmoboxLargeMoveable 720.20 11.22 655.92 0.00 197.91 0.00
+objects_override CannonAmmoboxLargeMoveable 718.51 11.22 656.47 0.00 198.39 0.00
+objects_override CannonFieldGun9PDRMoveable 540.68 14.57 585.25 0.00 267.16 0.00 
+objects_override CannonAmmoboxLargeMoveable 540.07 14.60 582.29 0.00 272.44 0.00
+
+#flags
+objects_override FlagFrench 485.76 22.23 563.13 0.00 0.14 0.00
+objects_override FlagPrussian 415.69 19.20 448.05 0.00 347.22 0.00
+objects_override FlagFrench 425.45 19.20 477.98 0.00 345.04 0.00
+objects_override FlagBritish 443.20 19.20 464.48 0.00 345.59 0.00
+
+#bereg
+objects_override ChevauxDeFriseLarge 650.93 11.47 610.70 0.00 94.32 0.00
+objects_override ChevauxDeFriseSmall 650.91 11.46 612.98 0.00 66.08 0.00
+objects_override ChevauxDeFriseSmall 650.41 11.39 608.39 0.00 103.76 0.00
+objects_override Earthworks 626.51 11.60 613.41 0.00 96.24 0.00
+objects_override PalisadeWall 627.66 10.21 618.45 0.00 72.16 0.00
+objects_override PalisadeWall 626.86 10.21 623.59 0.00 67.84 0.00
+objects_override ShootingPlatform 627.66 10.21 618.45 0.00 92.16 0.00
+objects_override ShootingPlatform 626.86 10.21 623.59 0.00 87.84 0.00
+
+#one hit
+objects_override ChevauxDeFriseSmall 554.46 14.09 615.29 0.00 140.42 0.00
+objects_override ChevauxDeFriseSmall 553.39 14.11 614.29 0.00 131.30 0.00
+objects_override ChevauxDeFriseSmall 554.29 14.13 613.21 0.00 157.06 0.00
+objects_override ChevauxDeFriseSmall 561.67 14.01 614.12 0.00 226.97 0.00
+objects_override ChevauxDeFriseSmall 561.21 14.23 605.29 0.00 248.57 0.00
+objects_override ChevauxDeFriseSmall 569.62 13.93 599.43 0.00 278.33 0.00
+objects_override ChevauxDeFriseSmall 569.16 13.86 594.66 0.00 283.61 0.00
+objects_override ChevauxDeFriseSmall 561.87 14.32 595.37 0.00 349.12 0.00
+objects_override ChevauxDeFriseSmall 561.15 14.40 593.23 0.00 289.68 0.00
+objects_override ChevauxDeFriseSmall 553.84 14.47 585.53 0.00 294.40 0.00
+objects_override ChevauxDeFriseSmall 547.78 14.49 589.86 0.00 114.40 0.00
+objects_override ChevauxDeFriseSmall 559.00 14.27 581.46 0.00 9.28 0.00
+objects_override ChevauxDeFriseSmall 558.91 14.28 579.51 0.00 9.76 0.00
+objects_override ChevauxDeFriseSmall 552.38 14.49 581.61 0.00 214.34 0.00
+
+#gabison
+objects_override Gabion 562.85 14.26 588.03 0.00 122.64 0.00
+objects_override Gabion 563.41 14.26 588.88 0.00 117.44 0.00
+objects_override Gabion 563.94 14.26 589.87 0.00 114.80 0.00
+objects_override Gabion 557.68 14.39 583.76 0.00 154.16 0.00
+objects_override Gabion 556.78 14.53 583.33 0.00 154.40 0.00
+objects_override Gabion 555.80 14.53 582.93 0.00 156.16 0.00
+objects_override Gabion 554.91 14.53 582.57 0.00 163.36 0.00
+objects_override Gabion 553.99 14.53 582.46 0.00 199.52 0.00
+objects_override Gabion 566.16 14.15 596.26 0.00 100.96 0.00
+objects_override Gabion 566.28 14.15 597.25 0.00 93.28 0.00
+objects_override Gabion 566.39 14.15 598.23 0.00 86.48 0.00
+objects_override Gabion 565.47 14.18 604.85 0.00 63.52 0.00
+objects_override Gabion 565.08 14.18 605.81 0.00 60.00 0.00
+objects_override Gabion 564.58 14.18 606.56 0.00 54.48 0.00
+
+#meshki
+objects_override Earthworks 557.81 14.19 612.28 0.00 22.72 0.00
+objects_override Earthworks 562.46 14.16 608.90 0.00 54.08 0.00
+objects_override Earthworks 565.97 13.90 601.62 0.00 83.12 0.00
+objects_override Earthworks 565.18 14.17 592.96 0.00 108.88 0.00
+objects_override Earthworks 560.35 14.38 585.58 0.00 142.83 0.00
+
+#ant-loahad
+objects_override Slow_Fire_W_Smoke 554.95 14.23 610.44 0.00 104.71 0.00
+
+#1st kolia
+objects_override InfantrySpikes 555.05 14.04 616.28 0.00 442.06 0.00
+objects_override InfantrySpikes 557.68 14.03 616.16 0.00 99.98 0.00
+objects_override InfantrySpikes 560.58 14.01 615.21 0.00 113.74 0.00
+objects_override InfantrySpikes 563.16 14.01 613.82 0.00 127.98 0.00
+objects_override InfantrySpikes 565.20 14.02 611.68 0.00 137.42 0.00
+objects_override InfantrySpikes 567.02 14.02 609.38 0.00 144.62 0.00
+objects_override InfantrySpikes 568.56 13.98 606.77 0.00 150.94 0.00
+objects_override InfantrySpikes 569.72 13.95 603.90 0.00 161.10 0.00
+objects_override InfantrySpikes 570.07 13.94 600.95 0.00 179.18 0.00
+objects_override InfantrySpikes 569.08 13.90 596.78 0.00 184.78 0.00
+objects_override InfantrySpikes 569.30 13.80 592.75 0.00 192.14 0.00
+objects_override InfantrySpikes 568.33 13.83 589.95 0.00 201.10 0.00
+objects_override InfantrySpikes 566.93 13.88 587.33 0.00 213.34 0.00
+objects_override InfantrySpikes 565.10 13.97 584.95 0.00 217.10 0.00
+objects_override InfantrySpikes 563.05 14.07 582.77 0.00 224.00 0.00
+objects_override InfantrySpikes 560.68 14.13 580.95 0.00 236.22 0.00
+objects_override InfantrySpikes 556.43 14.40 579.61 0.00 265.26 0.00
+objects_override InfantrySpikes 553.57 14.53 580.26 0.00 294.37 0.00
+
+#2nd kolia
+objects_override InfantrySpikes 553.61 14.20 611.64 0.00 378.15 0.00
+objects_override InfantrySpikes 553.15 14.29 608.73 0.00 373.19 0.00
+objects_override InfantrySpikes 552.65 14.36 605.90 0.00 370.79 0.00
+objects_override InfantrySpikes 552.56 14.40 602.78 0.00 361.03 0.00
+objects_override InfantrySpikes 552.44 14.44 599.77 0.00 368.55 0.00
+objects_override InfantrySpikes 551.86 14.47 596.83 0.00 378.31 0.00
+objects_override InfantrySpikes 550.64 14.49 594.02 0.00 388.15 0.00
+objects_override InfantrySpikes 549.45 14.51 591.43 0.00 388.07 0.00
+objects_override InfantrySpikes 549.76 14.52 588.39 0.00 311.43 0.00
+objects_override InfantrySpikes 552.17 14.48 586.56 0.00 312.62 0.00
+objects_override InfantrySpikes 554.07 14.48 581.64 0.00 259.66 0.00
+objects_override InfantrySpikes 556.78 14.49 582.55 0.00 244.06 0.00
+objects_override InfantrySpikes 557.06 14.37 581.06 0.00 272.70 0.00
+objects_override InfantrySpikes 560.47 14.26 582.85 0.00 227.50 0.00
+objects_override InfantrySpikes 562.69 14.11 585.12 0.00 221.34 0.00
+objects_override InfantrySpikes 564.69 14.01 587.43 0.00 219.18 0.00
+objects_override InfantrySpikes 566.40 13.97 589.83 0.00 211.74 0.00
+objects_override InfantrySpikes 567.46 13.94 592.54 0.00 196.38 0.00
+objects_override InfantrySpikes 567.65 14.02 597.13 0.00 185.66 0.00
+objects_override InfantrySpikes 568.40 13.99 601.55 0.00 169.66 0.00
+objects_override InfantrySpikes 567.79 14.05 604.41 0.00 160.38 0.00
+objects_override InfantrySpikes 566.56 14.06 607.13 0.00 151.42 0.00
+objects_override InfantrySpikes 564.81 14.07 609.67 0.00 141.58 0.00
+objects_override InfantrySpikes 562.81 14.06 611.85 0.00 129.74 0.00
+objects_override InfantrySpikes 559.17 14.08 614.03 0.00 111.18 0.00
+objects_override InfantrySpikes 556.41 14.09 614.67 0.00 99.34 0.00
+
+#vnyt kolia
+objects_override InfantrySpikes 560.99 14.36 597.22 0.00 174.70 0.00
+objects_override InfantrySpikes 560.78 14.38 600.15 0.00 173.02 0.00
+objects_override InfantrySpikes 560.38 14.34 603.05 0.00 163.26 0.00
+objects_override InfantrySpikes 558.95 14.28 605.71 0.00 141.82 0.00
+objects_override InfantrySpikes 556.68 14.28 607.76 0.00 129.50 0.00
+objects_override InfantrySpikes 559.51 14.48 591.66 0.00 211.10 0.00
+objects_override InfantrySpikes 557.72 14.55 589.28 0.00 223.66 0.00
+objects_override InfantrySpikes 555.26 14.51 587.21 0.00 234.14 0.00
+
+#wall
+objects_override PalisadeWall 558.83 14.43 592.07 0.00 113.50 0.00
+objects_override PalisadeWall 555.40 14.43 588.08 0.00 129.98 0.00
+objects_override PalisadeWall 551.29 14.43 588.19 0.00 209.26 0.00
+objects_override PalisadeWall 550.55 14.43 592.23 0.00 282.46 0.00
+objects_override PalisadeWall 552.70 14.43 596.42 0.00 281.34 0.00
+objects_override PalisadeWall 553.33 14.43 600.89 0.00 263.65 0.00
+objects_override PalisadeWall 553.64 14.43 606.09 0.00 260.61 0.00
+objects_override PalisadeWall 556.14 14.43 607.28 0.00 28.93 0.00
+objects_override PalisadeWall 558.97 14.43 603.10 0.00 59.01 0.00
+objects_override PalisadeWall 560.11 14.43 597.99 0.00 71.09 0.00
+
+#wall podium
+objects_override ShootingPlatform 558.83 14.43 592.07 0.00 128.50 0.00
+objects_override ShootingPlatform 555.40 14.43 588.08 0.00 144.98 0.00
+objects_override ShootingPlatform 551.29 14.43 588.19 0.00 224.26 0.00
+objects_override ShootingPlatform 550.55 14.43 592.23 0.00 296.46 0.00
+objects_override ShootingPlatform 552.70 14.43 596.42 0.00 296.34 0.00
+objects_override ShootingPlatform 553.33 14.43 600.89 0.00 278.65 0.00
+objects_override ShootingPlatform 553.64 14.43 606.09 0.00 275.61 0.00
+objects_override ShootingPlatform 556.14 14.43 607.28 0.00 33.93 0.00
+objects_override ShootingPlatform 558.97 14.43 603.10 0.00 74.01 0.00
+objects_override ShootingPlatform 560.11 14.43 597.99 0.00 86.09 0.00
+
+#cerkov kolia
+objects_override CannonFieldGun9PDRMoveable 565.67 10.53 420.68 0.00 80.71 0.00
+objects_override CannonFieldGun9PDRMoveable 570.07 10.53 410.82 0.00 53.55 0.00
+
+#cerkov styl
+objects_override Chair3 561.41 10.10 429.36 0.00 249.61 0.00
+
+#cerkov gabison
+objects_override Gabion 569.00 9.93 444.17 0.00 1.45 0.00
+objects_override Gabion 569.87 9.93 443.86 0.00 335.93 0.00
+objects_override Gabion 570.25 9.93 444.72 0.00 331.79 0.00
+objects_override Gabion 574.25 9.93 445.54 0.00 47.77 0.00
+objects_override Gabion 574.95 9.93 444.84 0.00 49.37 0.00
+objects_override Gabion 575.41 9.93 444.16 0.00 60.73 0.00
+
+#cerkov meshki
+objects_override Earthworks 572.06 9.93 446.79 0.00 334.97 0.00
+objects_override Earthworks 566.57 9.93 442.98 0.00 300.41 0.00
+
+#fire on camp aria
+objects_override Fire_Wall_W_Smoke 492.20 9.61 432.89 0.00 24.86 0.00
+
+#Sapper Configuration Commands
+sappers_attacking_starting_materials 10000
+sappers_defending_starting_materials 10000
+sappers_buildlimit ExplosiveBarrel defending 255
+sappers_buildlimit ExplosiveBarrel attacking 255
+sappers_buildlimit InfantryStakes defending 255
+sappers_buildlimit InfantryStakes attacking 255
+sappers_buildlimit Gabion defending 255
+sappers_buildlimit Gabion attacking 255
+sappers_buildlimit ChevauxDeFriseLarge defending 255
+sappers_buildlimit ChevauxDeFriseLarge attacking 255
+sappers_buildlimit ChevauxDeFriseSmall defending 255
+sappers_buildlimit ChevauxDeFriseSmall attacking 255
+sappers_buildlimit Palisade defending 255
+sappers_buildlimit Palisade attacking 255
+sappers_buildlimit ShootingPlatform defending 255
+sappers_buildlimit ShootingPlatform attacking 255
+sappers_buildlimit Chair defending 255
+sappers_buildlimit Chair attacking 255
+sappers_buildlimit Earthworks defending 255
+sappers_buildlimit Earthworks attacking 255
+sappers_buildlimit Sandbag defending 255
+sappers_buildlimit Sandbag attacking 255
+sappers_buildlimit SwivelGun defending 255
+sappers_buildlimit SwivelGun attacking 255
+sappers_buildlimit Ammobox defending 255
+sappers_buildlimit Ammobox attacking 255
+sappers_buildlimit RocketStack defending 255
+sappers_buildlimit RocketStack attacking 255
+
+#PinkyHorses
+rc set useSpecialHorseVariants true
+
+!map_rotation end 

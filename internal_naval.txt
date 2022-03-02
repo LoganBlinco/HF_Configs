@@ -1,0 +1,277 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 5579
+steam_communications_port 1387
+steam_query_port 1757
+
+
+
+###- Server Settings
+
+server_name QRR Naval Balls throwing game
+server_welcome_message Putin rules the world!!
+server_region europe
+server_admin_password 429753
+server_password 5050
+
+
+###- Map Rotations
+
+#1 = Naval1
+!map_rotation start
+map_name HaroutiIslands
+game_mode NavalAssault
+game_type hardcore
+round_time_minutes 20
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 19
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking French
+faction_defending British
+friendly_fire true
+round_spawn_close_timer_seconds 600
+rc set characterRespawnTime 10
+rc delayed 600 set characterRespawntime 9999999999
+ships_respawn_time_seconds 9000
+
+#Broadcasts
+rc delayed 630 broadcast Respawns Closing in 30 sec(ks)
+rc delayed 605 broadcast Respawns Closing in 5
+rc delayed 604 broadcast Respawns Closing in 4
+rc delayed 603 broadcast Respawns Closing in 3
+rc delayed 602 broadcast Respawns Closing in 2
+rc delayed 601 broadcast Respawns Closing in 1
+rc delayed 600 broadcast Respawns have been closed.
+
+
+# Override Commands (This is a comment and will be ignored by the game)
+ships_spawn_detail_override Brigsloop13gun British NavalCaptain 1
+ships_spawn_detail_override Brigsloop13gun French NavalCaptain 1
+ships_spawn_detail_override Brigsloop13gun British NavalMarine 3
+ships_spawn_detail_override Brigsloop13gun French NavalMarine 3
+ships_spawn_detail_override Brigsloop13gun British NavalSailor 7
+ships_spawn_detail_override Brigsloop13gun French NavalSailor 7
+ships_spawn_detail_override Brigsloop13gun British NavalSailor2 2
+ships_spawn_detail_override Brigsloop13gun French NavalSailor2 2
+ships_spawn_detail_override Brigsloop13gun British Violinist 1
+ships_spawn_detail_override Brigsloop13gun French Violinist 1
+ships_spawn_detail_override Schooner2gun French NavalSailor2 4
+ships_spawn_detail_override Schooner2gun French NavalCaptain 1
+ships_spawn_detail_override Schooner2gun British NavalSailor2 4
+ships_spawn_detail_override Schooner2gun British NavalCaptain 1
+
+# Set ship_preset to 37 (doesn't spawn any ships)
+ships_preset 37
+# Spawn ships
+ships_spawn Brigsloop13gun 3 British 10
+ships_spawn Brigsloop13gun 3 French 8
+ships_spawn Schooner2gun 3 French 8
+ships_spawn Schooner2gun 3 British 10
+
+!map_rotation end
+
+
+#2 = Naval2
+!map_rotation start
+map_name MartelloTower
+game_type hardcore
+game_mode NavalAssault
+round_time_minutes 20
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 20
+allow_midround_spawning true
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 14
+time_dynamic false
+weather_preset snowy
+weather_dynamic false
+wind_strength 1
+wind_direction east
+rowboat_cooldown_timer 120
+rowboat_cooldown_while_sinking_timer 20
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+round_spawn_close_timer_seconds 600
+rc set characterRespawnTime 10
+rc delayed 600 set characterRespawntime 9999999999
+ships_respawn_time_seconds 9000
+
+#Broadcasts
+rc delayed 630 broadcast Respawns Closing in 30 sec(ks)
+rc delayed 605 broadcast Respawns Closing in 5
+rc delayed 604 broadcast Respawns Closing in 4
+rc delayed 603 broadcast Respawns Closing in 3
+rc delayed 602 broadcast Respawns Closing in 2
+rc delayed 601 broadcast Respawns Closing in 1
+rc delayed 600 broadcast Respawns have been closed.
+
+# Override Commands (This is a comment and will be ignored by the game)
+ships_spawn_detail_override Brigsloop13gun British NavalCaptain 1
+ships_spawn_detail_override Brigsloop13gun French NavalCaptain 1
+ships_spawn_detail_override Brigsloop13gun British NavalMarine 3
+ships_spawn_detail_override Brigsloop13gun French NavalMarine 3
+ships_spawn_detail_override Brigsloop13gun British NavalSailor 7
+ships_spawn_detail_override Brigsloop13gun French NavalSailor 7
+ships_spawn_detail_override Brigsloop13gun British NavalSailor2 2
+ships_spawn_detail_override Brigsloop13gun French NavalSailor2 2
+ships_spawn_detail_override Brigsloop13gun British Violinist 1
+ships_spawn_detail_override Brigsloop13gun French Violinist 1
+ships_spawn_detail_override Rocketboat French NavalSailor 3
+ships_spawn_detail_override Rocketboat French NavalMarine 1
+ships_spawn_detail_override Rocketboat British NavalSailor 3
+ships_spawn_detail_override Rocketboat British NavalMarine 1
+
+# Set ship_preset to 37 (doesn't spawn any ships)
+ships_preset 37
+# Spawn ships
+ships_spawn Brigsloop13gun 3 British 10
+ships_spawn Brigsloop13gun 3 French 8
+ships_spawn Rocketboat 3 French 8
+ships_spawn Rocketboat 3 British 10
+
+!map_rotation end
+
+
+#3 = Navalniy3
+!map_rotation start
+map_name Caribbean
+game_type hardcore
+game_mode NavalAssault
+round_time_minutes 20
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 20
+allow_midround_spawning true
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+time_dynamic false
+weather_preset calm2
+weather_dynamic false
+wind_strength 1
+wind_direction east
+ships_respawn_time_seconds 9000
+rowboat_cooldown_timer 120
+rowboat_cooldown_while_sinking_timer 20
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+round_spawn_close_timer_seconds 600
+rc set characterRespawnTime 10
+rc delayed 600 set characterRespawntime 9999999999
+
+#Broadcasts
+rc delayed 630 broadcast Respawns Closing in 30 sec(ks)
+rc delayed 605 broadcast Respawns Closing in 5
+rc delayed 604 broadcast Respawns Closing in 4
+rc delayed 603 broadcast Respawns Closing in 3
+rc delayed 602 broadcast Respawns Closing in 2
+rc delayed 601 broadcast Respawns Closing in 1
+rc delayed 600 broadcast Respawns have been closed.
+
+# Override Commands (This is a comment and will be ignored by the game)
+ships_spawn_detail_override Rocketboat French NavalSailor 2
+ships_spawn_detail_override Rocketboat French NavalMarine 1
+ships_spawn_detail_override Rocketboat British NavalSailor 2
+ships_spawn_detail_override Rocketboat British NavalMarine 1
+ships_spawn_detail_override Gunboat French NavalSailor 2
+ships_spawn_detail_override Gunboat French NavalMarine 1
+ships_spawn_detail_override Gunboat British NavalSailor 2
+ships_spawn_detail_override Gunboat British NavalMarine 1
+
+
+# Set ship_preset to 37 (doesn't spawn any ships)
+ships_preset 37
+# Spawn ships
+
+ships_spawn Rocketboat 2 French 9
+ships_spawn Rocketboat 2 British 1
+ships_spawn Gunboat 5 French 3
+ships_spawn Gunboat 5 British 6
+
+!map_rotation end
+
+#4 = Navalniy4
+!map_rotation start
+map_name Caribbean
+game_type hardcore
+game_mode NavalAssault
+round_time_minutes 20
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 20
+allow_midround_spawning true
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 18
+time_dynamic false
+weather_preset fog
+weather_dynamic false
+wind_strength 1
+wind_direction east
+ships_respawn_time_seconds 9000
+rowboat_cooldown_timer 120
+rowboat_cooldown_while_sinking_timer 20
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+round_spawn_close_timer_seconds 600
+rc set characterRespawnTime 10
+rc delayed 600 set characterRespawntime 9999999999
+
+#Broadcasts
+rc delayed 630 broadcast Respawns Closing in 30 sec(ks)
+rc delayed 605 broadcast Respawns Closing in 5
+rc delayed 604 broadcast Respawns Closing in 4
+rc delayed 603 broadcast Respawns Closing in 3
+rc delayed 602 broadcast Respawns Closing in 2
+rc delayed 601 broadcast Respawns Closing in 1
+rc delayed 600 broadcast Respawns have been closed.
+
+# Override Commands (This is a comment and will be ignored by the game)
+ships_spawn_detail_override Frigate50gun French NavalCaptain 1
+ships_spawn_detail_override Frigate50gun French NavalMarine 10
+ships_spawn_detail_override Frigate50gun British NavalCaptain 1
+ships_spawn_detail_override Frigate50gun British NavalMarine 10
+ships_spawn_detail_override Frigate50gun French NavalSailor 30
+ships_spawn_detail_override Frigate50gun British NavalSailor 30
+ships_spawn_detail_override Frigate50gun British NavalSailor2 3
+ships_spawn_detail_override Frigate50gun French NavalSailor2 3
+ships_spawn_detail_override Frigate50gun British Violinist 1
+ships_spawn_detail_override Frigate50gun French Violinist 1
+
+# Set ship_preset to 37 (doesn't spawn any ships)
+ships_preset 37
+# Spawn ships
+
+ships_spawn Frigate50gun 2 French 5
+ships_spawn Frigate50gun 2 British 3
+
+
+!map_rotation end

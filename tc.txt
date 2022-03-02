@@ -1,0 +1,204 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+ 
+server_port 39900
+steam_communications_port 8607
+steam_query_port 39902
+
+###- Server Settings
+ 
+server_name QRR Training Server
+
+server_welcome_message Welcome to the QRR linebattle
+server_region europe
+server_admin_password 429753
+server_password 5050
+
+server_intro_title <b><color=red> Queens Royal Saturday Event hosted by the QRR </color></b> 
+server_intro_body <color=yellow> Please try to follow the rules to the best of your ability <br><br> Ammo boxes have been added to the spawns for musket and rifles <br><br> Cav spawns have been added with flags (to show leader) <br><br> Captains have been given a carbine <br><br> </color> <b><color=blue> Report rule breaks and ask questions in blue chat </color></b>
+ 
+#global settings
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+###- Administrator Preset Messages
+
+admin_action_preset_reason Firing Out Of Line | Watch your Fire Out of Line. You must be standing should to shoulder before shooting your musket.
+admin_action_preset_reason Crouching | You are not allowed to crouch unless you are lights.
+admin_action_preset_reason Line Dropped Below 3 | Your line has dropped to 3 members. Join another line.
+admin_action_preset_reason Rambo | You must be with a line to engage fire. finds a Line or charge.
+admin_action_preset_reason VoIP Spam | Please don't spam VoIP during the event.
+admin_action_preset_reason Misc rule Break | You have broken some general rule. This preset is fastest way to slay you. Tut tut.
+
+network_broadcast_mode Realtime
+
+#Rotation 2 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes 60
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+server_round_rule ArmyInfantryOfficer | This is a test | and another
+
+#Promotion area flags
+objects_override FlagBritish 563.65 11.03 416.67 0.00 165.41 0.00
+objects_override FlagBritish 565.36 11.03 412.18 0.00 73.52 0.00
+objects_override FlagBritish 586.09 9.93 425.62 0.00 247.12 0.00
+objects_override FlagBritish 588.00 9.93 420.24 0.00 105.06 0.00
+
+objects_override CannonFieldGun9PDR 584.73 10.53 416.91 0.00 240.68 0.00
+objects_override CannonAmmoboxLarge 587.64 10.53 416.92 0.00 243.99 0.00
+
+objects_override BarrelStack_Group 560.53 9.93 425.16 0.00 88.35 0.00
+
+objects_override MusketStack 583.32 10.53 423.07 0.00 155.54 0.00
+objects_override MusketStack 584.27 10.53 420.70 0.00 335.63 0.00
+objects_override MusketStack 570.97 10.53 420.52 0.00 150.39 0.00
+objects_override MusketStack 573.65 10.53 414.23 0.00 338.97 0.00
+objects_override Piano2 566.32 9.93 426.71 0.00 111.58 0.00
+
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 74
+
+
+rc delayed 3530 teleport 2 541.86,14.47,593.69
+rc delayed 3530 teleport 3 541.91,14.47,593.19
+rc delayed 3530 teleport 4 541.95,14.47,592.69
+rc delayed 3530 teleport 5 542.0,14.47,592.2
+rc delayed 3530 teleport 6 542.05,14.47,591.7
+rc delayed 3530 teleport 7 542.1,14.47,591.2
+rc delayed 3530 teleport 8 542.14,14.47,590.7
+rc delayed 3530 teleport 9 542.19,14.47,590.21
+rc delayed 3530 teleport 10 542.24,14.47,589.71
+rc delayed 3530 teleport 11 542.28,14.47,589.21
+rc delayed 3530 teleport 12 542.33,14.47,588.71
+rc delayed 3530 teleport 12 582.47,12.39,563.24
+rc delayed 3530 teleport 13 582.63,12.39,562.77
+rc delayed 3530 teleport 14 582.79,12.39,562.29
+rc delayed 3530 teleport 15 582.96,12.39,561.82
+rc delayed 3530 teleport 16 583.12,12.39,561.35
+rc delayed 3530 teleport 17 583.28,12.39,560.88
+rc delayed 3530 teleport 18 583.44,12.39,560.4
+rc delayed 3530 teleport 19 583.61,12.39,559.93
+rc delayed 3530 teleport 20 583.77,12.39,559.46
+rc delayed 3530 teleport 21 583.93,12.39,558.98
+rc delayed 3530 teleport 22 584.09,12.39,558.51
+rc delayed 3530 teleport 22 580.29,11.92,507.25
+rc delayed 3530 teleport 23 580.57,11.92,506.84
+rc delayed 3530 teleport 24 580.85,11.92,506.42
+rc delayed 3530 teleport 25 581.13,11.92,506.01
+rc delayed 3530 teleport 26 581.41,11.92,505.59
+rc delayed 3530 teleport 27 581.69,11.92,505.18
+rc delayed 3530 teleport 28 581.97,11.92,504.76
+rc delayed 3530 teleport 29 582.24,11.92,504.35
+rc delayed 3530 teleport 30 582.52,11.92,503.93
+rc delayed 3530 teleport 31 582.8,11.92,503.52
+rc delayed 3530 teleport 32 583.08,11.92,503.1
+rc delayed 3530 teleport 32 605.95,10.56,413.98
+rc delayed 3530 teleport 33 605.84,10.56,413.49
+rc delayed 3530 teleport 34 605.73,10.56,413.0
+rc delayed 3530 teleport 35 605.62,10.56,412.52
+rc delayed 3530 teleport 36 605.51,10.56,412.03
+rc delayed 3530 teleport 37 605.4,10.56,411.54
+rc delayed 3530 teleport 38 605.29,10.56,411.05
+rc delayed 3530 teleport 39 605.18,10.56,410.57
+rc delayed 3530 teleport 40 605.07,10.56,410.08
+rc delayed 3530 teleport 41 604.95,10.56,409.59
+rc delayed 3530 teleport 42 604.84,10.56,409.1
+rc delayed 3530 teleport 42 627.21,14.97,336.17
+rc delayed 3530 teleport 43 626.8,14.97,335.88
+rc delayed 3530 teleport 44 626.4,14.97,335.59
+rc delayed 3530 teleport 45 625.99,14.97,335.29
+rc delayed 3530 teleport 46 625.59,14.97,335.0
+rc delayed 3530 teleport 47 625.18,14.97,334.71
+rc delayed 3530 teleport 48 624.77,14.97,334.42
+rc delayed 3530 teleport 49 624.37,14.97,334.13
+rc delayed 3530 teleport 50 623.96,14.97,333.84
+rc delayed 3530 teleport 51 623.56,14.97,333.54
+rc delayed 3530 teleport 52 623.15,14.97,333.25
+rc delayed 3530 teleport 52 639.54,20.4,291.93
+rc delayed 3530 teleport 53 639.14,20.4,291.63
+rc delayed 3530 teleport 54 638.74,20.4,291.33
+rc delayed 3530 teleport 55 638.34,20.4,291.03
+rc delayed 3530 teleport 56 637.94,20.4,290.72
+rc delayed 3530 teleport 57 637.54,20.4,290.42
+rc delayed 3530 teleport 58 637.15,20.4,290.12
+rc delayed 3530 teleport 59 636.75,20.4,289.82
+rc delayed 3530 teleport 60 636.35,20.4,289.52
+rc delayed 3530 teleport 61 635.95,20.4,289.22
+rc delayed 3530 teleport 62 635.55,20.4,288.92
+rc delayed 3530 teleport 62 668.11,15.26,234.72
+rc delayed 3530 teleport 63 667.68,15.26,234.47
+rc delayed 3530 teleport 64 667.25,15.26,234.21
+rc delayed 3530 teleport 65 666.82,15.26,233.96
+rc delayed 3530 teleport 66 666.39,15.26,233.7
+rc delayed 3530 teleport 67 665.96,15.26,233.45
+rc delayed 3530 teleport 68 665.53,15.26,233.2
+rc delayed 3530 teleport 69 665.09,15.26,232.94
+rc delayed 3530 teleport 70 664.66,15.26,232.69
+rc delayed 3530 teleport 71 664.23,15.26,232.44
+rc delayed 3530 teleport 72 663.8,15.26,232.18
+
+
+!map_rotation end
+
+#Rotation 2 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+server_round_rule ArmyInfantryOfficer | This is a test | and another
+
+#Promotion area flags
+objects_override FlagBritish 563.65 11.03 416.67 0.00 165.41 0.00
+objects_override FlagBritish 565.36 11.03 412.18 0.00 73.52 0.00
+objects_override FlagBritish 586.09 9.93 425.62 0.00 247.12 0.00
+objects_override FlagBritish 588.00 9.93 420.24 0.00 105.06 0.00
+
+objects_override CannonFieldGun9PDR 584.73 10.53 416.91 0.00 240.68 0.00
+objects_override CannonAmmoboxLarge 587.64 10.53 416.92 0.00 243.99 0.00
+
+objects_override BarrelStack_Group 560.53 9.93 425.16 0.00 88.35 0.00
+
+objects_override MusketStack 583.32 10.53 423.07 0.00 155.54 0.00
+objects_override MusketStack 584.27 10.53 420.70 0.00 335.63 0.00
+objects_override MusketStack 570.97 10.53 420.52 0.00 150.39 0.00
+objects_override MusketStack 573.65 10.53 414.23 0.00 338.97 0.00
+objects_override Piano2 566.32 9.93 426.71 0.00 111.58 0.00
+
+
+!map_rotation end

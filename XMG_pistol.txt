@@ -1,0 +1,85 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+
+###- Server Settings
+
+server_name XMG Melee Gunfighter Tournament | S1 
+server_welcome_message Welcome to the XMG Tournament server
+server_region europe
+server_admin_password Spin
+server_password XMG
+
+mods_installed 2272056234 #xmg melee
+
+###- Bandwidth & Memory Settings
+
+network_broadcast_mode Realtime
+
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+game_type hardcore
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+
+spawn_override A ArmyInfantryOfficer 10
+spawn_override B ArmyInfantryOfficer 10
+spawn_override C ArmyInfantryOfficer 10
+spawn_override D ArmyInfantryOfficer 10
+spawn_override E ArmyInfantryOfficer 10
+spawn_override F ArmyInfantryOfficer 10
+spawn_override G ArmyInfantryOfficer 10
+spawn_override H ArmyInfantryOfficer 10
+spawn_override I ArmyInfantryOfficer 10
+spawn_override J ArmyInfantryOfficer 10
+spawn_override K ArmyInfantryOfficer 10
+spawn_override L ArmyInfantryOfficer 10
+spawn_override M ArmyInfantryOfficer 10
+spawn_override N ArmyInfantryOfficer 10
+spawn_override O ArmyInfantryOfficer 10
+spawn_override P ArmyInfantryOfficer 10
+spawn_override Q ArmyInfantryOfficer 10
+spawn_override R ArmyInfantryOfficer 10
+
+
+starting_weapons_override french ArmyInfantryOfficer 4 4 Pistol_XIII Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override british ArmyInfantryOfficer 4 4 Pistol_XIII Sword_Pattern1803FlankOfficer Unarmed
+
+
+firearm_ammo_override french ArmyInfantryOfficer Pistol_XIII 1 1 8 
+firearm_ammo_override british ArmyInfantryOfficer Pistol_XIII 1 1 8 
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+rc set idleToStrikeTransitionDelayMeleeWeapons 0.285
+rc set blockingStrikeTransitionDelayMeleeWeapons 0.285
+rc set characterBlockGraceTime 0.03
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2272056234 
+
+!map_rotation end

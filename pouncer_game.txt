@@ -1,0 +1,224 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+
+
+###- Server Settings
+
+server_name QRR | Cs 1.6
+server_welcome_message Welcome to my new game server!
+server_region europe
+server_admin_password Az708
+server_password 5050
+
+
+
+###- Server Intro Message
+
+#server_intro_title Welcome To The Community!
+#server_intro_body Greetings ladies and gentleman. Welcome to the <b>community!</b><br><br>Come join us on our Discord. We look forward to seeing you there. <br><br><b><color=yellow>discord.gg/holdfastgame</color></b>
+
+
+
+###- Bandwidth & Performance Settings
+
+network_broadcast_mode HighAccuracy
+
+
+mods_installed 2620570960 #mirage
+mods_installed 2523430502 #train
+mods_installed 2521544540 #storm
+mods_installed 2512247630 #prodigy
+mods_installed 2479088774 #inferno
+mods_installed 2465910424 #dust2
+mods_installed 2460225321 #cbble
+mods_installed 2453190571 #aztec
+mods_installed 2525192332 #sounds
+mods_installed_server_only 2585708441 #freeze
+
+###- Global Gameplay & Map Settings
+
+artillery_fieldgun_respawn_timer 120
+artillery_rocketlauncher_respawn_timer 120
+map_rotation_start_randomise true
+
+###- Map Rotations
+
+#1 = Fort Arena (Melee Arena) - Calm Weather | Morning (10)
+!map_rotation start
+map_name fortarena
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 15
+faction_balancing true
+faction_balancing_discrepancy_amount 2
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce true
+damage_split 50
+class_system_orders false
+!map_rotation end
+
+
+#2 = Mirage
+!map_rotation start
+map_name modmap
+game_mode MeleeArena
+game_type Hardcore
+round_time_minutes 3
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 30
+faction_balancing false
+faction_balancing_discrepancy_amount 2
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 14
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking British
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce true
+damage_split 50
+class_system_orders false
+
+rc set allowFiring true
+
+starting_weapons_override British Rifleman 2 1 Rifle_CharlevilleDragoonPattern_NoBayonet Pistol_XIII Knife_Variation1
+starting_weapons_override French Rifleman 2 1 Rifle_CharlevilleDragoonPattern_NoBayonet Pistol_XIII Knife_Variation1
+
+load_mod 2620570960 #map
+load_mod 2525192332 #sounds
+load_mod_server_only 2585708441 #freeze
+!map_rotation end
+
+
+#3 = Garrison Arena (Melee Arena) - Calm Weather | Morning (10)
+!map_rotation start
+map_name garrisonarena
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 15
+faction_balancing true
+faction_balancing_discrepancy_amount 2
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm2
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce true
+damage_split 50
+class_system_orders false
+!map_rotation end
+
+
+#4 = Watchtower Arena (Melee Arena) - Snowy Weather | Morning (8)
+!map_rotation start
+map_name watchtowerarena
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 15
+faction_balancing true
+faction_balancing_discrepancy_amount 2
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+time_dynamic false
+weather_preset snowy
+weather_dynamic false
+faction_attacking british
+faction_defending french
+friendly_fire false
+friendly_fire_melee_bounce true
+damage_split 50
+class_system_orders false
+!map_rotation end
+
+
+#5 = Sacred Arena (Melee Arena) - Calm Weather | Morning (10)
+!map_rotation start
+map_name sacredarena
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 15
+faction_balancing true
+faction_balancing_discrepancy_amount 2
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm2
+weather_dynamic false
+faction_attacking prussian
+faction_defending french
+friendly_fire false
+friendly_fire_melee_bounce true
+damage_split 50
+class_system_orders false
+!map_rotation end
+
+
+#6 = Castle Arena (Melee Arena) - Calm Weather | Morning (10)
+!map_rotation start
+map_name castlearena
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 15
+faction_balancing true
+faction_balancing_discrepancy_amount 2
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm3
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire false
+friendly_fire_melee_bounce true
+damage_split 50
+class_system_orders false
+!map_rotation end

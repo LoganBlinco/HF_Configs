@@ -1,0 +1,303 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 17000
+steam_communications_port 17001
+steam_query_port 17002
+
+
+
+
+###- Server Settings - EDIT IN STARTUP TAB
+
+server_name QRR | 5thIC Arty Tournament
+server_welcome_message ƒобро пожаловать на артиллерийский турнир 5thIC!
+server_region europe
+server_admin_password BigMan
+server_password 5050
+
+###- Global Gameplay Settings
+artillery_fieldgun_respawn_timer 60
+artillery_rocketlauncher_respawn_timer 60
+
+###- Map Rotations
+mods_installed 2491749755 # 1stWA Dragoon
+mods_installed 2704112494 # Grass_Arty_1
+mods_installed 2720451381 # Grass_Arty_2
+mods_installed 2720277142 # Desert_Arty_1
+mods_installed 2720329836 # Desert_Arty_2
+mods_installed 2720376433 # Snowy_Arty_1
+mods_installed 2720420496 # Snowy_Arty_2
+
+#1 = Trenirovka (mnogo)
+!map_rotation start
+map_name TrainingGrounds
+load_mod 2491749755 # 1stWA Dragoon
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+faction_attacking Russian
+faction_defending British
+minimum_players -1
+maximum_players 250
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+
+# Override Commands
+objects_override CannonFieldGun9PDR 584.47 10.53 416.68 0 216.88 0 
+objects_override Swivelgun 484.13 22.18 568.68 0.00 270.24 0.00
+objects_override CannonAmmoboxSmall 485.64 21.39 569.26 0.00 182.15 0.00
+objects_override CannonFieldGun9PDR 565.17 14.16 601.58 0.00 84.68 0.00 
+objects_override CannonAmmoboxLarge 565.16 14.17 598.04 0.00 303.48 0.00
+objects_override CannonFieldGun9PDRMoveable 718.55 11.15 654.10 0.00 200.87 0.00
+objects_override CannonAmmoboxLargeMoveable 720.20 11.22 655.92 0.00 197.91 0.00
+objects_override CannonAmmoboxLargeMoveable 718.51 11.22 656.47 0.00 198.39 0.00
+objects_override CannonFieldGun9PDRMoveable 540.68 14.57 585.25 0.00 267.16 0.00 
+objects_override CannonAmmoboxLargeMoveable 540.07 14.60 582.29 0.00 272.44 0.00
+
+flags
+objects_override FlagFrench 485.76 22.23 563.13 0.00 0.14 0.00
+objects_override FlagPrussian 415.69 19.20 448.05 0.00 347.22 0.00
+objects_override FlagFrench 425.45 19.20 477.98 0.00 345.04 0.00
+objects_override FlagBritish 443.20 19.20 464.48 0.00 345.59 0.00
+
+bereg
+
+one hit
+
+gabison
+
+meshki
+
+ant-loahad
+objects_override Slow_Fire_W_Smoke 554.95 14.23 610.44 0.00 104.71 0.00
+
+1st kolia
+
+2nd kolia
+
+vnyt kolia
+
+wall
+
+wall podium
+
+cerkov kolia
+objects_override CannonFieldGun9PDRMoveable 565.67 10.53 420.68 0.00 80.71 0.00
+objects_override CannonFieldGun9PDRMoveable 570.07 10.53 410.82 0.00 53.55 0.00
+
+cerkov styl
+objects_override Chair3 561.41 10.10 429.36 0.00 249.61 0.00
+
+cerkov gabison
+
+cerkov meshki
+
+fire on camp aria
+objects_override Fire_Wall_W_Smoke 492.20 9.61 432.89 0.00 24.86 0.00
+
+#Sapper Configuration Commands
+sappers_attacking_starting_materials 10000
+sappers_defending_starting_materials 10000
+sappers_buildlimit ExplosiveBarrel defending 255
+sappers_buildlimit ExplosiveBarrel attacking 255
+sappers_buildlimit InfantryStakes defending 255
+sappers_buildlimit InfantryStakes attacking 255
+sappers_buildlimit Gabion defending 255
+sappers_buildlimit Gabion attacking 255
+sappers_buildlimit ChevauxDeFriseLarge defending 255
+sappers_buildlimit ChevauxDeFriseLarge attacking 255
+sappers_buildlimit ChevauxDeFriseSmall defending 255
+sappers_buildlimit ChevauxDeFriseSmall attacking 255
+sappers_buildlimit Palisade defending 255
+sappers_buildlimit Palisade attacking 255
+sappers_buildlimit ShootingPlatform defending 255
+sappers_buildlimit ShootingPlatform attacking 255
+sappers_buildlimit Chair defending 255
+sappers_buildlimit Chair attacking 255
+sappers_buildlimit Earthworks defending 255
+sappers_buildlimit Earthworks attacking 255
+sappers_buildlimit Sandbag defending 255
+sappers_buildlimit Sandbag attacking 255
+sappers_buildlimit SwivelGun defending 255
+sappers_buildlimit SwivelGun attacking 255
+sappers_buildlimit Ammobox defending 255
+sappers_buildlimit Ammobox attacking 255
+sappers_buildlimit RocketStack defending 255
+sappers_buildlimit RocketStack attacking 255
+
+#PinkyHorses
+rc set useSpecialHorseVariants true
+
+!map_rotation end 
+
+#2 = Grass Arty 1
+!map_rotation start
+map_name modmap
+load_mod 2704112494 # Grass_Arty_1
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+round_spawn_close_timer_seconds 90
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+faction_attacking Russian
+faction_defending British
+minimum_players -1
+maximum_players 250
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+
+!map_rotation end 
+
+#3 = Grass Arty 2
+!map_rotation start
+map_name modmap
+load_mod 2720451381 # Grass_Arty_2
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+round_spawn_close_timer_seconds 90
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+faction_attacking Russian
+faction_defending British
+minimum_players -1
+maximum_players 250
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+
+!map_rotation end 
+
+#4 = Desert Arty 1
+!map_rotation start
+map_name modmap
+load_mod 2720277142 # Desert_Arty_1
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+round_spawn_close_timer_seconds 90
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+faction_attacking Russian
+faction_defending British
+minimum_players -1
+maximum_players 250
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+
+!map_rotation end 
+
+#5 = Desert Arty 2
+!map_rotation start
+map_name modmap
+load_mod 2720329836 # Desert_Arty_2
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+round_spawn_close_timer_seconds 90
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+faction_attacking Russian
+faction_defending British
+minimum_players -1
+maximum_players 250
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+
+!map_rotation end 
+
+#6 = Snowy Arty 1
+!map_rotation start
+map_name modmap
+load_mod 2720376433 # Snowy_Arty_1
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+round_spawn_close_timer_seconds 90
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+faction_attacking Russian
+faction_defending British
+minimum_players -1
+maximum_players 250
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+
+!map_rotation end 
+
+#7 = Snowy Arty 2
+!map_rotation start
+map_name modmap
+load_mod 2720420496 # Snowy_Arty_2
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+round_spawn_close_timer_seconds 90
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+faction_attacking Russian
+faction_defending British
+minimum_players -1
+maximum_players 250
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+
+!map_rotation end 

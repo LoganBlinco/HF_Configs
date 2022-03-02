@@ -1,0 +1,169 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+
+###- Server Settingsa
+
+server_name XMG World Cup Server FINAL | GERMANY vs SOVIET UNION 
+server_welcome_message Welcome!
+server_region europe
+server_admin_password ronaldo70
+server_password XMG
+
+mods_installed 2272056234 #comp melee
+mods_installed 2588287122 #finals 
+
+#mods_installed_server_only 2547657726 #XMG autolive mod
+
+
+###- Bandwidth & Memory Settings
+
+network_broadcast_mode Realtime
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking british
+faction_defending prussian
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+rc set idleToStrikeTransitionDelayMeleeWeapons 0.285
+rc set blockingStrikeTransitionDelayMeleeWeapons 0.285
+rc set characterBlockGraceTime 0.03
+
+#starting_weapons_override British ArmyLineInfantry 3 3 Musket_SeaServiceBrownBess Pistol_XIII Unarmed
+#starting_weapons_override French ArmyLineInfantry 3 3 Musket_SeaServiceBrownBess Pistol_XIII Unarmed
+
+#firearm_ammo_override British ArmyLineInfantry Pistol_XIII 99 99 99
+#firearm_ammo_override French ArmyLineInfantry Pistol_XIII 99 99 99
+
+#firearm_ammo_override British ArmyLineInfantry Musket_SeaServiceBrownBess 0 0 1
+#firearm_ammo_override French ArmyLineInfantry Musket_SeaServiceBrownBess 0 0 1
+
+load_mod 2272056234 #comp map
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking british
+faction_defending prussian
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+rc set idleToStrikeTransitionDelayMeleeWeapons 0.285
+rc set blockingStrikeTransitionDelayMeleeWeapons 0.285
+rc set characterBlockGraceTime 0.03
+
+#starting_weapons_override British ArmyLineInfantry 3 3 Musket_SeaServiceBrownBess Pistol_XIII Unarmed
+#starting_weapons_override French ArmyLineInfantry 3 3 Musket_SeaServiceBrownBess Pistol_XIII Unarmed
+
+#firearm_ammo_override British ArmyLineInfantry Pistol_XIII 99 99 99
+#firearm_ammo_override French ArmyLineInfantry Pistol_XIII 99 99 99
+
+#firearm_ammo_override British ArmyLineInfantry Musket_SeaServiceBrownBess 0 0 1
+#firearm_ammo_override French ArmyLineInfantry Musket_SeaServiceBrownBess 0 0 1
+
+spawn_override A ArmyLineInfantry 99
+spawn_override J ArmyLineInfantry 99
+
+spawn_override B ArmyLineInfantry 0
+spawn_override C ArmyLineInfantry 0
+spawn_override D ArmyLineInfantry 0
+spawn_override E ArmyLineInfantry 0
+spawn_override F ArmyLineInfantry 0
+spawn_override G ArmyLineInfantry 0
+spawn_override H ArmyLineInfantry 0
+spawn_override I ArmyLineInfantry 0
+
+spawn_override k ArmyLineInfantry 0
+spawn_override L ArmyLineInfantry 0
+spawn_override M ArmyLineInfantry 0
+spawn_override N ArmyLineInfantry 0
+spawn_override O ArmyLineInfantry 0
+spawn_override P ArmyLineInfantry 0
+spawn_override Q ArmyLineInfantry 0
+spawn_override R ArmyLineInfantry 0
+
+
+load_mod 2272056234 #comp map
+load_mod 2588287122 #finals
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 60
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 50
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm3
+weather_dynamic false
+faction_attacking british
+faction_defending prussian
+friendly_fire true
+damage_split 0
+
+
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+rc set idleToStrikeTransitionDelayMeleeWeapons 0.285
+rc set blockingStrikeTransitionDelayMeleeWeapons 0.285
+rc set characterBlockGraceTime 0.03
+
+load_mod 2272056234 #comp map
+!map_rotation end

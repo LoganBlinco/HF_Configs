@@ -1,0 +1,525 @@
+
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+###- Server Settings
+
+server_name QRR Comp Training
+server_welcome_message <b> Welcome to the Holdfast League Season 5. This server is brought to you by bmghosting.com, Reliable – Experienced – Affordable </b>
+server_region europe
+server_admin_password Random8
+server_password Maps
+
+network_broadcast_mode Realtime
+
+mods_installed 2579103379 #comp 3
+mods_installed 2590414991 #comp 4
+
+mods_installed_server_only 2590981585
+
+mod_variable 2531692643:punishmentMode:Comp
+
+mod_variable 2531692643:ArmyInfantryOfficer:11,0.68,5,1,2,1
+mod_variable 2531692643:ArmyLineInfantry:11,0.68,5,1,2,1
+mod_variable 2531692643:FlagBearer:11,0.68,5,1,2,1
+mod_variable 2531692643:Drummer:11,0.68,5,1,2,1
+mod_variable 2531692643:Fifer:11,0.68,5,1,2,1
+mod_variable 2531692643:Bagpiper:11,0.68,5,1,2,1
+mod_variable 2531692643:Surgeon:11,0.68,5,1,2,1
+mod_variable 2531692643:Cannoneer:11,0.68,5,1,2,1
+mod_variable 2531692643:Rocketeer:11,0.68,5,1,2,1
+mod_variable 2531692643:Guard:11,0.68,5,1,2,1
+mod_variable 2531692643:Grenadier:11,0.68,5,1,2,1
+
+#Rotation 1 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking prussian
+faction_defending british
+artillery_fieldgun_respawn_timer 30
+game_type hardcore
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes 20
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking prussian
+faction_defending british
+artillery_fieldgun_respawn_timer 30
+game_type hardcore
+
+
+## Class spawns
+spawn_override A ArmyInfantryOfficer 2
+spawn_override A ArmyLineInfantry 99
+spawn_override A FlagBearer 1
+spawn_override A Drummer 1
+spawn_override A Fifer 1
+spawn_override A Bagpiper 1
+spawn_override A Surgeon 1
+spawn_override A Cannoneer 1
+spawn_override A Rocketeer 1
+spawn_override A Guard 1
+spawn_override A Grenadier 1
+
+spawn_override B ArmyInfantryOfficer 2
+spawn_override B ArmyLineInfantry 99
+spawn_override B FlagBearer 1
+spawn_override B Drummer 1
+spawn_override B Fifer 1
+spawn_override B Bagpiper 1
+spawn_override B Surgeon 1
+spawn_override B Cannoneer 1
+spawn_override B Rocketeer 1
+spawn_override B Guard 1
+spawn_override B Grenadier 1
+
+## Class rules
+
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Cannoneer,Rocketeer,Guard,Grenadier|<size=15><b><color=\#989898>LEAGUE RULES - All must follow the rules</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 players required to fire <br>• Teams may split into a maximum of two lines <br>• Beware of passive behaviour as explained in the rules
+
+## Performance
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 166
+
+rc delayed 1170 teleport 2 214.01,8.51,208.05
+rc delayed 1170 teleport 3 213.35,8.51,210.46
+rc delayed 1170 teleport 4 212.68,8.51,212.87
+rc delayed 1170 teleport 5 212.02,8.51,215.28
+rc delayed 1170 teleport 6 211.35,8.51,217.69
+rc delayed 1170 teleport 12 226.79,8.16,260.35
+rc delayed 1170 teleport 13 224.7,8.16,261.72
+rc delayed 1170 teleport 14 222.61,8.16,263.1
+rc delayed 1170 teleport 15 220.52,8.16,264.47
+rc delayed 1170 teleport 16 218.44,8.16,265.85
+rc delayed 1170 teleport 22 176.57,7.61,295.36
+rc delayed 1170 teleport 23 178.44,7.61,297.02
+rc delayed 1170 teleport 24 180.3,7.61,298.69
+rc delayed 1170 teleport 25 182.17,7.61,300.35
+rc delayed 1170 teleport 26 184.04,7.61,302.01
+rc delayed 1170 teleport 32 178.55,9.65,329.29
+rc delayed 1170 teleport 33 178.58,9.65,331.79
+rc delayed 1170 teleport 34 178.62,9.65,334.29
+rc delayed 1170 teleport 35 178.65,9.65,336.79
+rc delayed 1170 teleport 36 178.68,9.65,339.29
+rc delayed 1170 teleport 42 219.0,8.89,367.14
+rc delayed 1170 teleport 43 221.0,8.89,368.64
+rc delayed 1170 teleport 44 223.0,8.89,370.15
+rc delayed 1170 teleport 45 224.99,8.89,371.65
+rc delayed 1170 teleport 46 226.99,8.89,373.15
+rc delayed 1170 teleport 52 265.52,8.07,379.42
+rc delayed 1170 teleport 53 267.88,8.07,378.6
+rc delayed 1170 teleport 54 270.25,8.07,377.79
+rc delayed 1170 teleport 55 272.61,8.07,376.97
+rc delayed 1170 teleport 56 274.97,8.07,376.16
+rc delayed 1170 teleport 62 337.24,9.12,382.61
+rc delayed 1170 teleport 63 339.15,9.12,381.0
+rc delayed 1170 teleport 64 341.06,9.12,379.39
+rc delayed 1170 teleport 65 342.98,9.12,377.78
+rc delayed 1170 teleport 66 344.89,9.12,376.17
+rc delayed 1170 teleport 72 360.81,9.67,359.09
+rc delayed 1170 teleport 73 361.0,9.67,356.6
+rc delayed 1170 teleport 74 361.18,9.67,354.1
+rc delayed 1170 teleport 75 361.37,9.67,351.61
+rc delayed 1170 teleport 76 361.56,9.67,349.12
+rc delayed 1170 teleport 82 352.34,10.17,293.01
+rc delayed 1170 teleport 83 351.16,10.17,290.8
+rc delayed 1170 teleport 84 349.99,10.17,288.6
+rc delayed 1170 teleport 85 348.81,10.17,286.39
+rc delayed 1170 teleport 86 347.63,10.17,284.19
+rc delayed 1170 teleport 92 284.27,8.0,300.55
+rc delayed 1170 teleport 93 281.77,8.0,300.54
+rc delayed 1170 teleport 94 279.27,8.0,300.54
+rc delayed 1170 teleport 95 276.77,8.0,300.53
+rc delayed 1170 teleport 96 274.27,8.0,300.53
+rc delayed 1170 teleport 102 151.98,7.69,255.48
+rc delayed 1170 teleport 103 150.55,7.69,253.43
+rc delayed 1170 teleport 104 149.11,7.69,251.38
+rc delayed 1170 teleport 105 147.68,7.69,249.33
+rc delayed 1170 teleport 106 146.25,7.69,247.29
+rc delayed 1170 teleport 112 136.75,8.29,167.29
+rc delayed 1170 teleport 113 137.67,8.29,164.97
+rc delayed 1170 teleport 114 138.59,8.29,162.64
+rc delayed 1170 teleport 115 139.51,8.29,160.32
+rc delayed 1170 teleport 116 140.43,8.29,157.99
+rc delayed 1170 teleport 122 293.25,8.14,246.37
+rc delayed 1170 teleport 123 293.06,8.14,243.88
+rc delayed 1170 teleport 124 292.87,8.14,241.38
+rc delayed 1170 teleport 125 292.68,8.14,238.89
+rc delayed 1170 teleport 126 292.49,8.14,236.4
+rc delayed 1170 teleport 132 272.33,10.02,193.97
+rc delayed 1170 teleport 133 270.12,10.02,192.79
+rc delayed 1170 teleport 134 267.92,10.02,191.62
+rc delayed 1170 teleport 135 265.71,10.02,190.44
+rc delayed 1170 teleport 136 263.51,10.02,189.26
+rc delayed 1170 teleport 142 257.74,8.12,151.99
+rc delayed 1170 teleport 143 256.12,8.12,150.08
+rc delayed 1170 teleport 144 254.51,8.12,148.17
+rc delayed 1170 teleport 145 252.89,8.12,146.27
+rc delayed 1170 teleport 146 251.28,8.12,144.36
+rc delayed 1170 teleport 152 198.81,9.73,122.54
+rc delayed 1170 teleport 153 196.47,9.73,123.41
+rc delayed 1170 teleport 154 194.12,9.73,124.28
+rc delayed 1170 teleport 155 191.78,9.73,125.15
+rc delayed 1170 teleport 156 189.43,9.73,126.02
+rc delayed 1170 teleport 162 172.81,10.18,213.82
+rc delayed 1170 teleport 163 172.23,10.18,211.39
+rc delayed 1170 teleport 164 171.66,10.18,208.96
+rc delayed 1170 teleport 165 171.08,10.18,206.52
+rc delayed 1170 teleport 166 170.5,10.18,204.09
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2590414991 #Competitive hills 3
+load_mod_server_only 2590981585
+
+!map_rotation end
+
+
+!map_rotation start
+map_name modmap
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes 20
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking prussian
+faction_defending british
+artillery_fieldgun_respawn_timer 30
+game_type hardcore
+
+
+## Class spawns
+spawn_override A ArmyInfantryOfficer 2
+spawn_override A ArmyLineInfantry 99
+spawn_override A FlagBearer 1
+spawn_override A Drummer 1
+spawn_override A Fifer 1
+spawn_override A Bagpiper 1
+spawn_override A Surgeon 1
+spawn_override A Cannoneer 1
+spawn_override A Rocketeer 1
+spawn_override A Guard 1
+spawn_override A Grenadier 1
+
+spawn_override B ArmyInfantryOfficer 2
+spawn_override B ArmyLineInfantry 99
+spawn_override B FlagBearer 1
+spawn_override B Drummer 1
+spawn_override B Fifer 1
+spawn_override B Bagpiper 1
+spawn_override B Surgeon 1
+spawn_override B Cannoneer 1
+spawn_override B Rocketeer 1
+spawn_override B Guard 1
+spawn_override B Grenadier 1
+
+## Class rules
+
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Cannoneer,Rocketeer,Guard,Grenadier|<size=15><b><color=\#989898>LEAGUE RULES - All must follow the rules</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 players required to fire <br>• Teams may split into a maximum of two lines <br>• Beware of passive behaviour as explained in the rules
+
+## Performance
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2590414991 #Competitive hills 3
+load_mod_server_only 2590981585
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes 20
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking prussian
+faction_defending british
+artillery_fieldgun_respawn_timer 30
+game_type hardcore
+
+
+## Class spawns
+spawn_override A ArmyInfantryOfficer 2
+spawn_override A ArmyLineInfantry 99
+spawn_override A FlagBearer 1
+spawn_override A Drummer 1
+spawn_override A Fifer 1
+spawn_override A Bagpiper 1
+spawn_override A Surgeon 1
+spawn_override A Cannoneer 1
+spawn_override A Rocketeer 1
+spawn_override A Guard 1
+spawn_override A Grenadier 1
+
+spawn_override B ArmyInfantryOfficer 2
+spawn_override B ArmyLineInfantry 99
+spawn_override B FlagBearer 1
+spawn_override B Drummer 1
+spawn_override B Fifer 1
+spawn_override B Bagpiper 1
+spawn_override B Surgeon 1
+spawn_override B Cannoneer 1
+spawn_override B Rocketeer 1
+spawn_override B Guard 1
+spawn_override B Grenadier 1
+
+## Class rules
+
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Cannoneer,Rocketeer,Guard,Grenadier|<size=15><b><color=\#989898>LEAGUE RULES - All must follow the rules</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 players required to fire <br>• Teams may split into a maximum of two lines <br>• Beware of passive behaviour as explained in the rules
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2579103379 #Competitive hills 3
+load_mod_server_only 2590981585
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 122
+
+rc delayed 1170 teleport 2 356.41,27.97,164.89
+rc delayed 1170 teleport 3 356.66,27.97,165.33
+rc delayed 1170 teleport 4 356.9,27.97,165.76
+rc delayed 1170 teleport 5 357.15,27.97,166.2
+rc delayed 1170 teleport 6 357.4,27.97,166.63
+rc delayed 1170 teleport 7 357.64,27.97,167.07
+rc delayed 1170 teleport 8 357.89,27.97,167.5
+rc delayed 1170 teleport 9 358.13,27.97,167.94
+rc delayed 1170 teleport 10 358.38,27.97,168.37
+rc delayed 1170 teleport 11 358.63,27.97,168.81
+rc delayed 1170 teleport 12 358.87,27.97,169.24
+rc delayed 1170 teleport 12 305.1,28.83,160.88
+rc delayed 1170 teleport 13 305.37,28.83,161.3
+rc delayed 1170 teleport 14 305.65,28.83,161.72
+rc delayed 1170 teleport 15 305.92,28.83,162.13
+rc delayed 1170 teleport 16 306.2,28.83,162.55
+rc delayed 1170 teleport 17 306.47,28.83,162.97
+rc delayed 1170 teleport 18 306.75,28.83,163.39
+rc delayed 1170 teleport 19 307.02,28.83,163.8
+rc delayed 1170 teleport 20 307.3,28.83,164.22
+rc delayed 1170 teleport 21 307.57,28.83,164.64
+rc delayed 1170 teleport 22 307.85,28.83,165.06
+rc delayed 1170 teleport 22 297.76,28.78,204.32
+rc delayed 1170 teleport 23 297.47,28.78,203.92
+rc delayed 1170 teleport 24 297.17,28.78,203.51
+rc delayed 1170 teleport 25 296.88,28.78,203.11
+rc delayed 1170 teleport 26 296.59,28.78,202.7
+rc delayed 1170 teleport 27 296.29,28.78,202.3
+rc delayed 1170 teleport 28 296.0,28.78,201.89
+rc delayed 1170 teleport 29 295.7,28.78,201.49
+rc delayed 1170 teleport 30 295.41,28.78,201.08
+rc delayed 1170 teleport 31 295.12,28.78,200.68
+rc delayed 1170 teleport 32 294.82,28.78,200.27
+rc delayed 1170 teleport 32 280.15,28.37,235.99
+rc delayed 1170 teleport 33 280.19,28.37,236.49
+rc delayed 1170 teleport 34 280.23,28.37,236.99
+rc delayed 1170 teleport 35 280.26,28.37,237.49
+rc delayed 1170 teleport 36 280.3,28.37,237.98
+rc delayed 1170 teleport 37 280.34,28.37,238.48
+rc delayed 1170 teleport 38 280.38,28.37,238.98
+rc delayed 1170 teleport 39 280.41,28.37,239.48
+rc delayed 1170 teleport 40 280.45,28.37,239.98
+rc delayed 1170 teleport 41 280.49,28.37,240.48
+rc delayed 1170 teleport 42 280.53,28.37,240.98
+rc delayed 1170 teleport 42 235.75,26.29,254.86
+rc delayed 1170 teleport 43 235.48,26.29,254.44
+rc delayed 1170 teleport 44 235.2,26.29,254.02
+rc delayed 1170 teleport 45 234.93,26.29,253.6
+rc delayed 1170 teleport 46 234.66,26.29,253.18
+rc delayed 1170 teleport 47 234.39,26.29,252.76
+rc delayed 1170 teleport 48 234.11,26.29,252.34
+rc delayed 1170 teleport 49 233.84,26.29,251.93
+rc delayed 1170 teleport 50 233.57,26.29,251.51
+rc delayed 1170 teleport 51 233.3,26.29,251.09
+rc delayed 1170 teleport 52 233.02,26.29,250.67
+rc delayed 1170 teleport 52 202.76,29.12,256.56
+rc delayed 1170 teleport 53 203.09,29.12,256.18
+rc delayed 1170 teleport 54 203.41,29.12,255.8
+rc delayed 1170 teleport 55 203.74,29.12,255.42
+rc delayed 1170 teleport 56 204.06,29.12,255.04
+rc delayed 1170 teleport 57 204.39,29.12,254.66
+rc delayed 1170 teleport 58 204.71,29.12,254.28
+rc delayed 1170 teleport 59 205.04,29.12,253.9
+rc delayed 1170 teleport 60 205.36,29.12,253.52
+rc delayed 1170 teleport 61 205.69,29.12,253.14
+rc delayed 1170 teleport 62 206.02,29.12,252.77
+rc delayed 1170 teleport 62 185.58,28.44,291.26
+rc delayed 1170 teleport 63 186.07,28.44,291.18
+rc delayed 1170 teleport 64 186.57,28.44,291.11
+rc delayed 1170 teleport 65 187.06,28.44,291.03
+rc delayed 1170 teleport 66 187.56,28.44,290.95
+rc delayed 1170 teleport 67 188.05,28.44,290.87
+rc delayed 1170 teleport 68 188.54,28.44,290.8
+rc delayed 1170 teleport 69 189.04,28.44,290.72
+rc delayed 1170 teleport 70 189.53,28.44,290.64
+rc delayed 1170 teleport 71 190.03,28.44,290.57
+rc delayed 1170 teleport 72 190.52,28.44,290.49
+rc delayed 1170 teleport 72 159.91,28.26,252.28
+rc delayed 1170 teleport 73 160.39,28.26,252.14
+rc delayed 1170 teleport 74 160.87,28.26,252.0
+rc delayed 1170 teleport 75 161.35,28.26,251.86
+rc delayed 1170 teleport 76 161.83,28.26,251.72
+rc delayed 1170 teleport 77 162.31,28.26,251.58
+rc delayed 1170 teleport 78 162.79,28.26,251.44
+rc delayed 1170 teleport 79 163.27,28.26,251.3
+rc delayed 1170 teleport 80 163.75,28.26,251.16
+rc delayed 1170 teleport 81 164.23,28.26,251.02
+rc delayed 1170 teleport 82 164.71,28.26,250.88
+rc delayed 1170 teleport 82 182.18,27.52,331.13
+rc delayed 1170 teleport 83 182.68,27.52,331.15
+rc delayed 1170 teleport 84 183.18,27.52,331.17
+rc delayed 1170 teleport 85 183.68,27.52,331.19
+rc delayed 1170 teleport 86 184.18,27.52,331.21
+rc delayed 1170 teleport 87 184.68,27.52,331.23
+rc delayed 1170 teleport 88 185.18,27.52,331.25
+rc delayed 1170 teleport 89 185.68,27.52,331.27
+rc delayed 1170 teleport 90 186.18,27.52,331.29
+rc delayed 1170 teleport 91 186.68,27.52,331.31
+rc delayed 1170 teleport 92 187.18,27.52,331.33
+rc delayed 1170 teleport 92 245.48,28.3,327.56
+rc delayed 1170 teleport 93 245.84,28.3,327.91
+rc delayed 1170 teleport 94 246.2,28.3,328.25
+rc delayed 1170 teleport 95 246.56,28.3,328.6
+rc delayed 1170 teleport 96 246.92,28.3,328.95
+rc delayed 1170 teleport 97 247.28,28.3,329.29
+rc delayed 1170 teleport 98 247.64,28.3,329.64
+rc delayed 1170 teleport 99 248.0,28.3,329.99
+rc delayed 1170 teleport 100 248.36,28.3,330.33
+rc delayed 1170 teleport 101 248.72,28.3,330.68
+rc delayed 1170 teleport 102 249.09,28.3,331.02
+rc delayed 1170 teleport 102 317.97,27.8,351.64
+rc delayed 1170 teleport 103 318.24,27.8,351.22
+rc delayed 1170 teleport 104 318.52,27.8,350.8
+rc delayed 1170 teleport 105 318.79,27.8,350.39
+rc delayed 1170 teleport 106 319.07,27.8,349.97
+rc delayed 1170 teleport 107 319.34,27.8,349.55
+rc delayed 1170 teleport 108 319.62,27.8,349.13
+rc delayed 1170 teleport 109 319.89,27.8,348.71
+rc delayed 1170 teleport 110 320.16,27.8,348.3
+rc delayed 1170 teleport 111 320.44,27.8,347.88
+rc delayed 1170 teleport 112 320.71,27.8,347.46
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+game_type Hardcore
+friendly_fire true
+round_time_minutes 20
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking prussian
+faction_defending british
+artillery_fieldgun_respawn_timer 30
+game_type hardcore
+
+
+## Class spawns
+spawn_override A ArmyInfantryOfficer 2
+spawn_override A ArmyLineInfantry 99
+spawn_override A FlagBearer 1
+spawn_override A Drummer 1
+spawn_override A Fifer 1
+spawn_override A Bagpiper 1
+spawn_override A Surgeon 1
+spawn_override A Cannoneer 1
+spawn_override A Rocketeer 1
+spawn_override A Guard 1
+spawn_override A Grenadier 1
+
+spawn_override B ArmyInfantryOfficer 2
+spawn_override B ArmyLineInfantry 99
+spawn_override B FlagBearer 1
+spawn_override B Drummer 1
+spawn_override B Fifer 1
+spawn_override B Bagpiper 1
+spawn_override B Surgeon 1
+spawn_override B Cannoneer 1
+spawn_override B Rocketeer 1
+spawn_override B Guard 1
+spawn_override B Grenadier 1
+
+## Class rules
+
+server_round_rule ArmyInfantryOfficer,ArmyLineInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Cannoneer,Rocketeer,Guard,Grenadier|<size=15><b><color=\#989898>LEAGUE RULES - All must follow the rules</color></b></size><br><br>• No firing out of line (FOL) <br>• Reloading must be done in a line or column when moving <br>• 3 players required to fire <br>• Teams may split into a maximum of two lines <br>• Beware of passive behaviour as explained in the rules
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2579103379 #Competitive hills 3
+load_mod_server_only 2590981585
+
+
+!map_rotation end

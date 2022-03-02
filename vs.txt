@@ -1,0 +1,1827 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+###- Server Settings
+
+server_name Товарищеский бой DCR и 5thIC
+server_region russia
+server_admin_password 1stwa
+server_password ukraine
+
+###- Map Rotations
+
+mods_installed 2133325553
+mods_installed 2134230566
+mods_installed 2239858766
+mods_installed 2376656345
+mods_installed 2524817960
+mods_installed 2281720256
+mods_installed 2595344752
+mods_installed 2595341595
+mods_installed 2595335467
+mods_installed 2579839234
+mods_installed 2599298190
+
+map_voting_enabled true
+map_voting_duration 15
+map_voting_allow_same_map false
+map_voting_history_count 10
+map_voting_gameplay_modes ArmyBattlefield ArmyAssault ArmyConquest ArmySiege
+
+#1 = Lobby
+!map_rotation start
+map_name TrainingGrounds
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+faction_attacking Russian
+faction_defending French
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+friendly_fire true
+
+rc set AllowPreviewAnimations true
+rc set cannonMoverSpeedMultiplier 1.2
+rc set cannonMoverRotationMultiplier 1.2
+rc set rocketMoverSpeedMultiplier 1.2
+rc set rocketMoverRotationMultiplier 1.2
+rc set characterRunSpeed 1.1
+rc set characterRespawnTime 1
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+!map_rotation end 
+
+#2 = DesertPlains
+!map_rotation start
+map_name DesertPlains
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#3 = Grassy Plains 5
+!map_rotation start
+map_name GrassyPlainsV
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#4 = Egypt
+!map_rotation start
+map_name Egypt
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#5 = GrassyPlainsII
+!map_rotation start
+map_name GrassyPlainsII
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#6 = GrassyPlainsIII
+!map_rotation start
+map_name GrassyPlainsIII
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#7 = SnowyPlainsIII
+!map_rotation start
+map_name SnowyPlainsIII
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#8 = SnowyPlainsV
+!map_rotation start
+map_name SnowyPlainsV
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#9 = Simple Plains - Marsh
+!map_rotation start
+load_mod 2133325553
+map_name modmap
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#10 = SnowyPlains
+!map_rotation start
+map_name SnowyPlains
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#11 = Grassy Plains 4
+!map_rotation start
+map_name GrassyPlainsIV
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#12 = IslandPlains
+!map_rotation start
+map_name IslandPlains
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#13 = Simple Plains - Alps
+!map_rotation start
+load_mod 2134230566
+map_name modmap
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#14 = Skirmish Grounds
+!map_rotation start
+load_mod 2239858766
+map_name modmap
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end
+
+#15 = Santa Anna's Demise
+!map_rotation start
+load_mod 2376656345
+map_name modmap
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 8
+reinforcements_per_faction 75
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Russian
+faction_defending French
+friendly_fire true
+
+load_mod 2524817960
+load_mod 2281720256
+load_mod 2595344752
+load_mod 2595341595
+load_mod 2595335467
+load_mod 2579839234
+load_mod 2599298190
+
+# Override Commands
+starting_weapons_override Russian ArmyInfantryOfficer 5 3 Musket_IndiaPatternBrownBess Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+starting_weapons_override French ArmyInfantryOfficer 5 3 Musket_CharlevilleIXXII Pistol_NewLandPattern Sword_Pattern1803FlankOfficer
+rc set allowFiring true
+
+spawn_override A ArmyInfantryOfficer 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A Grenadier 200
+spawn_override A Guard 200
+spawn_override A LightInfantry 200
+spawn_override A Rifleman 200
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Sapper 200
+spawn_override A Cannoneer 200
+spawn_override A Rocketeer 200
+spawn_override A NavalCaptain 200
+spawn_override A NavalMarine 200
+spawn_override A NavalSailor 200
+spawn_override A Carpenter 200
+spawn_override A CoastGuard 200
+spawn_override A Customs 200
+spawn_override A Violinist 200
+spawn_override A Hussar 200
+spawn_override A CuirassierDragoon 200
+
+spawn_override B ArmyInfantryOfficer 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B Grenadier 200
+spawn_override B Guard 200
+spawn_override B LightInfantry 200
+spawn_override B Rifleman 200
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Sapper 200
+spawn_override B Cannoneer 200
+spawn_override B Rocketeer 200
+spawn_override B NavalCaptain 200
+spawn_override B NavalMarine 200
+spawn_override B NavalSailor 200
+spawn_override B Carpenter 200
+spawn_override B CoastGuard 200
+spawn_override B Customs 200
+spawn_override B Violinist 200
+spawn_override B Hussar 200
+spawn_override B CuirassierDragoon 200
+
+rc delayed 451 broadcast Начало в 7:00, арта на арту в 2:00, штыковая в 1:00.
+rc delayed 421 broadcast Начали!
+rc delayed 121 broadcast Арта на арту! Штыковая через минуту!
+rc delayed 61 broadcast Только штыки!
+rc delayed 61 set allowFiring false
+
+wave_spawn_vehicle_time_seconds 45
+wave_spawn_time_seconds 5
+round_spawn_close_timer_seconds 390
+
+sappers_attacking_starting_materials 999
+sappers_buildlimit ExplosiveBarrel attacking 999
+sappers_buildlimit InfantryStakes attacking 999
+sappers_buildlimit Gabion attacking 999
+sappers_buildlimit ChevauxDeFriseLarge attacking 999
+sappers_buildlimit ChevauxDeFriseSmall attacking 999
+sappers_buildlimit Palisade attacking 999
+sappers_buildlimit ShootingPlatform attacking 999
+sappers_buildlimit Chair attacking 999
+sappers_buildlimit Earthworks attacking 999
+sappers_buildlimit Sandbag attacking 999
+sappers_buildlimit SwivelGun attacking 999
+sappers_buildlimit Ammobox attacking 999
+sappers_buildlimit RocketStack attacking 999
+
+sappers_defending_starting_materials 999
+sappers_buildlimit ExplosiveBarrel defending 999
+sappers_buildlimit InfantryStakes defending 999
+sappers_buildlimit Gabion defending 999
+sappers_buildlimit ChevauxDeFriseLarge defending 999
+sappers_buildlimit ChevauxDeFriseSmall defending 999
+sappers_buildlimit Palisade defending 999
+sappers_buildlimit ShootingPlatform defending 999
+sappers_buildlimit Chair defending 999
+sappers_buildlimit Earthworks defending 999
+sappers_buildlimit Sandbag defending 999
+sappers_buildlimit SwivelGun defending 999
+sappers_buildlimit Ammobox defending 999
+sappers_buildlimit RocketStack defending 999
+
+!map_rotation end

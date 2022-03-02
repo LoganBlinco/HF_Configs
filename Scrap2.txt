@@ -1,0 +1,381 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+#server_port 39900
+#steam_communications_port 8607
+#steam_query_port 39902
+
+
+server_port 39901
+steam_communications_port 8608
+steam_query_port 39903
+
+
+
+###- Server Settings
+
+server_name EU Comp Server test (QRR)
+server_welcome_message Welcome to the Comp Melee scrap server
+server_region europe
+server_admin_password Internal
+server_password 5050
+
+mods_installed 2114215625 #xmg melee
+mods_installed 2124103038 #QRR skin
+
+mods_installed 2133325553 
+mods_installed 2134230566
+mods_installed 2170201552
+#mods_installed 2119830114
+
+
+###- Bandwidth & Memory Settings
+
+network_broadcast_mode Realtime
+
+mods_installed 2119830114 # eLF melee [Wrexal test]
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending british
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+rc set secondaryAttackCooldownDuration 2.5
+
+load_mod 2119830114
+load_mod 2124103038
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending british
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+rc set secondaryAttackCooldownDuration 2.5
+
+load_mod 2133325553
+load_mod 2124103038
+
+!map_rotation end
+
+
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending british
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+rc set secondaryAttackCooldownDuration 2.5
+
+load_mod 2134230566
+load_mod 2124103038
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending british
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+rc set secondaryAttackCooldownDuration 2.5
+
+load_mod 2170201552
+load_mod 2124103038
+
+!map_rotation end
+
+
+#6 = Castle Arena (Melee Arena) - Calm Weather | Morning (10)
+!map_rotation start
+map_name palisadearena
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 20
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm3
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire true
+damage_split 0
+
+
+spawn_override A ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+
+spawn_override B ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry2 99
+
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+!map_rotation end
+
+#Rotation 2 = Grassyplainsii [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Grassyplainsii
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 122
+
+
+# Engagement 1
+objects_override spawnsection 218.77 13.81 307.49 0.00 109.40 0.00 11 Location_1 OpenPlains neutral 5 5
+
+
+
+# Engagement 2
+
+objects_override spawnsection 457.35 15.09 287.50 0.00 168.02 0.00 12 Location_2 OpenPlains neutral 5 5
+objects_override spawnsection 309.56 10.14 538.52 0.00 78.85 0.00 13 Location_3 OpenPlains neutral 5 5
+
+objects_override spawnsection 218.77 13.81 307.49 0.00 109.40 0.00 15 Location_1 OpenPlains neutral 5 5
+objects_override spawnsection 457.35 15.09 287.50 0.00 168.02 0.00 16 Location_2 OpenPlains neutral 5 5
+objects_override spawnsection 309.56 10.14 538.52 0.00 78.85 0.00 17 Location_3 OpenPlains neutral 5 5
+
+######## TRAINING PROGRAM ########
+
+### INITIAL ANNOUCEMENT ###
+
+rc delayed 1170 broadcast Live at 19:00
+rc delayed 1155 broadcast Welcome to the 2nd-Bat Training Shooting program!
+rc delayed 1150 broadcast Move around the map and kill ALL enemy players 
+rc delayed 1145 broadcast Record your time and compare!
+rc delayed 1140 broadcast LIVE!
+
+rc delayed 1140 teleport 2 213.19,13.81,332.07
+rc delayed 1140 teleport 3 212.77,13.81,331.8
+rc delayed 1140 teleport 4 212.35,13.81,331.53
+rc delayed 1140 teleport 5 211.93,13.81,331.26
+rc delayed 1140 teleport 6 211.5,13.81,330.99
+rc delayed 1140 teleport 7 211.08,13.81,330.72
+rc delayed 1140 teleport 8 210.66,13.81,330.46
+rc delayed 1140 teleport 9 210.24,13.81,330.19
+rc delayed 1140 teleport 10 209.82,13.81,329.92
+rc delayed 1140 teleport 11 209.4,13.81,329.65
+rc delayed 1140 teleport 12 208.98,13.81,329.38
+rc delayed 1140 teleport 12 210.15,13.77,393.92
+rc delayed 1140 teleport 13 209.66,13.77,393.85
+rc delayed 1140 teleport 14 209.16,13.77,393.77
+rc delayed 1140 teleport 15 208.67,13.77,393.7
+rc delayed 1140 teleport 16 208.17,13.77,393.62
+rc delayed 1140 teleport 17 207.68,13.77,393.55
+rc delayed 1140 teleport 18 207.18,13.77,393.47
+rc delayed 1140 teleport 19 206.69,13.77,393.4
+rc delayed 1140 teleport 20 206.2,13.77,393.32
+rc delayed 1140 teleport 21 205.7,13.77,393.25
+rc delayed 1140 teleport 22 205.21,13.77,393.17
+rc delayed 1140 teleport 22 153.92,13.99,436.65
+rc delayed 1140 teleport 23 153.5,13.99,436.93
+rc delayed 1140 teleport 24 153.09,13.99,437.2
+rc delayed 1140 teleport 25 152.67,13.99,437.48
+rc delayed 1140 teleport 26 152.26,13.99,437.76
+rc delayed 1140 teleport 27 151.84,13.99,438.04
+rc delayed 1140 teleport 28 151.42,13.99,438.31
+rc delayed 1140 teleport 29 151.01,13.99,438.59
+rc delayed 1140 teleport 30 150.59,13.99,438.87
+rc delayed 1140 teleport 31 150.18,13.99,439.15
+rc delayed 1140 teleport 32 149.76,13.99,439.42
+rc delayed 1140 teleport 32 174.26,14.32,525.35
+rc delayed 1140 teleport 33 174.75,14.32,525.26
+rc delayed 1140 teleport 34 175.24,14.32,525.17
+rc delayed 1140 teleport 35 175.74,14.32,525.08
+rc delayed 1140 teleport 36 176.23,14.32,524.99
+rc delayed 1140 teleport 37 176.72,14.32,524.9
+rc delayed 1140 teleport 38 177.21,14.32,524.81
+rc delayed 1140 teleport 39 177.7,14.32,524.72
+rc delayed 1140 teleport 40 178.19,14.32,524.63
+rc delayed 1140 teleport 41 178.69,14.32,524.54
+rc delayed 1140 teleport 42 179.18,14.32,524.45
+rc delayed 1140 teleport 42 325.86,11.73,553.79
+rc delayed 1140 teleport 43 325.52,11.73,554.15
+rc delayed 1140 teleport 44 325.17,11.73,554.52
+rc delayed 1140 teleport 45 324.83,11.73,554.88
+rc delayed 1140 teleport 46 324.49,11.73,555.25
+rc delayed 1140 teleport 47 324.15,11.73,555.61
+rc delayed 1140 teleport 48 323.8,11.73,555.97
+rc delayed 1140 teleport 49 323.46,11.73,556.34
+rc delayed 1140 teleport 50 323.12,11.73,556.7
+rc delayed 1140 teleport 51 322.77,11.73,557.06
+rc delayed 1140 teleport 52 322.43,11.73,557.43
+rc delayed 1140 teleport 52 346.85,13.69,542.87
+rc delayed 1140 teleport 53 346.86,13.69,543.37
+rc delayed 1140 teleport 54 346.87,13.69,543.87
+rc delayed 1140 teleport 55 346.88,13.69,544.37
+rc delayed 1140 teleport 56 346.89,13.69,544.87
+rc delayed 1140 teleport 57 346.9,13.69,545.37
+rc delayed 1140 teleport 58 346.91,13.69,545.87
+rc delayed 1140 teleport 59 346.92,13.69,546.37
+rc delayed 1140 teleport 60 346.93,13.69,546.87
+rc delayed 1140 teleport 61 346.94,13.69,547.37
+rc delayed 1140 teleport 62 346.95,13.69,547.87
+rc delayed 1140 teleport 62 183.73,13.09,244.38
+rc delayed 1140 teleport 63 183.3,13.09,244.13
+rc delayed 1140 teleport 64 182.86,13.09,243.89
+rc delayed 1140 teleport 65 182.43,13.09,243.64
+rc delayed 1140 teleport 66 181.99,13.09,243.39
+rc delayed 1140 teleport 67 181.56,13.09,243.15
+rc delayed 1140 teleport 68 181.12,13.09,242.9
+rc delayed 1140 teleport 69 180.69,13.09,242.65
+rc delayed 1140 teleport 70 180.25,13.09,242.4
+rc delayed 1140 teleport 71 179.82,13.09,242.16
+rc delayed 1140 teleport 72 179.38,13.09,241.91
+rc delayed 1140 teleport 72 172.29,14.0,312.6
+rc delayed 1140 teleport 73 172.3,14.0,313.1
+rc delayed 1140 teleport 74 172.31,14.0,313.6
+rc delayed 1140 teleport 75 172.33,14.0,314.1
+rc delayed 1140 teleport 76 172.34,14.0,314.6
+rc delayed 1140 teleport 77 172.35,14.0,315.1
+rc delayed 1140 teleport 78 172.36,14.0,315.6
+rc delayed 1140 teleport 79 172.37,14.0,316.1
+rc delayed 1140 teleport 80 172.39,14.0,316.6
+rc delayed 1140 teleport 81 172.4,14.0,317.1
+rc delayed 1140 teleport 82 172.41,14.0,317.6
+rc delayed 1140 teleport 82 275.69,8.94,522.51
+rc delayed 1140 teleport 83 275.68,8.94,523.01
+rc delayed 1140 teleport 84 275.67,8.94,523.51
+rc delayed 1140 teleport 85 275.66,8.94,524.01
+rc delayed 1140 teleport 86 275.65,8.94,524.51
+rc delayed 1140 teleport 87 275.64,8.94,525.01
+rc delayed 1140 teleport 88 275.63,8.94,525.51
+rc delayed 1140 teleport 89 275.62,8.94,526.01
+rc delayed 1140 teleport 90 275.61,8.94,526.51
+rc delayed 1140 teleport 91 275.6,8.94,527.01
+rc delayed 1140 teleport 92 275.59,8.94,527.51
+rc delayed 1140 teleport 92 476.27,14.72,342.1
+rc delayed 1140 teleport 93 475.78,14.72,342.0
+rc delayed 1140 teleport 94 475.29,14.72,341.91
+rc delayed 1140 teleport 95 474.8,14.72,341.81
+rc delayed 1140 teleport 96 474.31,14.72,341.72
+rc delayed 1140 teleport 97 473.82,14.72,341.62
+rc delayed 1140 teleport 98 473.33,14.72,341.53
+rc delayed 1140 teleport 99 472.83,14.72,341.43
+rc delayed 1140 teleport 100 472.34,14.72,341.33
+rc delayed 1140 teleport 101 471.85,14.72,341.24
+rc delayed 1140 teleport 102 471.36,14.72,341.14
+rc delayed 1140 teleport 102 454.01,14.14,223.55
+rc delayed 1140 teleport 103 454.14,14.14,223.07
+rc delayed 1140 teleport 104 454.27,14.14,222.58
+rc delayed 1140 teleport 105 454.39,14.14,222.1
+rc delayed 1140 teleport 106 454.52,14.14,221.62
+rc delayed 1140 teleport 107 454.65,14.14,221.13
+rc delayed 1140 teleport 108 454.78,14.14,220.65
+rc delayed 1140 teleport 109 454.9,14.14,220.17
+rc delayed 1140 teleport 110 455.03,14.14,219.68
+rc delayed 1140 teleport 111 455.16,14.14,219.2
+rc delayed 1140 teleport 112 455.29,14.14,218.72
+
+!map_rotation end

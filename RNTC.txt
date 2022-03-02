@@ -1,0 +1,209 @@
+### RNTC = Russian Naval Training Config
+
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 17000
+steam_communications_port 17001
+steam_query_port 17002
+
+###- Server Settings
+
+server_name QRR | Naval Training
+server_welcome_message Let's get down to business
+server_region europe
+server_admin_password BigMan
+server_password 5050
+
+###- Global Gameplay Settings
+
+
+
+mods_installed 2659062389 # 5thIC Naval Training Map V1 OLD
+mods_installed 2746552028 # 5thIC Naval Training Map V3
+
+###- Map Rotations
+
+#Rotation 1 = Naval Training
+
+!map_rotation start
+load_mod 2746552028 # 5thIC Naval Training Map V3
+map_name modmap
+game_mode NavalAssault
+round_time_minutes 50
+max_tickets -1
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 100
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 11
+time_dynamic false
+weather_preset Calm
+weather_dynamic false
+wind_direction north
+faction_attacking British
+faction_defending French
+friendly_fire true
+rowboat_cooldown_timer 15
+rowboat_cooldown_while_sinking_timer 5
+ships_spacemode false
+ships_respawn_time_seconds 15
+ships_preset 37
+
+# Spawn ships
+
+ships_spawn Frigate50gun 1 French 0
+ships_spawn Brigsloop13gun 1 French 0
+ships_spawn Brigsloop13gun 1 French 0
+ships_spawn Brigsloop13gun 1 French 0
+ships_spawn Brigsloop13gun 1 French 0
+ships_spawn Brigsloop13gun 1 French 0
+ships_spawn Brigsloop13gun 1 French 0
+ships_spawn Brigsloop13gun 1 French 0
+ships_spawn Brigsloop13gun 1 French 0
+ships_spawn Brigsloop13gun 1 French 0
+ships_spawn Brigsloop13gun 1 French 0
+ships_spawn Schooner8gun 1 French 0
+ships_spawn Schooner2gun 1 French 0
+ships_spawn Schooner2gun 1 French 0
+ships_spawn Schooner2gun 1 French 0
+ships_spawn Schooner2gun 1 French 0
+ships_spawn Schooner2gun 1 French 0
+ships_spawn Schooner2gun 1 French 0
+ships_spawn Schooner2gun 1 French 0
+ships_spawn Rocketboat 1 French 0
+ships_spawn Gunboat 1 French 0
+
+ships_spawn Frigate50gun 1 British 0
+ships_spawn Brigsloop13gun 1 British 0
+ships_spawn Brigsloop13gun 1 British 0
+ships_spawn Brigsloop13gun 1 British 0
+ships_spawn Schooner8gun 1 British 0
+ships_spawn Schooner2gun 1 British 0
+ships_spawn Schooner2gun 1 British 0
+ships_spawn Rocketboat 1 British 0
+ships_spawn Gunboat 1 British 0
+
+# Ship Health
+
+ships_health_detail_override Frigate50gun British 5500
+ships_health_detail_override Frigate50gun French 5500
+ships_health_detail_override Brigsloop13gun British 4500
+ships_health_detail_override Brigsloop13gun French 4500
+ships_health_detail_override Schooner8gun British 2000
+ships_health_detail_override Schooner8gun French 2000
+ships_health_detail_override Schooner2gun British 1625
+ships_health_detail_override Schooner2gun French 1625
+ships_health_detail_override Rocketboat British 500
+ships_health_detail_override Rocketboat French 500
+ships_health_detail_override Gunboat British 500
+ships_health_detail_override Gunboat French 500
+
+!map_rotation end
+
+#Rotation 2 - Training grounds
+
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+!map_rotation end
+
+#Rotation 3 - Naval map
+
+!map_rotation start
+map_name randomwaters
+game_mode NavalAssault
+round_time_minutes 10
+faction_attacking British
+faction_defending French
+ships_preset 37
+reinforcements_per_faction 2500
+wave_spawn_time_seconds 5
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 14
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+ships_spawn BrigSloop13gun 1 British 3
+ships_spawn BrigSloop13gun 1 French 1
+ships_spawn Schooner2gun 1 French 4
+ships_spawn Schooner2gun 1 British 3
+friendly_fire true
+wind_direction west
+
+ships_health_detail_override BrigSloop13gun British 4500
+ships_health_detail_override Schooner2gun British 1625
+ships_health_detail_override BrigSloop13gun French 4500
+ships_health_detail_override Schooner2gun French 1625
+
+rc nature weather wind strength 1
+
+rc set windDirectionAffectsShipSpeed true
+rc set shipSailWindUnitMultiplier 0.5
+rc delayed 450 nature weather wind direction west
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+!map_rotation end
+
+#Rotation 4 = Harouti Islands
+!map_rotation start
+map_name HaroutiIslands
+game_mode NavalAssault
+round_time_minutes 10
+round_spawn_close_timer_seconds 120
+ships_preset 37
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 14
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+ships_spawn BrigSloop13gun 1 French 1
+ships_spawn BrigSloop13gun 1 British 3
+ships_spawn Schooner2gun 1 French 4
+ships_spawn Schooner2gun 1 British 3
+friendly_fire true
+wind_direction west
+
+ships_health_detail_override BrigSloop13gun British 4500
+ships_health_detail_override Schooner2gun British 1625
+ships_health_detail_override BrigSloop13gun French 4500
+ships_health_detail_override Schooner2gun French 1625
+
+rc set windDirectionAffectsShipSpeed true
+rc set shipSailWindUnitMultiplier 0.5
+rc nature weather wind strength 1
+rc nature weather wind direction west
+
+!map_rotation end

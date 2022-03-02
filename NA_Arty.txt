@@ -1,0 +1,204 @@
+
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 17000
+steam_communications_port 17001
+steam_query_port 17002
+
+###- Server Settings
+
+server_name QRR Arty Map test
+server_welcome_message Welcome!
+server_region europe
+server_admin_password admin
+server_password 
+
+network_broadcast_mode Realtime
+
+mods_installed 2704112494
+mods_installed 2720451381
+mods_installed 2720277142
+mods_installed 2720329836
+mods_installed 2720376433
+mods_installed 2720420496
+
+!map_rotation start
+map_name modmap
+game_mode armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+
+rc set characterInfiniteFirearmAmmo true
+rc carbonPlayers spawn 30
+rc carbonPlayers devMode 0
+
+load_mod 2704112494
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+
+rc set characterInfiniteFirearmAmmo true
+rc carbonPlayers spawn 30
+rc carbonPlayers devMode 0
+
+load_mod 2720451381
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+
+rc set characterInfiniteFirearmAmmo true
+rc carbonPlayers spawn 30
+rc carbonPlayers devMode 0
+
+load_mod 2720277142
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+
+rc set characterInfiniteFirearmAmmo true
+rc carbonPlayers spawn 30
+rc carbonPlayers devMode 0
+
+load_mod 2720329836
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+
+rc set characterInfiniteFirearmAmmo true
+rc carbonPlayers spawn 30
+rc carbonPlayers devMode 0
+
+load_mod 2720376433
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+
+rc set characterInfiniteFirearmAmmo true
+rc carbonPlayers spawn 30
+rc carbonPlayers devMode 0
+
+load_mod 2720420496
+
+!map_rotation end
+

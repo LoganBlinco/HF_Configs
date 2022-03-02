@@ -1,0 +1,181 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+###- Server Settings
+
+server_name QRR Melee Scrap Server
+server_welcome_message QRR Melee Scrap Server
+server_region europe
+server_admin_password 429753
+server_password 5050
+
+###- Bandwidth & Memory Settings
+
+network_broadcast_mode Realtime
+
+
+###- Map Rotations
+
+#Rotation 1 = Palisade Arena [Army Deathmatch] - Calm Weather | Day
+!map_rotation start
+map_name palisadearena
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending prussian
+
+
+#Class overrides - Point A and B are for each team.
+
+#spawn_override A ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+
+#spawn_override B ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry2 99
+
+#spawn_override C ArmyLineInfantry 99
+spawn_override C ArmyLineInfantry2 99
+
+#spawn_override D ArmyLineInfantry 99
+spawn_override D ArmyLineInfantry2 99
+
+
+
+
+starting_weapons_override French Grenadier 1 2 Musket_CharlevilleIXXII Unarmed
+starting_weapons_override French ArmyLineInfantry 1 2 Musket_CharlevilleIXXII Unarmed
+starting_weapons_override French CoastGuard 1 2 Musket_CharlevilleIXXII Unarmed
+starting_weapons_override French Carpenter 1 2 Musket_CharlevilleIXXII Unarmed
+starting_weapons_override French FlagBearer 1 2 Musket_CharlevilleIXXII Unarmed
+starting_weapons_override French ArmyLineInfantry2 1 2 Musket_CharlevilleIXXII Unarmed
+
+
+
+starting_weapons_override Prussian Surgeon 1 2 Musket_CharlevilleIXXII Unarmed
+starting_weapons_override Prussian ArmyLineInfantry 1 2 Musket_CharlevilleIXXII Unarmed
+starting_weapons_override Prussian Grenadier 1 2 Musket_CharlevilleIXXII Unarmed
+starting_weapons_override Prussian Carpenter 1 2 Musket_CharlevilleIXXII Unarmed
+starting_weapons_override Prussian FlagBearer 1 2 Musket_CharlevilleIXXII Unarmed
+starting_weapons_override Prussian ArmyLineInfantry2 1 2 Musket_CharlevilleIXXII Unarmed
+
+
+#spawn_override E ArmyLineInfantry 99
+spawn_override E ArmyLineInfantry2 99
+
+#spawn_override F ArmyLineInfantry 99
+spawn_override F ArmyLineInfantry2 99
+
+#spawn_override G ArmyLineInfantry 99
+spawn_override G ArmyLineInfantry2 99
+
+#spawn_override H ArmyLineInfantry 99
+spawn_override H ArmyLineInfantry2 99
+
+#Walls East
+objects_override PalisadeWall 170.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 175.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 180.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 185.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 190.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 195.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 200.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 205.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 210.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 215.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 220.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 225.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 230.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 235.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 240.00 0.17 196.76 0.00 170.00 0.00
+objects_override PalisadeWall 245.00 0.17 196.76 0.00 170.00 0.00
+
+
+#Walls North
+objects_override PalisadeWall 206.27 0.36 160.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 165.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 170.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 175.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 180.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 185.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 190.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 195.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 200.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 205.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 210.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 215.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 220.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 225.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 230.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 235.00 0.00 80.00 0.00
+objects_override PalisadeWall 206.27 0.36 240.00 0.00 80.00 0.00
+
+#Spawns
+objects_override spawnsection 185.79 0.17 203.09 0.00 359.04 0.00 1 Arena_1 Field Neutral 3 3 
+objects_override spawnsection 225.45 0.17 206.16 0.00 359.56 0.00 2 Arena_2 Field Neutral 3 3 
+objects_override spawnsection 187.38 0.17 168.10 0.00 0.43 0.00 3 Arena_3 Field Neutral 3 3 
+objects_override spawnsection 224.69 0.17 167.20 0.00 359.26 0.00 4 Arena_4 Field Neutral 3 3
+
+objects_override spawnsection 185.38 0.17 227.75 0.00 180.67 0.00 5 Arena1 Field Neutral 3 3 
+objects_override spawnsection 225.43 0.17 226.49 0.00 180.49 0.00 6 Arena2 Field Neutral 3 3 
+objects_override spawnsection 187.52 0.17 186.71 0.00 178.23 0.00 7 Arena3 Field Neutral 3 3 
+objects_override spawnsection 224.40 0.17 192.65 0.00 180.54 0.00 8 Arena4 Field Neutral 3 3
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+rc set secondaryAttackCooldownDuration 2.5
+
+!map_rotation end
+
+#6 = Castle Arena (Melee Arena) - Calm Weather | Morning (10)
+!map_rotation start
+map_name palisadearena
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 15
+amount_of_rounds 20
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm3
+weather_dynamic false
+faction_attacking prussian
+faction_defending british
+friendly_fire true
+damage_split 0
+
+
+spawn_override A ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+
+spawn_override B ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry2 99
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+rc set secondaryAttackCooldownDuration 2.5
+!map_rotation end

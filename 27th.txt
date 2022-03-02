@@ -1,0 +1,1036 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+
+
+###- Server Settings
+
+server_name 27th Hosted by the Competitive Womens Team
+server_welcome_message Welcome to the 27th Regiment of Foot's Server.
+server_region europe
+server_admin_password Magners
+server_password Wine
+
+
+###- Server mods
+
+mods_installed 2116573280 #Ligny NTW Edition Map
+mods_installed 2238897147 #27th Skin
+mods_installed 2231589375 #QRR Guards Skin
+mods_installed 2376077886 #Svea Skin
+mods_installed 2173645483 #MANIAKI Greek Skin
+mods_installed 2250248789 #28steON Skin
+mods_installed 2260471107 #63e Skin
+mods_installed 2366501568 #42nd Skin
+mods_installed 2384794940 #23rd Flag
+
+###- Administrator Preset Messages
+
+admin_action_preset_reason Firing Out Of Line | Watch your Fire Out of Line. You must be standing should to shoulder before shooting your musket.
+admin_action_preset_reason Crouching | You are not allowed to crouch unless you are lights.
+admin_action_preset_reason Line Dropped Below 4 | Your line has dropped to 3 members. Join another line.
+admin_action_preset_reason Rambo | You must be with a line to engage fire. finds a Line or charge.
+admin_action_preset_reason VoIP Spam | Please don't spam VoIP during the event.
+admin_action_preset_reason FIC | You are not allowed to fire when charging.
+
+###- Loaded Server Mods
+load_mod 2120856979
+
+
+###- Map Rotations - General Maps
+
+#Rotation 1 = Training Grounds [Army Battlefield] - TRAINING & PROMOTIONS - Calm Weather | Evening (17)
+!map_rotation start
+load_mod 2238897147
+rc set framerate 120
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds 5
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 17
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking british
+faction_defending french
+max_player_respawns -1
+sappers_attacking_starting_materials 10000
+sappers_defending_starting_materials 10000
+
+#Override commands##################
+sappers_buildlimit ExplosiveBarrel Defending 255
+sappers_buildlimit ExplosiveBarrel Attacking 255
+
+#50m
+objects_override Carpet1 342.19 10.57 296.94 0.00 318.76 0.00
+objects_override TargetDummy 312.69 9.84 337.40 0.00 143.79 0.00
+#75m
+objects_override Carpet1 342.19 10.57 296.94 0.00 318.76 0.00
+objects_override TargetDummy 292.14 9.82 352.86 0.00 134.64 0.00
+
+#100m
+objects_override Carpet1 342.19 10.57 296.94 0.00 318.76 0.00
+objects_override TargetDummy 272.49 9.78 368.40 0.00 140.68 0.00
+
+#125m
+objects_override Carpet1 342.19 10.57 296.94 0.00 318.76 0.00
+objects_override TargetDummy 254.12 9.95 385.43 0.00 134.02 0.00
+
+#150m
+objects_override Carpet1 342.19 10.57 296.94 0.00 318.76 0.00
+objects_override TargetDummy 233.65 10.12 400.45 0.00 135.55 0.00
+
+objects_override LanternboxMoveable 657.8 16.4 197.8 0.0 72.9 0.0 255
+objects_override Lanternbox 654.7 16.4 204.1 0.0 64.8 0.0 255
+objects_override Lanternbox 655.0 16.4 214.2 0.0 129.4 0.0 255
+objects_override Lanternbox 652.5 16.4 221.7 0.0 126.5 0.0 255
+objects_override Lanternbox 669.3 16.0 199.8 0.0 93.0 0.0 255
+objects_override Firearmammobox 317.3 9.7 410.2 0.0 131.6 0.0 Unarmed 255 15 4
+objects_override SpyGlassBox 320.4 9.7 407.0 0.0 314.3 0.0 255
+objects_override Chair1 323.7 9.7 404.1 0.0 314.3 0.0
+objects_override Chair1 323.7 12 404.1 0.0 314.3 0.0
+objects_override Chair1 323.1 9.7 403.4 0.0 314.3 0.0
+objects_override Chair1 324.4 9.7 404.7 0.0 314.3 0.0
+
+#Promotions Props#####################
+objects_override Chair1 562.8 13 413.9 0.0 69.3 0.0
+objects_override 27th reg flag 562.3 10.5 419.6 0.0 0.0 0.0
+objects_override Lantern2 568.3 12.0 416.4 0.0 69.3 0.0
+objects_override Chair1 568.9 10.5 420.4 0.0 158.8 0.0
+objects_override Chair1 569.7 10.5 420.7 0.0 158.8 0.0
+objects_override Chair1 570.6 10.5 421.1 0.0 158.8 0.0
+objects_override Chair1 571.5 10.5 421.5 0.0 158.8 0.0
+objects_override Chair1 572.4 10.5 421.8 0.0 158.8 0.0
+objects_override LanternHanging 585.5 11.4 423.8 0.0 248.9 0.0
+objects_override LanternHanging 586.4 11.4 421.6 0.0 248.9 0.0
+#officer promotion props
+objects_override Chair1 567.8 11 413.5 0.0 69.7 0.0
+objects_override Chair1 566.3 11 417.4 0.0 69.7 0.0
+#secrethideyspot
+objects_override Campfire 202.2 19.8 178.6 0.0 106.6 0.0
+objects_override TentSmall3 199.4 19.7 179.4 0.0 104.7 0.0
+
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+#Automated Commands - Round Start
+rc set allowFiring true
+
+!map_rotation end
+
+
+
+#Rotation 2 = Palisade [Army Deathmatch] - Calm Weather | Day 
+!map_rotation start
+load_mod 2238897147
+delayed 930 broadcast Live at 14:15
+delayed 920 broadcast Arty vs Arty 12:30
+delayed 910 broadcast All Charge 7:00
+delayed 855 setallowFiring true
+delayed 855 broadcast Live
+delayed 420 broadcast All Charge (Cav Dismount)
+delayed 420 setallowFiring false
+map_name Palisadearena
+game_mode armydeathmatch
+round_time_minutes 120
+reinforcements_per_faction 9000
+wave_spawn_time_seconds -1
+max_player_respawns 100
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+deathmatch_max_kills 100
+
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+!map_rotation end
+
+
+# Rotation 3 = Palisade Arena (Melee Arena) - Calm Weather | Morning (10)
+!map_rotation start
+load_mod 2203450937
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2250248789
+map_name palisadearena
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 20
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+friendly_fire true
+damage_split 0
+
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override Prussian ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+!map_rotation end
+
+
+###- Map Rotations - Wednesday Event Maps
+
+
+##Rotation 4 = Grassy Plains II [Army Assault] - Calm Weather | Dynamic (Pre-Event)
+!map_rotation start
+map_name grassyplainsii
+game_mode ArmyBattlefield
+round_time_minutes 16
+reinforcements_per_faction 9000
+round_spawn_close_timer_seconds 960
+friendly_fire false
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+max_player_respawns -1
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Prussian
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 6
+spawn_override B Hussar 6
+spawn_override A CuirassierDragoon 6
+spawn_override B CuirassierDragoon 6
+
+#Mods 
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2376077886
+load_mod 2173645483
+load_mod 2250248789
+load_mod 2260471107
+load_mod 2366501568
+load_mod 2384794940
+
+# Sapper Overrides
+sappers_buildlimit ExplosiveBarrel attacking 0
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit Palisade attacking 0
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit SwivelGun attacking 0
+sappers_buildlimit SwivelGun defending 0
+
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override Prussian ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+!map_rotation end
+
+##Rotation 5 = Snowy Plains III [Army Assault] - Dynamic Weather | Morning 
+!map_rotation start
+map_name snowyplainsiii
+game_mode ArmyAssault
+round_time_minutes 16 
+round_spawn_close_timer_seconds 180
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 14
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+max_player_respawns -1
+faction_attacking Prussian
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 6
+spawn_override B Hussar 6
+spawn_override A CuirassierDragoon 6
+spawn_override B CuirassierDragoon 6
+
+#Mods 
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2376077886
+load_mod 2173645483
+load_mod 2250248789
+load_mod 2260471107
+load_mod 2366501568
+load_mod 2384794940
+
+# Sapper Overrides
+sappers_buildlimit ExplosiveBarrel attacking 0
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit Palisade attacking 0
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit SwivelGun attacking 0
+sappers_buildlimit SwivelGun defending 0
+
+#Spawn Weapons Override
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override Prussian ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+#Automated Commands - Line, Lights, Arty, Cav:
+rc delayed 920 broadcast Live at 14:30
+rc delayed 910 broadcast All charge at 7:30
+rc delayed 900 broadcast Arty vs Arty Live at 12:00
+rc delayed 870 set allowFiring true
+rc delayed 870 broadcast Live!
+rc delayed 720 broadcast Arty vs Arty Live!
+rc delayed 510 broadcast All charge at 7:30
+rc delayed 450 broadcast All Charge All Cav Dismount
+rc delayed 451 set allowFiring false
+
+#Lanterns
+
+#French/ Prussia
+objects_override Lantern2 516.77 48.98 472.63 0.00 189.96 0.00
+objects_override Lantern2 521.13 48.98 474.11 0.00 289.78 0.00
+objects_override Lantern2 529.03 48.98 479.28 0.00 21.67 0.00
+objects_override Lantern2 538.94 48.98 484.24 0.00 232.19 0.00
+objects_override Lantern2 506.03 48.98 469.09 0.00 316.20 0.00
+objects_override Lantern2 492.99 48.98 474.02 0.00 302.23 0.00
+objects_override Lantern2 480.93 48.98 482.69 0.00 311.16 0.00
+objects_override Lantern2 476.61 48.98 493.44 0.00 342.52 0.00
+objects_override Lantern2 477.69 48.98 506.04 0.00 9.76 0.00
+objects_override Lantern2 481.11 48.96 520.26 0.00 12.51 0.00
+objects_override Lantern2 178.27 48.98 184.32 0.00 41.29 0.00
+objects_override Lantern2 190.00 48.98 177.75 0.00 129.73 0.00
+objects_override Lantern2 191.52 48.98 160.16 0.00 14.90 0.00
+objects_override Lantern2 166.11 48.98 186.84 0.00 341.35 0.00
+objects_override Lantern2 151.00 48.98 184.82 0.00 219.72 0.00
+
+!map_rotation end
+
+
+##Rotation 6 = Tahir Desert [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Egypt
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking Prussian
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 6
+spawn_override B Hussar 6
+spawn_override A CuirassierDragoon 6
+spawn_override B CuirassierDragoon 6
+
+#Mods 
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2376077886
+load_mod 2173645483
+load_mod 2250248789
+load_mod 2260471107
+load_mod 2366501568
+load_mod 2384794940
+
+# Sapper Overrides
+sappers_buildlimit ExplosiveBarrel attacking 0
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit Palisade attacking 0
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit SwivelGun attacking 0
+sappers_buildlimit SwivelGun defending 0
+
+#Spawn Weapons Override
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override Prussian ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+#Automated Commands - Line, Lights, Arty, Cav:
+rc delayed 920 broadcast Live at 14:30
+rc delayed 910 broadcast All charge at 7:30
+rc delayed 900 broadcast Arty vs Arty Live at 12:00
+rc delayed 870 set allowFiring true
+rc delayed 870 broadcast Live!
+rc delayed 720 broadcast Arty vs Arty Live!
+rc delayed 510 broadcast All charge at 7:30
+rc delayed 450 broadcast All Charge All Cav Dismount
+rc delayed 451 set allowFiring false
+
+#Lanterns
+objects_override Lantern2 421.80 11.34 322.40 0.00 352.21 0.00
+objects_override Lantern2 401.03 10.02 326.73 0.00 29.52 0.00
+objects_override Lantern2 393.59 12.08 345.84 0.00 95.35 0.00
+objects_override Lantern2 386.17 11.98 367.95 0.00 272.43 0.00
+objects_override Lantern2 450.96 10.37 337.89 0.00 183.49 0.00
+objects_override Lantern2 461.56 9.36 352.65 0.00 238.20 0.00
+objects_override Lantern2 194.43 7.17 45.57 0.00 171.51 0.00
+objects_override Lantern2 213.68 6.10 40.85 0.00 228.74 0.00
+objects_override Lantern2 221.14 6.76 23.66 0.00 261.93 0.00
+objects_override Lantern2 171.03 5.44 37.83 0.00 94.46 0.00
+objects_override Lantern2 164.94 3.91 17.35 0.00 1.74 0.00
+
+!map_rotation end
+
+
+##Rotation 7 = Grassy Plains III [Army Assault] - Calm Weather | Evening (liked)
+!map_rotation start
+map_name grassyplainsiii
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 6
+spawn_override B Hussar 6
+spawn_override A CuirassierDragoon 6
+spawn_override B CuirassierDragoon 6
+
+#Mods 
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2376077886
+load_mod 2173645483
+load_mod 2250248789
+load_mod 2260471107
+load_mod 2366501568
+load_mod 2384794940
+
+# Sapper Overrides
+sappers_buildlimit ExplosiveBarrel attacking 0
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit Palisade attacking 0
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit SwivelGun attacking 0
+sappers_buildlimit SwivelGun defending 0
+
+#Spawn Weapons Override
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override Prussian ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+#Automated Commands - Line, Lights, Arty, Cav:
+rc delayed 920 broadcast Live at 14:30
+rc delayed 910 broadcast All charge at 7:30
+rc delayed 900 broadcast Arty vs Arty Live at 12:00
+rc delayed 870 set allowFiring true
+rc delayed 870 broadcast Live!
+rc delayed 720 broadcast Arty vs Arty Live!
+rc delayed 510 broadcast All charge at 7:30
+rc delayed 450 broadcast All Charge All Cav Dismount
+rc delayed 451 set allowFiring false
+
+#Lanterns
+
+objects_override Lantern2 547.80 55.28 352.62 0.00 9.91 0.00
+objects_override Lantern2 553.62 55.28 347.37 0.00 312.00 0.00
+objects_override Lantern2 537.98 55.28 360.69 0.00 337.63 0.00
+objects_override Lantern2 536.85 55.28 371.52 0.00 10.60 0.00
+objects_override Lantern2 538.88 55.28 381.73 0.00 9.00 0.00
+objects_override Lantern2 541.07 55.28 389.49 0.00 126.66 0.00
+objects_override Lantern2 547.96 55.28 392.88 0.00 155.18 0.00
+objects_override Lantern2 558.98 55.28 395.21 0.00 240.46 0.00
+objects_override Lantern2 179.97 54.51 357.32 0.00 106.47 0.00
+objects_override Lantern2 189.88 54.88 348.63 0.00 222.78 0.00
+objects_override Lantern2 192.16 54.88 337.19 0.00 170.20 0.00
+objects_override Lantern2 193.16 54.88 327.53 0.00 184.51 0.00
+objects_override Lantern2 179.78 54.88 321.82 0.00 253.64 0.00
+
+!map_rotation end
+
+
+##Rotation 8 = Island Plains 1 [Army Assault] - Calm Weather | Day 
+!map_rotation start
+map_name IslandPlains
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 6
+spawn_override B Hussar 6
+spawn_override A CuirassierDragoon 6
+spawn_override B CuirassierDragoon 6
+
+#Mods 
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2376077886
+load_mod 2173645483
+load_mod 2250248789
+load_mod 2260471107
+load_mod 2366501568
+load_mod 2384794940
+
+# Sapper Overrides
+sappers_buildlimit ExplosiveBarrel attacking 0
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit Palisade attacking 0
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit SwivelGun attacking 0
+sappers_buildlimit SwivelGun defending 0
+
+#Spawn Weapons Override
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override Prussian ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+#Automated Commands - Line, Lights, Arty, Cav:
+rc delayed 920 broadcast Live at 14:30
+rc delayed 910 broadcast All charge at 7:30
+rc delayed 900 broadcast Arty vs Arty Live at 12:00
+rc delayed 870 set allowFiring true
+rc delayed 870 broadcast Live!
+rc delayed 720 broadcast Arty vs Arty Live!
+rc delayed 510 broadcast All charge at 7:30
+rc delayed 450 broadcast All Charge All Cav Dismount
+rc delayed 451 set allowFiring false
+
+#Lanterns
+objects_override Lantern2 266.67 31.42 115.79 0.00 154.06 0.00
+objects_override Lantern2 257.98 32.13 114.85 0.00 183.81 0.00
+objects_override Lantern2 246.51 32.61 110.69 0.00 240.36 0.00
+objects_override Lantern2 276.88 31.06 116.96 0.00 176.72 0.00
+objects_override Lantern2 290.70 31.35 117.56 0.00 222.27 0.00
+objects_override Lantern2 302.45 31.98 112.52 0.00 218.38 0.00
+objects_override Lantern2 240.19 33.84 488.51 0.00 71.18 0.00
+objects_override Lantern2 227.00 33.68 489.44 0.00 290.21 0.00
+objects_override Lantern2 207.54 33.81 499.74 0.00 308.93 0.00
+objects_override Lantern2 197.15 33.87 516.07 0.00 339.19 0.00
+objects_override Lantern2 261.64 33.98 518.41 0.00 78.78 0.00
+objects_override Lantern2 264.38 33.96 503.38 0.00 184.01 0.00
+objects_override Lantern2 258.84 33.90 489.08 0.00 255.50 0.00
+
+!map_rotation end
+
+
+#Rotation 9 = Grassy Plains II [Army Assault] - Calm Weather | Dynamic (Reserve)
+!map_rotation start
+map_name grassyplainsii
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 6
+spawn_override B Hussar 6
+spawn_override A CuirassierDragoon 6
+spawn_override B CuirassierDragoon 6
+
+#Mods 
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2376077886
+load_mod 2173645483
+load_mod 2250248789
+load_mod 2260471107
+load_mod 2366501568
+load_mod 2384794940
+
+# Sapper Overrides
+sappers_buildlimit ExplosiveBarrel attacking 0
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit Palisade attacking 0
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit SwivelGun attacking 0
+sappers_buildlimit SwivelGun defending 0
+
+#Spawn Weapons Override
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override Prussian ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+#Automated Commands - Line, Lights, Arty, Cav:
+rc delayed 920 broadcast Live at 14:30
+rc delayed 910 broadcast All charge at 7:30
+rc delayed 900 broadcast Arty vs Arty Live at 12:00
+rc delayed 870 set allowFiring true
+rc delayed 870 broadcast Live!
+rc delayed 720 broadcast Arty vs Arty Live!
+rc delayed 510 broadcast All charge at 7:30
+rc delayed 450 broadcast All Charge All Cav Dismount
+rc delayed 451 set allowFiring false
+
+#Lanterns
+objects_override Lantern2 350.08 13.67 521.42 0.00 357.37 0.00
+objects_override Lantern2 332.73 12.92 524.79 0.00 53.69 0.00
+objects_override Lantern2 326.14 11.95 541.18 0.00 87.34 0.00
+objects_override Lantern2 377.49 12.00 522.74 0.00 289.94 0.00
+objects_override Lantern2 388.42 11.06 530.24 0.00 298.18 0.00
+objects_override Lantern2 364.00 13.66 152.94 0.00 182.56 0.00
+objects_override Lantern2 345.30 13.58 149.07 0.00 149.15 0.00
+objects_override Lantern2 336.04 13.00 139.05 0.00 115.56 0.00
+objects_override Lantern2 379.94 13.36 136.25 0.00 267.16 0.00
+
+!map_rotation end
+
+
+##Rotation 10 = Grassy Plains IV [Army Assault] - Calm Weather | Dynamic (Reserve)
+!map_rotation start
+map_name grassyplainsiv
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 6
+spawn_override B Hussar 6
+spawn_override A CuirassierDragoon 6
+spawn_override B CuirassierDragoon 6
+
+#Mods 
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2376077886
+load_mod 2173645483
+load_mod 2250248789
+load_mod 2260471107
+load_mod 2366501568
+load_mod 2384794940
+
+# Sapper Overrides
+sappers_buildlimit ExplosiveBarrel attacking 0
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit Palisade attacking 0
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit SwivelGun attacking 0
+sappers_buildlimit SwivelGun defending 0
+
+#Spawn Weapons Override
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override Prussian ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+#Automated Commands - Line, Lights, Arty, Cav:
+rc delayed 920 broadcast Live at 14:30
+rc delayed 910 broadcast All charge at 7:30
+rc delayed 900 broadcast Arty vs Arty Live at 12:00
+rc delayed 870 set allowFiring true
+rc delayed 870 broadcast Live!
+rc delayed 720 broadcast Arty vs Arty Live!
+rc delayed 510 broadcast All charge at 7:30
+rc delayed 450 broadcast All Charge All Cav Dismount
+rc delayed 451 set allowFiring false
+
+#Lanterns
+objects_override Lantern2 296.85 10.37 463.49 0.00 352.71 0.00
+objects_override Lantern2 308.53 10.73 467.31 0.00 55.32 0.00
+objects_override Lantern2 321.12 10.75 473.02 0.00 39.87 0.00
+objects_override Lantern2 282.65 10.55 460.97 0.00 352.44 0.00
+objects_override Lantern2 265.46 10.56 461.83 0.00 2.43 0.00
+objects_override Lantern2 252.85 10.47 469.08 0.00 41.99 0.00
+objects_override Lantern2 270.69 9.82 157.41 0.00 9.26 0.00
+objects_override Lantern2 286.29 9.97 155.33 0.00 111.86 0.00
+objects_override Lantern2 290.78 9.78 138.31 0.00 186.42 0.00
+objects_override Lantern2 257.17 9.91 157.30 0.00 250.37 0.00
+objects_override Lantern2 244.14 10.03 154.05 0.00 239.72 0.00
+objects_override Lantern2 224.01 10.47 144.65 0.00 215.39 0.00
+
+!map_rotation end
+
+
+##Rotation 11 = Custom Maps [Army Assault] - Calm Weather | Dynamic (Reserve)
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 6
+spawn_override B Hussar 6
+spawn_override A CuirassierDragoon 6
+spawn_override B CuirassierDragoon 6
+
+#Mods 
+load_mod 2116573280 #Map
+load_mod 2238897147 
+load_mod 2231589375
+load_mod 2376077886
+load_mod 2173645483
+load_mod 2250248789
+load_mod 2260471107
+load_mod 2366501568
+load_mod 2384794940
+
+# Sapper Overrides
+sappers_buildlimit ExplosiveBarrel attacking 0
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit Palisade attacking 0
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit SwivelGun attacking 0
+sappers_buildlimit SwivelGun defending 0
+
+#Spawn Weapons Override
+starting_weapons_override French ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override British ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+starting_weapons_override Prussian ArmyInfantryOfficer 3 3 Unarmed Sword_Pattern1803FlankOfficer Musket_IndiaPatternBrownBess
+
+#Automated Commands - Line, Lights, Arty, Cav:
+rc delayed 920 broadcast Live at 14:30
+rc delayed 910 broadcast All charge at 7:30
+rc delayed 900 broadcast Arty vs Arty Live at 12:00
+rc delayed 870 set allowFiring true
+rc delayed 870 broadcast Live!
+rc delayed 720 broadcast Arty vs Arty Live!
+rc delayed 510 broadcast All charge at 7:30
+rc delayed 450 broadcast All Charge All Cav Dismount
+rc delayed 451 set allowFiring false
+
+!map_rotation end
+
+
+
+### Naval Competitive Rotation
+
+#Rotation 12 = Harouti Islands
+!map_rotation start
+map_name HaroutiIslands
+game_mode NavalAssault
+round_time_minutes 15
+ships_preset 37
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+round_spawn_close_timer_seconds 140
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+wind_direction east
+ships_spawn BrigSloop13gun 1 French 1
+ships_spawn BrigSloop13gun 1 British 3
+ships_spawn Schooner2gun 1 French 4
+ships_spawn Schooner2gun 1 British 3
+friendly_fire true
+game_type hardcore
+rc delayed 780 broadcast Live!
+rc set windDirectionAffectsShipSpeed false
+rc set shipSailWindUnitMultiplier 0
+rc set rowboatCooldownBetweenSpawns 900
+!map_rotation end
+
+#Rotation 13 = Open Waters
+!map_rotation start
+map_name RandomWaters
+game_mode NavalAssault
+round_time_minutes 15
+ships_preset 37
+faction_balancing false
+round_spawn_close_timer_seconds 140
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+wind_direction east
+ships_spawn BrigSloop13gun 1 French 1
+ships_spawn BrigSloop13gun 1 British 3
+ships_spawn Schooner2gun 1 French 4
+ships_spawn Schooner2gun 1 British 3
+friendly_fire true
+game_type hardcore
+rc delayed 780 broadcast Live!
+rc set windDirectionAffectsShipSpeed true
+rc set shipSailWindUnitMultiplier 1
+rc set rowboatCooldownBetweenSpawns 900
+load_mod 2132646850
+!map_rotation end

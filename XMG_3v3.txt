@@ -1,0 +1,73 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+
+###- Server Settingsa
+
+server_name XMG 3v3 Melee Tournament | S1
+server_welcome_message Welcome to XMG custom melee
+server_region europe
+server_admin_password Spin
+server_password XMG
+
+mods_installed 2272056234 #comp melee
+
+###- Bandwidth & Memory Settings
+
+network_broadcast_mode Realtime
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending british
+
+
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override C ArmyLineInfantry 99
+spawn_override D ArmyLineInfantry 99
+spawn_override E ArmyLineInfantry 99
+spawn_override F ArmyLineInfantry 99
+spawn_override G ArmyLineInfantry 99
+spawn_override H ArmyLineInfantry 99
+spawn_override I ArmyLineInfantry 99
+spawn_override J ArmyLineInfantry 99
+spawn_override K ArmyLineInfantry 99
+spawn_override L ArmyLineInfantry 99
+spawn_override M ArmyLineInfantry 99
+spawn_override N ArmyLineInfantry 99
+spawn_override 0 ArmyLineInfantry 99
+spawn_override P ArmyLineInfantry 99
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+rc set idleToStrikeTransitionDelayMeleeWeapons 0.285
+rc set blockingStrikeTransitionDelayMeleeWeapons 0.285
+rc set characterBlockGraceTime 0.03
+
+load_mod 2272056234 #comp map
+
+!map_rotation end
+

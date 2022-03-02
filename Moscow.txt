@@ -1,0 +1,1285 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 17000
+steam_communications_port 17001
+steam_query_port 17002
+
+
+
+###- Server Settings
+
+server_name QRR Moscows|Training Avenue
+server_welcome_message Slava ukraine!
+server_region europe
+server_admin_password 429753
+server_password 5050
+
+
+#Mods
+mods_installed 2177522444 #180th training avenue
+mods_installed 2130352982 #Putin
+mods_installed 2199408567 #180th skin
+mods_installed 2548829114 #moscow Gren skin
+
+###- Global Gameplay Settings
+artillery_fieldgun_respawn_timer 10
+artillery_rocketlauncher_respawn_timer 10
+
+
+###- Bandwidth & Memory Settings
+
+network_broadcast_mode LowBandwidth
+
+
+
+###- Global Gameplay Settings
+
+server_autorestart_interval_minutes 240
+
+
+
+
+###- Map Rotations
+
+
+
+#1 = Trenirovka (mnogo)
+!map_rotation start
+map_name modmap
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+officers_spawn_mounted false
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking British
+faction_defending Russian
+friendly_fire true
+load_mod 2177522444 #180th training avenue
+load_mod 2130352982 #Putin
+load_mod 2199408567 #180th skin
+load_mod 2548829114 #moscow Gren skin
+!map_rotation end
+
+#2 = Trenirovka (mnogo)
+!map_rotation start
+map_name TrainingGrounds
+game_mode ArmyBattlefield
+game_type hardcore
+round_time_minutes -1
+reinforcements_per_faction 4444
+wave_spawn_time_seconds 1
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+officers_spawn_mounted false
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking British
+faction_defending Russian
+friendly_fire true
+
+# Override Commands
+starting_weapons_override British ArmyLineInfantry2 3 4 Unarmed
+#Fort (svintus)
+objects_override Fort_Salettes 241.94 17 365.57 0.00 50.06 0.00
+objects_override Rock_Group_09 216.78 10.26 368.55 0.00 234.27 0.00
+objects_override Rock_Group_09 214.18 10.43 370.81 0.00 211.23 0.00
+objects_override Rock_Group_09 212.72 10.59 372.71 0.00 235.23 0.00
+objects_override Rock_Group_09 211.91 10.81 375.33 0.00 242.75 0.00
+objects_override Rock_Group_09 212.99 10.89 377.79 0.00 305.31 0.00
+objects_override Rock_Group_09 215.04 10.77 379.58 0.00 311.55 0.00
+objects_override Rock_Group_09 216.28 10.72 381.18 0.00 261.62 0.00
+objects_override Rock_Group_09 214.05 10.95 383.23 0.00 228.34 0.00
+objects_override Rock_Group_09 212.83 11.12 384.65 0.00 228.34 0.00
+objects_override Rock_Group_09 211.99 11.02 387.04 0.00 259.86 0.00
+objects_override Rock_Group_09 212.45 10.85 389.11 0.00 288.50 0.00
+objects_override Rock_Group_09 213.84 10.73 390.40 0.00 317.14 0.00
+objects_override Rock_Group_09 215.56 10.61 391.98 0.00 317.62 0.00
+objects_override Rock_Group_09 217.11 10.50 393.86 0.00 303.06 0.00
+objects_override Rock_Group_09 219.00 10.43 396.16 0.00 276.02 0.00
+objects_override Rock_Group_09 218.50 10.35 397.82 0.00 238.10 0.00
+objects_override Rock_Group_09 217.41 10.31 400.59 0.00 245.29 0.00
+objects_override Rock_Group_09 219.76 10.15 405.16 0.00 140.93 0.00
+objects_override Rock_Group_09 222.49 10.12 406.48 0.00 163.33 0.00
+objects_override Rock_Group_09 223.94 10.16 406.22 0.00 174.85 0.00
+objects_override Rock_Group_09 226.04 10.09 406.90 0.00 143.49 0.00
+objects_override Rock_Group_09 227.91 10.05 408.06 0.00 146.21 0.00
+objects_override Rock_Group_09 230.64 10.03 409.97 0.00 146.85 0.00
+objects_override Rock_Group_09 232.73 10.05 411.32 0.00 144.61 0.00
+objects_override Rock_Group_09 235.32 10.06 413.05 0.00 145.57 0.00
+objects_override Rock_Group_09 235.92 10.06 415.53 0.00 86.53 0.00
+objects_override Rock_Group_09 236.50 10.08 417.69 0.00 107.17 0.00
+objects_override Rock_Group_09 238.23 10.12 420.02 0.00 132.96 0.00
+objects_override Rock_Group_09 239.75 10.17 421.61 0.00 134.05 0.00
+objects_override Rock_Group_09 242.20 10.24 423.34 0.00 153.09 0.00
+objects_override Rock_Group_09 244.15 10.21 422.18 0.00 240.61 0.00
+objects_override Rock_Group_09 245.25 10.15 420.08 0.00 240.61 0.00
+objects_override Rock_Group_09 246.43 10.10 417.93 0.00 237.36 0.00
+objects_override Rock_Group_09 247.73 10.07 415.85 0.00 236.45 0.00
+objects_override Rock_Group_09 249.02 10.05 413.54 0.00 236.61 0.00
+objects_override Rock_Group_09 250.52 10.01 411.14 0.00 236.61 0.00
+objects_override Rock_Group_09 251.92 9.97 408.73 0.00 239.01 0.00
+objects_override Rock_Group_09 253.35 9.95 406.23 0.00 240.77 0.00
+objects_override Rock_Group_09 254.95 9.94 403.38 0.00 240.77 0.00
+objects_override Rock_Group_09 256.07 9.95 401.43 0.00 238.37 0.00
+objects_override Rock_Group_09 255.92 10.00 397.84 0.00 314.21 0.00
+objects_override Rock_Group_09 254.07 10.01 396.10 0.00 314.84 0.00
+objects_override Rock_Group_09 252.94 10.02 393.82 0.00 228.44 0.00
+objects_override Rock_Group_09 254.96 10.00 391.58 0.00 227.80 0.00
+objects_override Rock_Group_09 256.44 9.97 389.87 0.00 229.56 0.00
+objects_override Rock_Group_09 258.92 9.92 388.54 0.00 231.80 0.00
+objects_override Rock_Group_09 260.71 9.88 386.27 0.00 231.80 0.00
+objects_override Rock_Group_09 262.73 9.84 383.70 0.00 231.80 0.00
+objects_override Rock_Group_09 264.45 9.83 381.45 0.00 232.76 0.00
+objects_override Rock_Group_09 266.25 9.77 379.35 0.00 229.56 0.00
+objects_override Rock_Group_09 268.28 9.73 376.98 0.00 229.40 0.00
+objects_override Rock_Group_09 273.63 9.69 371.92 0.00 227.32 0.00
+objects_override Rock_Group_09 274.89 9.70 371.75 0.00 139.32 0.00
+objects_override Rock_Group_09 276.76 9.70 373.01 0.00 139.96 0.00
+objects_override Rock_Group_09 279.63 9.72 372.79 0.00 218.68 0.00
+objects_override Rock_Group_09 281.31 9.73 371.44 0.00 212.12 0.00
+objects_override Rock_Group_09 283.18 9.76 370.20 0.00 213.88 0.00
+objects_override Rock_Group_09 285.53 9.80 368.63 0.00 213.88 0.00
+objects_override Rock_Group_09 287.76 9.79 367.13 0.00 217.72 0.00
+objects_override Rock_Group_09 290.27 9.78 365.14 0.00 216.12 0.00
+objects_override Rock_Group_09 292.57 9.77 362.96 0.00 217.40 0.00
+objects_override Rock_Group_09 294.46 9.79 361.65 0.00 220.44 0.00
+objects_override Rock_Group_09 293.86 9.80 359.61 0.00 332.44 0.00
+objects_override Rock_Group_09 291.60 9.80 358.45 0.00 334.04 0.00
+objects_override Rock_Group_09 288.75 9.81 357.19 0.00 333.24 0.00
+objects_override Rock_Group_09 285.51 9.80 355.84 0.00 335.96 0.00
+objects_override Rock_Group_09 282.89 9.80 354.55 0.00 331.48 0.00
+objects_override Rock_Group_09 279.77 9.82 352.95 0.00 334.20 0.00
+objects_override Rock_Group_09 278.10 9.82 352.11 0.00 333.08 0.00
+objects_override Rock_Group_09 275.66 9.83 352.70 0.00 47.00 0.00
+objects_override Rock_Group_09 273.88 9.81 354.12 0.00 30.68 0.00
+objects_override Rock_Group_09 271.98 9.81 355.30 0.00 35.80 0.00
+objects_override Rock_Group_09 269.98 9.84 356.79 0.00 36.92 0.00
+objects_override Rock_Group_09 268.11 9.84 356.83 0.00 314.04 0.00
+objects_override Rock_Group_09 266.04 9.83 354.63 0.00 313.71 0.00
+objects_override Rock_Group_09 263.46 9.84 352.25 0.00 312.27 0.00
+objects_override Rock_Group_09 261.62 9.86 350.43 0.00 314.67 0.00
+objects_override Rock_Group_09 259.15 9.91 348.02 0.00 315.15 0.00
+objects_override Rock_Group_09 257.16 9.98 345.96 0.00 312.59 0.00
+objects_override Rock_Group_09 254.26 10.12 342.87 0.00 310.83 0.00
+objects_override Rock_Group_09 251.19 10.27 340.02 0.00 317.07 0.00
+objects_override Rock_Group_09 247.92 10.46 337.06 0.00 313.07 0.00
+objects_override Rock_Group_09 254.66 10.42 337.48 0.00 130.67 0.00
+objects_override Rock_Group_09 254.66 12.42 337.48 0.00 130.67 0.00
+objects_override Rock_Group_09 259.74 10.72 332.58 0.00 134.03 0.00
+objects_override Rock_Group_09 259.74 12.72 332.58 0.00 134.03 0.00
+objects_override Rock_Group_09 264.14 9.87 388.84 0.00 48.58 0.00
+objects_override Rock_Group_09 264.14 11.87 388.84 0.00 48.58 0.00
+objects_override Rock_Group_09 269.33 9.89 393.20 0.00 48.42 0.00
+objects_override Rock_Group_09 269.33 11.89 393.20 0.00 48.42 0.00
+objects_override Rock_Group_09 216.78 12.26 368.55 0.00 234.27 0.00
+objects_override Rock_Group_09 214.18 12.43 370.81 0.00 211.23 0.00
+objects_override Rock_Group_09 212.72 12.59 372.71 0.00 235.23 0.00
+objects_override Rock_Group_09 211.91 12.81 375.33 0.00 242.75 0.00
+objects_override Rock_Group_09 212.99 12.89 377.79 0.00 305.31 0.00
+objects_override Rock_Group_09 215.04 12.77 379.58 0.00 311.55 0.00
+objects_override Rock_Group_09 216.28 12.72 381.18 0.00 261.62 0.00
+objects_override Rock_Group_09 214.05 12.95 383.23 0.00 228.34 0.00
+objects_override Rock_Group_09 212.83 13.12 384.65 0.00 228.34 0.00
+objects_override Rock_Group_09 211.99 13.02 387.04 0.00 259.86 0.00
+objects_override Rock_Group_09 212.45 12.85 389.11 0.00 288.50 0.00
+objects_override Rock_Group_09 213.84 12.73 390.40 0.00 317.14 0.00
+objects_override Rock_Group_09 215.56 12.61 391.98 0.00 317.62 0.00
+objects_override Rock_Group_09 217.11 12.50 393.86 0.00 303.06 0.00
+objects_override Rock_Group_09 219.00 12.43 396.16 0.00 276.02 0.00
+objects_override Rock_Group_09 218.50 12.35 397.82 0.00 238.10 0.00
+objects_override Rock_Group_09 217.41 12.31 400.59 0.00 245.29 0.00
+objects_override Rock_Group_09 219.76 12.15 405.16 0.00 140.93 0.00
+objects_override Rock_Group_09 222.49 12.12 406.48 0.00 163.33 0.00
+objects_override Rock_Group_09 223.94 12.16 406.22 0.00 174.85 0.00
+objects_override Rock_Group_09 226.04 12.09 406.90 0.00 143.49 0.00
+objects_override Rock_Group_09 227.91 12.05 408.06 0.00 146.21 0.00
+objects_override Rock_Group_09 230.64 12.03 409.97 0.00 146.85 0.00
+objects_override Rock_Group_09 232.73 12.05 411.32 0.00 144.61 0.00
+objects_override Rock_Group_09 235.32 12.06 413.05 0.00 145.57 0.00
+objects_override Rock_Group_09 235.92 12.06 415.53 0.00 86.53 0.00
+objects_override Rock_Group_09 236.50 12.08 417.69 0.00 107.17 0.00
+objects_override Rock_Group_09 238.23 12.12 420.02 0.00 132.96 0.00
+objects_override Rock_Group_09 239.75 12.17 421.61 0.00 134.05 0.00
+objects_override Rock_Group_09 242.20 12.24 423.34 0.00 153.09 0.00
+objects_override Rock_Group_09 244.15 12.21 422.18 0.00 240.61 0.00
+objects_override Rock_Group_09 245.25 12.15 420.08 0.00 240.61 0.00
+objects_override Rock_Group_09 246.43 12.10 417.93 0.00 237.36 0.00
+objects_override Rock_Group_09 247.73 12.07 415.85 0.00 236.45 0.00
+objects_override Rock_Group_09 249.02 12.05 413.54 0.00 236.61 0.00
+objects_override Rock_Group_09 250.52 12.01 411.14 0.00 236.61 0.00
+objects_override Rock_Group_09 251.92 11.97 408.73 0.00 239.01 0.00
+objects_override Rock_Group_09 253.35 11.95 406.23 0.00 240.77 0.00
+objects_override Rock_Group_09 254.95 11.94 403.38 0.00 240.77 0.00
+objects_override Rock_Group_09 256.07 11.95 401.43 0.00 238.37 0.00
+objects_override Rock_Group_09 255.92 12.00 397.84 0.00 314.21 0.00
+objects_override Rock_Group_09 254.07 12.01 396.10 0.00 314.84 0.00
+objects_override Rock_Group_09 252.94 12.02 393.82 0.00 228.44 0.00
+objects_override Rock_Group_09 254.96 12.00 391.58 0.00 227.80 0.00
+objects_override Rock_Group_09 256.44 11.97 389.87 0.00 229.56 0.00
+objects_override Rock_Group_09 258.92 11.92 388.54 0.00 231.80 0.00
+objects_override Rock_Group_09 260.71 11.88 386.27 0.00 231.80 0.00
+objects_override Rock_Group_09 262.73 11.84 383.70 0.00 231.80 0.00
+objects_override Rock_Group_09 264.45 11.83 381.45 0.00 232.76 0.00
+objects_override Rock_Group_09 266.25 11.77 379.35 0.00 229.56 0.00
+objects_override Rock_Group_09 268.28 11.73 376.98 0.00 229.40 0.00
+objects_override Rock_Group_09 273.63 11.69 371.92 0.00 227.32 0.00
+objects_override Rock_Group_09 274.89 11.70 371.75 0.00 139.32 0.00
+objects_override Rock_Group_09 276.76 11.70 373.01 0.00 139.96 0.00
+objects_override Rock_Group_09 279.63 11.72 372.79 0.00 218.68 0.00
+objects_override Rock_Group_09 281.31 11.73 371.44 0.00 212.12 0.00
+objects_override Rock_Group_09 283.18 11.76 370.20 0.00 213.88 0.00
+objects_override Rock_Group_09 285.53 11.80 368.63 0.00 213.88 0.00
+objects_override Rock_Group_09 287.76 11.79 367.13 0.00 217.72 0.00
+objects_override Rock_Group_09 290.27 11.78 365.14 0.00 216.12 0.00
+objects_override Rock_Group_09 292.57 11.77 362.96 0.00 217.40 0.00
+objects_override Rock_Group_09 294.46 11.79 361.65 0.00 220.44 0.00
+objects_override Rock_Group_09 293.86 11.80 359.61 0.00 332.44 0.00
+objects_override Rock_Group_09 291.60 11.80 358.45 0.00 334.04 0.00
+objects_override Rock_Group_09 288.75 11.81 357.19 0.00 333.24 0.00
+objects_override Rock_Group_09 285.51 11.80 355.84 0.00 335.96 0.00
+objects_override Rock_Group_09 282.89 11.80 354.55 0.00 331.48 0.00
+objects_override Rock_Group_09 279.77 11.82 352.95 0.00 334.20 0.00
+objects_override Rock_Group_09 278.10 11.82 352.11 0.00 333.08 0.00
+objects_override Rock_Group_09 275.66 11.83 352.70 0.00 47.00 0.00
+objects_override Rock_Group_09 273.88 11.81 354.12 0.00 30.68 0.00
+objects_override Rock_Group_09 271.98 11.81 355.30 0.00 35.80 0.00
+objects_override Rock_Group_09 269.98 11.84 356.79 0.00 36.92 0.00
+objects_override Rock_Group_09 268.11 11.84 356.83 0.00 314.04 0.00
+objects_override Rock_Group_09 266.04 11.83 354.63 0.00 313.71 0.00
+objects_override Rock_Group_09 263.46 11.84 352.25 0.00 312.27 0.00
+objects_override Rock_Group_09 261.62 11.86 350.43 0.00 314.67 0.00
+objects_override Rock_Group_09 259.15 11.91 348.02 0.00 315.15 0.00
+objects_override Rock_Group_09 257.16 11.98 345.96 0.00 312.59 0.00
+objects_override Rock_Group_09 254.26 12.12 342.87 0.00 310.83 0.00
+objects_override Rock_Group_09 251.19 12.27 340.02 0.00 317.07 0.00
+objects_override Rock_Group_09 247.92 12.46 337.06 0.00 313.07 0.00
+objects_override TowerStaircase 274.40 9.90 399.33 0.00 231.94 0.00
+objects_override PlatformLong 271.15 20.50 394.70 0.00 139.71 0.00
+objects_override Windmill1_Base 222.81 17.55 395.07 0.00 14.84 0.00
+objects_override Windmill1_Base 243.57 17.55 405.44 0.00 317.04 0.00
+objects_override Windmill1_Base 232.39 17.55 398.65 0.00 235.50 0.00
+objects_override PalisadeSimple 247.90 21.47 403.06 0.00 165.45 0.00
+objects_override PalisadeSimple 249.44 23.35 400.40 0.00 334.54 0.00
+objects_override PlatformShort 233.82 20.80 408.61 0.00 325.87 0.00
+objects_override PlatformShort 243.87 20.8 415.01 0.00 93.26 0.00
+objects_override PlatformShort 214.72 20.8 387.59 0.00 230.33 0.00
+objects_override PlatformShort 219.24 20.8 385.16 0.00 140.81 0.00
+objects_override PalisadeSimple 244.38 21.47 406.87 0.00 142.86 0.00
+objects_override PalisadeSimple 246.05 21.47 408.16 0.00 142.14 0.00
+objects_override PalisadeSimple 247.34 21.47 409.16 0.00 142.14 0.00
+objects_override PalisadeSimple 243.53 21.47 406.25 0.00 142.22 0.00
+objects_override PalisadeSimple 242.63 21.47 405.88 0.00 141.42 0.00
+objects_override PalisadeSimple 244.38 23.47 406.87 0.00 142.86 0.00
+objects_override PalisadeSimple 246.05 23.47 408.16 0.00 142.14 0.00
+objects_override PalisadeSimple 247.34 23.47 409.16 0.00 142.14 0.00
+objects_override PalisadeSimple 243.53 23.47 406.25 0.00 142.22 0.00
+objects_override PalisadeSimple 242.63 23.47 405.88 0.00 141.42 0.00
+objects_override PalisadeSimple 251.45 23.35 401.77 0.00 327.36 0.00
+objects_override PalisadeSimple 250.08 23.35 400.89 0.00 327.44 0.00
+objects_override PalisadeSimple 247.28 23.35 400.54 0.00 50.48 0.00
+objects_override PalisadeSimple 246.73 23.35 401.21 0.00 50.00 0.00
+objects_override PalisadeSimple 246.14 23.35 401.91 0.00 50.00 0.00
+objects_override PalisadeSimple 245.43 23.35 402.75 0.00 50.00 0.00
+objects_override PalisadeSimple 244.78 23.35 403.52 0.00 50.00 0.00
+objects_override PalisadeSimple 244.42 23.35 404.28 0.00 54.56 0.00
+objects_override PalisadeSimple 244.13 23.47 404.87 0.00 54.56 0.00
+objects_override PalisadeSimple 243.35 23.35 404.60 0.00 324.08 0.00
+objects_override PalisadeSimple
+objects_override PalisadeSimple
+objects_override PalisadeSimple
+objects_override PalisadeSimple
+objects_override PalisadeSimple
+#decor Fort
+objects_override CannonAmmoboxLarge 242.79 26.53 332.53 0.00 144.06 0.00
+objects_override CannonAmmoboxLarge 222.03 21.62 398.57 0.00 63.30 0.00
+objects_override CannonAmmoboxLarge 217.74 21.47 389.09 0.00 111.62 0.00
+objects_override CannonAmmoboxLarge 252.93 23.35 400.27 0.00 225.69 0.00
+objects_override CannonAmmoboxLarge 221.11 24.47 374.35 0.00 316.64 0.00
+objects_override CannonAmmoboxLarge 216.29 30.29 364.16 0.00 137.11 0.00
+objects_override CannonAmmoboxLarge 225.95 21.82 316.32 0.00 35.90 0.00
+objects_override CannonAmmoboxLarge 281.28 21.83 369.53 0.00 212.37 0.00
+objects_override CannonAmmoboxLarge 245.07 32.47 354.34 0.00 334.58 0.00
+objects_override CannonAmmoboxLarge 241.50 32.47 354.57 0.00 28.18 0.00
+objects_override CannonAmmoboxLarge 234.68 32.47 367.16 0.00 136.82 0.00
+objects_override CannonAmmoboxLarge 241.57 32.47 367.77 0.00 316.66 0.00
+objects_override CannonAmmoboxLarge 248.44 32.47 375.18 0.00 200.01 0.00
+objects_override CannonAmmoboxLarge 255.57 32.47 367.83 0.00 230.18 0.00
+objects_override CannonAmmoboxLarge 250.69 32.47 363.74 0.00 127.78 0.00
+objects_override CannonAmmoboxLarge 201.24 11.55 337.02 0.00 213.68 0.00
+objects_override CannonAmmoboxLarge 207.39 20.32 351.74 0.00 34.24 0.00
+objects_override CannonAmmoboxLarge 203.89 17.22 346.05 0.00 31.68 0.00
+objects_override CannonAmmoboxLarge 199.94 14.79 340.32 0.00 30.40 0.00
+objects_override CannonAmmoboxLarge 213.34 22.35 361.63 0.00 136.23 0.00
+objects_override CannonAmmoboxSmall 251.81 27.36 395.65 0.00 312.67 0.00
+objects_override FlagPrussian 243.70 37.31 353.20 0.00 180.31 0.00
+objects_override FlagPrussian 234.06 37.31 363.63 0.00 285.51 0.00
+objects_override FlagPrussian 255.37 37.31 365.29 0.00 92.31 0.00
+objects_override FlagPrussian 245.94 37.31 375.61 0.00 4.47 0.00
+objects_override Lantern1 253.04 30.20 399.34 0.00 137.68 0.00
+objects_override Carpet1 251.08 27.38 398.27 0.00 258.88 0.00
+objects_override Furniture4 252.65 27.38 400.66 0.00 229.22 0.00
+objects_override Swivlegun_Stand 253.14 27.38 396.93 0.00 128.03 0.00
+objects_override Piano1 219.89 26.52 349.35 0.00 85.62 0.00
+objects_override Crates_Group 222.59 26.52 352.41 0.00 221.47 0.00
+objects_override Grandfather_Clock 227.11 26.52 348.00 0.00 264.93 0.00
+objects_override Bench 223.63 26.52 344.74 0.00 314.03 0.00
+objects_override Bench 222.51 26.52 346.11 0.00 314.86 0.00
+objects_override Chair4 224.46 26.52 348.65 0.00 279.32 0.00
+objects_override Furniture 1220.18 26.52 351.55 0.00 138.77 0.00
+objects_override CrateLong_Red 225.72 26.52 339.55 0.00 68.25 0.00
+objects_override CrateLong_Brown 223.83 26.52 341.61 0.00 346.64 0.00
+objects_override Furniture2 231.69 26.52 333.53 0.00 45.91 0.00
+objects_override CrateBarrelStack_Group 237.35 26.52 337.85 0.00 241.36 0.00
+objects_override Table_1 229.90 26.52 337.61 0.00 221.95 0.00
+objects_override Bench 220.30 26.52 346.93 0.00 43.36 0.00
+objects_override Carpet1 229.06 26.52 344.66 0.00 130.04 0.00
+objects_override CrateBarrelStack_Group 226.35 26.60 352.25 0.00 40.03 0.00
+objects_override BarrelStack_Group 222.05 26.60 361.33 0.00 217.73 0.00
+objects_override BarrelCollection_Group 216.32 26.60 363.30 0.00 50.63 0.00
+objects_override Furniture4 234.09 26.52 341.51 0.00 225.24 0.00
+objects_override Table_1 251.65 27.38 398.85 0.00 231.28 0.00
+objects_override Grandfather_Clock 250.76 27.38 394.84 0.00 359.16 0.00
+objects_override Chair1 250.83 27.38 398.26 0.00 49.97 0.00
+objects_override Chair4 252.62 27.38 399.67 0.00 230.99 0.00
+objects_override Furniture2 248.19 27.38 399.20 0.00 140.04 0.00
+objects_override BarrelStack_Group 263.48 26.60 378.04 0.00 224.82 0.00
+objects_override CrateLong_Red 268.51 26.60 367.63 0.00 42.19 0.00
+objects_override BarrelStack_Group 269.85 26.60 360.26 0.00 314.58 0.00
+objects_override Christian_Cross_2_SeperateBase 231.01 22.19 336.21 0.00 48.02 0.00
+objects_override WoodStack2_Group 237.78 22.34 344.50 0.00 219.03 0.00
+objects_override Crates_Group 224.86 22.34 328.90 0.00 46.97 0.00
+objects_override BarrelStack_Group 218.52 22.34 336.69 0.00 91.75 0.00
+objects_override Crates_Group 224.33 22.34 343.60 0.00 133.89 0.00
+objects_override Crates_Group 243.58 22.34 328.88 0.00 224.95 0.00
+objects_override CrateLong_Red 238.04 22.34 324.72 0.00 43.53 0.00
+objects_override Furniture5 229.23 14.79 328.14 0.00 296.75 0.00
+objects_override Furniture6 228.06 14.79 331.89 0.00 210.83 0.00
+objects_override Crates_Group 217.39 14.80 329.83 0.00 20.49 0.00
+objects_override CrateLong_Red 213.48 14.80 338.61 0.00 212.30 0.00
+objects_override Furniture1 197.55 11.55 334.00 0.00 28.84 0.00
+objects_override Furniture1 211.71 20.32 356.62 0.00 215.31 0.00
+objects_override CannonAmmoboxSmall 212.48 22.35 359.14 0.00 47.77 0.00
+objects_override Crates_Group 289.78 21.83 361.10 0.00 261.76 0.00
+objects_override Furniture5 279.45 21.83 354.56 0.00 335.90 0.00
+objects_override CrateLong_Red 272.24 21.83 362.77 0.00 121.04 0.00
+objects_override Crates_Group 226.84 26.52 321.20 0.00 129.88 0.00
+objects_override Outhouse 230.27 31.21 318.61 0.00 38.28 0.00
+objects_override Campfire 230.27 31.21 318.61 0.00 38.28 0.00
+objects_override GuardHouse_1 274.29 20.99 395.63 0.00 319.60 0.00
+objects_override GuardHouse_1 241.55 23.35 401.66 0.00 57.53 0.00
+objects_override Crates_Group 243.02 23.35 393.84 0.00 326.63 0.00
+objects_override BarrelStack_Group 237.52 23.35 399.55 0.00 164.29 0.00
+objects_override CrateLong_Red 231.71 23.35 393.19 0.00 63.77 0.00
+objects_override BarrelStack_Group 238.14 23.35 394.71 0.00 315.95 0.00
+objects_override Outhouse 228.49 21.79 393.85 0.00 147.23 0.00
+objects_override Campfire 228.49 21.79 393.85 0.00 147.23 0.00
+objects_override WeaponRack 236.38 23.35 396.29 0.00 328.45 0.00 Carbine_Elliot 40
+objects_override WeaponRack 233.87 23.35 394.75 0.00 328.45 0.00 BearingFlagPrussian 40
+objects_override WeaponRack 236.24 23.35 390.90 0.00 326.05 0.00 Hanger_Variation1 40
+objects_override WeaponRack 239.24 23.35 392.11 0.00 326.05 0.00 Axe2H_Variation2 40
+objects_override WeaponRack 239.64 23.35 400.46 0.00 56.05 0.00 Sword_Bayonet 40
+objects_override WeaponRack 239.43 23.35 396.22 0.00 145.25 0.00 CannonRamRod 40
+objects_override Cattail_Desktop_Cluster_Full 249.89 21.17 382.15 0.00 131.83 0.00
+objects_override Azalea_Flowers_Pink_Low 251.29 21.17 378.56 0.00 170.87 0.00
+objects_override Azalea_Low 255.25 21.17 376.32 0.00 109.35 0.00
+objects_override Azalea_Flowers_White_Low 256.49 21.17 372.94 0.00 160.87 0.00
+objects_override AzaleaPatch_Low 258.91 21.17 371.42 0.00 112.79 0.00
+objects_override RedButterFly_Particles 260.17 21.17 368.12 0.00 166.07 0.00
+objects_override BostonFern_Low 262.64 21.17 365.75 0.00 151.35 0.00
+objects_override FalseSpirea_Cluster_Low 259.80 21.93 363.03 0.00 225.91 0.00
+objects_override BostonFern_Low 259.34 22.10 360.40 0.00 184.87 0.00
+#promotion_area
+objects_override WeaponRack 578.8 9.9 433.9 0 159.2 0 BearingFlagBritish 4
+objects_override WeaponRack 576.98 9.93 433.24 0.00 336.66 0.00 BearingFlagPrussian 4
+objects_override WeaponRack 580.46 9.93 434.52 0.00 338.82 0.00 BearingFlagFrench 4
+objects_override WeaponRack 562.50 9.93 426.82 0.00 337.08 0.00 Dagger_Variation1 10
+objects_override WeaponRack 561.03 9.93 426.24 0.00 338.04 0.00 Knife_Variation1 10
+objects_override WeaponRack 559.74 9.93 425.72 0.00 338.04 0.00 Musket_IndiaPatternBrownBess 10
+objects_override WeaponRack 591.29 13.96 369.45 0.00 69.76 0.00 Rifle_Pattern1800Infantry 4
+objects_override Chair3 595.31 11.39 368.14 0.00 288.08 0.00
+objects_override FlagPrussian 565.36 10 412.21 0 349 0
+objects_override FlagPrussian 563.67 10 416.72 0 349 0
+objects_override GuardHouse_1 586.35 9.93 426.30 0 67.53 0
+objects_override CannonFieldGun9PDR 584.47 10.53 416.68 0 216.88 0
+objects_override TowerStaircase 487.41 11.14 566.5 0 269.61 0
+objects_override Lantern2 568.34 11.99 416.3 0 67.51 0
+objects_override Blockhouse 592.33 11.15 369.44 0 340.00 0
+objects_override PlatformLong 481.84 10.58 564.88 0 266.81 0
+objects_override TargetDummy 308.50 11.95 597.82 0.00 88 0.00
+objects_override TargetDummy 308.50 11.95 597.32 0.00 88 0.00
+objects_override TargetDummy 308.50 11.95 596.82 0.00 88 0.00
+objects_override TargetDummy 308.50 11.95 596.32 0.00 88 0.00
+objects_override TargetDummy 308.50 11.95 598.82 0.00 88 0.00
+objects_override TargetDummy 308.50 11.95 598.32 0.00 88 0.00
+objects_override TargetDummy 280.52 16.21 571.10 0.00 88 0.00
+objects_override TargetDummy 280.52 16.21 571.60 0.00 88 0.00
+objects_override TargetDummy 280.52 16.21 572.10 0.00 88 0.00
+objects_override TargetDummy 280.52 16.21 570.60 0.00 88 0.00
+objects_override TargetDummy 280.52 16.21 570.10 0.00 88 0.00
+objects_override TargetDummy 330.41 11.64 571.06 0.00 88 0.00
+objects_override TargetDummy 330.41 11.64 571.56 0.00 88 0.00
+objects_override TargetDummy 330.41 11.64 572.06 0.00 88 0.00
+objects_override TargetDummy 330.41 11.64 570.06 0.00 88 0.00
+objects_override TargetDummy 330.41 11.64 570.56 0.00 88 0.00
+objects_override TargetDummy 362.95 9.78 608.39 0.00 88 0.00
+objects_override TargetDummy 362.95 9.78 608.89 0.00 88 0.00
+objects_override TargetDummy 362.95 9.78 609.39 0.00 88 0.00
+objects_override TargetDummy 362.95 9.78 607.89 0.00 88 0.00
+objects_override TargetDummy 362.95 9.78 607.39 0.00 88 0.00
+objects_override TargetDummy 380.32 11.42 564.72 0.00 88 0.00
+objects_override TargetDummy 380.32 11.42 565.22 0.00 88 0.00
+objects_override TargetDummy 380.32 11.42 565.72 0.00 88 0.00
+objects_override TargetDummy 380.32 11.42 564.22 0.00 88 0.00
+objects_override TargetDummy 380.32 11.42 563.72 0.00 88 0.00
+objects_override TargetDummy 406.46 11.09 552.31 0.00 88 0.00
+objects_override TargetDummy 406.46 11.09 552.81 0.00 88 0.00
+objects_override TargetDummy 406.46 11.09 553.31 0.00 88 0.00
+objects_override TargetDummy 406.46 11.09 551.81 0.00 88 0.00
+objects_override TargetDummy 406.46 11.09 551.31 0.00 88 0.00
+objects_override TargetDummy 430.67 10.24 572.40 0.00 88 0.00
+objects_override TargetDummy 430.67 10.24 572.90 0.00 88 0.00
+objects_override TargetDummy 430.67 10.24 573.40 0.00 88 0.00
+objects_override TargetDummy 430.67 10.24 571.90 0.00 88 0.00
+objects_override TargetDummy 430.67 10.24 571.40 0.00 88 0.00
+objects_override TargetDummy 458.69 10 552.64 0.00 88 0.00
+objects_override TargetDummy 458.69 10 552.14 0.00 88 0.00
+objects_override TargetDummy 458.69 10 553.14 0.00 88 0.00
+objects_override TargetDummy 458.69 10 551.64 0.00 88 0.00
+objects_override TargetDummy 458.69 10 553.64 0.00 88 0.00
+objects_override SpyglassboxMoveable 485.33 10.78 561.31 0.00 304.64 0.00
+objects_override Campfire 308.10 12.25 597.82 0.00 88 0.00
+objects_override Campfire 280.12 16.51 571.10 0.00 88 0.00
+objects_override Campfire 330.01 11.94 571.60 0.00 88 0.00
+objects_override Campfire 362.55 10.08 608.39 0.00 88 0.00
+objects_override Campfire 380.02 11.72 564.72 0.00 88 0.00
+objects_override Campfire 406.16 11.39 552.31 0.00 88 0.00
+objects_override Campfire 430.27 10.54 572.40 0.00 88 0.00
+objects_override Campfire 458.29 10.30 552.64 0.00 88 0.00
+objects_override Lantern2 484.50 14.28 561.33 0.00 268.48 0.00
+objects_override Lantern2 484.17 23.10 562.78 0.00 268.39 0.00
+objects_override Lantern2 484.10 18.39 562.38 0.00 268.71 0.00
+objects_override Outhouse 561.86 10.53 419.52 0.00 67.79 0.00
+objects_override Campfire 561.64 10.84 419.45 0.00 67.31 0.00
+objects_override Bench 589.40 10.93 372.35 0.00 338.40 0.00
+objects_override Swivelgun 484.13 22.18 568.68 0.00 270.24 0.00
+objects_override CannonAmmoboxSmall 485.64 21.39 569.26 0.00 182.15 0.00
+objects_override CannonFieldGun9PDR 565.17 14.16 601.58 0.00 84.68 0.00
+objects_override CannonAmmoboxLarge 565.16 14.17 598.04 0.00 303.48 0.00
+objects_override CannonFieldGun9PDRMoveable 718.55 11.15 654.10 0.00 200.87 0.00
+objects_override CannonAmmoboxLargeMoveable 720.20 11.22 655.92 0.00 197.91 0.00
+objects_override CannonAmmoboxLargeMoveable 718.51 11.22 656.47 0.00 198.39 0.00
+objects_override CannonFieldGun9PDRMoveable 540.68 14.57 585.25 0.00 267.16 0.00
+objects_override CannonAmmoboxLargeMoveable 540.07 14.60 582.29 0.00 272.44 0.00
+
+# flags
+objects_override FlagFrench 485.76 22.23 563.13 0.00 0.14 0.00
+objects_override FlagPrussian 415.69 19.20 448.05 0.00 347.22 0.00
+objects_override FlagFrench 425.45 19.20 477.98 0.00 345.04 0.00
+objects_override FlagBritish 443.20 19.20 464.48 0.00 345.59 0.00
+
+# bereg
+objects_override ChevauxDeFriseLarge 650.93 11.47 610.70 0.00 94.32 0.00
+objects_override ChevauxDeFriseSmall 650.91 11.46 612.98 0.00 66.08 0.00
+objects_override ChevauxDeFriseSmall 650.41 11.39 608.39 0.00 103.76 0.00
+objects_override Earthworks 626.51 11.60 613.41 0.00 96.24 0.00
+objects_override PalisadeWall 627.66 10.21 618.45 0.00 72.16 0.00
+objects_override PalisadeWall 626.86 10.21 623.59 0.00 67.84 0.00
+objects_override ShootingPlatform 627.66 10.21 618.45 0.00 92.16 0.00
+objects_override ShootingPlatform 626.86 10.21 623.59 0.00 87.84 0.00
+
+# one hit
+objects_override ChevauxDeFriseSmall 554.46 14.09 615.29 0.00 140.42 0.00
+objects_override ChevauxDeFriseSmall 553.39 14.11 614.29 0.00 131.30 0.00
+objects_override ChevauxDeFriseSmall 554.29 14.13 613.21 0.00 157.06 0.00
+objects_override ChevauxDeFriseSmall 561.67 14.01 614.12 0.00 226.97 0.00
+objects_override ChevauxDeFriseSmall 561.21 14.23 605.29 0.00 248.57 0.00
+objects_override ChevauxDeFriseSmall 569.62 13.93 599.43 0.00 278.33 0.00
+objects_override ChevauxDeFriseSmall 569.16 13.86 594.66 0.00 283.61 0.00
+objects_override ChevauxDeFriseSmall 561.87 14.32 595.37 0.00 349.12 0.00
+objects_override ChevauxDeFriseSmall 561.15 14.40 593.23 0.00 289.68 0.00
+objects_override ChevauxDeFriseSmall 553.84 14.47 585.53 0.00 294.40 0.00
+objects_override ChevauxDeFriseSmall 547.78 14.49 589.86 0.00 114.40 0.00
+objects_override ChevauxDeFriseSmall 559.00 14.27 581.46 0.00 9.28 0.00
+objects_override ChevauxDeFriseSmall 558.91 14.28 579.51 0.00 9.76 0.00
+objects_override ChevauxDeFriseSmall 552.38 14.49 581.61 0.00 214.34 0.00
+
+# gabison
+objects_override Gabion 562.85 14.26 588.03 0.00 122.64 0.00
+objects_override Gabion 563.41 14.26 588.88 0.00 117.44 0.00
+objects_override Gabion 563.94 14.26 589.87 0.00 114.80 0.00
+objects_override Gabion 557.68 14.39 583.76 0.00 154.16 0.00
+objects_override Gabion 556.78 14.53 583.33 0.00 154.40 0.00
+objects_override Gabion 555.80 14.53 582.93 0.00 156.16 0.00
+objects_override Gabion 554.91 14.53 582.57 0.00 163.36 0.00
+objects_override Gabion 553.99 14.53 582.46 0.00 199.52 0.00
+objects_override Gabion 566.16 14.15 596.26 0.00 100.96 0.00
+objects_override Gabion 566.28 14.15 597.25 0.00 93.28 0.00
+objects_override Gabion 566.39 14.15 598.23 0.00 86.48 0.00
+objects_override Gabion 565.47 14.18 604.85 0.00 63.52 0.00
+objects_override Gabion 565.08 14.18 605.81 0.00 60.00 0.00
+objects_override Gabion 564.58 14.18 606.56 0.00 54.48 0.00
+
+# meshki
+objects_override Earthworks 557.81 14.19 612.28 0.00 22.72 0.00
+objects_override Earthworks 562.46 14.16 608.90 0.00 54.08 0.00
+objects_override Earthworks 565.97 13.90 601.62 0.00 83.12 0.00
+objects_override Earthworks 565.18 14.17 592.96 0.00 108.88 0.00
+objects_override Earthworks 560.35 14.38 585.58 0.00 142.83 0.00
+
+# ant-loahad
+objects_override Slow_Fire_W_Smoke 554.95 14.23 610.44 0.00 104.71 0.00
+
+# 1st kolia
+objects_override InfantrySpikes 555.05 14.04 616.28 0.00 442.06 0.00
+objects_override InfantrySpikes 557.68 14.03 616.16 0.00 99.98 0.00
+objects_override InfantrySpikes 560.58 14.01 615.21 0.00 113.74 0.00
+objects_override InfantrySpikes 563.16 14.01 613.82 0.00 127.98 0.00
+objects_override InfantrySpikes 565.20 14.02 611.68 0.00 137.42 0.00
+objects_override InfantrySpikes 567.02 14.02 609.38 0.00 144.62 0.00
+objects_override InfantrySpikes 568.56 13.98 606.77 0.00 150.94 0.00
+objects_override InfantrySpikes 569.72 13.95 603.90 0.00 161.10 0.00
+objects_override InfantrySpikes 570.07 13.94 600.95 0.00 179.18 0.00
+objects_override InfantrySpikes 569.08 13.90 596.78 0.00 184.78 0.00
+objects_override InfantrySpikes 569.30 13.80 592.75 0.00 192.14 0.00
+objects_override InfantrySpikes 568.33 13.83 589.95 0.00 201.10 0.00
+objects_override InfantrySpikes 566.93 13.88 587.33 0.00 213.34 0.00
+objects_override InfantrySpikes 565.10 13.97 584.95 0.00 217.10 0.00
+objects_override InfantrySpikes 563.05 14.07 582.77 0.00 224.00 0.00
+objects_override InfantrySpikes 560.68 14.13 580.95 0.00 236.22 0.00
+objects_override InfantrySpikes 556.43 14.40 579.61 0.00 265.26 0.00
+objects_override InfantrySpikes 553.57 14.53 580.26 0.00 294.37 0.00
+
+# 2nd kolia
+objects_override InfantrySpikes 553.61 14.20 611.64 0.00 378.15 0.00
+objects_override InfantrySpikes 553.15 14.29 608.73 0.00 373.19 0.00
+objects_override InfantrySpikes 552.65 14.36 605.90 0.00 370.79 0.00
+objects_override InfantrySpikes 552.56 14.40 602.78 0.00 361.03 0.00
+objects_override InfantrySpikes 552.44 14.44 599.77 0.00 368.55 0.00
+objects_override InfantrySpikes 551.86 14.47 596.83 0.00 378.31 0.00
+objects_override InfantrySpikes 550.64 14.49 594.02 0.00 388.15 0.00
+objects_override InfantrySpikes 549.45 14.51 591.43 0.00 388.07 0.00
+objects_override InfantrySpikes 549.76 14.52 588.39 0.00 311.43 0.00
+objects_override InfantrySpikes 552.17 14.48 586.56 0.00 312.62 0.00
+objects_override InfantrySpikes 554.07 14.48 581.64 0.00 259.66 0.00
+objects_override InfantrySpikes 556.78 14.49 582.55 0.00 244.06 0.00
+objects_override InfantrySpikes 557.06 14.37 581.06 0.00 272.70 0.00
+objects_override InfantrySpikes 560.47 14.26 582.85 0.00 227.50 0.00
+objects_override InfantrySpikes 562.69 14.11 585.12 0.00 221.34 0.00
+objects_override InfantrySpikes 564.69 14.01 587.43 0.00 219.18 0.00
+objects_override InfantrySpikes 566.40 13.97 589.83 0.00 211.74 0.00
+objects_override InfantrySpikes 567.46 13.94 592.54 0.00 196.38 0.00
+objects_override InfantrySpikes 567.65 14.02 597.13 0.00 185.66 0.00
+objects_override InfantrySpikes 568.40 13.99 601.55 0.00 169.66 0.00
+objects_override InfantrySpikes 567.79 14.05 604.41 0.00 160.38 0.00
+objects_override InfantrySpikes 566.56 14.06 607.13 0.00 151.42 0.00
+objects_override InfantrySpikes 564.81 14.07 609.67 0.00 141.58 0.00
+objects_override InfantrySpikes 562.81 14.06 611.85 0.00 129.74 0.00
+objects_override InfantrySpikes 559.17 14.08 614.03 0.00 111.18 0.00
+objects_override InfantrySpikes 556.41 14.09 614.67 0.00 99.34 0.00
+
+# vnyt kolia
+objects_override InfantrySpikes 560.99 14.36 597.22 0.00 174.70 0.00
+objects_override InfantrySpikes 560.78 14.38 600.15 0.00 173.02 0.00
+objects_override InfantrySpikes 560.38 14.34 603.05 0.00 163.26 0.00
+objects_override InfantrySpikes 558.95 14.28 605.71 0.00 141.82 0.00
+objects_override InfantrySpikes 556.68 14.28 607.76 0.00 129.50 0.00
+objects_override InfantrySpikes 559.51 14.48 591.66 0.00 211.10 0.00
+objects_override InfantrySpikes 557.72 14.55 589.28 0.00 223.66 0.00
+objects_override InfantrySpikes 555.26 14.51 587.21 0.00 234.14 0.00
+
+# wall
+objects_override PalisadeWall 558.83 14.43 592.07 0.00 113.50 0.00
+objects_override PalisadeWall 555.40 14.43 588.08 0.00 129.98 0.00
+objects_override PalisadeWall 551.29 14.43 588.19 0.00 209.26 0.00
+objects_override PalisadeWall 550.55 14.43 592.23 0.00 282.46 0.00
+objects_override PalisadeWall 552.70 14.43 596.42 0.00 281.34 0.00
+objects_override PalisadeWall 553.33 14.43 600.89 0.00 263.65 0.00
+objects_override PalisadeWall 553.64 14.43 606.09 0.00 260.61 0.00
+objects_override PalisadeWall 556.14 14.43 607.28 0.00 28.93 0.00
+objects_override PalisadeWall 558.97 14.43 603.10 0.00 59.01 0.00
+objects_override PalisadeWall 560.11 14.43 597.99 0.00 71.09 0.00
+
+# wall podium
+objects_override ShootingPlatform 558.83 14.43 592.07 0.00 128.50 0.00
+objects_override ShootingPlatform 555.40 14.43 588.08 0.00 144.98 0.00
+objects_override ShootingPlatform 551.29 14.43 588.19 0.00 224.26 0.00
+objects_override ShootingPlatform 550.55 14.43 592.23 0.00 296.46 0.00
+objects_override ShootingPlatform 552.70 14.43 596.42 0.00 296.34 0.00
+objects_override ShootingPlatform 553.33 14.43 600.89 0.00 278.65 0.00
+objects_override ShootingPlatform 553.64 14.43 606.09 0.00 275.61 0.00
+objects_override ShootingPlatform 556.14 14.43 607.28 0.00 33.93 0.00
+objects_override ShootingPlatform 558.97 14.43 603.10 0.00 74.01 0.00
+objects_override ShootingPlatform 560.11 14.43 597.99 0.00 86.09 0.00
+
+# cerkov kolia
+
+cerkov styl
+objects_override Chair3 561.41 10.10 429.36 0.00 249.61 0.00
+objects_override Furniture4 579.88 10.10 439.25 0.00 245.18 0.00
+objects_override Furniture4 579.40 10.10 440.45 0.00 247.10 0.00
+
+# cerkov hit one
+objects_override ChevauxDeFriseSmall 581.09 9.93 439.80 0.00 80.49 0.00
+objects_override ChevauxDeFriseSmall 562.73 10.10 429.87 0.00 237.63 0.00
+objects_override ChevauxDeFriseSmall 569.09 9.93 445.29 0.00 328.65 0.00
+
+# cerkov gabison
+objects_override Gabion 569.00 9.93 444.17 0.00 1.45 0.00
+objects_override Gabion 569.87 9.93 443.86 0.00 335.93 0.00
+objects_override Gabion 570.25 9.93 444.72 0.00 331.79 0.00
+objects_override Gabion 574.25 9.93 445.54 0.00 47.77 0.00
+objects_override Gabion 574.95 9.93 444.84 0.00 49.37 0.00
+objects_override Gabion575.41 9.93 444.16 0.00 60.73 0.00
+
+# cerkov meshki
+objects_override Earthworks 572.06 9.93 446.79 0.00 334.97 0.00
+objects_override Earthworks 566.57 9.93 442.98 0.00 300.41 0.00
+
+# cerkov anti-loashad
+objects_override ChevauxDeFriseLarge 581.67 9.93 441.73 0.00 39.44 0.00
+
+# fire on camp aria
+objects_override Fire_Wall_W_Smoke 492.20 9.61 432.89 0.00 24.86 0.00
+
+#Sapper Configuration Commands
+sappers_attacking_starting_materials 10000
+sappers_defending_starting_materials 10000
+sappers_buildlimit ExplosiveBarrel defending 255
+sappers_buildlimit ExplosiveBarrel attacking 255
+sappers_buildlimit InfantryStakes defending 255
+sappers_buildlimit InfantryStakes attacking 255
+sappers_buildlimit Gabion defending 255
+sappers_buildlimit Gabion attacking 255
+sappers_buildlimit ChevauxDeFriseLarge defending 255
+sappers_buildlimit ChevauxDeFriseLarge attacking 255
+sappers_buildlimit ChevauxDeFriseSmall defending 255
+sappers_buildlimit ChevauxDeFriseSmall attacking 255
+sappers_buildlimit Palisade defending 255
+sappers_buildlimit Palisade attacking 255
+sappers_buildlimit ShootingPlatform defending 255
+sappers_buildlimit ShootingPlatform attacking 255
+sappers_buildlimit Chair defending 255
+sappers_buildlimit Chair attacking 255
+sappers_buildlimit Earthworks defending 255
+sappers_buildlimit Earthworks attacking 255
+sappers_buildlimit Sandbag defending 255
+sappers_buildlimit Sandbag attacking 255
+sappers_buildlimit SwivelGun defending 255
+sappers_buildlimit SwivelGun attacking 255
+sappers_buildlimit Ammobox defending 255
+sappers_buildlimit Ammobox attacking 255
+sappers_buildlimit RocketStack defending 255
+sappers_buildlimit RocketStack attacking 255
+
+
+load_mod 2130352982 #Putin
+load_mod 2199408567 #180th skin
+load_mod 2548829114 #moscow Gren skin
+!map_rotation end
+
+#3 = Sneg (Small) noname`s rules (one life)
+!map_rotation start
+map_name SnowyPlainsSmall
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 15
+reinforcements_per_faction 2000
+wave_spawn_time_seconds 0
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 9
+time_dynamic false
+weather_preset Snowy
+weather_dynamic false
+faction_attacking Russian
+faction_defending Prussian
+friendly_fire true
+
+# Override Commands (This is a comment and will be ignored by the game. Yes?)
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Rifleman 200
+spawn_override A Grenadier 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override A LightInfantry 200
+spawn_override A Cannoneer 200
+spawn_override A Sapper 1
+spawn_override B Sapper 1
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Rifleman 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Grenadier 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override B LightInfantry 200
+spawn_override B Cannoneer 200
+spawn_override A CuirassierDragoon 200
+spawn_override A Hussar 200
+spawn_override B CuirassierDragoon 200
+spawn_override B Hussar 200
+objects_override WeaponRack 133.58 2.78 502.66 0.00 283.81 0.00 Musket_IndiaPatternBrownBess 10
+objects_override WeaponRack 523.92 7.61 225.47 0.00 313.86 0.00 Musket_IndiaPatternBrownBess 10
+load_mod 2130352982 #Putin
+load_mod 2199408567  #180th skin
+!map_rotation end
+
+#4 = Sneg (Small) e7paul's rules (one life)
+!map_rotation start
+map_name SnowyPlainsIII
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 15
+reinforcements_per_faction 2000
+wave_spawn_time_seconds 0
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+time_dynamic false
+weather_preset Snowy
+weather_dynamic false
+faction_attacking Prussian
+faction_defending Russian
+friendly_fire true
+
+# Override Commands (This is a comment and will be ignored by the game. Yes?)
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Rifleman 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Grenadier 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override A LightInfantry 200
+spawn_override A Cannoneer 200
+spawn_override A Sapper 1
+spawn_override B Sapper 1
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Rifleman 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Grenadier 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override B LightInfantry 200
+spawn_override B Cannoneer 200
+spawn_override A CuirassierDragoon 200
+spawn_override A Hussar 200
+spawn_override B CuirassierDragoon 200
+spawn_override B Hussar 200
+objects_override WeaponRack 177.12 48.98 165.75 0.00 185.42 0.00 Musket_IndiaPatternBrownBess 10
+objects_override WeaponRack 505.40 48.98 488.81 0.00 28.83 0.00 Musket_IndiaPatternBrownBess 10
+load_mod 2130352982 #Putin
+load_mod 2199408567  #180th skin
+load_mod 2548829114 #moscow Gren skin
+!map_rotation end
+
+#5 = Samrus`s lb
+!map_rotation start
+map_name AncientPlains
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 15
+reinforcements_per_faction 2000
+wave_spawn_time_seconds 0
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset Calm4
+weather_dynamic false
+faction_attacking Russian
+faction_defending Prussian
+friendly_fire true
+
+# Override Commands (This is a comment and will be ignored by the game. Yes?)
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Rifleman 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Grenadier 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override A LightInfantry 200
+spawn_override A Cannoneer 200
+spawn_override A Sapper 1
+spawn_override B Sapper 1
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Rifleman 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Grenadier 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override B LightInfantry 200
+spawn_override B Cannoneer 200
+spawn_override A CuirassierDragoon 200
+spawn_override A Hussar 200
+spawn_override B CuirassierDragoon 200
+spawn_override B Hussar 200
+objects_override WeaponRack 170.09 9.18 115.24 0.00 38.00 0.00 Musket_IndiaPatternBrownBess 10
+objects_override WeaponRack 554.05 0.48 572.69 0.00 243.05 0.00 Musket_IndiaPatternBrownBess 10
+load_mod 2130352982 #Putin
+load_mod 2199408567  #180th skin
+load_mod 2548829114 #moscow Gren skin
+!map_rotation end
+
+#6 = Sneg (Small) e7paul's rules (one life)
+!map_rotation start
+map_name DesertPlainsSmall
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 15
+reinforcements_per_faction 2000
+wave_spawn_time_seconds 0
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking Prussian
+faction_defending Russian
+friendly_fire true
+
+# Override Commands (This is a comment and will be ignored by the game. Yes?)
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Rifleman 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Grenadier 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override A LightInfantry 200
+spawn_override A Cannoneer 200
+spawn_override A Sapper 1
+spawn_override B Sapper 1
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Rifleman 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Grenadier 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override B LightInfantry 200
+spawn_override B Cannoneer 200
+spawn_override A CuirassierDragoon 200
+spawn_override A Hussar 200
+spawn_override B CuirassierDragoon 200
+spawn_override B Hussar 200
+objects_override WeaponRack 316.90 6.70 186.94 0.00 171.54 0.00 Musket_IndiaPatternBrownBess 10
+objects_override WeaponRack 328.22 7.33 395.06 0.00 146.74 0.00 Musket_IndiaPatternBrownBess 10
+load_mod 2130352982 #Putin
+load_mod 2199408567  #180th skin
+load_mod 2548829114 #moscow Gren skin
+!map_rotation end
+
+#7 = Sneg (Small) e7paul's rules (one life)
+!map_rotation start
+map_name GrassyPlainsII
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 15
+reinforcements_per_faction 2000
+wave_spawn_time_seconds 0
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm2
+weather_dynamic false
+faction_attacking Russian
+faction_defending Prussian
+friendly_fire true
+
+# Override Commands (This is a comment and will be ignored by the game. Yes?)
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Rifleman 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Grenadier 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override A LightInfantry 200
+spawn_override A Cannoneer 200
+spawn_override A Sapper 1
+spawn_override B Sapper 1
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Rifleman 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Grenadier 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override B LightInfantry 200
+spawn_override B Cannoneer 200
+spawn_override A CuirassierDragoon 200
+spawn_override A Hussar 200
+spawn_override B CuirassierDragoon 200
+spawn_override B Hussar 200
+objects_override WeaponRack 360.90 13.74 131.76 0.00 184.25 0.00 Musket_IndiaPatternBrownBess 10
+objects_override WeaponRack 357.83 13.85 544.81 0.00 201.84 0.00 Musket_IndiaPatternBrownBess 10
+load_mod 2130352982 #Putin
+load_mod 2199408567  #180th skin
+load_mod 2548829114 #moscow Gren skin
+!map_rotation end
+
+#8 = Sneg (Small) e7paul's rules (one life)
+!map_rotation start
+map_name GrassyPlainsIII
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 15
+reinforcements_per_faction 2000
+wave_spawn_time_seconds 0
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset CalmRain
+weather_dynamic false
+faction_attacking Prussian
+faction_defending Russian
+friendly_fire true
+
+# Override Commands (This is a comment and will be ignored by the game. Yes?)
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Rifleman 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Grenadier 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override A LightInfantry 200
+spawn_override A Cannoneer 200
+spawn_override A Sapper 1
+spawn_override B Sapper 1
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Rifleman 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Grenadier 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override B LightInfantry 200
+spawn_override B Cannoneer 200
+spawn_override A CuirassierDragoon 200
+spawn_override A Hussar 200
+spawn_override B CuirassierDragoon 200
+spawn_override B Hussar 200
+objects_override WeaponRack 184.20 54.88 337.62 0.00 90.73 0.00 Musket_IndiaPatternBrownBess 10
+objects_override WeaponRack 548.55 55.28 379.11 0.00 281.93 0.00 Musket_IndiaPatternBrownBess 10
+load_mod 2130352982 #Putin
+load_mod 2199408567  #180th skin
+!map_rotation end
+
+#9 = Sneg (Small) e7paul's rules (one life)
+!map_rotation start
+map_name SnowyPlainsSmall
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 15
+reinforcements_per_faction 2000
+wave_spawn_time_seconds 0
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset Snowy
+weather_dynamic false
+faction_attacking Russian
+faction_defending Prussian
+friendly_fire true
+
+# Override Commands (This is a comment and will be ignored by the game. Yes?)
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Rifleman 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Grenadier 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override A LightInfantry 200
+spawn_override A Cannoneer 200
+spawn_override A Sapper 1
+spawn_override B Sapper 1
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Rifleman 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Grenadier 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override B LightInfantry 200
+spawn_override B Cannoneer 200
+spawn_override A CuirassierDragoon 200
+spawn_override A Hussar 200
+spawn_override B CuirassierDragoon 200
+spawn_override B Hussar 200
+objects_override WeaponRack 249.13 10.97 106.00 0.00 80.69 0.00 Musket_IndiaPatternBrownBess 10
+objects_override WeaponRack 490.04 11.33 557.29 0.00 177.81 0.00 Musket_IndiaPatternBrownBess 10
+load_mod 2130352982 #Putin
+load_mod 2199408567  #180th skin
+load_mod 2548829114 #moscow Gren skin
+!map_rotation end
+
+#10 =  e7paul's rules (one life)
+!map_rotation start
+map_name DesertPlains
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 15
+reinforcements_per_faction 2000
+wave_spawn_time_seconds 0
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 16
+time_dynamic false
+weather_preset Fog
+weather_dynamic false
+faction_attacking Prussian
+faction_defending Russian
+friendly_fire true
+
+# Override Commands (This is a comment and will be ignored by the game. Yes?)
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Rifleman 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Grenadier 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override A LightInfantry 200
+spawn_override A Cannoneer 200
+spawn_override A Sapper 1
+spawn_override B Sapper 1
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Rifleman 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Grenadier 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override B LightInfantry 200
+spawn_override B Cannoneer 200
+spawn_override A CuirassierDragoon 200
+spawn_override A Hussar 200
+spawn_override B CuirassierDragoon 200
+spawn_override B Hussar 200
+objects_override WeaponRack 321.44 8.00 -44.79 0.00 165.98 0.00 Musket_IndiaPatternBrownBess 10
+objects_override WeaponRack 299.82 7.17 426.38 0.00 353.81 0.00 Musket_IndiaPatternBrownBess 10
+load_mod 2130352982 #Putin
+load_mod 2199408567  #180th skin
+load_mod 2548829114 #moscow Gren skin
+!map_rotation end
+
+#11 = Rovno e7paul's rules (one life)
+!map_rotation start
+map_name Causeways 
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 15
+reinforcements_per_faction 2000
+wave_spawn_time_seconds 0
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 171
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking Prussian
+faction_defending Russian
+friendly_fire true
+
+# Override Commands (This is a comment and will be ignored by the game. Yes?)
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A FlagBearer 200
+spawn_override A Drummer 200
+spawn_override A Fifer 200
+spawn_override A Rifleman 200
+spawn_override A Bagpiper 200
+spawn_override A Surgeon 200
+spawn_override A Grenadier 200
+spawn_override A ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override A LightInfantry 200
+spawn_override A Cannoneer 200
+spawn_override A Sapper 1
+spawn_override B Sapper 1
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B FlagBearer 200
+spawn_override B Drummer 200
+spawn_override B Fifer 200
+spawn_override B Rifleman 200
+spawn_override B Bagpiper 200
+spawn_override B Surgeon 200
+spawn_override B Grenadier 200
+spawn_override B ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override B LightInfantry 200
+spawn_override B Cannoneer 200
+spawn_override A CuirassierDragoon 200
+spawn_override A Hussar 200
+spawn_override B CuirassierDragoon 200
+spawn_override B Hussar 200
+objects_override WeaponRack 736.15 100.04 416.52 0.00 290.23 0.00 Musket_IndiaPatternBrownBess 10
+objects_override WeaponRack 416.24 99.33 477.00 0.00 87.34 0.00 Musket_IndiaPatternBrownBess 10
+load_mod 2130352982 #Putin
+load_mod 2199408567  #180th skin
+load_mod 2548829114 #moscow Gren skin
+!map_rotation end
+
+#12 = Samrus`s canyon
+!map_rotation start
+map_name Canyon 
+game_mode ArmyAssault
+game_type hardcore
+round_time_minutes 15
+reinforcements_per_faction 2000
+wave_spawn_time_seconds 0
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset Fog3
+weather_dynamic false
+faction_attacking Prussian
+faction_defending Russian
+friendly_fire true
+
+# Override Commands (This is a comment and will be ignored by the game. Yes?)
+spawn_override A LightInfantry 200
+spawn_override A Cannoneer 200
+spawn_override A Sapper 1
+spawn_override B Sapper 1
+spawn_override B LightInfantry 200
+spawn_override B Cannoneer 200
+load_mod 2130352982 #Putin
+load_mod 2199408567  #180th skin
+load_mod 2548829114 #moscow Gren skin
+!map_rotation end
+
+
+
+
+
+

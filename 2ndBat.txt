@@ -1,0 +1,1188 @@
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+###- Server Settings
+
+server_name QRR 2nd-Bat Training server
+server_welcome_message Welcome to the QRR public server!
+server_region europe
+server_admin_password Training
+server_password 5050
+
+
+
+###- Map Rotations
+
+##### Grassyplainsii CUSTOM #####
+
+
+#Rotation 2 = Grassyplainsii [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Grassyplainsii
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 122
+
+
+# Engagement 1
+objects_override spawnsection 218.77 13.81 307.49 0.00 109.40 0.00 11 Location_1 OpenPlains neutral 5 5
+
+
+
+# Engagement 2
+
+objects_override spawnsection 457.35 15.09 287.50 0.00 168.02 0.00 12 Location_2 OpenPlains neutral 5 5
+objects_override spawnsection 309.56 10.14 538.52 0.00 78.85 0.00 13 Location_3 OpenPlains neutral 5 5
+
+objects_override spawnsection 218.77 13.81 307.49 0.00 109.40 0.00 15 Location_1 OpenPlains neutral 5 5
+objects_override spawnsection 457.35 15.09 287.50 0.00 168.02 0.00 16 Location_2 OpenPlains neutral 5 5
+objects_override spawnsection 309.56 10.14 538.52 0.00 78.85 0.00 17 Location_3 OpenPlains neutral 5 5
+
+######## TRAINING PROGRAM ########
+
+### INITIAL ANNOUCEMENT ###
+
+rc delayed 1170 broadcast Live at 19:00
+rc delayed 1155 broadcast Welcome to the 2nd-Bat Training Shooting program!
+rc delayed 1150 broadcast Move around the map and kill ALL enemy players 
+rc delayed 1145 broadcast Record your time and compare!
+rc delayed 1140 broadcast LIVE!
+
+rc delayed 1140 teleport 2 213.19,13.81,332.07
+rc delayed 1140 teleport 3 212.77,13.81,331.8
+rc delayed 1140 teleport 4 212.35,13.81,331.53
+rc delayed 1140 teleport 5 211.93,13.81,331.26
+rc delayed 1140 teleport 6 211.5,13.81,330.99
+rc delayed 1140 teleport 7 211.08,13.81,330.72
+rc delayed 1140 teleport 8 210.66,13.81,330.46
+rc delayed 1140 teleport 9 210.24,13.81,330.19
+rc delayed 1140 teleport 10 209.82,13.81,329.92
+rc delayed 1140 teleport 11 209.4,13.81,329.65
+rc delayed 1140 teleport 12 208.98,13.81,329.38
+rc delayed 1140 teleport 12 210.15,13.77,393.92
+rc delayed 1140 teleport 13 209.66,13.77,393.85
+rc delayed 1140 teleport 14 209.16,13.77,393.77
+rc delayed 1140 teleport 15 208.67,13.77,393.7
+rc delayed 1140 teleport 16 208.17,13.77,393.62
+rc delayed 1140 teleport 17 207.68,13.77,393.55
+rc delayed 1140 teleport 18 207.18,13.77,393.47
+rc delayed 1140 teleport 19 206.69,13.77,393.4
+rc delayed 1140 teleport 20 206.2,13.77,393.32
+rc delayed 1140 teleport 21 205.7,13.77,393.25
+rc delayed 1140 teleport 22 205.21,13.77,393.17
+rc delayed 1140 teleport 22 153.92,13.99,436.65
+rc delayed 1140 teleport 23 153.5,13.99,436.93
+rc delayed 1140 teleport 24 153.09,13.99,437.2
+rc delayed 1140 teleport 25 152.67,13.99,437.48
+rc delayed 1140 teleport 26 152.26,13.99,437.76
+rc delayed 1140 teleport 27 151.84,13.99,438.04
+rc delayed 1140 teleport 28 151.42,13.99,438.31
+rc delayed 1140 teleport 29 151.01,13.99,438.59
+rc delayed 1140 teleport 30 150.59,13.99,438.87
+rc delayed 1140 teleport 31 150.18,13.99,439.15
+rc delayed 1140 teleport 32 149.76,13.99,439.42
+rc delayed 1140 teleport 32 174.26,14.32,525.35
+rc delayed 1140 teleport 33 174.75,14.32,525.26
+rc delayed 1140 teleport 34 175.24,14.32,525.17
+rc delayed 1140 teleport 35 175.74,14.32,525.08
+rc delayed 1140 teleport 36 176.23,14.32,524.99
+rc delayed 1140 teleport 37 176.72,14.32,524.9
+rc delayed 1140 teleport 38 177.21,14.32,524.81
+rc delayed 1140 teleport 39 177.7,14.32,524.72
+rc delayed 1140 teleport 40 178.19,14.32,524.63
+rc delayed 1140 teleport 41 178.69,14.32,524.54
+rc delayed 1140 teleport 42 179.18,14.32,524.45
+rc delayed 1140 teleport 42 325.86,11.73,553.79
+rc delayed 1140 teleport 43 325.52,11.73,554.15
+rc delayed 1140 teleport 44 325.17,11.73,554.52
+rc delayed 1140 teleport 45 324.83,11.73,554.88
+rc delayed 1140 teleport 46 324.49,11.73,555.25
+rc delayed 1140 teleport 47 324.15,11.73,555.61
+rc delayed 1140 teleport 48 323.8,11.73,555.97
+rc delayed 1140 teleport 49 323.46,11.73,556.34
+rc delayed 1140 teleport 50 323.12,11.73,556.7
+rc delayed 1140 teleport 51 322.77,11.73,557.06
+rc delayed 1140 teleport 52 322.43,11.73,557.43
+rc delayed 1140 teleport 52 346.85,13.69,542.87
+rc delayed 1140 teleport 53 346.86,13.69,543.37
+rc delayed 1140 teleport 54 346.87,13.69,543.87
+rc delayed 1140 teleport 55 346.88,13.69,544.37
+rc delayed 1140 teleport 56 346.89,13.69,544.87
+rc delayed 1140 teleport 57 346.9,13.69,545.37
+rc delayed 1140 teleport 58 346.91,13.69,545.87
+rc delayed 1140 teleport 59 346.92,13.69,546.37
+rc delayed 1140 teleport 60 346.93,13.69,546.87
+rc delayed 1140 teleport 61 346.94,13.69,547.37
+rc delayed 1140 teleport 62 346.95,13.69,547.87
+rc delayed 1140 teleport 62 183.73,13.09,244.38
+rc delayed 1140 teleport 63 183.3,13.09,244.13
+rc delayed 1140 teleport 64 182.86,13.09,243.89
+rc delayed 1140 teleport 65 182.43,13.09,243.64
+rc delayed 1140 teleport 66 181.99,13.09,243.39
+rc delayed 1140 teleport 67 181.56,13.09,243.15
+rc delayed 1140 teleport 68 181.12,13.09,242.9
+rc delayed 1140 teleport 69 180.69,13.09,242.65
+rc delayed 1140 teleport 70 180.25,13.09,242.4
+rc delayed 1140 teleport 71 179.82,13.09,242.16
+rc delayed 1140 teleport 72 179.38,13.09,241.91
+rc delayed 1140 teleport 72 172.29,14.0,312.6
+rc delayed 1140 teleport 73 172.3,14.0,313.1
+rc delayed 1140 teleport 74 172.31,14.0,313.6
+rc delayed 1140 teleport 75 172.33,14.0,314.1
+rc delayed 1140 teleport 76 172.34,14.0,314.6
+rc delayed 1140 teleport 77 172.35,14.0,315.1
+rc delayed 1140 teleport 78 172.36,14.0,315.6
+rc delayed 1140 teleport 79 172.37,14.0,316.1
+rc delayed 1140 teleport 80 172.39,14.0,316.6
+rc delayed 1140 teleport 81 172.4,14.0,317.1
+rc delayed 1140 teleport 82 172.41,14.0,317.6
+rc delayed 1140 teleport 82 275.69,8.94,522.51
+rc delayed 1140 teleport 83 275.68,8.94,523.01
+rc delayed 1140 teleport 84 275.67,8.94,523.51
+rc delayed 1140 teleport 85 275.66,8.94,524.01
+rc delayed 1140 teleport 86 275.65,8.94,524.51
+rc delayed 1140 teleport 87 275.64,8.94,525.01
+rc delayed 1140 teleport 88 275.63,8.94,525.51
+rc delayed 1140 teleport 89 275.62,8.94,526.01
+rc delayed 1140 teleport 90 275.61,8.94,526.51
+rc delayed 1140 teleport 91 275.6,8.94,527.01
+rc delayed 1140 teleport 92 275.59,8.94,527.51
+rc delayed 1140 teleport 92 476.27,14.72,342.1
+rc delayed 1140 teleport 93 475.78,14.72,342.0
+rc delayed 1140 teleport 94 475.29,14.72,341.91
+rc delayed 1140 teleport 95 474.8,14.72,341.81
+rc delayed 1140 teleport 96 474.31,14.72,341.72
+rc delayed 1140 teleport 97 473.82,14.72,341.62
+rc delayed 1140 teleport 98 473.33,14.72,341.53
+rc delayed 1140 teleport 99 472.83,14.72,341.43
+rc delayed 1140 teleport 100 472.34,14.72,341.33
+rc delayed 1140 teleport 101 471.85,14.72,341.24
+rc delayed 1140 teleport 102 471.36,14.72,341.14
+rc delayed 1140 teleport 102 454.01,14.14,223.55
+rc delayed 1140 teleport 103 454.14,14.14,223.07
+rc delayed 1140 teleport 104 454.27,14.14,222.58
+rc delayed 1140 teleport 105 454.39,14.14,222.1
+rc delayed 1140 teleport 106 454.52,14.14,221.62
+rc delayed 1140 teleport 107 454.65,14.14,221.13
+rc delayed 1140 teleport 108 454.78,14.14,220.65
+rc delayed 1140 teleport 109 454.9,14.14,220.17
+rc delayed 1140 teleport 110 455.03,14.14,219.68
+rc delayed 1140 teleport 111 455.16,14.14,219.2
+rc delayed 1140 teleport 112 455.29,14.14,218.72
+
+!map_rotation end
+
+#Rotation 2 = Grassyplainsii [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Grassyplainsiii
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 122
+
+
+######## TRAINING PROGRAM ########
+
+### INITIAL ANNOUCEMENT ###
+
+rc delayed 1170 broadcast Live at 19:00
+rc delayed 1155 broadcast Welcome to the 2nd-Bat Training Shooting program!
+rc delayed 1150 broadcast Move around the map and kill ALL enemy players 
+rc delayed 1145 broadcast Record your time and compare!
+rc delayed 1140 broadcast LIVE!
+
+rc delayed 1140 teleport 2 553.02,55.28,390.03
+rc delayed 1140 teleport 3 552.54,55.28,389.88
+rc delayed 1140 teleport 4 552.07,55.28,389.73
+rc delayed 1140 teleport 5 551.59,55.28,389.58
+rc delayed 1140 teleport 6 551.11,55.28,389.43
+rc delayed 1140 teleport 7 550.63,55.28,389.28
+rc delayed 1140 teleport 8 550.16,55.28,389.13
+rc delayed 1140 teleport 9 549.68,55.28,388.98
+rc delayed 1140 teleport 10 549.2,55.28,388.84
+rc delayed 1140 teleport 11 548.73,55.28,388.69
+rc delayed 1140 teleport 12 548.25,55.28,388.54
+rc delayed 1140 teleport 12 425.66,53.67,523.99
+rc delayed 1140 teleport 13 425.59,53.67,523.5
+rc delayed 1140 teleport 14 425.52,53.67,523.0
+rc delayed 1140 teleport 15 425.45,53.67,522.51
+rc delayed 1140 teleport 16 425.38,53.67,522.01
+rc delayed 1140 teleport 17 425.31,53.67,521.52
+rc delayed 1140 teleport 18 425.24,53.67,521.02
+rc delayed 1140 teleport 19 425.17,53.67,520.53
+rc delayed 1140 teleport 20 425.1,53.67,520.03
+rc delayed 1140 teleport 21 425.03,53.67,519.54
+rc delayed 1140 teleport 22 424.95,53.67,519.04
+rc delayed 1140 teleport 22 448.43,56.14,587.81
+rc delayed 1140 teleport 23 448.41,56.14,587.31
+rc delayed 1140 teleport 24 448.39,56.14,586.81
+rc delayed 1140 teleport 25 448.37,56.14,586.31
+rc delayed 1140 teleport 26 448.34,56.14,585.81
+rc delayed 1140 teleport 27 448.32,56.14,585.31
+rc delayed 1140 teleport 28 448.3,56.14,584.81
+rc delayed 1140 teleport 29 448.28,56.14,584.31
+rc delayed 1140 teleport 30 448.26,56.14,583.81
+rc delayed 1140 teleport 31 448.24,56.14,583.31
+rc delayed 1140 teleport 32 448.21,56.14,582.81
+rc delayed 1140 teleport 32 368.05,48.28,557.93
+rc delayed 1140 teleport 33 368.07,48.28,557.43
+rc delayed 1140 teleport 34 368.1,48.28,556.93
+rc delayed 1140 teleport 35 368.12,48.28,556.43
+rc delayed 1140 teleport 36 368.14,48.28,555.93
+rc delayed 1140 teleport 37 368.16,48.28,555.43
+rc delayed 1140 teleport 38 368.19,48.28,554.93
+rc delayed 1140 teleport 39 368.21,48.28,554.43
+rc delayed 1140 teleport 40 368.23,48.28,553.93
+rc delayed 1140 teleport 41 368.25,48.28,553.43
+rc delayed 1140 teleport 42 368.28,48.28,552.94
+rc delayed 1140 teleport 42 336.11,48.9,554.23
+rc delayed 1140 teleport 43 336.0,48.9,554.72
+rc delayed 1140 teleport 44 335.9,48.9,555.21
+rc delayed 1140 teleport 45 335.79,48.9,555.7
+rc delayed 1140 teleport 46 335.68,48.9,556.18
+rc delayed 1140 teleport 47 335.57,48.9,556.67
+rc delayed 1140 teleport 48 335.47,48.9,557.16
+rc delayed 1140 teleport 49 335.36,48.9,557.65
+rc delayed 1140 teleport 50 335.25,48.9,558.14
+rc delayed 1140 teleport 51 335.14,48.9,558.63
+rc delayed 1140 teleport 52 335.04,48.9,559.11
+rc delayed 1140 teleport 52 401.7,51.88,430.28
+rc delayed 1140 teleport 53 402.2,51.88,430.31
+rc delayed 1140 teleport 54 402.7,51.88,430.33
+rc delayed 1140 teleport 55 403.2,51.88,430.36
+rc delayed 1140 teleport 56 403.7,51.88,430.39
+rc delayed 1140 teleport 57 404.2,51.88,430.42
+rc delayed 1140 teleport 58 404.7,51.88,430.44
+rc delayed 1140 teleport 59 405.19,51.88,430.47
+rc delayed 1140 teleport 60 405.69,51.88,430.5
+rc delayed 1140 teleport 61 406.19,51.88,430.53
+rc delayed 1140 teleport 62 406.69,51.88,430.55
+rc delayed 1140 teleport 62 314.86,45.59,407.87
+rc delayed 1140 teleport 63 314.51,45.59,407.51
+rc delayed 1140 teleport 64 314.17,45.59,407.15
+rc delayed 1140 teleport 65 313.82,45.59,406.79
+rc delayed 1140 teleport 66 313.47,45.59,406.43
+rc delayed 1140 teleport 67 313.13,45.59,406.07
+rc delayed 1140 teleport 68 312.78,45.59,405.71
+rc delayed 1140 teleport 69 312.43,45.59,405.35
+rc delayed 1140 teleport 70 312.08,45.59,404.99
+rc delayed 1140 teleport 71 311.74,45.59,404.63
+rc delayed 1140 teleport 72 311.39,45.59,404.27
+rc delayed 1140 teleport 72 269.03,50.32,437.69
+rc delayed 1140 teleport 73 269.01,50.32,437.19
+rc delayed 1140 teleport 74 268.98,50.32,436.69
+rc delayed 1140 teleport 75 268.96,50.32,436.19
+rc delayed 1140 teleport 76 268.93,50.32,435.69
+rc delayed 1140 teleport 77 268.91,50.32,435.19
+rc delayed 1140 teleport 78 268.88,50.32,434.69
+rc delayed 1140 teleport 79 268.86,50.32,434.19
+rc delayed 1140 teleport 80 268.84,50.32,433.69
+rc delayed 1140 teleport 81 268.81,50.32,433.2
+rc delayed 1140 teleport 82 268.79,50.32,432.7
+rc delayed 1140 teleport 82 249.65,54.22,366.23
+rc delayed 1140 teleport 83 249.64,54.22,366.73
+rc delayed 1140 teleport 84 249.64,54.22,367.23
+rc delayed 1140 teleport 85 249.63,54.22,367.73
+rc delayed 1140 teleport 86 249.63,54.22,368.23
+rc delayed 1140 teleport 87 249.62,54.22,368.73
+rc delayed 1140 teleport 88 249.62,54.22,369.23
+rc delayed 1140 teleport 89 249.61,54.22,369.73
+rc delayed 1140 teleport 90 249.61,54.22,370.23
+rc delayed 1140 teleport 91 249.6,54.22,370.73
+rc delayed 1140 teleport 92 249.6,54.22,371.23
+rc delayed 1140 teleport 92 199.33,54.01,273.41
+rc delayed 1140 teleport 93 198.98,54.01,273.05
+rc delayed 1140 teleport 94 198.63,54.01,272.7
+rc delayed 1140 teleport 95 198.28,54.01,272.34
+rc delayed 1140 teleport 96 197.93,54.01,271.98
+rc delayed 1140 teleport 97 197.58,54.01,271.62
+rc delayed 1140 teleport 98 197.23,54.01,271.27
+rc delayed 1140 teleport 99 196.88,54.01,270.91
+rc delayed 1140 teleport 100 196.53,54.01,270.55
+rc delayed 1140 teleport 101 196.18,54.01,270.19
+rc delayed 1140 teleport 102 195.83,54.01,269.84
+rc delayed 1140 teleport 102 295.29,55.31,180.77
+rc delayed 1140 teleport 103 295.46,55.31,180.3
+rc delayed 1140 teleport 104 295.63,55.31,179.83
+rc delayed 1140 teleport 105 295.8,55.31,179.36
+rc delayed 1140 teleport 106 295.97,55.31,178.89
+rc delayed 1140 teleport 107 296.14,55.31,178.42
+rc delayed 1140 teleport 108 296.31,55.31,177.95
+rc delayed 1140 teleport 109 296.48,55.31,177.48
+rc delayed 1140 teleport 110 296.65,55.31,177.01
+rc delayed 1140 teleport 111 296.82,55.31,176.54
+rc delayed 1140 teleport 112 296.98,55.31,176.07
+rc delayed 1140 teleport 112 365.88,54.84,181.6
+rc delayed 1140 teleport 113 365.78,54.84,181.11
+rc delayed 1140 teleport 114 365.67,54.84,180.62
+rc delayed 1140 teleport 115 365.57,54.84,180.13
+rc delayed 1140 teleport 116 365.46,54.84,179.64
+rc delayed 1140 teleport 117 365.36,54.84,179.15
+rc delayed 1140 teleport 118 365.25,54.84,178.67
+rc delayed 1140 teleport 119 365.15,54.84,178.18
+rc delayed 1140 teleport 120 365.05,54.84,177.69
+rc delayed 1140 teleport 121 364.94,54.84,177.2
+rc delayed 1140 teleport 122 364.84,54.84,176.71
+rc delayed 1140 teleport 122 486.31,52.97,379.02
+rc delayed 1140 teleport 123 486.34,52.97,379.52
+rc delayed 1140 teleport 124 486.37,52.97,380.02
+rc delayed 1140 teleport 125 486.4,52.97,380.52
+rc delayed 1140 teleport 126 486.43,52.97,381.02
+rc delayed 1140 teleport 127 486.46,52.97,381.52
+rc delayed 1140 teleport 128 486.5,52.97,382.01
+rc delayed 1140 teleport 129 486.53,52.97,382.51
+rc delayed 1140 teleport 130 486.56,52.97,383.01
+rc delayed 1140 teleport 131 486.59,52.97,383.51
+rc delayed 1140 teleport 132 486.62,52.97,384.01
+rc delayed 1140 teleport 132 247.69,53.2,342.36
+rc delayed 1140 teleport 133 247.73,53.2,342.86
+rc delayed 1140 teleport 134 247.77,53.2,343.36
+rc delayed 1140 teleport 135 247.82,53.2,343.85
+rc delayed 1140 teleport 136 247.86,53.2,344.35
+rc delayed 1140 teleport 137 247.9,53.2,344.85
+rc delayed 1140 teleport 138 247.94,53.2,345.35
+rc delayed 1140 teleport 139 247.98,53.2,345.85
+rc delayed 1140 teleport 140 248.03,53.2,346.35
+rc delayed 1140 teleport 141 248.07,53.2,346.84
+rc delayed 1140 teleport 142 248.11,53.2,347.34
+
+!map_rotation end
+
+#Rotation 23 = Training Grounds [Army Battlefield] - TRAINING & PROMOTIONS - Calm Weather | Evening
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending prussian
+artillery_fieldgun_respawn_timer 30
+!map_rotation end
+
+
+##### EGYPT CUSTOM #####
+
+#Rotation 8 = Egypt [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Egypt
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 20
+
+
+# Engagement 1
+objects_override spawnsection 117.38 9.75 314.15 0.00 39.09 0.00 11 Location_1 OpenPlains neutral 5 5
+
+
+
+# Engagement 2
+
+objects_override spawnsection 216.20 4.09 226.47 0.00 193.57 0.00 12 Location_2 OpenPlains neutral 5 5
+
+
+objects_override spawnsection 117.38 9.75 314.15 0.00 39.09 0.00 13 Location_1 OpenPlains neutral 5 5
+objects_override spawnsection 216.20 4.09 226.47 0.00 193.57 0.00 14 Location_2 OpenPlains neutral 5 5
+
+
+
+######## TRAINING PROGRAM ########
+
+### INITIAL ANNOUCEMENT ###
+
+rc delayed 1170 broadcast Live at 19:00
+rc delayed 1155 broadcast Welcome to the 2nd-Bat Training Shooting program!
+rc delayed 1150 broadcast Move around the map and kill ALL enemy players 
+rc delayed 1145 broadcast Record your time and compare!
+rc delayed 1140 broadcast LIVE!
+
+
+
+
+
+!map_rotation end
+
+
+
+
+#Rotation 1 - Training Grounds [Army Battlefield] - TRAINING & PROMOTIONS - Calm Weather | Evening
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset Snowy
+weather_dynamic false
+faction_attacking british
+faction_defending prussian
+artillery_fieldgun_respawn_timer 30
+
+#Flags in promotion area
+objects_override FlagBritish 563.6 11 416.6 0 64 0
+objects_override FlagBritish 565.5 11 412.1 0 64 0
+
+#Cannon
+objects_override CannonFieldGun9Pdr 584.8 10.5 416.5 0 228 0
+objects_override CannonAmmoboxLarge 588.2 10.5 416.1 0 340.8 0
+
+#Class changes
+starting_weapons_override British Cannoneer 5 5 Musket Pistol Sabre BearingFlag Unarmed
+starting_weapons_override British Rocketeer 5 5 Musket Pistol Sabre Unarmed
+starting_weapons_override British Carpenter 5 5 Blunderbuss Pistol Axe Unarmed
+firearm_ammo_override British ArmyLineInfantry2 Musket 4 0 4
+
+sappers_defending_starting_materials 9999
+sappers_attacking_starting_materials 9999
+
+sappers_buildlimit InfantryStakes defending 250
+sappers_buildlimit InfantryStakes attacking 250
+
+sappers_buildlimit Gabion defending 250
+sappers_buildlimit Gabion attacking 250
+
+sappers_buildlimit ChevauxDeFriseLarge defending 250
+sappers_buildlimit ChevauxDeFriseLarge attacking 250
+
+sappers_buildlimit ChevauxDeFriseSmall defending 250
+sappers_buildlimit ChevauxDeFriseSmall attacking 250
+
+sappers_buildlimit ExplosiveBarrel defending 250
+sappers_buildlimit ExplosiveBarrel attacking 250
+
+sappers_buildlimit Palisade defending 250
+sappers_buildlimit Palisade attacking 250
+
+sappers_buildlimit ShootingPlatform defending 250
+sappers_buildlimit ShootingPlatform attacking 250
+
+sappers_buildlimit Chair defending 250
+sappers_buildlimit Chair attacking 250
+
+sappers_buildlimit Earthworks defending 250
+sappers_buildlimit Earthworks attacking 250
+
+sappers_buildlimit Sandbag defending 250
+sappers_buildlimit Sandbag attacking 250
+
+sappers_buildlimit SwivelGun defending 250
+sappers_buildlimit SwivelGun attacking 250
+
+sappers_buildlimit Ammobox defending 250
+sappers_buildlimit Ammobox attacking 250
+
+sappers_buildlimit RocketStack defending 250
+sappers_buildlimit RocketStack attacking 250
+
+!map_rotation end
+
+#Rotation 1 =Ancient Planes || [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Ancientplains
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking british
+faction_defending french
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 2 = Black Forest[Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Blackforest
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking british
+faction_defending french
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 3 = Crosshills [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Crosshills
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 4 = Canyon [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Canyon
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 5 = Desertplains [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Desertplains
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 600
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 100
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 6 = Desertplains small [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Desertplainssmall
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 600
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 100
+faction_attacking french
+faction_defending british
+faction_balancing true
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 7 = Dutchcanals [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Dutchcanals
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+##### EGYPT CUSTOM #####
+
+#Rotation 8 = Egypt [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Egypt
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 9 = Ernestridge [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Ernestridge
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 10 = Grassyplains [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Grassyplains
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 11 = Grassyplainsii [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Grassyplainsii
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 12 = Grassyplainsiii [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Grassyplainsiii
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 13 = Kinggeorge [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Kinggeorge
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 14 = Linburg [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Linburg
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 15 = Palisadearena [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Palisadearena
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 16 = Snowyplains [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Snowyplains
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 17 = Snowyplainsii [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Snowyplainsii
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 18 = Snowyplainsiii [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Snowyplainsiii
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 19 = Snowyplainsiv [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Snowyplainsiv
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 20 = Snowyplainsv [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Snowyplainsv
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 21 = Snowyplainssmall [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Snowyplainssmall
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 22 = Spanishfarm [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Spanishfarm
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 240
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+!map_rotation end
+
+#Rotation 23 = Training Grounds [Army Battlefield] - TRAINING & PROMOTIONS - Calm Weather | Evening
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending prussian
+artillery_fieldgun_respawn_timer 30
+!map_rotation end

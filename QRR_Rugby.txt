@@ -1,0 +1,233 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+
+###- Server Settingsa
+
+server_name QRR 'totally' original rugby game mode
+server_welcome_message Yo wagwan my slimes. Remember qrr-reg.com and qrr-moscow.ru
+server_region europe
+server_admin_password Internal
+server_password 5050
+
+mods_installed 2272056234 #comp melee
+mods_installed 2287169781 #23rd map
+mods_installed 2284542991 #rugby uniform
+mods_installed 2285035165 #rugby uniform
+
+###- Bandwidth & Memory Settings
+
+network_broadcast_mode Realtime
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 10.5
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 5
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending british
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+rc set idleToStrikeTransitionDelayMeleeWeapons 0.285
+rc set blockingStrikeTransitionDelayMeleeWeapons 0.285
+rc set characterBlockGraceTime 0.03
+
+spawn_override B Sapper 0
+spawn_override C Sapper 0
+spawn_override E Sapper 0
+spawn_override F Sapper 0
+spawn_override G Sapper 0
+spawn_override H Sapper 0
+spawn_override I Sapper 0
+spawn_override J Sapper 0
+spawn_override K Sapper 0
+spawn_override L Sapper 0
+spawn_override M Sapper 0
+spawn_override N Sapper 0
+
+
+spawn_override A Sapper 50
+spawn_override D Sapper 50
+
+sappers_attacking_starting_materials 200
+sappers_defending_starting_materials 200
+ 
+sappers_buildlimit InfantryStakes defending 0
+sappers_buildlimit InfantryStakes attacking 0
+ 
+sappers_buildlimit Gabion defending 0
+sappers_buildlimit Gabion attacking 0
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 0
+sappers_buildlimit ChevauxDeFriseLarge attacking 0
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 0
+sappers_buildlimit ChevauxDeFriseSmall attacking 0
+ 
+sappers_buildlimit ExplosiveBarrel defending 99
+sappers_buildlimit ExplosiveBarrel attacking 99
+ 
+sappers_buildlimit Palisade defending 0
+sappers_buildlimit Palisade attacking 0
+ 
+sappers_buildlimit ShootingPlatform defending 0
+sappers_buildlimit ShootingPlatform attacking 0
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 0
+sappers_buildlimit Sandbag attacking 0
+ 
+sappers_buildlimit Ammobox defending 0
+sappers_buildlimit Ammobox attacking 0
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivleGun defending 0
+sappers_buildlimit SwivleGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 0
+sappers_buildlimit Earthworks attacking 0
+
+starting_weapons_override British Sapper 4 4 Unarmed
+starting_weapons_override French Sapper 4 4 Unarmed
+starting_weapons_override Russian Sapper 4 4 Unarmed
+starting_weapons_override Prussian Sapper 4 4 Unarmed
+
+load_mod 2287169781 #23rd map
+load_mod 2284542991 #rugby uniform
+load_mod 2285035165 #rugby uniform
+
+objects_override CannonFieldGun9PDRMoveable 685.39 -0.02 759.67 0.00 92.43 0.00
+objects_override CannonFieldGun9PDRMoveable 785.28 -0.02 760.34 0.00 271.19 0.00
+objects_override CannonAmmoboxLargeMoveable 685.49 -0.02 756.93 0.00 87.93 0.00
+objects_override CannonAmmoboxLargeMoveable 785.01 -0.02 756.61 0.00 270.15 0.00
+
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending british
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+rc set idleToStrikeTransitionDelayMeleeWeapons 0.285
+rc set blockingStrikeTransitionDelayMeleeWeapons 0.285
+rc set characterBlockGraceTime 0.03
+
+load_mod 2272056234 #comp map
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 60
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 50
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm3
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire true
+damage_split 0
+
+
+spawn_override A ArmyLineInfantry 99
+
+spawn_override B ArmyLineInfantry 99
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2272056234 #comp map
+!map_rotation end
+
+
+!map_rotation start
+map_name modmap
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 60
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 50
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm3
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire true
+damage_split 0
+
+
+spawn_override A ArmyLineInfantry 99
+
+spawn_override B ArmyLineInfantry 99
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2272056234 #comp map
+!map_rotation end

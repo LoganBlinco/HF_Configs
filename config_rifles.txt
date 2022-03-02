@@ -1,0 +1,291 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+ 
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+###- Server Settings
+ 
+server_name QRR Rifle Practice
+server_welcome_message Welcome to rifle league server.
+server_region europe
+server_admin_password Internal
+server_password 5050
+
+#global settings
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+network_broadcast_mode Realtime
+
+mods_installed 2134163798 # competitive hills 1
+
+#Rotation 2 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+!map_rotation end
+
+
+#Rotation 2
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds -1
+max_player_respawns 0
+faction_attacking french
+faction_defending italian
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating false
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#starting_weapons_override british rifleman 4 4 Rifle_Pattern1800Infantry Sabre_Briquet Unarmed
+#starting_weapons_override french rifleman 4 4 Rifle_Pattern1800Infantry Sabre_Briquet Unarmed
+
+firearm_ammo_override italian rifleman Rifle_Pattern1800Infantry 10 1 11
+firearm_ammo_override italian rifleman Rifle_CharlevilleDragoonPattern_NoBayonet 10 1 11
+firearm_ammo_override french rifleman Rifle_Pattern1800Infantry 10 1 11
+firearm_ammo_override french rifleman Rifle_CharlevilleDragoonPattern_NoBayonet 10 1 11
+
+rc delayed 720 broadcast Live
+
+load_mod 2134163798 #Competitive hills 1
+
+spawn_override A rifleman 99
+spawn_override B rifleman 99
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+
+
+### BOTS
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 126
+
+rc delayed 1170 teleport 2 166.82,4.51,387.2
+rc delayed 1170 teleport 3 167.07,4.51,385.72
+rc delayed 1170 teleport 4 167.32,4.51,384.24
+rc delayed 1170 teleport 5 167.57,4.51,382.76
+rc delayed 1170 teleport 6 167.82,4.51,381.28
+rc delayed 1170 teleport 12 223.26,5.15,359.55
+rc delayed 1170 teleport 13 222.15,5.15,358.54
+rc delayed 1170 teleport 14 221.04,5.15,357.53
+rc delayed 1170 teleport 15 219.93,5.15,356.52
+rc delayed 1170 teleport 16 218.82,5.15,355.51
+rc delayed 1170 teleport 22 236.52,5.24,303.05
+rc delayed 1170 teleport 23 237.99,5.24,302.77
+rc delayed 1170 teleport 24 239.47,5.24,302.48
+rc delayed 1170 teleport 25 240.94,5.24,302.2
+rc delayed 1170 teleport 26 242.41,5.24,301.92
+rc delayed 1170 teleport 32 247.5,6.07,250.66
+rc delayed 1170 teleport 33 246.02,6.07,250.42
+rc delayed 1170 teleport 34 244.54,6.07,250.18
+rc delayed 1170 teleport 35 243.06,6.07,249.94
+rc delayed 1170 teleport 36 241.58,6.07,249.7
+rc delayed 1170 teleport 42 270.87,1.88,268.06
+rc delayed 1170 teleport 43 271.63,1.88,269.35
+rc delayed 1170 teleport 44 272.4,1.88,270.64
+rc delayed 1170 teleport 45 273.16,1.88,271.93
+rc delayed 1170 teleport 46 273.93,1.88,273.22
+rc delayed 1170 teleport 52 305.15,3.15,208.86
+rc delayed 1170 teleport 53 305.69,3.15,207.46
+rc delayed 1170 teleport 54 306.23,3.15,206.06
+rc delayed 1170 teleport 55 306.78,3.15,204.66
+rc delayed 1170 teleport 56 307.32,3.15,203.27
+rc delayed 1170 teleport 62 351.96,5.63,220.09
+rc delayed 1170 teleport 63 352.33,5.63,221.54
+rc delayed 1170 teleport 64 352.71,5.63,222.99
+rc delayed 1170 teleport 65 353.08,5.63,224.45
+rc delayed 1170 teleport 66 353.46,5.63,225.9
+rc delayed 1170 teleport 72 368.09,5.45,185.44
+rc delayed 1170 teleport 73 367.18,5.45,184.24
+rc delayed 1170 teleport 74 366.28,5.45,183.05
+rc delayed 1170 teleport 75 365.37,5.45,181.85
+rc delayed 1170 teleport 76 364.46,5.45,180.66
+rc delayed 1170 teleport 82 306.95,5.12,133.66
+rc delayed 1170 teleport 83 306.14,5.12,134.92
+rc delayed 1170 teleport 84 305.33,5.12,136.18
+rc delayed 1170 teleport 85 304.51,5.12,137.44
+rc delayed 1170 teleport 86 303.7,5.12,138.71
+rc delayed 1170 teleport 92 262.29,5.31,134.23
+rc delayed 1170 teleport 93 260.79,5.31,134.31
+rc delayed 1170 teleport 94 259.29,5.31,134.39
+rc delayed 1170 teleport 95 257.8,5.31,134.47
+rc delayed 1170 teleport 96 256.3,5.31,134.55
+rc delayed 1170 teleport 102 238.93,5.32,179.53
+rc delayed 1170 teleport 103 240.42,5.32,179.68
+rc delayed 1170 teleport 104 241.92,5.32,179.82
+rc delayed 1170 teleport 105 243.41,5.32,179.97
+rc delayed 1170 teleport 106 244.9,5.32,180.12
+rc delayed 1170 teleport 112 195.59,5.19,210.96
+rc delayed 1170 teleport 113 197.09,5.19,210.94
+rc delayed 1170 teleport 114 198.59,5.19,210.91
+rc delayed 1170 teleport 115 200.09,5.19,210.89
+rc delayed 1170 teleport 116 201.59,5.19,210.86
+rc delayed 1170 teleport 122 162.67,5.33,260.58
+rc delayed 1170 teleport 123 163.79,5.33,261.58
+rc delayed 1170 teleport 124 164.91,5.33,262.58
+rc delayed 1170 teleport 125 166.03,5.33,263.57
+rc delayed 1170 teleport 126 167.15,5.33,264.57
+
+!map_rotation end
+
+#Rotation 2 = Sp3 [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name grassyplainsiv
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds -1
+max_player_respawns 0
+faction_attacking french
+faction_defending italian
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating false
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+starting_weapons_override british rifleman 4 4 Rifle_Pattern1800Infantry Sabre_Briquet Unarmed
+starting_weapons_override french rifleman 4 4 Rifle_Pattern1800Infantry Sabre_Briquet Unarmed
+
+firearm_ammo_override british rifleman Rifle_Pattern1800Infantry 10 1 11
+firearm_ammo_override british rifleman Rifle_CharlevilleDragoonPattern_NoBayonet10 1 11
+firearm_ammo_override french rifleman Rifle_Pattern1800Infantry 10 1 11
+firearm_ammo_override french rifleman Rifle_CharlevilleDragoonPattern_NoBayonet10 1 11
+
+objects_override FlagBritish 280.82 16.99 144.09 0.00 359.42 0.00
+objects_override FlagBritish 276.42 16.98 144.56 0.00 351.40 0.00
+objects_override FlagBritish 276.02 16.09 153.54 0.00 352.74 0.00
+objects_override FlagBritish 281.72 16.30 153.99 0.00 159.52 0.00
+objects_override FlagBritish 293.07 16.98 478.32 0.00 354.96 0.00
+objects_override FlagBritish 288.69 16.99 478.91 0.00 262.74 0.00
+objects_override FlagBritish 287.17 16.03 471.96 0.00 168.43 0.00
+
+firearm_ammo_override italian rifleman Rifle_Pattern1800Infantry 10 1 11
+firearm_ammo_override italian rifleman Rifle_CharlevilleDragoonPattern_NoBayonet 10 1 11
+firearm_ammo_override french rifleman Rifle_Pattern1800Infantry 10 1 11
+firearm_ammo_override french rifleman Rifle_CharlevilleDragoonPattern_NoBayonet 10 1 11
+
+rc delayed 720 broadcast Live
+
+spawn_override A rifleman 99
+spawn_override B rifleman 99
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+
+
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers spawn 126
+
+rc delayed 1170 teleport 2 309.42,9.4,245.07
+rc delayed 1170 teleport 3 307.92,9.4,245.08
+rc delayed 1170 teleport 4 306.42,9.4,245.08
+rc delayed 1170 teleport 5 304.92,9.4,245.09
+rc delayed 1170 teleport 6 303.42,9.4,245.09
+rc delayed 1170 teleport 12 312.03,10.25,291.39
+rc delayed 1170 teleport 13 311.9,10.25,292.88
+rc delayed 1170 teleport 14 311.78,10.25,294.38
+rc delayed 1170 teleport 15 311.65,10.25,295.87
+rc delayed 1170 teleport 16 311.52,10.25,297.37
+rc delayed 1170 teleport 22 352.41,12.76,301.31
+rc delayed 1170 teleport 23 351.09,12.76,302.03
+rc delayed 1170 teleport 24 349.78,12.76,302.75
+rc delayed 1170 teleport 25 348.46,12.76,303.46
+rc delayed 1170 teleport 26 347.14,12.76,304.18
+rc delayed 1170 teleport 32 349.74,13.38,330.64
+rc delayed 1170 teleport 33 348.8,13.38,331.81
+rc delayed 1170 teleport 34 347.86,13.38,332.98
+rc delayed 1170 teleport 35 346.93,13.38,334.15
+rc delayed 1170 teleport 36 345.99,13.38,335.32
+rc delayed 1170 teleport 42 337.61,11.62,379.91
+rc delayed 1170 teleport 43 336.93,11.62,381.25
+rc delayed 1170 teleport 44 336.26,11.62,382.59
+rc delayed 1170 teleport 45 335.58,11.62,383.93
+rc delayed 1170 teleport 46 334.9,11.62,385.26
+rc delayed 1170 teleport 52 318.56,10.43,432.76
+rc delayed 1170 teleport 53 319.94,10.43,432.18
+rc delayed 1170 teleport 54 321.33,10.43,431.6
+rc delayed 1170 teleport 55 322.71,10.43,431.02
+rc delayed 1170 teleport 56 324.09,10.43,430.44
+rc delayed 1170 teleport 62 229.52,10.76,394.24
+rc delayed 1170 teleport 63 229.29,10.76,392.76
+rc delayed 1170 teleport 64 229.06,10.76,391.28
+rc delayed 1170 teleport 65 228.83,10.76,389.79
+rc delayed 1170 teleport 66 228.6,10.76,388.31
+rc delayed 1170 teleport 72 230.94,10.73,364.08
+rc delayed 1170 teleport 73 232.42,10.73,364.33
+rc delayed 1170 teleport 74 233.9,10.73,364.58
+rc delayed 1170 teleport 75 235.38,10.73,364.83
+rc delayed 1170 teleport 76 236.86,10.73,365.08
+rc delayed 1170 teleport 82 213.31,11.75,317.64
+rc delayed 1170 teleport 83 212.6,11.75,318.96
+rc delayed 1170 teleport 84 211.89,11.75,320.28
+rc delayed 1170 teleport 85 211.19,11.75,321.61
+rc delayed 1170 teleport 86 210.48,11.75,322.93
+rc delayed 1170 teleport 92 182.88,12.39,316.86
+rc delayed 1170 teleport 93 183.75,12.39,315.64
+rc delayed 1170 teleport 94 184.61,12.39,314.41
+rc delayed 1170 teleport 95 185.48,12.39,313.19
+rc delayed 1170 teleport 96 186.35,12.39,311.96
+rc delayed 1170 teleport 102 212.82,11.41,227.91
+rc delayed 1170 teleport 103 214.27,11.41,228.28
+rc delayed 1170 teleport 104 215.73,11.41,228.66
+rc delayed 1170 teleport 105 217.18,11.41,229.03
+rc delayed 1170 teleport 106 218.63,11.41,229.4
+rc delayed 1170 teleport 112 272.95,8.36,317.16
+rc delayed 1170 teleport 113 271.46,8.36,316.95
+rc delayed 1170 teleport 114 269.98,8.36,316.75
+rc delayed 1170 teleport 115 268.49,8.36,316.54
+rc delayed 1170 teleport 116 267.01,8.36,316.34
+rc delayed 1170 teleport 122 290.51,10.1,424.93
+rc delayed 1170 teleport 123 291.92,10.1,425.44
+rc delayed 1170 teleport 124 293.33,10.1,425.95
+rc delayed 1170 teleport 125 294.74,10.1,426.46
+rc delayed 1170 teleport 126 296.15,10.1,426.97
+!map_rotation end
+

@@ -1,0 +1,1749 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+ 
+server_port 39900
+steam_communications_port 8607
+steam_query_port 39902
+
+###- Server Settings
+ 
+server_name Queens Royal Saturday Event | QRR
+server_welcome_message Welcome to the QRR linebattle
+server_region europe
+server_admin_password Rambo
+server_password 5050
+
+server_intro_title <b><color=red> Queens Royal Saturday Event hosted by the QRR </color></b> 
+server_intro_body <color=yellow> Please try to follow the rules to the best of your ability <br><br> Ammo boxes have been added to the spawns for musket and rifles <br><br> Cav spawns have been added with flags (to show leader) <br><br> Captains have been given a carbine <br><br> </color> <b><color=blue> Report rule breaks and ask questions in blue chat </color></b>
+ 
+#global settings
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+mods_installed 2115965206 #hilly hills
+mods_installed 2114776657 #duney dunes
+mods_installed 2117367100 #77th uniform
+mods_installed 2116573280 #johnson map
+mods_installed 2119830114 #elf melee
+
+
+#Rotation 1 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+server_round_rule ArmyInfantryOfficer | This is a test | and another
+
+#Promotion area flags
+objects_override FlagBritish 563.65 11.03 416.67 0.00 165.41 0.00
+objects_override FlagBritish 565.36 11.03 412.18 0.00 73.52 0.00
+objects_override FlagBritish 586.09 9.93 425.62 0.00 247.12 0.00
+objects_override FlagBritish 588.00 9.93 420.24 0.00 105.06 0.00
+
+objects_override CannonFieldGun9PDR 584.73 10.53 416.91 0.00 240.68 0.00
+objects_override CannonAmmoboxLarge 587.64 10.53 416.92 0.00 243.99 0.00
+
+objects_override BarrelStack_Group 560.53 9.93 425.16 0.00 88.35 0.00
+
+objects_override MusketStack 583.32 10.53 423.07 0.00 155.54 0.00
+objects_override MusketStack 584.27 10.53 420.70 0.00 335.63 0.00
+objects_override MusketStack 570.97 10.53 420.52 0.00 150.39 0.00
+objects_override MusketStack 573.65 10.53 414.23 0.00 338.97 0.00
+objects_override Piano2 566.32 9.93 426.71 0.00 111.58 0.00
+
+load_mod 2117367100 #77th uniform
+!map_rotation end
+
+#Rotation 2 - MINISIEGE
+!map_rotation start
+map_name FortSchwarz
+game_mode ArmySiege
+round_time_minutes 10
+reinforcements_per_faction 250
+wave_spawn_time_seconds 20
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 20
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+#max_player_respawns 5
+
+
+#spawn changes
+objects_override spawnsection 266.27 20.42 337.30 0.00 254.92 0.00 11 Trench_A Ruins Attacking 15 5
+objects_override spawnsection 214.09 20.41 229.57 0.00 325.67 0.00 12 Trench_B Ruins Attacking 15 5
+objects_override spawnsection 222.76 25.13 448.37 0.00 233.49 0.00 13 Capture_B BaseSpawn Attacking 15 5
+
+#removing spawns for defenders
+spawn_override A ArmyInfantryOfficer 10
+spawn_override A ArmyLineInfantry 200
+spawn_override A FlagBearer 10
+spawn_override A Drummer 3
+spawn_override A Fifer 3
+spawn_override A Bagpiper 3
+spawn_override A Surgeon 2
+spawn_override A Sapper 2
+spawn_override A Cannoneer 6
+spawn_override A Rocketeer 6
+
+spawn_override B ArmyLineInfantry 0
+
+#spawns for attackers
+spawn_override K ArmyInfantryOfficer 10
+spawn_override K ArmyLineInfantry 200
+spawn_override K FlagBearer 10
+spawn_override K Drummer 3
+spawn_override K Fifer 3
+spawn_override K Bagpiper 3
+spawn_override K Surgeon 2
+spawn_override K Sapper 2
+spawn_override K Cannoneer 6
+spawn_override K Rocketeer 6
+
+spawn_override L ArmyInfantryOfficer 10
+spawn_override L ArmyLineInfantry 200
+spawn_override L FlagBearer 10
+spawn_override L Drummer 3
+spawn_override L Fifer 3
+spawn_override L Bagpiper 3
+spawn_override L Surgeon 2
+spawn_override L Sapper 2
+spawn_override L Cannoneer 6
+spawn_override L Rocketeer 6
+
+spawn_override C ArmyInfantryOfficer 0
+spawn_override D ArmyInfantryOfficer 0
+
+
+#extra cover
+
+objects_override ChevauxDeFriseLarge 145.66 23.28 264.40 0.00 231.91 0.00
+objects_override ChevauxDeFriseLarge 161.86 23.42 263.20 0.00 85.74 0.00
+objects_override ChevauxDeFriseLarge 187.82 22.58 252.51 0.00 130.22 0.00
+objects_override ChevauxDeFriseLarge 210.85 24.73 284.78 0.00 64.27 0.00
+objects_override ChevauxDeFriseLarge 213.65 24.47 325.85 0.00 346.88 0.00
+objects_override ChevauxDeFriseLarge 197.38 25.16 374.83 0.00 354.85 0.00
+objects_override ChevauxDeFriseLarge 150.33 24.99 385.52 0.00 279.13 0.00
+objects_override ChevauxDeFriseLarge 123.16 23.05 359.72 0.00 227.19 0.00
+objects_override ChevauxDeFriseLarge 111.83 25.18 316.79 0.00 185.02 0.00
+objects_override ChevauxDeFriseLarge 120.89 22.34 278.73 0.00 137.84 0.00
+
+
+!map_rotation end
+
+
+##### EVENT MAPS #####
+
+#Rotation 3
+!map_rotation start
+map_name Egypt
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 300
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+#faction_attacking british
+#faction_defending french
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 6
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+faction_randomiser both
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>EVENT RULES - INFANTRY</color></b></size><br><br>• No firing out of line (FOL) <br>• Lines require (to start the round) with an Officer/Captain/Flag bearer <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>• Pistols may fire in compass range of a line/skirms/cannon
+
+server_round_rule FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter |<size=15><b><color=\#989898>EVENT RULES - AUXILLARY</color></b></size><br><br>• May fire in compass range of a line/artillery/skirms <br>• Auxillary must attempt to stay within compass range of a line/artillery/skirms [no rambo]<br>• May reload out of line<br>• May be used as a dedicated Auxillary Support Line [More infomation on rule doc]
+
+server_round_rule Sapper|<size=15><b><color=\#989898>EVENT RULES - SAPPER</color></b></size><br><br>• Cannont build within 50m of spawn<br>• Must be shouldered to fire when with a Line<br>• May skirmish around a cannon in compass range. Max crew size is 5 muskets<br>• Can only build within compass range of a friendly unit<br>• May form an engineer lines composed of Officers , Line infantry and Sappers. [More infomation on rule doc]
+
+server_round_rule Cannoneer,Rocketeer|<size=15><b><color=\#989898>EVENT RULES - ARTILLERY CREW</color></b></size><br><br>• Cannoneers CANNOT be used a NCO's for lines [use captain/2nd infantry varient for this]<br>• Artillery crew may skirmish around a cannon. Max crew of 5 muskets<br>• May steal and use enemy artillery<br>• Arty vs Arty live at 12:00<br>• Cannons may fire at 18:00
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>EVENT RULES - CAVALRY </color></b></size><br><br>• Cannont mix Cav units <br>• Dragoons must be stationary and within 3 horse width spacing to fire<br>• Dragoons may not fire in charge<br>• Hussars may fire on the move in a reasonable Cavalry formation [compass range]<br>• Hussars may fire in charge<br>• Must dismount for all charge<br>• Once a cav unit is down to 2 players you must dismount and join a line [May finish your current engagement but cannot start a new one].
+
+
+### CUSTOM SPAWNS ###
+
+## UK CAV ##
+objects_override spawnsection 174.12 3.99 -35.85 0.00 345.11 0.00 11 Cav_Spawn Field attacking 5 5
+
+objects_override TentLarge1 146.08 4.38 -18.83 0.00 90.44 0.00
+objects_override TentLarge2 166.37 3.92 -20.81 0.00 275.30 0.00
+objects_override TentSmall2 155.49 3.75 -32.40 0.00 357.57 0.00
+objects_override BarrelStack_Group 142.48 4.79 -30.22 0.00 30.87 0.00
+objects_override WickerWall_Group1_1 142.91 4.67 -15.99 0.00 124.66 0.00
+objects_override Campfire 152.77 3.84 -19.59 0.00 355.56 0.00
+objects_override HuntingHut 139.34 3.05 18.06 0.00 11.53 0.00
+
+rc delayed 1170 vehiclesSpawn 1 British Hussar
+rc delayed 1170 vehiclesSpawn 1 British CuirassierDragoon 
+objects_override WeaponRack 155.11 3.87 -15.17 0.00 1.97 0.00 BearingFlagBritish 3
+
+
+## UK MAIN ## uk - main
+objects_override spawnsection 196.99 7.97 22.98 0.00 357.82 0.00 12 Main_Spawn BaseSpawn attacking 8 5
+
+## FRANCE CAV ##
+objects_override spawnsection 508.70 8.88 375.58 0.13 213.94 0.20 14 Cav_Spawn Field attacking 5 5
+
+objects_override TentLarge1 515.50 5.45 363.01 0.00 106.05 0.00
+objects_override TentLarge2 528.97 5.42 361.03 0.00 269.96 0.00
+objects_override WickerWall_Group1_1 506.93 6.26 340.96 0.00 256.47 0.00
+objects_override Campfire 521.63 5.32 361.32 0.00 182.80 0.00
+objects_override HuntingHut 532.74 11.07 312.67 0.00 183.46 0.00
+objects_override TentSmall2 522.92 6.74 371.60 0.00 186.98 0.00
+objects_override BarrelStack_Group 532.62 6.00 374.72 0.00 214.95 0.00
+
+rc delayed 1168 vehiclesSpawn 1 French Hussar
+rc delayed 1168 vehiclesSpawn 1 French CuirassierDragoon 
+objects_override WeaponRack 521.43 5.19 344.55 0.00 181.97 0.00 BearingFlagFrench 3
+
+## FRANCE MAIN ##
+objects_override spawnsection 421.92 13.07 352.23 0.00 179.84 0.00 13 Main_Spawn BaseSpawn attacking 8 5
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override L ArmyInfantryOfficer 20
+spawn_override M ArmyInfantryOfficer 20
+spawn_override L NavalCaptain 20
+spawn_override M NavalCaptain 20
+spawn_override L ArmyLineInfantry 99
+spawn_override M ArmyLineInfantry 99
+spawn_override L ArmyLineInfantry2 99
+spawn_override M ArmyLineInfantry2 99
+spawn_override L Grenadier 99
+spawn_override M Grenadier 99
+spawn_override L Guard 99
+spawn_override M Guard 99
+spawn_override L LightInfantry 7
+spawn_override M LightInfantry 7
+spawn_override L Rifleman 7
+spawn_override M Rifleman 7
+spawn_override L FlagBearer 99
+spawn_override M FlagBearer 99
+spawn_override L Drummer 99
+spawn_override M Drummer 99
+spawn_override L Fifer 99
+spawn_override M Fifer 99
+spawn_override L Bagpiper 99
+spawn_override M Bagpiper 99
+spawn_override L Surgeon 99
+spawn_override M Surgeon 99
+spawn_override L Cannoneer 99
+spawn_override M Cannoneer 99
+spawn_override L Rocketeer 99
+spawn_override M Rocketeer 99
+spawn_override L Sapper 12
+spawn_override M Sapper 12
+spawn_override L Carpenter 12
+spawn_override M Carpenter 12
+
+## CAV SPAWNS ## 
+spawn_override K Hussar 8
+spawn_override K CuirassierDragoon 8
+spawn_override K ArmyInfantryOfficer 1
+spawn_override K NavalCaptain 0
+
+spawn_override N Hussar 8
+spawn_override N CuirassierDragoon 8
+spawn_override N ArmyInfantryOfficer 1
+spawn_override N NavalCaptain 0
+
+### Additional Settings ###
+
+## Cav settings ##
+rc set vehicleHorseForAll false #must be true for captain
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 15
+sappers_buildlimit Gabion attacking 15
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ExplosiveBarrel attacking 0
+ 
+sappers_buildlimit Palisade defending 5
+sappers_buildlimit Palisade attacking 5
+ 
+sappers_buildlimit ShootingPlatform defending 5
+sappers_buildlimit ShootingPlatform attacking 5
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivleGun defending 0
+sappers_buildlimit SwivleGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+
+### AMMO BOX SPAWNS ###
+objects_override firearmammobox 194.71 7.96 24.91 0.00 358.79 0.00 Unarmed 50 2 4
+objects_override firearmammobox 422.45 13.07 355.20 0.00 167.95 0.00 Unarmed 50 2 4
+
+### ENABLE AND DISABLE FIRING ### 
+rc delayed 1200 set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+rc delayed 1160 broadcast Arty can fire at 18:00 (Arty on Arty at 12:00)
+rc delayed 1155 broadcast Reminder that Sappers cannot build within 50m of spawn
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live (Arty cannot fire)
+rc delayed 1080 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 720 broadcast Arty on Arty live!
+
+### ARTY SPEED ### 
+rc delayed 1200 set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Rifleman 4 4 Rifle_Pattern1800Infantry Sword_Bayonet Unarmed
+starting_weapons_override French Rifleman 4 4 Rifle_Pattern1800Infantry Sabre_Briquet Unarmed
+
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+
+starting_weapons_override British Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+starting_weapons_override British CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+### EXTRA cover ###
+
+
+objects_override PalisadeWall 119.68 11.13 293.81 0.00 340.40 0.00
+objects_override PalisadeWall 105.04 6.94 247.99 0.00 164.56 0.00
+objects_override PalisadeWall 358.91 2.94 107.79 0.00 214.13 0.00
+objects_override PalisadeWall 386.68 2.81 96.52 0.00 245.76 0.00
+
+
+objects_override Ruins_Wall1 519.47 4.30 91.11 0.00 4.04 0.00
+objects_override Ruins_Wall1 470.33 4.85 164.07 0.00 354.53 0.00
+objects_override Ruins_Wall1 506.24 7.16 219.26 0.00 321.55 0.00
+objects_override Ruins_Wall1 456.87 6.41 255.41 0.00 159.81 0.00
+ 
+objects_override PalisadeWall 520.94 10.08 296.22 0.00 302.91 0.00
+objects_override PalisadeWall 309.43 9.02 333.52 0.00 87.43 0.00
+objects_override PalisadeWall 360.22 7.49 367.08 0.00 98.79 0.00
+objects_override PalisadeWall 405.61 10.77 391.66 0.00 142.01 0.00
+objects_override PalisadeWall 423.74 2.55 117.21 0.00 355.83 0.00
+objects_override PalisadeWall 362.35 3.69 31.88 0.00 259.69 0.00
+
+objects_override PalisadeWall 300.14 5.55 -0.40 0.00 277.21 0.00
+objects_override PalisadeWall 240.88 4.62 47.56 0.00 227.01 0.00
+objects_override PalisadeWall 196.86 1.99 105.24 0.00 0.38 0.00
+objects_override PalisadeWall 252.41 4.33 338.45 0.00 87.23 0.00
+
+
+### TIME AND WEATHER ###
+rc delayed 1200 nature time timeOfDay 7.00
+rc delayed 1185 nature time timeOfDay 7.04
+rc delayed 1170 nature time timeOfDay 7.07
+rc delayed 1155 nature time timeOfDay 7.11
+rc delayed 1140 nature time timeOfDay 7.15
+rc delayed 1125 nature time timeOfDay 7.19
+rc delayed 1110 nature time timeOfDay 7.22
+rc delayed 1095 nature time timeOfDay 7.26
+rc delayed 1080 nature time timeOfDay 7.30
+rc delayed 1065 nature time timeOfDay 7.34
+rc delayed 1050 nature time timeOfDay 7.37
+rc delayed 1035 nature time timeOfDay 7.41
+rc delayed 1020 nature time timeOfDay 7.45
+rc delayed 1005 nature time timeOfDay 7.49
+rc delayed 990 nature time timeOfDay 7.52
+rc delayed 975 nature time timeOfDay 7.56
+rc delayed 960 nature time timeOfDay 7.60
+rc delayed 945 nature time timeOfDay 7.64
+rc delayed 930 nature time timeOfDay 7.67
+rc delayed 915 nature time timeOfDay 7.71
+rc delayed 900 nature time timeOfDay 7.75
+rc delayed 885 nature time timeOfDay 7.79
+rc delayed 870 nature time timeOfDay 7.82
+rc delayed 855 nature time timeOfDay 7.86
+rc delayed 840 nature time timeOfDay 7.90
+rc delayed 825 nature time timeOfDay 7.94
+rc delayed 810 nature time timeOfDay 7.97
+rc delayed 795 nature time timeOfDay 8.01
+rc delayed 780 nature time timeOfDay 8.05
+rc delayed 765 nature time timeOfDay 8.09
+rc delayed 750 nature time timeOfDay 8.12
+rc delayed 735 nature time timeOfDay 8.16
+rc delayed 720 nature time timeOfDay 8.20
+rc delayed 705 nature time timeOfDay 8.24
+rc delayed 690 nature time timeOfDay 8.27
+rc delayed 675 nature time timeOfDay 8.31
+rc delayed 660 nature time timeOfDay 8.35
+rc delayed 645 nature time timeOfDay 8.39
+rc delayed 630 nature time timeOfDay 8.42
+rc delayed 615 nature time timeOfDay 8.46
+rc delayed 600 nature time timeOfDay 8.50
+rc delayed 585 nature time timeOfDay 8.54
+rc delayed 570 nature time timeOfDay 8.57
+rc delayed 555 nature time timeOfDay 8.61
+rc delayed 540 nature time timeOfDay 8.65
+rc delayed 525 nature time timeOfDay 8.69
+rc delayed 510 nature time timeOfDay 8.72
+rc delayed 495 nature time timeOfDay 8.76
+rc delayed 480 nature time timeOfDay 8.80
+rc delayed 465 nature time timeOfDay 8.84
+rc delayed 450 nature time timeOfDay 8.87
+rc delayed 435 nature time timeOfDay 8.91
+rc delayed 420 nature time timeOfDay 8.95
+rc delayed 405 nature time timeOfDay 8.99
+rc delayed 390 nature time timeOfDay 9.02
+rc delayed 375 nature time timeOfDay 9.06
+rc delayed 360 nature time timeOfDay 9.10
+rc delayed 345 nature time timeOfDay 9.14
+rc delayed 330 nature time timeOfDay 9.17
+rc delayed 315 nature time timeOfDay 9.21
+rc delayed 300 nature time timeOfDay 9.25
+rc delayed 285 nature time timeOfDay 9.29
+rc delayed 270 nature time timeOfDay 9.32
+rc delayed 255 nature time timeOfDay 9.36
+rc delayed 240 nature time timeOfDay 9.40
+rc delayed 225 nature time timeOfDay 9.44
+rc delayed 210 nature time timeOfDay 9.47
+rc delayed 195 nature time timeOfDay 9.51
+rc delayed 180 nature time timeOfDay 9.55
+rc delayed 165 nature time timeOfDay 9.59
+rc delayed 150 nature time timeOfDay 9.62
+rc delayed 135 nature time timeOfDay 9.66
+rc delayed 120 nature time timeOfDay 9.70
+rc delayed 105 nature time timeOfDay 9.74
+rc delayed 90 nature time timeOfDay 9.77
+rc delayed 75 nature time timeOfDay 9.81
+rc delayed 60 nature time timeOfDay 9.85
+rc delayed 45 nature time timeOfDay 9.89
+rc delayed 30 nature time timeOfDay 9.92
+rc delayed 15 nature time timeOfDay 9.96
+rc delayed 0 nature time timeOfDay 10.00
+
+load_mod 2117367100 #77th uniform
+
+!map_rotation end
+
+#Rotation 22 = Duney dunes
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+game_type Hardcore
+round_time_minutes 20
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 17
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire false
+faction_attacking french
+faction_defending british
+
+
+########## NON-MAP SPECIFIC #####################
+
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>EVENT RULES - INFANTRY</color></b></size><br><br>• No firing out of line (FOL) <br>• Lines require (to start the round) with an Officer/Captain/Flag bearer <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>• Pistols may fire in compass range of a line/skirms/cannon
+
+server_round_rule FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter |<size=15><b><color=\#989898>EVENT RULES - AUXILLARY</color></b></size><br><br>• May fire in compass range of a line/artillery/skirms <br>• Auxillary must attempt to stay within compass range of a line/artillery/skirms [no rambo]<br>• May reload out of line<br>• May be used as a dedicated Auxillary Support Line [More infomation on rule doc]
+
+server_round_rule Sapper|<size=15><b><color=\#989898>EVENT RULES - SAPPER</color></b></size><br><br>• Cannont build within 50m of spawn<br>• Must be shouldered to fire when with a Line<br>• May skirmish around a cannon in compass range. Max crew size is 5 muskets<br>• Can only build within compass range of a friendly unit<br>• May form an engineer lines composed of Officers , Line infantry and Sappers. [More infomation on rule doc]
+
+server_round_rule Cannoneer,Rocketeer|<size=15><b><color=\#989898>EVENT RULES - ARTILLERY CREW</color></b></size><br><br>• Cannoneers CANNOT be used a NCO's for lines [use captain/2nd infantry varient for this]<br>• Artillery crew may skirmish around a cannon. Max crew of 5 muskets<br>• May steal and use enemy artillery<br>• Arty vs Arty live at 12:00<br>• Cannons may fire at 18:00
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>EVENT RULES - CAVALRY </color></b></size><br><br>• Cannont mix Cav units <br>• Dragoons must be stationary and within 3 horse width spacing to fire<br>• Dragoons may not fire in charge<br>• Hussars may fire on the move in a reasonable Cavalry formation [compass range]<br>• Hussars may fire in charge<br>• Must dismount for all charge<br>• Once a cav unit is down to 2 players you must dismount and join a line [May finish your current engagement but cannot start a new one].
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 7
+spawn_override B LightInfantry 7
+spawn_override A Rifleman 7
+spawn_override B Rifleman 7
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+
+## CAV SPAWNS ## 
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A NavalCaptain 0
+
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B NavalCaptain 0
+
+### Additional Settings ###
+
+## Cav settings ##
+rc set vehicleHorseForAll false #must be true for captain
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 15
+sappers_buildlimit Gabion attacking 15
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ExplosiveBarrel attacking 0
+ 
+sappers_buildlimit Palisade defending 5
+sappers_buildlimit Palisade attacking 5
+ 
+sappers_buildlimit ShootingPlatform defending 5
+sappers_buildlimit ShootingPlatform attacking 5
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivleGun defending 0
+sappers_buildlimit SwivleGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+### ENABLE AND DISABLE FIRING ### 
+rc delayed 1200 set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+rc delayed 1160 broadcast Arty can fire at 18:00 (Arty on Arty at 12:00)
+rc delayed 1155 broadcast Reminder that Sappers cannot build within 50m of spawn
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live (Arty cannot fire)
+rc delayed 1080 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 720 broadcast Arty on Arty live!
+
+### ARTY SPEED ### 
+rc delayed 1200 set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Rifleman 4 4 Rifle_Pattern1800Infantry Sword_Bayonet Unarmed
+starting_weapons_override French Rifleman 4 4 Rifle_Pattern1800Infantry Sabre_Briquet Unarmed
+
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+
+starting_weapons_override British Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+starting_weapons_override British CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+#Loaded Modifications
+load_mod 2117367100 #77th uniform
+load_mod 2114776657
+!map_rotation end
+
+
+#Rotation 5
+!map_rotation start
+map_name grassyplainsii
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 300
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+#faction_attacking british
+#faction_defending french
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 6
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+faction_randomiser both
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>EVENT RULES - INFANTRY</color></b></size><br><br>• No firing out of line (FOL) <br>• Lines require (to start the round) with an Officer/Captain/Flag bearer <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>• Pistols may fire in compass range of a line/skirms/cannon
+
+server_round_rule FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter |<size=15><b><color=\#989898>EVENT RULES - AUXILLARY</color></b></size><br><br>• May fire in compass range of a line/artillery/skirms <br>• Auxillary must attempt to stay within compass range of a line/artillery/skirms [no rambo]<br>• May reload out of line<br>• May be used as a dedicated Auxillary Support Line [More infomation on rule doc]
+
+server_round_rule Sapper|<size=15><b><color=\#989898>EVENT RULES - SAPPER</color></b></size><br><br>• Cannont build within 50m of spawn<br>• Must be shouldered to fire when with a Line<br>• May skirmish around a cannon in compass range. Max crew size is 5 muskets<br>• Can only build within compass range of a friendly unit<br>• May form an engineer lines composed of Officers , Line infantry and Sappers. [More infomation on rule doc]
+
+server_round_rule Cannoneer,Rocketeer|<size=15><b><color=\#989898>EVENT RULES - ARTILLERY CREW</color></b></size><br><br>• Cannoneers CANNOT be used a NCO's for lines [use captain/2nd infantry varient for this]<br>• Artillery crew may skirmish around a cannon. Max crew of 5 muskets<br>• May steal and use enemy artillery<br>• Arty vs Arty live at 12:00<br>• Cannons may fire at 18:00
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>EVENT RULES - CAVALRY </color></b></size><br><br>• Cannont mix Cav units <br>• Dragoons must be stationary and within 3 horse width spacing to fire<br>• Dragoons may not fire in charge<br>• Hussars may fire on the move in a reasonable Cavalry formation [compass range]<br>• Hussars may fire in charge<br>• Must dismount for all charge<br>• Once a cav unit is down to 2 players you must dismount and join a line [May finish your current engagement but cannot start a new one].
+
+
+### CUSTOM SPAWNS ###
+
+## UK CAV ##
+objects_override spawnsection 290.04 14.13 116.45 0.00 4.10 0.00 11 Cav_Spawn Field attacking 15 5
+
+objects_override TentLarge1 291.20 14.05 124.60 0.00 181.76 0.00
+objects_override TentLarge2 284.05 14.03 118.86 0.00 84.06 0.00
+objects_override TentSmall2 300.68 14.13 120.42 0.00 255.02 0.00
+objects_override WickerWall_Group1_1 312.42 13.59 135.66 0.00 351.45 0.00
+objects_override Campfire 290.04 14.13 116.45 0.00 4.10 0.00
+
+rc delayed 1170 vehiclesSpawn 1 British Hussar
+rc delayed 1170 vehiclesSpawn 1 British CuirassierDragoon 
+objects_override WeaponRack 293.29 14.09 131.88 0.00 318.90 0.00 BearingFlagBritish 3
+
+
+## UK MAIN ## uk - main
+objects_override spawnsection 361.10 13.82 126.26 0.00 1.65 0.00 12 Main_Spawn BaseSpawn attacking 15 5
+
+## FRANCE CAV ##
+objects_override spawnsection 416.62 11.97 554.38 0.00 146.81 0.00 14 Cav_Spawn Field attacking 15 10
+
+objects_override TentLarge1 421.52 11.20 546.92 0.00 326.06 0.00
+objects_override TentLarge2 410.62 12.02 568.76 0.00 177.63 0.00
+objects_override WickerWall_Group1_1 423.34 11.17 565.59 0.00 234.39 0.00
+objects_override Campfire 416.62 11.97 554.38 0.00 146.81 0.00
+
+rc delayed 1168 vehiclesSpawn 1 French Hussar
+rc delayed 1168 vehiclesSpawn 1 French CuirassierDragoon 
+objects_override WeaponRack 427.87 11.00 548.48 0.00 171.46 0.00 BearingFlagFrench 3
+
+## FRANCE MAIN ##
+objects_override spawnsection 352.32 13.69 547.92 0.00 185.12 0.00 13 Main_Spawn BaseSpawn attacking 15 5
+
+rc delayed 1170 vehiclesSpawn 1 Prussian Hussar
+rc delayed 1170 vehiclesSpawn 1 Prussian CuirassierDragoon 
+
+rc delayed 1170 vehiclesSpawn 1 Russian Hussar
+rc delayed 1170 vehiclesSpawn 1 Russian CuirassierDragoon 
+
+
+##### EXTRA COVER #####
+
+objects_override PalisadeWall 155.98 10.50 306.86 0.00 162.14 0.00
+objects_override PalisadeWall 135.90 10.09 291.28 0.00 159.32 0.00
+objects_override Rock_Group_12 232.33 13.96 318.46 0.00 181.00 0.00
+objects_override SandstoneRock_Group_22 199.48 14.43 324.66 0.00 174.76 0.00
+objects_override SandstoneRock_Group_21 403.86 11.80 275.87 0.00 276.27 0.00
+objects_override PalisadeWall 472.86 15.51 280.60 0.00 183.82 0.00
+
+objects_override PalisadeWall 432.70 14.51 189.17 0.00 245.03 0.00
+objects_override Rock_Group_12 421.78 13.96 150.68 0.00 263.74 0.00
+objects_override PalisadeWall 420.46 13.00 105.61 0.00 278.74 0.00
+
+objects_override Ruins_Wall7 153.68 8.40 279.62 0.00 139.11 0.00
+objects_override Ruins_Wall7 261.32 11.75 334.62 0.00 191.08 0.00
+objects_override Ruins_Wall1 330.58 9.37 307.81 0.00 212.44 0.00
+objects_override PalisadeWall 418.59 14.86 206.52 0.00 247.64 0.00
+
+
+
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override L ArmyInfantryOfficer 20
+spawn_override M ArmyInfantryOfficer 20
+spawn_override L NavalCaptain 20
+spawn_override M NavalCaptain 20
+spawn_override L ArmyLineInfantry 99
+spawn_override M ArmyLineInfantry 99
+spawn_override L ArmyLineInfantry2 99
+spawn_override M ArmyLineInfantry2 99
+spawn_override L Grenadier 99
+spawn_override M Grenadier 99
+spawn_override L Guard 99
+spawn_override M Guard 99
+spawn_override L LightInfantry 7
+spawn_override M LightInfantry 7
+spawn_override L Rifleman 7
+spawn_override M Rifleman 7
+spawn_override L FlagBearer 99
+spawn_override M FlagBearer 99
+spawn_override L Drummer 99
+spawn_override M Drummer 99
+spawn_override L Fifer 99
+spawn_override M Fifer 99
+spawn_override L Bagpiper 99
+spawn_override M Bagpiper 99
+spawn_override L Surgeon 99
+spawn_override M Surgeon 99
+spawn_override L Cannoneer 99
+spawn_override M Cannoneer 99
+spawn_override L Rocketeer 99
+spawn_override M Rocketeer 99
+spawn_override L Sapper 12
+spawn_override M Sapper 12
+spawn_override L Carpenter 12
+spawn_override M Carpenter 12
+
+## CAV SPAWNS ## 
+spawn_override K Hussar 8
+spawn_override K CuirassierDragoon 8
+spawn_override K ArmyInfantryOfficer 1
+spawn_override K NavalCaptain 0
+
+spawn_override N Hussar 8
+spawn_override N CuirassierDragoon 8
+spawn_override N ArmyInfantryOfficer 1
+spawn_override N NavalCaptain 0
+
+### Additional Settings ###
+
+## Cav settings ##
+rc set vehicleHorseForAll false #must be true for captain
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 15
+sappers_buildlimit Gabion attacking 15
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ExplosiveBarrel attacking 0
+ 
+sappers_buildlimit Palisade defending 5
+sappers_buildlimit Palisade attacking 5
+ 
+sappers_buildlimit ShootingPlatform defending 5
+sappers_buildlimit ShootingPlatform attacking 5
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivleGun defending 0
+sappers_buildlimit SwivleGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+
+### AMMO BOX SPAWNS ###
+objects_override firearmammobox 355.82 13.76 108.58 0.00 6.22 0.00 Unarmed 50 2 4
+objects_override firearmammobox 354.66 13.71 565.46 0.00 183.95 0.00 Unarmed 50 2 4
+
+### ENABLE AND DISABLE FIRING ### 
+rc delayed 1200 set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+rc delayed 1160 broadcast Arty can fire at 18:00 (Arty on Arty at 12:00)
+rc delayed 1155 broadcast Reminder that Sappers cannot build within 50m of spawn
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live (Arty cannot fire)
+rc delayed 1080 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 720 broadcast Arty on Arty live!
+
+### ARTY SPEED ### 
+rc delayed 1200 set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Rifleman 4 4 Rifle_Pattern1800Infantry Sword_Bayonet Unarmed
+starting_weapons_override French Rifleman 4 4 Rifle_Pattern1800Infantry Sabre_Briquet Unarmed
+
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+
+starting_weapons_override British Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+starting_weapons_override British CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+
+### TIME AND WEATHER ###
+rc delayed 1200 nature time timeOfDay 13.00
+rc delayed 1185 nature time timeOfDay 13.04
+rc delayed 1170 nature time timeOfDay 13.07
+rc delayed 1155 nature time timeOfDay 13.11
+rc delayed 1140 nature time timeOfDay 13.15
+rc delayed 1125 nature time timeOfDay 13.19
+rc delayed 1110 nature time timeOfDay 13.22
+rc delayed 1095 nature time timeOfDay 13.26
+rc delayed 1080 nature time timeOfDay 13.30
+rc delayed 1065 nature time timeOfDay 13.34
+rc delayed 1050 nature time timeOfDay 13.37
+rc delayed 1035 nature time timeOfDay 13.41
+rc delayed 1020 nature time timeOfDay 13.45
+rc delayed 1005 nature time timeOfDay 13.49
+rc delayed 990 nature time timeOfDay 13.52
+rc delayed 975 nature time timeOfDay 13.56
+rc delayed 960 nature time timeOfDay 13.60
+rc delayed 945 nature time timeOfDay 13.64
+rc delayed 930 nature time timeOfDay 13.67
+rc delayed 915 nature time timeOfDay 13.71
+rc delayed 900 nature time timeOfDay 13.75
+rc delayed 885 nature time timeOfDay 13.79
+rc delayed 870 nature time timeOfDay 13.82
+rc delayed 855 nature time timeOfDay 13.86
+rc delayed 840 nature time timeOfDay 13.90
+rc delayed 825 nature time timeOfDay 13.94
+rc delayed 810 nature time timeOfDay 13.97
+rc delayed 795 nature time timeOfDay 14.01
+rc delayed 780 nature time timeOfDay 14.05
+rc delayed 765 nature time timeOfDay 14.09
+rc delayed 750 nature time timeOfDay 14.12
+rc delayed 735 nature time timeOfDay 14.16
+rc delayed 720 nature time timeOfDay 14.20
+rc delayed 705 nature time timeOfDay 14.24
+rc delayed 690 nature time timeOfDay 14.27
+rc delayed 675 nature time timeOfDay 14.31
+rc delayed 660 nature time timeOfDay 14.35
+rc delayed 645 nature time timeOfDay 14.39
+rc delayed 630 nature time timeOfDay 14.42
+rc delayed 615 nature time timeOfDay 14.46
+rc delayed 600 nature time timeOfDay 14.50
+rc delayed 585 nature time timeOfDay 14.54
+rc delayed 570 nature time timeOfDay 14.57
+rc delayed 555 nature time timeOfDay 14.61
+rc delayed 540 nature time timeOfDay 14.65
+rc delayed 525 nature time timeOfDay 14.69
+rc delayed 510 nature time timeOfDay 14.72
+rc delayed 495 nature time timeOfDay 14.76
+rc delayed 480 nature time timeOfDay 14.80
+rc delayed 465 nature time timeOfDay 14.84
+rc delayed 450 nature time timeOfDay 14.87
+rc delayed 435 nature time timeOfDay 14.91
+rc delayed 420 nature time timeOfDay 14.95
+rc delayed 405 nature time timeOfDay 14.99
+rc delayed 390 nature time timeOfDay 15.02
+rc delayed 375 nature time timeOfDay 15.06
+rc delayed 360 nature time timeOfDay 15.10
+rc delayed 345 nature time timeOfDay 15.14
+rc delayed 330 nature time timeOfDay 15.17
+rc delayed 315 nature time timeOfDay 15.21
+rc delayed 300 nature time timeOfDay 15.25
+rc delayed 285 nature time timeOfDay 15.29
+rc delayed 270 nature time timeOfDay 15.32
+rc delayed 255 nature time timeOfDay 15.36
+rc delayed 240 nature time timeOfDay 15.40
+rc delayed 225 nature time timeOfDay 15.44
+rc delayed 210 nature time timeOfDay 15.47
+rc delayed 195 nature time timeOfDay 15.51
+rc delayed 180 nature time timeOfDay 15.55
+rc delayed 165 nature time timeOfDay 15.59
+rc delayed 150 nature time timeOfDay 15.62
+rc delayed 135 nature time timeOfDay 15.66
+rc delayed 120 nature time timeOfDay 15.70
+rc delayed 105 nature time timeOfDay 15.74
+rc delayed 90 nature time timeOfDay 15.77
+rc delayed 75 nature time timeOfDay 15.81
+rc delayed 60 nature time timeOfDay 15.85
+rc delayed 45 nature time timeOfDay 15.89
+rc delayed 30 nature time timeOfDay 15.92
+rc delayed 15 nature time timeOfDay 15.96
+rc delayed 0 nature time timeOfDay 16.00
+
+load_mod 2117367100 #77th uniform
+
+!map_rotation end
+
+#Rotation 22 = Hilly hills
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+game_type Hardcore
+round_time_minutes 20
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 17
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire false
+faction_attacking french
+faction_defending british
+
+
+########## NON-MAP SPECIFIC #####################
+
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>EVENT RULES - INFANTRY</color></b></size><br><br>• No firing out of line (FOL) <br>• Lines require (to start the round) with an Officer/Captain/Flag bearer <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>• Pistols may fire in compass range of a line/skirms/cannon
+
+server_round_rule FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter |<size=15><b><color=\#989898>EVENT RULES - AUXILLARY</color></b></size><br><br>• May fire in compass range of a line/artillery/skirms <br>• Auxillary must attempt to stay within compass range of a line/artillery/skirms [no rambo]<br>• May reload out of line<br>• May be used as a dedicated Auxillary Support Line [More infomation on rule doc]
+
+server_round_rule Sapper|<size=15><b><color=\#989898>EVENT RULES - SAPPER</color></b></size><br><br>• Cannont build within 50m of spawn<br>• Must be shouldered to fire when with a Line<br>• May skirmish around a cannon in compass range. Max crew size is 5 muskets<br>• Can only build within compass range of a friendly unit<br>• May form an engineer lines composed of Officers , Line infantry and Sappers. [More infomation on rule doc]
+
+server_round_rule Cannoneer,Rocketeer|<size=15><b><color=\#989898>EVENT RULES - ARTILLERY CREW</color></b></size><br><br>• Cannoneers CANNOT be used a NCO's for lines [use captain/2nd infantry varient for this]<br>• Artillery crew may skirmish around a cannon. Max crew of 5 muskets<br>• May steal and use enemy artillery<br>• Arty vs Arty live at 12:00<br>• Cannons may fire at 18:00
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>EVENT RULES - CAVALRY </color></b></size><br><br>• Cannont mix Cav units <br>• Dragoons must be stationary and within 3 horse width spacing to fire<br>• Dragoons may not fire in charge<br>• Hussars may fire on the move in a reasonable Cavalry formation [compass range]<br>• Hussars may fire in charge<br>• Must dismount for all charge<br>• Once a cav unit is down to 2 players you must dismount and join a line [May finish your current engagement but cannot start a new one].
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 7
+spawn_override B LightInfantry 7
+spawn_override A Rifleman 7
+spawn_override B Rifleman 7
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+
+## CAV SPAWNS ## 
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override A ArmyInfantryOfficer 1
+spawn_override A NavalCaptain 0
+
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+spawn_override B ArmyInfantryOfficer 1
+spawn_override B NavalCaptain 0
+
+### Additional Settings ###
+
+## Cav settings ##
+rc set vehicleHorseForAll false #must be true for captain
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 15
+sappers_buildlimit Gabion attacking 15
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ExplosiveBarrel attacking 0
+ 
+sappers_buildlimit Palisade defending 5
+sappers_buildlimit Palisade attacking 5
+ 
+sappers_buildlimit ShootingPlatform defending 5
+sappers_buildlimit ShootingPlatform attacking 5
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivleGun defending 0
+sappers_buildlimit SwivleGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+### ENABLE AND DISABLE FIRING ### 
+rc delayed 1200 set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+rc delayed 1160 broadcast Arty can fire at 18:00 (Arty on Arty at 12:00)
+rc delayed 1155 broadcast Reminder that Sappers cannot build within 50m of spawn
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live (Arty cannot fire)
+rc delayed 1080 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 720 broadcast Arty on Arty live!
+
+### ARTY SPEED ### 
+rc delayed 1200 set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Rifleman 4 4 Rifle_Pattern1800Infantry Sword_Bayonet Unarmed
+starting_weapons_override French Rifleman 4 4 Rifle_Pattern1800Infantry Sabre_Briquet Unarmed
+
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+
+starting_weapons_override British Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+starting_weapons_override British CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+
+load_mod 2117367100 #77th uniform
+load_mod 2115965206
+!map_rotation end
+
+
+#Rotation 6
+!map_rotation start
+map_name snowyplainsiii
+game_mode ArmyAssault
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 300
+reinforcements_per_faction 500
+wave_spawn_time_seconds 1
+max_player_respawns 0
+#faction_attacking British
+#faction_defending french
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 6
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+faction_randomiser both
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>EVENT RULES - INFANTRY</color></b></size><br><br>• No firing out of line (FOL) <br>• Lines require (to start the round) with an Officer/Captain/Flag bearer <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>• Pistols may fire in compass range of a line/skirms/cannon
+
+server_round_rule FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter |<size=15><b><color=\#989898>EVENT RULES - AUXILLARY</color></b></size><br><br>• May fire in compass range of a line/artillery/skirms <br>• Auxillary must attempt to stay within compass range of a line/artillery/skirms [no rambo]<br>• May reload out of line<br>• May be used as a dedicated Auxillary Support Line [More infomation on rule doc]
+
+server_round_rule Sapper|<size=15><b><color=\#989898>EVENT RULES - SAPPER</color></b></size><br><br>• Cannont build within 50m of spawn<br>• Must be shouldered to fire when with a Line<br>• May skirmish around a cannon in compass range. Max crew size is 5 muskets<br>• Can only build within compass range of a friendly unit<br>• May form an engineer lines composed of Officers , Line infantry and Sappers. [More infomation on rule doc]
+
+server_round_rule Cannoneer,Rocketeer|<size=15><b><color=\#989898>EVENT RULES - ARTILLERY CREW</color></b></size><br><br>• Cannoneers CANNOT be used a NCO's for lines [use captain/2nd infantry varient for this]<br>• Artillery crew may skirmish around a cannon. Max crew of 5 muskets<br>• May steal and use enemy artillery<br>• Arty vs Arty live at 12:00<br>• Cannons may fire at 18:00
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>EVENT RULES - CAVALRY </color></b></size><br><br>• Cannont mix Cav units <br>• Dragoons must be stationary and within 3 horse width spacing to fire<br>• Dragoons may not fire in charge<br>• Hussars may fire on the move in a reasonable Cavalry formation [compass range]<br>• Hussars may fire in charge<br>• Must dismount for all charge<br>• Once a cav unit is down to 2 players you must dismount and join a line [May finish your current engagement but cannot start a new one].
+
+
+### CUSTOM SPAWNS ###
+
+## UK CAV ##
+objects_override spawnsection 545.75 48.98 463.72 0.00 215.21 0.00 11 Cav_Spawn Field attacking 15 5
+
+objects_override TentLarge1 541.56 48.98 457.83 0.00 17.84 0.00
+objects_override TentLarge2 546.69 48.98 476.76 0.00 233.66 0.00
+objects_override TentSmall2 533.78 48.98 478.38 0.00 144.12 0.00
+objects_override Campfire 545.75 48.98 463.72 0.00 215.21 0.00
+
+rc delayed 1170 vehiclesSpawn 1 British Hussar
+rc delayed 1170 vehiclesSpawn 1 British CuirassierDragoon 
+objects_override WeaponRack 554.57 48.98 481.18 0.00 173.20 0.00 BearingFlagBritish 3
+
+
+## UK MAIN ## uk - main
+objects_override spawnsection 516.78 48.98 489.37 0.00 245.65 0.00 12 Main_Spawn BaseSpawn attacking 15 5
+
+## FRANCE CAV ##
+objects_override spawnsection 180.57 47.97 107.18 0.00 50.28 0.00 14 Cav_Spawn Field attacking 15 10
+
+objects_override TentLarge1 183.81 47.97 101.29 0.00 334.30 0.00
+objects_override TentLarge2 173.32 48.94 121.02 0.00 132.43 0.00
+objects_override WickerWall_Group1_1 167.16 47.97 107.46 0.00 53.88 0.00
+objects_override Campfire 180.57 47.97 107.18 0.00 50.28 0.00
+
+rc delayed 1168 vehiclesSpawn 1 French Hussar
+rc delayed 1168 vehiclesSpawn 1 French CuirassierDragoon 
+objects_override WeaponRack 185.51 48.60 119.68 0.00 52.27 0.00 BearingFlagFrench 3
+
+## FRANCE MAIN ##
+objects_override spawnsection 174.34 48.98 161.59 0.00 35.20 0.00 13 Main_Spawn BaseSpawn attacking 15 5
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override L ArmyInfantryOfficer 20
+spawn_override M ArmyInfantryOfficer 20
+spawn_override L NavalCaptain 20
+spawn_override M NavalCaptain 20
+spawn_override L ArmyLineInfantry 99
+spawn_override M ArmyLineInfantry 99
+spawn_override L ArmyLineInfantry2 99
+spawn_override M ArmyLineInfantry2 99
+spawn_override L Grenadier 99
+spawn_override M Grenadier 99
+spawn_override L Guard 99
+spawn_override M Guard 99
+spawn_override L LightInfantry 7
+spawn_override M LightInfantry 7
+spawn_override L Rifleman 7
+spawn_override M Rifleman 7
+spawn_override L FlagBearer 99
+spawn_override M FlagBearer 99
+spawn_override L Drummer 99
+spawn_override M Drummer 99
+spawn_override L Fifer 99
+spawn_override M Fifer 99
+spawn_override L Bagpiper 99
+spawn_override M Bagpiper 99
+spawn_override L Surgeon 99
+spawn_override M Surgeon 99
+spawn_override L Cannoneer 99
+spawn_override M Cannoneer 99
+spawn_override L Rocketeer 99
+spawn_override M Rocketeer 99
+spawn_override L Sapper 12
+spawn_override M Sapper 12
+spawn_override L Carpenter 12
+spawn_override M Carpenter 12
+
+## CAV SPAWNS ## 
+spawn_override K Hussar 8
+spawn_override K CuirassierDragoon 8
+spawn_override K ArmyInfantryOfficer 1
+spawn_override K NavalCaptain 0
+
+spawn_override N Hussar 8
+spawn_override N CuirassierDragoon 8
+spawn_override N ArmyInfantryOfficer 1
+spawn_override N NavalCaptain 0
+
+### Additional Settings ###
+
+## Cav settings ##
+rc set vehicleHorseForAll false #must be true for captain
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 15
+sappers_buildlimit Gabion attacking 15
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ExplosiveBarrel attacking 0
+ 
+sappers_buildlimit Palisade defending 5
+sappers_buildlimit Palisade attacking 5
+ 
+sappers_buildlimit ShootingPlatform defending 5
+sappers_buildlimit ShootingPlatform attacking 5
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivleGun defending 0
+sappers_buildlimit SwivleGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+
+### AMMO BOX SPAWNS ###
+objects_override firearmammobox 171.87 48.98 134.02 0.00 9.38 0.00 Unarmed 50 2 4
+objects_override firearmammobox 519.82 48.98 527.21 0.00 196.68 0.00 Unarmed 50 2 4
+
+### ENABLE AND DISABLE FIRING ### 
+rc delayed 1200 set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+rc delayed 1160 broadcast Arty can fire at 18:00 (Arty on Arty at 12:00)
+rc delayed 1155 broadcast Reminder that Sappers cannot build within 50m of spawn
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live (Arty cannot fire)
+rc delayed 1080 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 720 broadcast Arty on Arty live!
+
+### ARTY SPEED ### 
+rc delayed 1200 set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Rifleman 4 4 Rifle_Pattern1800Infantry Sword_Bayonet Unarmed
+starting_weapons_override French Rifleman 4 4 Rifle_Pattern1800Infantry Sabre_Briquet Unarmed
+
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+
+starting_weapons_override British Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+starting_weapons_override British CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+
+#####EXTRA OBJECTS ##########
+
+objects_override PalisadeWall 353.12 41.99 344.17 0.00 203.91 0.00
+objects_override PalisadeWall 285.63 41.99 356.61 0.00 345.44 0.00
+objects_override PalisadeWall 282.28 42.70 303.91 0.00 207.22 0.00
+objects_override PalisadeWall 257.35 45.77 229.72 0.00 20.68 0.00
+objects_override PalisadeWall 280.53 45.01 273.11 0.00 168.01 0.00
+objects_override PalisadeWall 360.61 44.97 283.90 0.00 37.91 0.00
+objects_override PalisadeWall 484.27 45.94 115.55 0.00 269.88 0.00
+objects_override PalisadeWall 508.52 44.97 331.45 0.00 345.76 0.00
+objects_override PalisadeWall 248.35 44.97 399.89 0.00 303.87 0.00
+objects_override PalisadeWall 195.38 44.77 438.54 0.00 206.84 0.00
+objects_override PalisadeWall 105.34 45.10 395.26 0.00 35.59 0.00
+objects_override PalisadeWall 98.66 41.97 238.35 0.00 116.93 0.00
+objects_override Pidgeoncoop 231.68 44.97 302.33 0.00 29.90 0.00
+objects_override PalisadeWall 345.70 44.97 148.61 0.00 281.85 0.00
+objects_override PalisadeWall 444.12 41.99 191.40 0.00 35.32 0.00
+
+
+
+### TIME AND WEATHER ###
+rc delayed 1200 nature time timeOfDay 16.00
+rc delayed 1185 nature time timeOfDay 16.04
+rc delayed 1170 nature time timeOfDay 16.08
+rc delayed 1155 nature time timeOfDay 16.11
+rc delayed 1140 nature time timeOfDay 16.15
+rc delayed 1125 nature time timeOfDay 16.19
+rc delayed 1110 nature time timeOfDay 16.23
+rc delayed 1095 nature time timeOfDay 16.26
+rc delayed 1080 nature time timeOfDay 16.30
+rc delayed 1065 nature time timeOfDay 16.34
+rc delayed 1050 nature time timeOfDay 16.38
+rc delayed 1035 nature time timeOfDay 16.41
+rc delayed 1020 nature time timeOfDay 16.45
+rc delayed 1005 nature time timeOfDay 16.49
+rc delayed 990 nature time timeOfDay 16.53
+rc delayed 975 nature time timeOfDay 16.56
+rc delayed 960 nature time timeOfDay 16.60
+rc delayed 945 nature time timeOfDay 16.64
+rc delayed 930 nature time timeOfDay 16.68
+rc delayed 915 nature time timeOfDay 16.71
+rc delayed 900 nature time timeOfDay 16.75
+rc delayed 885 nature time timeOfDay 16.79
+rc delayed 870 nature time timeOfDay 16.83
+rc delayed 855 nature time timeOfDay 16.86
+rc delayed 840 nature time timeOfDay 16.90
+rc delayed 825 nature time timeOfDay 16.94
+rc delayed 810 nature time timeOfDay 16.98
+rc delayed 795 nature time timeOfDay 17.01
+rc delayed 780 nature time timeOfDay 17.05
+rc delayed 765 nature time timeOfDay 17.09
+rc delayed 750 nature time timeOfDay 17.13
+rc delayed 735 nature time timeOfDay 17.16
+rc delayed 720 nature time timeOfDay 17.20
+rc delayed 705 nature time timeOfDay 17.24
+rc delayed 690 nature time timeOfDay 17.28
+rc delayed 675 nature time timeOfDay 17.31
+rc delayed 660 nature time timeOfDay 17.35
+rc delayed 645 nature time timeOfDay 17.39
+rc delayed 630 nature time timeOfDay 17.43
+rc delayed 615 nature time timeOfDay 17.46
+rc delayed 600 nature time timeOfDay 17.50
+rc delayed 585 nature time timeOfDay 17.54
+rc delayed 570 nature time timeOfDay 17.58
+rc delayed 555 nature time timeOfDay 17.61
+rc delayed 540 nature time timeOfDay 17.65
+rc delayed 525 nature time timeOfDay 17.69
+rc delayed 510 nature time timeOfDay 17.73
+rc delayed 495 nature time timeOfDay 17.76
+rc delayed 480 nature time timeOfDay 17.80
+rc delayed 465 nature time timeOfDay 17.84
+rc delayed 450 nature time timeOfDay 17.88
+rc delayed 435 nature time timeOfDay 17.91
+rc delayed 420 nature time timeOfDay 17.95
+rc delayed 405 nature time timeOfDay 17.99
+rc delayed 390 nature time timeOfDay 18.03
+rc delayed 375 nature time timeOfDay 18.06
+rc delayed 360 nature time timeOfDay 18.10
+rc delayed 345 nature time timeOfDay 18.14
+rc delayed 330 nature time timeOfDay 18.18
+rc delayed 315 nature time timeOfDay 18.21
+rc delayed 300 nature time timeOfDay 18.25
+rc delayed 285 nature time timeOfDay 18.29
+rc delayed 270 nature time timeOfDay 18.33
+rc delayed 255 nature time timeOfDay 18.36
+rc delayed 240 nature time timeOfDay 18.40
+rc delayed 225 nature time timeOfDay 18.44
+rc delayed 210 nature time timeOfDay 18.48
+rc delayed 195 nature time timeOfDay 18.51
+rc delayed 180 nature time timeOfDay 18.55
+rc delayed 165 nature time timeOfDay 18.59
+rc delayed 150 nature time timeOfDay 18.63
+rc delayed 135 nature time timeOfDay 18.66
+rc delayed 120 nature time timeOfDay 18.70
+rc delayed 105 nature time timeOfDay 18.74
+rc delayed 90 nature time timeOfDay 18.78
+rc delayed 75 nature time timeOfDay 18.81
+rc delayed 60 nature time timeOfDay 18.85
+rc delayed 45 nature time timeOfDay 18.89
+rc delayed 30 nature time timeOfDay 18.93
+rc delayed 15 nature time timeOfDay 18.96
+rc delayed 0 nature time timeOfDay 19.00
+
+load_mod 2117367100 #77th uniform
+
+!map_rotation end
+
+#Rotation 22 = Johnson
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+game_type Hardcore
+round_time_minutes 20
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 17
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire false
+faction_attacking french
+faction_defending british
+
+
+########## NON-MAP SPECIFIC #####################
+
+
+#### Anti-45th command
+rc set longRangeHeadshotDamage 0.8
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,ArmyLineInfantry2,Grenadier,Guard|<size=15><b><color=\#989898>EVENT RULES - INFANTRY</color></b></size><br><br>• No firing out of line (FOL) <br>• Lines require (to start the round) with an Officer/Captain/Flag bearer <br>• Reloading must be done in a line or column when moving <br>• 3 Muskets minimum to fire <br>• Pistols may fire in compass range of a line/skirms/cannon
+
+server_round_rule FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter |<size=15><b><color=\#989898>EVENT RULES - AUXILLARY</color></b></size><br><br>• May fire in compass range of a line/artillery/skirms <br>• Auxillary must attempt to stay within compass range of a line/artillery/skirms [no rambo]<br>• May reload out of line<br>• May be used as a dedicated Auxillary Support Line [More infomation on rule doc]
+
+server_round_rule Sapper|<size=15><b><color=\#989898>EVENT RULES - SAPPER</color></b></size><br><br>• Cannont build within 50m of spawn<br>• Must be shouldered to fire when with a Line<br>• May skirmish around a cannon in compass range. Max crew size is 5 muskets<br>• Can only build within compass range of a friendly unit<br>• May form an engineer lines composed of Officers , Line infantry and Sappers. [More infomation on rule doc]
+
+server_round_rule Cannoneer,Rocketeer|<size=15><b><color=\#989898>EVENT RULES - ARTILLERY CREW</color></b></size><br><br>• Cannoneers CANNOT be used a NCO's for lines [use captain/2nd infantry varient for this]<br>• Artillery crew may skirmish around a cannon. Max crew of 5 muskets<br>• May steal and use enemy artillery<br>• Arty vs Arty live at 12:00<br>• Cannons may fire at 18:00
+
+server_round_rule Hussar,CuirassierDragoon|<size=15><b><color=\#989898>EVENT RULES - CAVALRY </color></b></size><br><br>• Cannont mix Cav units <br>• Dragoons must be stationary and within 3 horse width spacing to fire<br>• Dragoons may not fire in charge<br>• Hussars may fire on the move in a reasonable Cavalry formation [compass range]<br>• Hussars may fire in charge<br>• Must dismount for all charge<br>• Once a cav unit is down to 2 players you must dismount and join a line [May finish your current engagement but cannot start a new one].
+
+### SPAWN OVERRIDES ###
+
+## MAIN SPAWN ##
+spawn_override A ArmyInfantryOfficer 20
+spawn_override B ArmyInfantryOfficer 20
+spawn_override A NavalCaptain 20
+spawn_override B NavalCaptain 20
+spawn_override A ArmyLineInfantry 99
+spawn_override B ArmyLineInfantry 99
+spawn_override A ArmyLineInfantry2 99
+spawn_override B ArmyLineInfantry2 99
+spawn_override A Grenadier 99
+spawn_override B Grenadier 99
+spawn_override A Guard 99
+spawn_override B Guard 99
+spawn_override A LightInfantry 7
+spawn_override B LightInfantry 7
+spawn_override A Rifleman 7
+spawn_override B Rifleman 7
+spawn_override A FlagBearer 99
+spawn_override B FlagBearer 99
+spawn_override A Drummer 99
+spawn_override B Drummer 99
+spawn_override A Fifer 99
+spawn_override B Fifer 99
+spawn_override A Bagpiper 99
+spawn_override B Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override B Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override B Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override B Rocketeer 99
+spawn_override A Sapper 12
+spawn_override B Sapper 12
+spawn_override A Carpenter 12
+spawn_override B Carpenter 12
+
+## CAV SPAWNS ## 
+spawn_override A Hussar 8
+spawn_override B CuirassierDragoon 8
+spawn_override A ArmyInfantryOfficer 1
+spawn_override B NavalCaptain 0
+
+spawn_override A Hussar 8
+spawn_override B CuirassierDragoon 8
+spawn_override A ArmyInfantryOfficer 1
+spawn_override B NavalCaptain 0
+
+### Additional Settings ###
+
+## Cav settings ##
+rc set vehicleHorseForAll false #must be true for captain
+rc set useSpecialHorseVariants true
+rc set secondsToPassAfterDismounted 1200
+rc set secondsSpawnedBeforeDespawn 1200
+rc set secondsToPassAfterHealthUpdated 1200
+
+## SAPPER SETTINGS ##
+sappers_attacking_starting_materials 100
+sappers_defending_starting_materials 100
+ 
+sappers_buildlimit InfantryStakes defending 30
+sappers_buildlimit InfantryStakes attacking 30
+ 
+sappers_buildlimit Gabion defending 15
+sappers_buildlimit Gabion attacking 15
+ 
+sappers_buildlimit ChevauxDeFriseLarge defending 5
+sappers_buildlimit ChevauxDeFriseLarge attacking 5
+ 
+sappers_buildlimit ChevauxDeFriseSmall defending 5
+sappers_buildlimit ChevauxDeFriseSmall attacking 5
+ 
+sappers_buildlimit ExplosiveBarrel defending 0
+sappers_buildlimit ExplosiveBarrel attacking 0
+ 
+sappers_buildlimit Palisade defending 5
+sappers_buildlimit Palisade attacking 5
+ 
+sappers_buildlimit ShootingPlatform defending 5
+sappers_buildlimit ShootingPlatform attacking 5
+ 
+sappers_buildlimit Chair defending 0
+sappers_buildlimit Chair attacking 0
+ 
+sappers_buildlimit Sandbag defending 90
+sappers_buildlimit Sandbag attacking 90
+ 
+sappers_buildlimit Ammobox defending 6
+sappers_buildlimit Ammobox attacking 6
+ 
+sappers_buildlimit RocketStack defending 6
+sappers_buildlimit RocketStack attacking 6
+ 
+sappers_buildlimit SwivleGun defending 0
+sappers_buildlimit SwivleGun attacking 0
+ 
+sappers_buildlimit SwivelGun defending 0
+sappers_buildlimit SwivelGun attacking 0
+ 
+sappers_buildlimit Earthworks defending 10
+sappers_buildlimit Earthworks attacking 10
+
+### ENABLE AND DISABLE FIRING ### 
+rc delayed 1200 set allowFiring false
+rc delayed 1125 set allowFiring true
+ 
+### INITIAL BROADCASTS ###
+rc delayed 1165 broadcast Live at 18:45
+rc delayed 1160 broadcast Arty can fire at 18:00 (Arty on Arty at 12:00)
+rc delayed 1155 broadcast Reminder that Sappers cannot build within 50m of spawn
+
+### LIVE AND ARTY CALLS ###
+rc delayed 1125 broadcast Live (Arty cannot fire)
+rc delayed 1080 broadcast Arty may now fire (Arty on Arty not live)
+rc delayed 720 broadcast Arty on Arty live!
+
+### ARTY SPEED ### 
+rc delayed 1200 set cannonMoverSpeedMultiplier 0
+rc delayed 1170 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1140 set cannonMoverSpeedMultiplier 1.5
+rc delayed 1110 set cannonMoverSpeedMultiplier 1
+ 
+### CLASS ADJUSTMENTS ###
+starting_weapons_override British Rifleman 4 4 Rifle_Pattern1800Infantry Sword_Bayonet Unarmed
+starting_weapons_override French Rifleman 4 4 Rifle_Pattern1800Infantry Sabre_Briquet Unarmed
+
+starting_weapons_override British Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override French Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Russian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+starting_weapons_override Prussian Sapper 4 4 Musket_CharlevilleDragoonPattern Unarmed
+
+starting_weapons_override British NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+starting_weapons_override French NavalCaptain 4 4 Carbine_Elliot Sword_Pattern1803FlankOfficer Unarmed
+
+starting_weapons_override British Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian Hussar 4 4 Pistol_NewLandPattern Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+starting_weapons_override British CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override French CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Prussian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+starting_weapons_override Russian CuirassierDragoon 4 4 Carbine_CharlevilleCavalryIXXIII Sword_Pattern1803FlankOfficer BearingFlag Unarmed
+
+
+
+load_mod 2116573280
+load_mod 2117367100 #77th uniform
+!map_rotation end

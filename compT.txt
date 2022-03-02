@@ -1,0 +1,724 @@
+
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 39900
+steam_communications_port 8607
+steam_query_port 39902
+
+###- Server Settings
+
+server_name QRR Competitive Team Training
+server_welcome_message Welcome to the Holdfast League Season 4 Server
+server_region europe
+server_admin_password Admin
+server_password 5050
+
+network_broadcast_mode Realtime
+
+mods_installed 2134163798 # competitive hills 1
+mods_installed 2134144435 # competitive hills 2
+
+
+
+!map_rotation start
+map_name modmap
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+spawn_override A ArmyInfantryOfficer 99
+spawn_override A ArmyLineInfantry 125
+spawn_override A FlagBearer 99
+spawn_override A Drummer 99
+spawn_override A Fifer 99
+spawn_override A Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override A Guard 99
+spawn_override A Grenadier 99
+ 
+spawn_override B ArmyInfantryOfficer 99
+spawn_override B ArmyLineInfantry 125
+spawn_override B FlagBearer 99
+spawn_override B Drummer 99
+spawn_override B Fifer 99
+spawn_override B Bagpiper 99
+spawn_override B Surgeon 99
+spawn_override B Cannoneer 99
+spawn_override B Rocketeer 99
+spawn_override B Guard 99
+spawn_override B Grenadier 99
+
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+#### BOTS
+
+rc delayed 1180 teleport 2 354.55,5.63,335.63
+rc delayed 1180 teleport 3 355.05,5.63,335.61
+rc delayed 1180 teleport 4 355.55,5.63,335.59
+rc delayed 1180 teleport 5 356.05,5.63,335.57
+rc delayed 1180 teleport 6 356.55,5.63,335.54
+rc delayed 1180 teleport 7 357.05,5.63,335.52
+rc delayed 1180 teleport 8 357.55,5.63,335.5
+rc delayed 1180 teleport 9 358.05,5.63,335.48
+rc delayed 1180 teleport 10 358.55,5.63,335.46
+rc delayed 1180 teleport 11 359.05,5.63,335.44
+rc delayed 1180 teleport 12 359.55,5.63,335.42
+rc delayed 1180 teleport 12 384.99,4.47,331.62
+rc delayed 1180 teleport 13 384.49,4.47,331.63
+rc delayed 1180 teleport 14 383.99,4.47,331.63
+rc delayed 1180 teleport 15 383.49,4.47,331.64
+rc delayed 1180 teleport 16 382.99,4.47,331.64
+rc delayed 1180 teleport 17 382.49,4.47,331.65
+rc delayed 1180 teleport 18 381.99,4.47,331.66
+rc delayed 1180 teleport 19 381.49,4.47,331.66
+rc delayed 1180 teleport 20 380.99,4.47,331.67
+rc delayed 1180 teleport 21 380.49,4.47,331.67
+rc delayed 1180 teleport 22 379.99,4.47,331.68
+rc delayed 1180 teleport 22 387.45,4.69,381.82
+rc delayed 1180 teleport 23 386.95,4.69,381.78
+rc delayed 1180 teleport 24 386.45,4.69,381.74
+rc delayed 1180 teleport 25 385.95,4.69,381.71
+rc delayed 1180 teleport 26 385.46,4.69,381.67
+rc delayed 1180 teleport 27 384.96,4.69,381.63
+rc delayed 1180 teleport 28 384.46,4.69,381.59
+rc delayed 1180 teleport 29 383.96,4.69,381.55
+rc delayed 1180 teleport 30 383.46,4.69,381.51
+rc delayed 1180 teleport 31 382.96,4.69,381.48
+rc delayed 1180 teleport 32 382.46,4.69,381.44
+rc delayed 1180 teleport 32 344.9,4.99,381.44
+rc delayed 1180 teleport 33 344.81,4.99,381.93
+rc delayed 1180 teleport 34 344.72,4.99,382.42
+rc delayed 1180 teleport 35 344.63,4.99,382.92
+rc delayed 1180 teleport 36 344.54,4.99,383.41
+rc delayed 1180 teleport 37 344.45,4.99,383.9
+rc delayed 1180 teleport 38 344.36,4.99,384.39
+rc delayed 1180 teleport 39 344.27,4.99,384.88
+rc delayed 1180 teleport 40 344.17,4.99,385.37
+rc delayed 1180 teleport 41 344.08,4.99,385.87
+rc delayed 1180 teleport 42 343.99,4.99,386.36
+rc delayed 1180 teleport 42 298.53,4.89,303.29
+rc delayed 1180 teleport 43 298.43,4.89,303.78
+rc delayed 1180 teleport 44 298.33,4.89,304.27
+rc delayed 1180 teleport 45 298.23,4.89,304.76
+rc delayed 1180 teleport 46 298.13,4.89,305.25
+rc delayed 1180 teleport 47 298.03,4.89,305.74
+rc delayed 1180 teleport 48 297.93,4.89,306.23
+rc delayed 1180 teleport 49 297.82,4.89,306.72
+rc delayed 1180 teleport 50 297.72,4.89,307.21
+rc delayed 1180 teleport 51 297.62,4.89,307.7
+rc delayed 1180 teleport 52 297.52,4.89,308.19
+rc delayed 1180 teleport 52 265.0,4.69,344.06
+rc delayed 1180 teleport 53 265.07,4.69,343.56
+rc delayed 1180 teleport 54 265.13,4.69,343.07
+rc delayed 1180 teleport 55 265.2,4.69,342.57
+rc delayed 1180 teleport 56 265.26,4.69,342.08
+rc delayed 1180 teleport 57 265.33,4.69,341.58
+rc delayed 1180 teleport 58 265.39,4.69,341.09
+rc delayed 1180 teleport 59 265.46,4.69,340.59
+rc delayed 1180 teleport 60 265.52,4.69,340.09
+rc delayed 1180 teleport 61 265.59,4.69,339.6
+rc delayed 1180 teleport 62 265.65,4.69,339.1
+rc delayed 1180 teleport 62 257.07,5.6,374.03
+rc delayed 1180 teleport 63 257.23,5.6,373.56
+rc delayed 1180 teleport 64 257.39,5.6,373.08
+rc delayed 1180 teleport 65 257.55,5.6,372.61
+rc delayed 1180 teleport 66 257.71,5.6,372.14
+rc delayed 1180 teleport 67 257.87,5.6,371.66
+rc delayed 1180 teleport 68 258.03,5.6,371.19
+rc delayed 1180 teleport 69 258.2,5.6,370.72
+rc delayed 1180 teleport 70 258.36,5.6,370.24
+rc delayed 1180 teleport 71 258.52,5.6,369.77
+rc delayed 1180 teleport 72 258.68,5.6,369.3
+rc delayed 1180 teleport 72 209.25,4.93,356.41
+rc delayed 1180 teleport 73 209.75,4.93,356.37
+rc delayed 1180 teleport 74 210.25,4.93,356.32
+rc delayed 1180 teleport 75 210.74,4.93,356.28
+rc delayed 1180 teleport 76 211.24,4.93,356.23
+rc delayed 1180 teleport 77 211.74,4.93,356.19
+rc delayed 1180 teleport 78 212.24,4.93,356.14
+rc delayed 1180 teleport 79 212.74,4.93,356.1
+rc delayed 1180 teleport 80 213.23,4.93,356.05
+rc delayed 1180 teleport 81 213.73,4.93,356.01
+rc delayed 1180 teleport 82 214.23,4.93,355.96
+rc delayed 1180 teleport 82 190.94,4.19,377.69
+rc delayed 1180 teleport 83 191.07,4.19,377.21
+rc delayed 1180 teleport 84 191.21,4.19,376.73
+rc delayed 1180 teleport 85 191.34,4.19,376.24
+rc delayed 1180 teleport 86 191.47,4.19,375.76
+rc delayed 1180 teleport 87 191.61,4.19,375.28
+rc delayed 1180 teleport 88 191.74,4.19,374.8
+rc delayed 1180 teleport 89 191.88,4.19,374.32
+rc delayed 1180 teleport 90 192.01,4.19,373.84
+rc delayed 1180 teleport 91 192.14,4.19,373.35
+rc delayed 1180 teleport 92 192.28,4.19,372.87
+rc delayed 1180 teleport 92 110.94,5.45,385.43
+rc delayed 1180 teleport 93 111.44,5.45,385.49
+rc delayed 1180 teleport 94 111.93,5.45,385.55
+rc delayed 1180 teleport 95 112.43,5.45,385.61
+rc delayed 1180 teleport 96 112.93,5.45,385.66
+rc delayed 1180 teleport 97 113.42,5.45,385.72
+rc delayed 1180 teleport 98 113.92,5.45,385.78
+rc delayed 1180 teleport 99 114.42,5.45,385.84
+rc delayed 1180 teleport 100 114.91,5.45,385.9
+rc delayed 1180 teleport 101 115.41,5.45,385.96
+rc delayed 1180 teleport 102 115.91,5.45,386.02
+rc delayed 1180 teleport 102 120.97,3.59,325.16
+rc delayed 1180 teleport 103 121.47,3.59,325.16
+rc delayed 1180 teleport 104 121.97,3.59,325.16
+rc delayed 1180 teleport 105 122.47,3.59,325.16
+rc delayed 1180 teleport 106 122.97,3.59,325.17
+rc delayed 1180 teleport 107 123.47,3.59,325.17
+rc delayed 1180 teleport 108 123.97,3.59,325.17
+rc delayed 1180 teleport 109 124.47,3.59,325.17
+rc delayed 1180 teleport 110 124.97,3.59,325.17
+rc delayed 1180 teleport 111 125.47,3.59,325.17
+rc delayed 1180 teleport 112 125.97,3.59,325.17
+rc delayed 1180 teleport 112 160.54,4.08,243.28
+rc delayed 1180 teleport 113 160.85,4.08,242.89
+rc delayed 1180 teleport 114 161.17,4.08,242.5
+rc delayed 1180 teleport 115 161.48,4.08,242.11
+rc delayed 1180 teleport 116 161.79,4.08,241.72
+rc delayed 1180 teleport 117 162.11,4.08,241.33
+rc delayed 1180 teleport 118 162.42,4.08,240.94
+rc delayed 1180 teleport 119 162.73,4.08,240.55
+rc delayed 1180 teleport 120 163.05,4.08,240.16
+rc delayed 1180 teleport 121 163.36,4.08,239.77
+rc delayed 1180 teleport 122 163.67,4.08,239.38
+rc delayed 1180 teleport 122 174.29,4.33,207.2
+rc delayed 1180 teleport 123 174.19,4.33,207.69
+rc delayed 1180 teleport 124 174.08,4.33,208.18
+rc delayed 1180 teleport 125 173.98,4.33,208.67
+rc delayed 1180 teleport 126 173.87,4.33,209.16
+rc delayed 1180 teleport 127 173.77,4.33,209.65
+rc delayed 1180 teleport 128 173.67,4.33,210.13
+rc delayed 1180 teleport 129 173.56,4.33,210.62
+rc delayed 1180 teleport 130 173.46,4.33,211.11
+rc delayed 1180 teleport 131 173.36,4.33,211.6
+rc delayed 1180 teleport 132 173.25,4.33,212.09
+rc delayed 1180 teleport 132 178.6,4.81,180.19
+rc delayed 1180 teleport 133 178.65,4.81,179.69
+rc delayed 1180 teleport 134 178.69,4.81,179.19
+rc delayed 1180 teleport 135 178.74,4.81,178.7
+rc delayed 1180 teleport 136 178.79,4.81,178.2
+rc delayed 1180 teleport 137 178.83,4.81,177.7
+rc delayed 1180 teleport 138 178.88,4.81,177.2
+rc delayed 1180 teleport 139 178.93,4.81,176.71
+rc delayed 1180 teleport 140 178.98,4.81,176.21
+rc delayed 1180 teleport 141 179.02,4.81,175.71
+rc delayed 1180 teleport 142 179.07,4.81,175.21
+rc delayed 1180 teleport 142 195.59,4.22,146.47
+rc delayed 1180 teleport 143 195.88,4.22,146.06
+rc delayed 1180 teleport 144 196.17,4.22,145.66
+rc delayed 1180 teleport 145 196.46,4.22,145.25
+rc delayed 1180 teleport 146 196.75,4.22,144.84
+rc delayed 1180 teleport 147 197.04,4.22,144.44
+rc delayed 1180 teleport 148 197.33,4.22,144.03
+rc delayed 1180 teleport 149 197.62,4.22,143.62
+rc delayed 1180 teleport 150 197.91,4.22,143.21
+rc delayed 1180 teleport 151 198.21,4.22,142.81
+rc delayed 1180 teleport 152 198.5,4.22,142.4
+rc delayed 1180 teleport 152 221.78,4.78,119.84
+rc delayed 1180 teleport 153 222.28,4.78,119.77
+rc delayed 1180 teleport 154 222.77,4.78,119.7
+rc delayed 1180 teleport 155 223.27,4.78,119.64
+rc delayed 1180 teleport 156 223.76,4.78,119.57
+rc delayed 1180 teleport 157 224.26,4.78,119.5
+rc delayed 1180 teleport 158 224.75,4.78,119.43
+rc delayed 1180 teleport 159 225.25,4.78,119.36
+rc delayed 1180 teleport 160 225.74,4.78,119.29
+rc delayed 1180 teleport 161 226.24,4.78,119.23
+rc delayed 1180 teleport 162 226.73,4.78,119.16
+rc delayed 1180 teleport 162 270.76,4.28,133.57
+rc delayed 1180 teleport 163 271.26,4.28,133.6
+rc delayed 1180 teleport 164 271.76,4.28,133.64
+rc delayed 1180 teleport 165 272.26,4.28,133.67
+rc delayed 1180 teleport 166 272.76,4.28,133.71
+rc delayed 1180 teleport 167 273.25,4.28,133.74
+rc delayed 1180 teleport 168 273.75,4.28,133.77
+rc delayed 1180 teleport 169 274.25,4.28,133.81
+rc delayed 1180 teleport 170 274.75,4.28,133.84
+rc delayed 1180 teleport 171 275.25,4.28,133.88
+rc delayed 1180 teleport 172 275.75,4.28,133.91
+rc delayed 1180 teleport 172 363.34,5.4,120.39
+rc delayed 1180 teleport 173 363.28,5.4,120.89
+rc delayed 1180 teleport 174 363.23,5.4,121.38
+rc delayed 1180 teleport 175 363.17,5.4,121.88
+rc delayed 1180 teleport 176 363.11,5.4,122.38
+rc delayed 1180 teleport 177 363.05,5.4,122.87
+rc delayed 1180 teleport 178 363.0,5.4,123.37
+rc delayed 1180 teleport 179 362.94,5.4,123.87
+rc delayed 1180 teleport 180 362.88,5.4,124.36
+rc delayed 1180 teleport 181 362.83,5.4,124.86
+rc delayed 1180 teleport 182 362.77,5.4,125.36
+rc delayed 1180 teleport 182 386.18,5.61,136.51
+rc delayed 1180 teleport 183 385.69,5.61,136.59
+rc delayed 1180 teleport 184 385.19,5.61,136.67
+rc delayed 1180 teleport 185 384.7,5.61,136.75
+rc delayed 1180 teleport 186 384.21,5.61,136.83
+rc delayed 1180 teleport 187 383.71,5.61,136.91
+rc delayed 1180 teleport 188 383.22,5.61,137.0
+rc delayed 1180 teleport 189 382.73,5.61,137.08
+rc delayed 1180 teleport 190 382.23,5.61,137.16
+rc delayed 1180 teleport 191 381.74,5.61,137.24
+rc delayed 1180 teleport 192 381.25,5.61,137.32
+
+rc carbonPlayers spawn 200
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers inputAxis 0
+rc carbonPlayers inputRotation 0
+
+load_mod 2134163798 #Competitive hills 1
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+spawn_override A ArmyInfantryOfficer 99
+spawn_override A ArmyLineInfantry 125
+spawn_override A FlagBearer 99
+spawn_override A Drummer 99
+spawn_override A Fifer 99
+spawn_override A Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override A Guard 99
+spawn_override A Grenadier 99
+ 
+spawn_override B ArmyInfantryOfficer 99
+spawn_override B ArmyLineInfantry 125
+spawn_override B FlagBearer 99
+spawn_override B Drummer 99
+spawn_override B Fifer 99
+spawn_override B Bagpiper 99
+spawn_override B Surgeon 99
+spawn_override B Cannoneer 99
+spawn_override B Rocketeer 99
+spawn_override B Guard 99
+spawn_override B Grenadier 99
+
+
+
+## bots
+rc delayed 1180 teleport 2 147.73,5.75,330.71
+rc delayed 1180 teleport 3 147.89,5.75,331.18
+rc delayed 1180 teleport 4 148.05,5.75,331.66
+rc delayed 1180 teleport 5 148.22,5.75,332.13
+rc delayed 1180 teleport 6 148.38,5.75,332.6
+rc delayed 1180 teleport 7 148.54,5.75,333.07
+rc delayed 1180 teleport 8 148.7,5.75,333.55
+rc delayed 1180 teleport 9 148.87,5.75,334.02
+rc delayed 1180 teleport 10 149.03,5.75,334.49
+rc delayed 1180 teleport 11 149.19,5.75,334.97
+rc delayed 1180 teleport 12 149.35,5.75,335.44
+rc delayed 1180 teleport 12 149.57,5.0,277.08
+rc delayed 1180 teleport 13 149.67,5.0,277.57
+rc delayed 1180 teleport 14 149.77,5.0,278.06
+rc delayed 1180 teleport 15 149.87,5.0,278.55
+rc delayed 1180 teleport 16 149.97,5.0,279.04
+rc delayed 1180 teleport 17 150.08,5.0,279.53
+rc delayed 1180 teleport 18 150.18,5.0,280.02
+rc delayed 1180 teleport 19 150.28,5.0,280.51
+rc delayed 1180 teleport 20 150.38,5.0,281.0
+rc delayed 1180 teleport 21 150.48,5.0,281.49
+rc delayed 1180 teleport 22 150.58,5.0,281.98
+rc delayed 1180 teleport 22 135.91,5.88,249.93
+rc delayed 1180 teleport 23 135.42,5.88,249.84
+rc delayed 1180 teleport 24 134.93,5.88,249.76
+rc delayed 1180 teleport 25 134.43,5.88,249.67
+rc delayed 1180 teleport 26 133.94,5.88,249.58
+rc delayed 1180 teleport 27 133.45,5.88,249.5
+rc delayed 1180 teleport 28 132.96,5.88,249.41
+rc delayed 1180 teleport 29 132.46,5.88,249.32
+rc delayed 1180 teleport 30 131.97,5.88,249.23
+rc delayed 1180 teleport 31 131.48,5.88,249.15
+rc delayed 1180 teleport 32 130.99,5.88,249.06
+rc delayed 1180 teleport 32 149.97,4.58,156.3
+rc delayed 1180 teleport 33 149.49,4.58,156.43
+rc delayed 1180 teleport 34 149.0,4.58,156.56
+rc delayed 1180 teleport 35 148.52,4.58,156.69
+rc delayed 1180 teleport 36 148.04,4.58,156.82
+rc delayed 1180 teleport 37 147.56,4.58,156.95
+rc delayed 1180 teleport 38 147.07,4.58,157.08
+rc delayed 1180 teleport 39 146.59,4.58,157.21
+rc delayed 1180 teleport 40 146.11,4.58,157.34
+rc delayed 1180 teleport 41 145.62,4.58,157.47
+rc delayed 1180 teleport 42 145.14,4.58,157.59
+rc delayed 1180 teleport 42 158.2,6.7,157.23
+rc delayed 1180 teleport 43 158.57,6.7,156.9
+rc delayed 1180 teleport 44 158.94,6.7,156.56
+rc delayed 1180 teleport 45 159.32,6.7,156.23
+rc delayed 1180 teleport 46 159.69,6.7,155.89
+rc delayed 1180 teleport 47 160.06,6.7,155.56
+rc delayed 1180 teleport 48 160.43,6.7,155.23
+rc delayed 1180 teleport 49 160.81,6.7,154.89
+rc delayed 1180 teleport 50 161.18,6.7,154.56
+rc delayed 1180 teleport 51 161.55,6.7,154.23
+rc delayed 1180 teleport 52 161.92,6.7,153.89
+rc delayed 1180 teleport 52 220.66,4.91,121.02
+rc delayed 1180 teleport 53 220.59,4.91,121.51
+rc delayed 1180 teleport 54 220.51,4.91,122.01
+rc delayed 1180 teleport 55 220.44,4.91,122.5
+rc delayed 1180 teleport 56 220.37,4.91,123.0
+rc delayed 1180 teleport 57 220.29,4.91,123.49
+rc delayed 1180 teleport 58 220.22,4.91,123.99
+rc delayed 1180 teleport 59 220.15,4.91,124.48
+rc delayed 1180 teleport 60 220.07,4.91,124.98
+rc delayed 1180 teleport 61 220.0,4.91,125.47
+rc delayed 1180 teleport 62 219.93,4.91,125.97
+rc delayed 1180 teleport 62 237.9,4.36,145.2
+rc delayed 1180 teleport 63 238.37,4.36,145.36
+rc delayed 1180 teleport 64 238.85,4.36,145.52
+rc delayed 1180 teleport 65 239.32,4.36,145.68
+rc delayed 1180 teleport 66 239.79,4.36,145.84
+rc delayed 1180 teleport 67 240.27,4.36,146.0
+rc delayed 1180 teleport 68 240.74,4.36,146.16
+rc delayed 1180 teleport 69 241.22,4.36,146.32
+rc delayed 1180 teleport 70 241.69,4.36,146.48
+rc delayed 1180 teleport 71 242.16,4.36,146.64
+rc delayed 1180 teleport 72 242.64,4.36,146.8
+rc delayed 1180 teleport 72 277.71,4.36,151.1
+rc delayed 1180 teleport 73 277.56,4.36,151.58
+rc delayed 1180 teleport 74 277.41,4.36,152.05
+rc delayed 1180 teleport 75 277.26,4.36,152.53
+rc delayed 1180 teleport 76 277.11,4.36,153.01
+rc delayed 1180 teleport 77 276.96,4.36,153.49
+rc delayed 1180 teleport 78 276.81,4.36,153.96
+rc delayed 1180 teleport 79 276.67,4.36,154.44
+rc delayed 1180 teleport 80 276.52,4.36,154.92
+rc delayed 1180 teleport 81 276.37,4.36,155.4
+rc delayed 1180 teleport 82 276.22,4.36,155.87
+rc delayed 1180 teleport 82 269.31,4.94,183.94
+rc delayed 1180 teleport 83 269.27,4.94,184.44
+rc delayed 1180 teleport 84 269.22,4.94,184.94
+rc delayed 1180 teleport 85 269.18,4.94,185.43
+rc delayed 1180 teleport 86 269.13,4.94,185.93
+rc delayed 1180 teleport 87 269.09,4.94,186.43
+rc delayed 1180 teleport 88 269.05,4.94,186.93
+rc delayed 1180 teleport 89 269.0,4.94,187.43
+rc delayed 1180 teleport 90 268.96,4.94,187.92
+rc delayed 1180 teleport 91 268.91,4.94,188.42
+rc delayed 1180 teleport 92 268.87,4.94,188.92
+rc delayed 1180 teleport 92 386.11,5.6,190.36
+rc delayed 1180 teleport 93 386.59,5.6,190.49
+rc delayed 1180 teleport 94 387.08,5.6,190.61
+rc delayed 1180 teleport 95 387.56,5.6,190.74
+rc delayed 1180 teleport 96 388.05,5.6,190.86
+rc delayed 1180 teleport 97 388.53,5.6,190.99
+rc delayed 1180 teleport 98 389.01,5.6,191.12
+rc delayed 1180 teleport 99 389.5,5.6,191.24
+rc delayed 1180 teleport 100 389.98,5.6,191.37
+rc delayed 1180 teleport 101 390.47,5.6,191.49
+rc delayed 1180 teleport 102 390.95,5.6,191.62
+rc delayed 1180 teleport 102 373.24,3.5,169.97
+rc delayed 1180 teleport 103 372.75,3.5,169.86
+rc delayed 1180 teleport 104 372.26,3.5,169.75
+rc delayed 1180 teleport 105 371.78,3.5,169.65
+rc delayed 1180 teleport 106 371.29,3.5,169.54
+rc delayed 1180 teleport 107 370.8,3.5,169.43
+rc delayed 1180 teleport 108 370.31,3.5,169.32
+rc delayed 1180 teleport 109 369.82,3.5,169.21
+rc delayed 1180 teleport 110 369.33,3.5,169.1
+rc delayed 1180 teleport 111 368.85,3.5,169.0
+rc delayed 1180 teleport 112 368.36,3.5,168.89
+rc delayed 1180 teleport 112 353.66,4.81,220.83
+rc delayed 1180 teleport 113 353.88,4.81,221.28
+rc delayed 1180 teleport 114 354.1,4.81,221.73
+rc delayed 1180 teleport 115 354.32,4.81,222.18
+rc delayed 1180 teleport 116 354.54,4.81,222.62
+rc delayed 1180 teleport 117 354.77,4.81,223.07
+rc delayed 1180 teleport 118 354.99,4.81,223.52
+rc delayed 1180 teleport 119 355.21,4.81,223.97
+rc delayed 1180 teleport 120 355.43,4.81,224.42
+rc delayed 1180 teleport 121 355.65,4.81,224.87
+rc delayed 1180 teleport 122 355.87,4.81,225.31
+rc delayed 1180 teleport 122 353.86,4.96,241.05
+rc delayed 1180 teleport 123 353.42,4.96,240.81
+rc delayed 1180 teleport 124 352.99,4.96,240.56
+rc delayed 1180 teleport 125 352.55,4.96,240.32
+rc delayed 1180 teleport 126 352.12,4.96,240.07
+rc delayed 1180 teleport 127 351.68,4.96,239.83
+rc delayed 1180 teleport 128 351.24,4.96,239.58
+rc delayed 1180 teleport 129 350.81,4.96,239.34
+rc delayed 1180 teleport 130 350.37,4.96,239.09
+rc delayed 1180 teleport 131 349.94,4.96,238.85
+rc delayed 1180 teleport 132 349.5,4.96,238.6
+rc delayed 1180 teleport 132 355.63,4.63,269.08
+rc delayed 1180 teleport 133 356.13,4.63,269.02
+rc delayed 1180 teleport 134 356.62,4.63,268.96
+rc delayed 1180 teleport 135 357.12,4.63,268.91
+rc delayed 1180 teleport 136 357.62,4.63,268.85
+rc delayed 1180 teleport 137 358.11,4.63,268.79
+rc delayed 1180 teleport 138 358.61,4.63,268.73
+rc delayed 1180 teleport 139 359.11,4.63,268.67
+rc delayed 1180 teleport 140 359.6,4.63,268.62
+rc delayed 1180 teleport 141 360.1,4.63,268.56
+rc delayed 1180 teleport 142 360.6,4.63,268.5
+rc delayed 1180 teleport 142 397.89,4.95,283.17
+rc delayed 1180 teleport 143 397.4,4.95,283.1
+rc delayed 1180 teleport 144 396.9,4.95,283.02
+rc delayed 1180 teleport 145 396.41,4.95,282.95
+rc delayed 1180 teleport 146 395.91,4.95,282.87
+rc delayed 1180 teleport 147 395.42,4.95,282.8
+rc delayed 1180 teleport 148 394.92,4.95,282.73
+rc delayed 1180 teleport 149 394.43,4.95,282.65
+rc delayed 1180 teleport 150 393.93,4.95,282.58
+rc delayed 1180 teleport 151 393.44,4.95,282.5
+rc delayed 1180 teleport 152 392.94,4.95,282.43
+rc delayed 1180 teleport 152 364.34,4.23,319.53
+rc delayed 1180 teleport 153 363.84,4.23,319.47
+rc delayed 1180 teleport 154 363.35,4.23,319.41
+rc delayed 1180 teleport 155 362.85,4.23,319.36
+rc delayed 1180 teleport 156 362.35,4.23,319.3
+rc delayed 1180 teleport 157 361.86,4.23,319.24
+rc delayed 1180 teleport 158 361.36,4.23,319.18
+rc delayed 1180 teleport 159 360.86,4.23,319.12
+rc delayed 1180 teleport 160 360.37,4.23,319.06
+rc delayed 1180 teleport 161 359.87,4.23,319.01
+rc delayed 1180 teleport 162 359.37,4.23,318.95
+rc delayed 1180 teleport 162 332.3,6.51,331.14
+rc delayed 1180 teleport 163 332.21,6.51,331.63
+rc delayed 1180 teleport 164 332.12,6.51,332.12
+rc delayed 1180 teleport 165 332.03,6.51,332.61
+rc delayed 1180 teleport 166 331.93,6.51,333.11
+rc delayed 1180 teleport 167 331.84,6.51,333.6
+rc delayed 1180 teleport 168 331.75,6.51,334.09
+rc delayed 1180 teleport 169 331.66,6.51,334.58
+rc delayed 1180 teleport 170 331.57,6.51,335.07
+rc delayed 1180 teleport 171 331.48,6.51,335.56
+rc delayed 1180 teleport 172 331.38,6.51,336.06
+rc delayed 1180 teleport 172 389.21,4.67,386.46
+rc delayed 1180 teleport 173 388.73,4.67,386.61
+rc delayed 1180 teleport 174 388.25,4.67,386.75
+rc delayed 1180 teleport 175 387.78,4.67,386.9
+rc delayed 1180 teleport 176 387.3,4.67,387.05
+rc delayed 1180 teleport 177 386.82,4.67,387.19
+rc delayed 1180 teleport 178 386.34,4.67,387.34
+rc delayed 1180 teleport 179 385.86,4.67,387.49
+rc delayed 1180 teleport 180 385.39,4.67,387.63
+rc delayed 1180 teleport 181 384.91,4.67,387.78
+rc delayed 1180 teleport 182 384.43,4.67,387.93
+rc delayed 1180 teleport 182 358.61,4.78,403.67
+rc delayed 1180 teleport 183 358.85,4.78,403.23
+rc delayed 1180 teleport 184 359.09,4.78,402.79
+rc delayed 1180 teleport 185 359.33,4.78,402.35
+rc delayed 1180 teleport 186 359.57,4.78,401.92
+rc delayed 1180 teleport 187 359.81,4.78,401.48
+rc delayed 1180 teleport 188 360.05,4.78,401.04
+rc delayed 1180 teleport 189 360.29,4.78,400.6
+rc delayed 1180 teleport 190 360.53,4.78,400.16
+rc delayed 1180 teleport 191 360.77,4.78,399.72
+rc delayed 1180 teleport 192 361.01,4.78,399.28
+rc delayed 1180 teleport 192 298.25,4.28,391.12
+rc delayed 1180 teleport 193 298.22,4.28,390.62
+rc delayed 1180 teleport 194 298.2,4.28,390.12
+rc delayed 1180 teleport 195 298.17,4.28,389.62
+rc delayed 1180 teleport 196 298.15,4.28,389.12
+rc delayed 1180 teleport 197 298.12,4.28,388.62
+rc delayed 1180 teleport 198 298.1,4.28,388.12
+rc delayed 1180 teleport 199 298.07,4.28,387.62
+rc delayed 1180 teleport 200 298.05,4.28,387.13
+rc delayed 1180 teleport 201 298.02,4.28,386.63
+rc delayed 1180 teleport 202 298.0,4.28,386.13
+rc delayed 1180 teleport 202 277.73,4.17,378.55
+rc delayed 1180 teleport 203 277.92,4.17,378.09
+rc delayed 1180 teleport 204 278.12,4.17,377.63
+rc delayed 1180 teleport 205 278.31,4.17,377.17
+rc delayed 1180 teleport 206 278.5,4.17,376.7
+rc delayed 1180 teleport 207 278.69,4.17,376.24
+rc delayed 1180 teleport 208 278.89,4.17,375.78
+rc delayed 1180 teleport 209 279.08,4.17,375.32
+rc delayed 1180 teleport 210 279.27,4.17,374.86
+rc delayed 1180 teleport 211 279.46,4.17,374.4
+rc delayed 1180 teleport 212 279.66,4.17,373.94
+rc delayed 1180 teleport 212 234.54,3.0,397.32
+rc delayed 1180 teleport 213 234.27,3.0,396.9
+rc delayed 1180 teleport 214 233.99,3.0,396.48
+rc delayed 1180 teleport 215 233.72,3.0,396.07
+rc delayed 1180 teleport 216 233.44,3.0,395.65
+rc delayed 1180 teleport 217 233.17,3.0,395.23
+rc delayed 1180 teleport 218 232.89,3.0,394.81
+rc delayed 1180 teleport 219 232.62,3.0,394.4
+rc delayed 1180 teleport 220 232.34,3.0,393.98
+rc delayed 1180 teleport 221 232.07,3.0,393.56
+rc delayed 1180 teleport 222 231.79,3.0,393.14
+
+rc carbonPlayers spawn 222
+rc carbonPlayers forceInputAxis true
+rc carbonPlayers forceInputRotation true
+rc carbonPlayers inputAxis 0
+rc carbonPlayers inputRotation 0
+
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2134144435 #Competitive hills 2
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+spawn_override A ArmyInfantryOfficer 99
+spawn_override A ArmyLineInfantry 125
+spawn_override A FlagBearer 99
+spawn_override A Drummer 99
+spawn_override A Fifer 99
+spawn_override A Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override A Guard 99
+spawn_override A Grenadier 99
+ 
+spawn_override B ArmyInfantryOfficer 99
+spawn_override B ArmyLineInfantry 125
+spawn_override B FlagBearer 99
+spawn_override B Drummer 99
+spawn_override B Fifer 99
+spawn_override B Bagpiper 99
+spawn_override B Surgeon 99
+spawn_override B Cannoneer 99
+spawn_override B Rocketeer 99
+spawn_override B Guard 99
+spawn_override B Grenadier 99
+
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+#### BOTS
+
+
+load_mod 2134163798 #Competitive hills 1
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 20
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1000
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+spawn_override A ArmyInfantryOfficer 99
+spawn_override A ArmyLineInfantry 125
+spawn_override A FlagBearer 99
+spawn_override A Drummer 99
+spawn_override A Fifer 99
+spawn_override A Bagpiper 99
+spawn_override A Surgeon 99
+spawn_override A Cannoneer 99
+spawn_override A Rocketeer 99
+spawn_override A Guard 99
+spawn_override A Grenadier 99
+ 
+spawn_override B ArmyInfantryOfficer 99
+spawn_override B ArmyLineInfantry 125
+spawn_override B FlagBearer 99
+spawn_override B Drummer 99
+spawn_override B Fifer 99
+spawn_override B Bagpiper 99
+spawn_override B Surgeon 99
+spawn_override B Cannoneer 99
+spawn_override B Rocketeer 99
+spawn_override B Guard 99
+spawn_override B Grenadier 99
+
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2134144435 #Competitive hills 2
+
+!map_rotation end

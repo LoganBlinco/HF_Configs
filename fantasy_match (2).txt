@@ -1,0 +1,140 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 17000
+steam_communications_port 17001
+steam_query_port 17002
+
+
+###- Server Settingsa
+
+server_name EU XMG Melee Fantasy League | S1 
+server_welcome_message Welcome to the Melee League server
+server_region europe
+server_admin_password Matters
+server_password Money
+
+mods_installed 2272056234 #comp melee
+
+
+
+###- Bandwidth & Memory Settings
+
+network_broadcast_mode Realtime
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 250
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending british
+
+
+rc set voiceChatEnabled true
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+#### MOVMEMENT BASED CHANGES 
+rc set characterCombatStanceBlockRunSpeed 1 #must remain as 1 since that blocking doesnt slow you down
+rc set characterCombatStanceMeleeStrikeRunSpeed 1.088 #default = 1, no slowdown = 1.17. This is a 50% reduction
+rc set characterCombatStanceMeleeHoldRunSpeed 1.088 #default = 1, no slowdown = 1.17. This is a 50% reduction
+
+#### NETWORKING BASED CHANGES
+rc set networkMeleePingAllowanceMultiplier 1.5 #default = 2. This multiplier is applied to the players average ping in "backward snapshot" calculations.
+rc set networkMeleePingAllowanceMax 150 #default 200, is the average ping * multiplier (above) compared to this value and smallest one used.
+
+#### ATTACK SPEED CHANGES
+
+rc set idleToStrikeTransitionDelayMeleeWeapons 0.282 #default = 0.3 , is the added time from getting to "top" of attack to the attack releasing after being in an idle state
+rc set blockingStrikeTransitionDelayMeleeWeapons 0.282 #default = 0.3 , is the added time from getting to "top" of attack to the attack releasing after being in an blocking state
+rc set characterBlockGraceTime 0.03 #default = 0.03
+rc set characterMeleeWeaponReleaseTime 0.03
+rc set meleeLegHitSystemEnabled false
+
+#### SECONDARY ATTACK
+rc set characterSecondaryAttackWinddownTime 0.3 #default 0.4
+rc set characterSecondaryAttackWindupTime 0.3 #default 0.4
+rc set characterSecondaryAttackKickBackDuration 0.22 #default 0.2
+rc set secondaryAttackCooldownDuration 2 #default = 1.6. Time between secondary attacks. Prevents spamming.
+
+#### CROUCHING 
+rc set characterCrouchToggleCooldownTime 0.32
+
+load_mod 2272056234 #comp map
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 60
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 50
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 250
+time_hour 10
+time_dynamic false
+weather_preset calm3
+weather_dynamic false
+faction_attacking french
+faction_defending british
+friendly_fire true
+damage_split 0
+
+
+spawn_override A ArmyLineInfantry 99
+
+spawn_override B ArmyLineInfantry 99
+rc set voiceChatEnabled true
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+
+#### MOVMEMENT BASED CHANGES 
+rc set characterCombatStanceBlockRunSpeed 1 #must remain as 1 since that blocking doesnt slow you down
+rc set characterCombatStanceMeleeStrikeRunSpeed 1.088 #default = 1, no slowdown = 1.17. This is a 50% reduction
+rc set characterCombatStanceMeleeHoldRunSpeed 1.088 #default = 1, no slowdown = 1.17. This is a 50% reduction
+
+#### NETWORKING BASED CHANGES
+rc set networkMeleePingAllowanceMultiplier 1.5 #default = 2. This multiplier is applied to the players average ping in "backward snapshot" calculations.
+rc set networkMeleePingAllowanceMax 150 #default 200, is the average ping * multiplier (above) compared to this value and smallest one used.
+
+#### ATTACK SPEED CHANGES
+
+rc set idleToStrikeTransitionDelayMeleeWeapons 0.282 #default = 0.3 , is the added time from getting to "top" of attack to the attack releasing after being in an idle state
+rc set blockingStrikeTransitionDelayMeleeWeapons 0.282 #default = 0.3 , is the added time from getting to "top" of attack to the attack releasing after being in an blocking state
+rc set characterBlockGraceTime 0.03 #default = 0.03
+rc set characterMeleeWeaponReleaseTime 0.03
+rc set meleeLegHitSystemEnabled false
+
+#### SECONDARY ATTACK
+rc set characterSecondaryAttackWinddownTime 0.3 #default 0.4
+rc set characterSecondaryAttackWindupTime 0.3 #default 0.4
+rc set characterSecondaryAttackKickBackDuration 0.22 #default 0.2
+rc set secondaryAttackCooldownDuration 2 #default = 1.6. Time between secondary attacks. Prevents spamming.
+
+#### CROUCHING 
+rc set characterCrouchToggleCooldownTime 0.32
+
+load_mod 2272056234 #comp map
+!map_rotation end

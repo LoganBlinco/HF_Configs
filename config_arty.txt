@@ -1,0 +1,157 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+ 
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+###- Server Settings
+ 
+server_name QRR Event Server | S1
+server_welcome_message Welcome!
+server_region europe
+server_admin_password 429753
+server_password 5050
+
+#global settings
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+network_broadcast_mode Realtime
+
+
+#Rotation 2 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+!map_rotation end
+
+
+#Rotation 2 = Grassyplainsii [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name Grassyplainsiii
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 11
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+
+rc set cannonMoverSpeedMultiplier 0
+rc set cannonMoverRotationMultiplier 0
+rc set drawCannonPathTrajectories true
+
+rc delayed 600 broadcast Live
+rc delayed 600 set cannonMoverSpeedMultiplier 1
+rc delayed 600 set cannonMoverRotationMultiplier 1
+
+
+rc delayed 520 broadcast Grace Period Over.
+rc delayed 520 set drawCannonPathTrajectories false
+
+
+objects_override CannonFieldGun9PDRMoveable 540.64 55.28 382.20 0.00 267.38 0.00
+objects_override FlagBritish 535.98 60.12 398.73 0.00 179.04 0.00
+objects_override FlagBritish 538.88 60.28 354.22 0.00 176.67 0.00
+objects_override FlagBritish 572.12 60.44 354.26 0.00 273.06 0.00
+objects_override FlagBritish 572.07 60.28 397.52 0.00 10.45 0.00
+
+
+
+objects_override CannonFieldGun9PDRMoveable 186.66 54.88 346.64 0.00 74.43 0.00
+objects_override FlagBritish 186.50 59.88 360.11 0.00 161.68 0.00
+objects_override FlagBritish 196.92 59.88 317.40 0.00 356.53 0.00
+objects_override FlagBritish 156.70 59.87 316.20 0.00 71.23 0.00
+objects_override FlagBritish 149.26 59.41 368.06 0.00 99.37 0.00
+
+!map_rotation end
+
+#Rotation 2 = Grassyplainsii [Army Assault] - Calm Weather | Day
+!map_rotation start
+map_name snowyplainsiii
+game_mode ArmyBattlefield
+friendly_fire true
+round_time_minutes 11
+round_spawn_close_timer_seconds 2400
+reinforcements_per_faction 5000
+wave_spawn_time_seconds 2
+max_player_respawns 1
+faction_attacking french
+faction_defending british
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+game_type hardcore
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+
+rc set cannonMoverSpeedMultiplier 0
+rc set cannonMoverRotationMultiplier 0
+rc set drawCannonPathTrajectories true
+
+rc delayed 600 broadcast Live
+rc delayed 600 set cannonMoverSpeedMultiplier 1
+rc delayed 600 set cannonMoverRotationMultiplier 1
+
+
+rc delayed 520 broadcast Grace Period Over.
+rc delayed 520 set drawCannonPathTrajectories false
+
+
+objects_override CannonFieldGun9PDRMoveable 170.08 48.98 176.13 0.00 17.35 0.00
+objects_override FlagBritish 535.98 60.12 398.73 0.00 179.04 0.00
+objects_override FlagBritish 538.88 60.28 354.22 0.00 176.67 0.00
+objects_override FlagBritish 572.12 60.44 354.26 0.00 273.06 0.00
+objects_override FlagBritish 572.07 60.28 397.52 0.00 10.45 0.00
+
+
+
+objects_override CannonFieldGun9PDRMoveable 504.88 48.98 479.94 0.00 178.89 0.00
+objects_override FlagBritish 522.61 53.98 464.18 0.00 283.74 0.00
+objects_override FlagBritish 470.41 53.73 485.59 0.00 121.86 0.00
+objects_override FlagBritish 485.76 53.98 524.04 0.00 191.36 0.00
+objects_override FlagBritish 551.11 53.98 502.47 0.00 194.18 0.00
+
+!map_rotation end

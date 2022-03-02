@@ -1,0 +1,163 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+ 
+server_port 17000
+steam_communications_port 17001
+steam_query_port 17002
+
+###- Server Settings
+ 
+server_name Queens Royal Saturday Event | QRR
+server_welcome_message Welcome to the QRR linebattle
+server_region europe
+server_admin_password Cav
+server_password 5050
+
+server_intro_title <b><color=red> Queens Royal Saturday Event hosted by the QRR </color></b> 
+server_intro_body <color=yellow> Please try to follow the rules to the best of your ability <br><br> Ammo boxes have been added to the spawns for musket and rifles <br><br> Cav spawns have been added with flags (to show leader) <br><br> Captains have been given a carbine <br><br> </color> <b><color=blue> Report rule breaks and ask questions in blue chat </color></b>
+ 
+#global settings
+artillery_fieldgun_respawn_timer 1200
+artillery_rocketlauncher_respawn_timer 1200
+
+#Rotation 1 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 6
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+server_round_rule ArmyInfantryOfficer | This is a test | and another
+
+#Promotion area flags
+objects_override FlagBritish 563.65 11.03 416.67 0.00 165.41 0.00
+objects_override FlagBritish 565.36 11.03 412.18 0.00 73.52 0.00
+objects_override FlagBritish 586.09 9.93 425.62 0.00 247.12 0.00
+objects_override FlagBritish 588.00 9.93 420.24 0.00 105.06 0.00
+
+objects_override CannonFieldGun9PDR 584.73 10.53 416.91 0.00 240.68 0.00
+objects_override CannonAmmoboxLarge 587.64 10.53 416.92 0.00 243.99 0.00
+
+objects_override BarrelStack_Group 560.53 9.93 425.16 0.00 88.35 0.00
+
+objects_override MusketStack 583.32 10.53 423.07 0.00 155.54 0.00
+objects_override MusketStack 584.27 10.53 420.70 0.00 335.63 0.00
+objects_override MusketStack 570.97 10.53 420.52 0.00 150.39 0.00
+objects_override MusketStack 573.65 10.53 414.23 0.00 338.97 0.00
+objects_override Piano2 566.32 9.93 426.71 0.00 111.58 0.00
+
+!map_rotation end
+
+#Rotation 2- grassy 3 
+!map_rotation start
+map_name grassyplainsiii
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 6
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+!map_rotation end
+
+#Rotation 3 - grassy 2
+!map_rotation start
+map_name grassyplainsii
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 6
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+!map_rotation end
+
+#Rotation 4 - desert plains 1 
+!map_rotation start
+map_name desertplains
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 6
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+
+!map_rotation end
+
+#Rotation 5 - snowyplains5
+!map_rotation start
+map_name snowyplainsiiiii
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 6
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+
+!map_rotation end
+
+

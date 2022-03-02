@@ -1,0 +1,692 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 6942
+steam_communications_port 6943
+steam_query_port 6944
+
+
+
+###- Server Settings
+
+server_name 27th Regiment of Foot | Hosted by Shanks
+server_welcome_message Welcome to the 27th Regiment of Foot's Server.
+server_region europe
+server_admin_password Magners
+server_password Cheese
+
+
+###- Server mods
+
+mods_installed 2116573280
+mods_installed 2238897147
+mods_installed 2231589375
+mods_installed 2235975920
+mods_installed 2173645483
+
+###- Administrator Preset Messages
+
+admin_action_preset_reason Firing Out Of Line | Watch your Fire Out of Line. You must be standing should to shoulder before shooting your musket.
+admin_action_preset_reason Crouching | You are not allowed to crouch unless you are lights.
+admin_action_preset_reason Line Dropped Below 4 | Your line has dropped to 3 members. Join another line.
+admin_action_preset_reason Rambo | You must be with a line to engage fire. finds a Line or charge.
+admin_action_preset_reason VoIP Spam | Please don't spam VoIP during the event.
+admin_action_preset_reason FIC | You are not allowed to fire when charging.
+
+###- Loaded Server Mods
+load_mod 2120856979
+
+###- Map Rotations - General Maps
+
+
+#Rotation 1 = Training Grounds [Army Battlefield] - TRAINING & PROMOTIONS - Calm Weather | Evening (17)
+!map_rotation start
+load_mod 2238897147
+rc set framerate 120
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds 5
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players  200
+time_hour 17
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking british
+faction_defending french
+max_player_respawns -1
+sappers_attacking_starting_materials 10000
+sappers_defending_starting_materials 10000
+
+#Override commands##################
+sappers_buildlimit ExplosiveBarrel Defending 255
+sappers_buildlimit ExplosiveBarrel Attacking 255
+
+#50m
+objects_override Carpet1 342.19 10.57 296.94 0.00 318.76 0.00
+objects_override TargetDummy 312.69 9.84 337.40 0.00 143.79 0.00
+#75m
+objects_override Carpet1 342.19 10.57 296.94 0.00 318.76 0.00
+objects_override TargetDummy 292.14 9.82 352.86 0.00 134.64 0.00
+
+#100m
+objects_override Carpet1 342.19 10.57 296.94 0.00 318.76 0.00
+objects_override TargetDummy 272.49 9.78 368.40 0.00 140.68 0.00
+
+#125m
+objects_override Carpet1 342.19 10.57 296.94 0.00 318.76 0.00
+objects_override TargetDummy 254.12 9.95 385.43 0.00 134.02 0.00
+
+#150m
+objects_override Carpet1 342.19 10.57 296.94 0.00 318.76 0.00
+objects_override TargetDummy 233.65 10.12 400.45 0.00 135.55 0.00
+
+objects_override LanternboxMoveable 657.8 16.4 197.8 0.0 72.9 0.0 255
+objects_override Lanternbox 654.7 16.4 204.1 0.0 64.8 0.0 255
+objects_override Lanternbox 655.0 16.4 214.2 0.0 129.4 0.0 255
+objects_override Lanternbox 652.5 16.4 221.7 0.0 126.5 0.0 255
+objects_override Lanternbox 669.3 16.0 199.8 0.0 93.0 0.0 255
+objects_override Firearmammobox 317.3 9.7 410.2 0.0 131.6 0.0 Unarmed 255 15 4
+objects_override SpyGlassBox 320.4 9.7 407.0 0.0 314.3 0.0 255
+objects_override Chair1 323.7 9.7 404.1 0.0 314.3 0.0
+objects_override Chair1 323.7 12 404.1 0.0 314.3 0.0
+objects_override Chair1 323.1 9.7 403.4 0.0 314.3 0.0
+objects_override Chair1 324.4 9.7 404.7 0.0 314.3 0.0
+
+#Promotions Props#####################
+objects_override Chair1 562.8 13 413.9 0.0 69.3 0.0
+objects_override 27th reg flag 562.3 10.5 419.6 0.0 0.0 0.0
+objects_override Lantern2 568.3 12.0 416.4 0.0 69.3 0.0
+objects_override Chair1 568.9 10.5 420.4 0.0 158.8 0.0
+objects_override Chair1 569.7 10.5 420.7 0.0 158.8 0.0
+objects_override Chair1 570.6 10.5 421.1 0.0 158.8 0.0
+objects_override Chair1 571.5 10.5 421.5 0.0 158.8 0.0
+objects_override Chair1 572.4 10.5 421.8 0.0 158.8 0.0
+objects_override LanternHanging 585.5 11.4 423.8 0.0 248.9 0.0
+objects_override LanternHanging 586.4 11.4 421.6 0.0 248.9 0.0
+#officer promotion props
+objects_override Chair1 567.8 11 413.5 0.0 69.7 0.0
+objects_override Chair1 566.3 11 417.4 0.0 69.7 0.0
+#secrethideyspot
+objects_override Campfire 202.2 19.8 178.6 0.0 106.6 0.0
+objects_override TentSmall3 199.4 19.7 179.4 0.0 104.7 0.0
+!map_rotation end
+
+
+
+#Rotation 2 = Palisade [Army Deathmatch] - Calm Weather | Day 
+!map_rotation start
+load_mod 2238897147
+delayed 930 broadcast Live at 14:15
+delayed 920 broadcast Arty vs Arty 12:30
+delayed 910 broadcast All Charge 7:00
+delayed 855 setallowFiring true
+delayed 855 broadcast Live
+delayed 420 broadcast All Charge (Cav Dismount)
+delayed 420 setallowFiring false
+map_name Palisadearena
+game_mode armydeathmatch
+round_time_minutes 120
+reinforcements_per_faction 9000
+wave_spawn_time_seconds -1
+max_player_respawns 100
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+deathmatch_max_kills 100
+!map_rotation end
+
+
+# Rotation 3 = Palisade Arena (Melee Arena) - Calm Weather | Morning (10)
+!map_rotation start
+load_mod 2203450937
+load_mod 2238897147
+load_mod 2231589375
+map_name palisadearena
+game_mode MeleeArena
+game_type Standard
+round_time_minutes 12
+round_spawn_close_timer_seconds 35
+round_spawn_close_timer_seconds_between_rounds 20
+amount_of_rounds 20
+faction_balancing false
+faction_balancing_discrepancy_amount 1
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+friendly_fire true
+damage_split 0
+!map_rotation end
+
+
+###- Map Rotations - Wednesday Event Maps
+
+
+#Rotation 4 = Grassy Plains II [Army Assault] - Calm Weather | Dynamic (Pre-Event)
+!map_rotation start
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2235975920
+load_mod 2173645483
+map_name grassyplainsii
+game_mode ArmyBattlefield
+round_time_minutes 16
+reinforcements_per_faction 9000
+round_spawn_close_timer_seconds 960
+friendly_fire false
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+max_player_respawns -1
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 5
+spawn_override B Hussar 5
+spawn_override A CuirassierDragoon 5
+spawn_override B CuirassierDragoon 5
+!map_rotation end
+
+#Rotation 5 = Snowy Plains III [Army Assault] - Dynamic Weather | Morning 
+!map_rotation start
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2235975920
+load_mod 2173645483
+map_name snowyplainsiii
+game_mode ArmyAssault
+round_time_minutes 16 
+round_spawn_close_timer_seconds 180
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 14
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+max_player_respawns -1
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 5
+spawn_override B Hussar 5
+spawn_override A CuirassierDragoon 5
+spawn_override B CuirassierDragoon 5
+!map_rotation end
+
+
+#Rotation 6 = Grassy Plains [Army Assault] - Calm Weather | Day
+!map_rotation start
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2235975920
+load_mod 2173645483
+map_name grassyplains
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 5
+spawn_override B Hussar 5
+spawn_override A CuirassierDragoon 5
+spawn_override B CuirassierDragoon 5
+!map_rotation end
+
+
+#Rotation 7 = Grassy Plains III [Army Assault] - Calm Weather | Evening (liked)
+!map_rotation start
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2235975920
+load_mod 2173645483
+map_name grassyplainsiii
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 5
+spawn_override B Hussar 5
+spawn_override A CuirassierDragoon 5
+spawn_override B CuirassierDragoon 5
+!map_rotation end
+
+
+#Rotation 8 = Island Plains 1 [Army Assault] - Calm Weather | Day 
+!map_rotation start
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2235975920
+load_mod 2173645483
+map_name IslandPlains
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 5
+spawn_override B Hussar 5
+spawn_override A CuirassierDragoon 5
+spawn_override B CuirassierDragoon 5
+!map_rotation end
+
+
+#Rotation 9 = Grassy Plains II [Army Assault] - Calm Weather | Dynamic (Reserve)
+!map_rotation start
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2235975920
+load_mod 2173645483
+map_name grassyplainsii
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 5
+spawn_override B Hussar 5
+spawn_override A CuirassierDragoon 5
+spawn_override B CuirassierDragoon 5
+!map_rotation end
+
+
+#Rotation 10 = Grassy Plains IV [Army Assault] - Calm Weather | Dynamic (Reserve)
+!map_rotation start
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2235975920
+load_mod 2173645483
+map_name grassyplainsiv
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 5
+spawn_override B Hussar 5
+spawn_override A CuirassierDragoon 5
+spawn_override B CuirassierDragoon 5
+!map_rotation end
+
+
+#Rotation 11 = Custom Maps [Army Assault] - Calm Weather | Dynamic (Reserve)
+!map_rotation start
+load_mod 2116573280
+load_mod 2238897147
+load_mod 2231589375
+load_mod 2235975920
+load_mod 2173645483
+map_name modmap
+game_mode ArmyAssault
+round_time_minutes 16
+round_spawn_close_timer_seconds 180
+friendly_fire true
+faction_balancing false
+allow_midround_spawning false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 13
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking french
+faction_defending british
+game_type hardcore
+spawn_override A Surgeon 200
+spawn_override B Surgeon 200
+spawn_override A ArmyLineInfantry 200
+spawn_override B ArmyLineInfantry 200
+spawn_override A ArmyLineInfantry2 200
+spawn_override B ArmyLineInfantry2 200
+spawn_override A ArmyInfantryOfficer 200
+spawn_override B ArmyInfantryOfficer 200
+spawn_override A CoastGuard 200
+spawn_override B CoastGuard 200
+spawn_override A LightInfantry 50
+spawn_override B LightInfantry 50
+spawn_override A Guard 50
+spawn_override B Guard 50
+spawn_override A FlagBearer 50
+spawn_override B FlagBearer 50
+spawn_override A Drummer 50
+spawn_override B Drummer 50
+spawn_override A Fifer 50
+spawn_override B Fifer 50
+spawn_override A Sapper 50
+spawn_override B Sapper 50
+spawn_override A Cannoneer 50
+spawn_override B Cannoneer 50
+spawn_override A Hussar 5
+spawn_override B Hussar 5
+spawn_override A CuirassierDragoon 5
+spawn_override B CuirassierDragoon 5
+
+!map_rotation end
+
+
+
+### Naval Competitive Rotation
+
+#Rotation 12 = Harouti Islands
+!map_rotation start
+map_name HaroutiIslands
+game_mode NavalAssault
+round_time_minutes 15
+ships_preset 37
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+round_spawn_close_timer_seconds 140
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+wind_direction east
+ships_spawn BrigSloop13gun 1 French 1
+ships_spawn BrigSloop13gun 1 British 3
+ships_spawn Schooner2gun 1 French 4
+ships_spawn Schooner2gun 1 British 3
+friendly_fire true
+game_type hardcore
+rc delayed 780 broadcast Live!
+rc set windDirectionAffectsShipSpeed false
+rc set shipSailWindUnitMultiplier 0
+rc set rowboatCooldownBetweenSpawns 900
+!map_rotation end
+
+#Rotation 13 = Open Waters
+!map_rotation start
+map_name RandomWaters
+game_mode NavalAssault
+round_time_minutes 15
+ships_preset 37
+faction_balancing false
+round_spawn_close_timer_seconds 140
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+wind_direction east
+ships_spawn BrigSloop13gun 1 French 1
+ships_spawn BrigSloop13gun 1 British 3
+ships_spawn Schooner2gun 1 French 4
+ships_spawn Schooner2gun 1 British 3
+friendly_fire true
+game_type hardcore
+rc delayed 780 broadcast Live!
+rc set windDirectionAffectsShipSpeed true
+rc set shipSailWindUnitMultiplier 1
+rc set rowboatCooldownBetweenSpawns 900
+load_mod 2132646850
+!map_rotation end

@@ -1,0 +1,226 @@
+
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+###- Server Settings
+
+server_name EU Competitive Cavalry League Season 1 | S2
+server_welcome_message <b> Welcome to the Holdfast Cavalry Season 1. This server is brought to you by bmghosting.com, Reliable – Experienced – Affordable </b>
+server_region europe
+server_admin_password Never
+server_password Cavwhen
+
+network_broadcast_mode Realtime
+
+mods_installed 2133325553 # marsh
+
+
+#Rotation 1 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+game_type hardcore
+
+!map_rotation end
+
+
+!map_rotation start
+map_name grassyplainsii
+game_mode ArmyAssault
+round_time_minutes 11.5
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+round_spawn_close_timer_seconds 151
+minimum_players 0
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+game_type hardcore
+
+## Class spawns
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+firearm_ammo_override British Hussar Pistol_NewLandPattern 1 1 1
+firearm_ammo_override British CuirassierDragoon Carbine_Elliot 6 1 6
+
+firearm_ammo_override French Hussar Pistol_XIII 1 1 1
+firearm_ammo_override French CuirassierDragoon Carbine_CharlevilleCavalryIXXIII 6 1 6
+
+objects_override FlagPrussian 367.83 18.72 114.63 0.00 221.15 0.00
+objects_override FlagPrussian 368.20 18.71 95.22 0.00 174.29 0.00
+objects_override FlagPrussian 330.64 17.47 117.09 0.00 101.25 0.00
+objects_override FlagPrussian 331.40 17.55 95.37 0.00 173.69 0.00
+
+objects_override FlagPrussian 331.27 17.11 557.83 0.00 92.30 0.00
+objects_override FlagPrussian 330.54 17.73 580.32 0.00 171.01 0.00
+objects_override FlagPrussian 363.32 19.74 555.72 0.00 250.57 0.00
+objects_override FlagPrussian 364.18 18.87 579.37 0.00 175.42 0.00
+
+## Automatic commands
+rc set allowFiring false
+rc delayed 600 broadcast Live
+rc delayed 600 set allowFiring true
+rc set secondsToPassAfterDismounted 999
+rc set secondsToPassAfterHealthUpdated 999
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+!map_rotation end
+
+!map_rotation start
+map_name snowyplainsiii
+game_mode ArmyAssault
+round_time_minutes 11.5
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+round_spawn_close_timer_seconds 151
+minimum_players 0
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+game_type hardcore
+
+## Class spawns
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+firearm_ammo_override British Hussar Pistol_NewLandPattern 1 1 1
+firearm_ammo_override British CuirassierDragoon Carbine_Elliot 6 1 6
+
+firearm_ammo_override French Hussar Pistol_XIII 1 1 1
+firearm_ammo_override French CuirassierDragoon Carbine_CharlevilleCavalryIXXIII 6 1 6
+
+objects_override FlagPrussian 530.03 53.98 509.90 0.00 7.87 0.00
+objects_override FlagPrussian 511.91 53.98 509.37 0.00 24.20 0.00
+objects_override FlagPrussian 519.93 53.14 550.53 0.00 187.42 0.00
+objects_override FlagPrussian 543.52 53.01 549.87 0.00 190.84 0.00
+
+objects_override FlagPrussian 181.30 53.98 146.44 0.00 284.30 0.00
+objects_override FlagPrussian 178.50 52.97 100.99 0.00 183.31 0.00
+objects_override FlagPrussian 147.62 53.98 155.94 0.00 188.06 0.00
+objects_override FlagPrussian 134.07 52.99 99.82 0.00 194.52 0.00
+
+
+## Automatic commands
+rc set allowFiring false
+rc delayed 600 broadcast Live
+rc delayed 600 set allowFiring true
+rc set secondsToPassAfterDismounted 999
+rc set secondsToPassAfterHealthUpdated 999
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+!map_rotation end
+
+!map_rotation start
+map_name modmap
+game_mode ArmyAssault
+round_time_minutes 12
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 0
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+round_spawn_close_timer_seconds 151
+minimum_players 0
+maximum_players 200
+time_hour 10
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+game_type hardcore
+
+## Class spawns
+spawn_override A Hussar 8
+spawn_override A CuirassierDragoon 8
+spawn_override B Hussar 8
+spawn_override B CuirassierDragoon 8
+
+firearm_ammo_override British Hussar Pistol_NewLandPattern 1 1 1
+firearm_ammo_override British CuirassierDragoon Carbine_Elliot 6 1 6
+
+firearm_ammo_override French Hussar Pistol_XIII 1 1 1
+firearm_ammo_override French CuirassierDragoon Carbine_CharlevilleCavalryIXXIII 6 1 6
+
+objects_override FlagPrussian 369.49 46.18 393.72 0.00 118.54 0.00
+objects_override FlagPrussian 374.57 45.98 406.98 0.00 185.52 0.00
+objects_override FlagPrussian 384.45 46.18 385.86 0.00 354.83 0.00
+objects_override FlagPrussian 388.11 45.67 406.98 0.00 196.66 0.00
+
+objects_override FlagPrussian 108.56 46.18 107.50 0.00 126.71 0.00
+objects_override FlagPrussian 100.72 46.18 98.25 0.00 23.20 0.00
+objects_override FlagPrussian 120.74 46.18 97.83 0.00 250.78 0.00
+objects_override FlagPrussian 112.31 46.18 93.22 0.00 1.66 0.00
+
+
+## Automatic commands
+rc set allowFiring false
+rc delayed 600 broadcast Live
+rc delayed 600 set allowFiring true
+rc set secondsToPassAfterDismounted 999
+rc set secondsToPassAfterHealthUpdated 999
+
+## Performance
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2133325553 #marsh
+
+!map_rotation end

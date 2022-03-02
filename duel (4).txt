@@ -1,0 +1,58 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 17000
+steam_communications_port 17001
+steam_query_port 17002
+
+
+###- Server Settings
+
+server_name XMG Melee Matchmaking/Duel Server | QRR
+server_welcome_message Testing config for a matchmaking mod.
+server_region europe
+server_admin_password Host70
+#server_password Scrim
+
+mods_installed 2725619766 #matchmaking
+mods_installed 2706367629 #XMG settings 
+
+###- Bandwidth & Memory Settings
+
+network_broadcast_mode Realtime
+
+mod_variable 2725619766:MatchMakeFreq:8
+
+!map_rotation start
+map_name modmap
+game_mode Armybattlefield
+round_time_minutes 20
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+melee_weapons_only true
+faction_attacking french
+faction_defending british
+
+server_round_rule ArmyInfantryOfficer,NavalCaptain,ArmyLineInfantry,LightInfantry,FlagBearer,Drummer,Fifer,Bagpiper,Surgeon,Carpenter,Grenadier,Guard|<size=15><b><color=\#989898>MATCHMAKING COMMANDS</color></b></size><br><br>• /leave to leave matchmaking <br>• /join to join matchmaking<br>• /duel [playerID] [rounds] to challenge a player to a duel<br>• /disable to turn off the overlay. <br>• /enable to turn on the overlay.
+
+rc carbonPlayers devMode 0
+
+rc set framerate 120
+rc set fixedTimestep 0.0078125
+
+load_mod 2725619766 #matchmaking
+load_mod 2706367629 #XMG settings 
+
+!map_rotation end

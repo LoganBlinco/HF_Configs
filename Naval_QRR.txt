@@ -1,0 +1,610 @@
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+
+
+###- Server Settings
+
+server_name QRR | Naval 
+server_welcome_message Putin rules the world!!
+server_region europe
+server_admin_password 4297533
+server_password 5050
+
+mods_installed 2321979951 #QRR Flag
+
+###- Map Rotations
+
+
+#Rotation 0 - Training grounds
+!map_rotation start
+map_name traininggrounds
+game_mode ArmyBattlefield
+game_type Hardcore
+friendly_fire true
+round_time_minutes -1
+reinforcements_per_faction 9999
+wave_spawn_time_seconds -1
+faction_balancing false
+allow_faction_switching true
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 12
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+faction_attacking british
+faction_defending french
+artillery_fieldgun_respawn_timer 30
+
+server_round_rule ArmyInfantryOfficer | This is a test | and another
+
+#Promotion area flags
+objects_override FlagBritish 563.65 11.03 416.67 0.00 165.41 0.00
+objects_override FlagBritish 565.36 11.03 412.18 0.00 73.52 0.00
+objects_override FlagBritish 586.09 9.93 425.62 0.00 247.12 0.00
+objects_override FlagBritish 588.00 9.93 420.24 0.00 105.06 0.00
+
+objects_override CannonFieldGun9PDR 584.73 10.53 416.91 0.00 240.68 0.00
+objects_override CannonAmmoboxLarge 587.64 10.53 416.92 0.00 243.99 0.00
+
+objects_override BarrelStack_Group 560.53 9.93 425.16 0.00 88.35 0.00
+
+objects_override MusketStack 583.32 10.53 423.07 0.00 155.54 0.00
+objects_override MusketStack 584.27 10.53 420.70 0.00 335.63 0.00
+objects_override MusketStack 570.97 10.53 420.52 0.00 150.39 0.00
+objects_override MusketStack 573.65 10.53 414.23 0.00 338.97 0.00
+objects_override Piano2 566.32 9.93 426.71 0.00 111.58 0.00
+
+objects_override MusketStack 577.41 10.53 417.96 0.00 247.38 0.00
+objects_override MusketStack 576.42 10.53 420.35 0.00 250.20 0.00
+
+load_mod 2321979951 #QRR Flag
+
+!map_rotation end
+
+#1 = Naval1
+!map_rotation start
+map_name HaroutiIslands
+game_mode NavalAssault
+game_type hardcore
+round_time_minutes 20
+max_player_respawns -1
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 19
+time_dynamic false
+weather_preset calm
+weather_dynamic true
+faction_attacking French
+faction_defending British
+friendly_fire true
+round_spawn_close_timer_seconds 600
+rc set characterRespawnTime 10
+rc delayed 600 set characterRespawntime 9999999999
+ships_respawn_time_seconds 9000
+rc set lanternsAsProjectiles true
+
+#wind
+rc delayed 120 nature weather wind direction North
+rc delayed 260 nature weather wind direction SouthWest
+rc delayed 380 nature weather wind direction NorthEast
+rc delayed 620 nature weather wind direction East
+rc delayed 770 nature weather wind direction NorthWest
+rc delayed 970 nature weather wind direction South
+rc delayed 1060 nature weather wind direction SouthEast
+rc delayed 1180 nature weather wind direction North
+rc delayed 1300 nature weather wind direction West
+rc delayed 1550 nature weather wind direction SouthWest
+rc delayed 1800 nature weather wind direction NorthWest
+rc delayed 2040 nature weather wind direction NorthEast
+
+#Broadcasts
+rc delayed 630 broadcast Respawns Closing in 30 sec(ks)
+rc delayed 605 broadcast Respawns Closing in 5
+rc delayed 604 broadcast Respawns Closing in 4
+rc delayed 603 broadcast Respawns Closing in 3
+rc delayed 602 broadcast Respawns Closing in 2
+rc delayed 601 broadcast Respawns Closing in 1
+rc delayed 600 broadcast Respawns have been closed.
+
+# Ships health
+ships_health_detail_override Brigsloop13gun Britis 7500
+ships_health_detail_override Brigsloop13gun British 7500
+ships_health_detail_override Schooner2gun French 3500
+ships_health_detail_override Schooner2gun French 3500
+
+# Override Commands (This is a comment and will be ignored by the game)
+ships_spawn_detail_override Brigsloop13gun British NavalCaptain 1
+ships_spawn_detail_override Brigsloop13gun French NavalCaptain 1
+ships_spawn_detail_override Brigsloop13gun British NavalMarine 3
+ships_spawn_detail_override Brigsloop13gun French NavalMarine 3
+ships_spawn_detail_override Brigsloop13gun British NavalSailor 10
+ships_spawn_detail_override Brigsloop13gun French NavalSailor 10
+ships_spawn_detail_override Brigsloop13gun British NavalSailor2 2
+ships_spawn_detail_override Brigsloop13gun French NavalSailor2 2
+ships_spawn_detail_override Brigsloop13gun British Violinist 1
+ships_spawn_detail_override Brigsloop13gun French Violinist 1
+ships_spawn_detail_override Schooner2gun French NavalSailor2 4
+ships_spawn_detail_override Schooner2gun French NavalCaptain 1
+ships_spawn_detail_override Schooner2gun British NavalSailor2 4
+ships_spawn_detail_override Schooner2gun British NavalCaptain 1
+ships_spawn_detail_override Schooner2gun British FlagBearer 1
+ships_spawn_detail_override Schooner2gun French FlagBearer 1
+ships_spawn_detail_override Brigsloop13gun French FlagBearer 1
+ships_spawn_detail_override Brigsloop13gun British FlagBearer 1
+
+# Set ship_preset to 37 (doesn't spawn any ships)
+ships_preset 37
+# Spawn ships
+ships_spawn Brigsloop13gun 2 British 10
+ships_spawn Brigsloop13gun 2 French 8
+ships_spawn Schooner2gun 2 French 8
+ships_spawn Schooner2gun 2 British 10
+
+load_mod 2321979951 #QRR Flag
+
+!map_rotation end
+
+
+#2 = Naval2
+!map_rotation start
+map_name MartelloTower
+game_type hardcore
+game_mode NavalAssault
+round_time_minutes 20
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 20
+allow_midround_spawning true
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 14
+time_dynamic false
+weather_preset snowy
+weather_dynamic false
+wind_strength 1
+wind_direction east
+rowboat_cooldown_timer 120
+rowboat_cooldown_while_sinking_timer 20
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+round_spawn_close_timer_seconds 600
+rc set characterRespawnTime 10
+rc delayed 600 set characterRespawntime 9999999999
+ships_respawn_time_seconds 9000
+rc set lanternsAsProjectiles true
+
+#wind
+rc delayed 120 nature weather wind direction North
+rc delayed 260 nature weather wind direction SouthWest
+rc delayed 380 nature weather wind direction NorthEast
+rc delayed 620 nature weather wind direction East
+rc delayed 770 nature weather wind direction NorthWest
+rc delayed 970 nature weather wind direction South
+rc delayed 1060 nature weather wind direction SouthEast
+rc delayed 1180 nature weather wind direction North
+rc delayed 1300 nature weather wind direction West
+rc delayed 1550 nature weather wind direction SouthWest
+rc delayed 1800 nature weather wind direction NorthWest
+rc delayed 2040 nature weather wind direction NorthEast
+
+#Broadcasts
+rc delayed 630 broadcast Respawns Closing in 30 sec(ks)
+rc delayed 605 broadcast Respawns Closing in 5
+rc delayed 604 broadcast Respawns Closing in 4
+rc delayed 603 broadcast Respawns Closing in 3
+rc delayed 602 broadcast Respawns Closing in 2
+rc delayed 601 broadcast Respawns Closing in 1
+rc delayed 600 broadcast Respawns have been closed.
+
+# Ships health
+ships_health_detail_override Brigsloop13gun Britis 7500
+ships_health_detail_override Brigsloop13gun British 7500
+ships_health_detail_override Rocketboat French 1500
+ships_health_detail_override Rocketboat British 1500
+
+# Override Commands (This is a comment and will be ignored by the game)
+ships_spawn_detail_override Brigsloop13gun British NavalCaptain 1
+ships_spawn_detail_override Brigsloop13gun French NavalCaptain 1
+ships_spawn_detail_override Brigsloop13gun British NavalMarine 3
+ships_spawn_detail_override Brigsloop13gun French NavalMarine 3
+ships_spawn_detail_override Brigsloop13gun British NavalSailor 7
+ships_spawn_detail_override Brigsloop13gun French NavalSailor 7
+ships_spawn_detail_override Brigsloop13gun British NavalSailor2 2
+ships_spawn_detail_override Brigsloop13gun French NavalSailor2 2
+ships_spawn_detail_override Brigsloop13gun British Violinist 1
+ships_spawn_detail_override Brigsloop13gun French Violinist 1
+ships_spawn_detail_override Rocketboat French NavalSailor 3
+ships_spawn_detail_override Rocketboat French NavalMarine 1
+ships_spawn_detail_override Rocketboat British NavalSailor 3
+ships_spawn_detail_override Rocketboat British NavalMarine 1
+ships_spawn_detail_override Rocketboat British FlagBearer 1
+ships_spawn_detail_override Rocketboat French FlagBearer 1
+ships_spawn_detail_override Brigsloop13gun French FlagBearer 1
+ships_spawn_detail_override Brigsloop13gun British FlagBearer 1
+# Set ship_preset to 37 (doesn't spawn any ships)
+ships_preset 37
+# Spawn ships
+ships_spawn Brigsloop13gun 2 British 10
+ships_spawn Brigsloop13gun 2 French 8
+ships_spawn Rocketboat 3 French 8
+ships_spawn Rocketboat 3 British 10
+
+load_mod 2321979951 #QRR Flag
+
+!map_rotation end
+
+#3 = Naval3
+!map_rotation start
+map_name MartelloTower
+game_type hardcore
+game_mode NavalAssault
+round_time_minutes 20
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 20
+allow_midround_spawning true
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 14
+time_dynamic false
+weather_preset snowy
+weather_dynamic false
+wind_strength 1
+wind_direction east
+rowboat_cooldown_timer 120
+rowboat_cooldown_while_sinking_timer 20
+faction_attacking french
+faction_defending british
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+round_spawn_close_timer_seconds 600
+rc set characterRespawnTime 10
+rc delayed 600 set characterRespawntime 9999999999
+ships_respawn_time_seconds 9000
+rc set lanternsAsProjectiles true
+
+#wind
+rc delayed 120 nature weather wind direction North
+rc delayed 260 nature weather wind direction SouthWest
+rc delayed 380 nature weather wind direction NorthEast
+rc delayed 620 nature weather wind direction East
+rc delayed 770 nature weather wind direction NorthWest
+rc delayed 970 nature weather wind direction South
+rc delayed 1060 nature weather wind direction SouthEast
+rc delayed 1180 nature weather wind direction North
+rc delayed 1300 nature weather wind direction West
+rc delayed 1550 nature weather wind direction SouthWest
+rc delayed 1800 nature weather wind direction NorthWest
+rc delayed 2040 nature weather wind direction NorthEast
+
+#Broadcasts
+rc delayed 630 broadcast Respawns Closing in 30 sec(ks)
+rc delayed 605 broadcast Respawns Closing in 5
+rc delayed 604 broadcast Respawns Closing in 4
+rc delayed 603 broadcast Respawns Closing in 3
+rc delayed 602 broadcast Respawns Closing in 2
+rc delayed 601 broadcast Respawns Closing in 1
+rc delayed 600 broadcast Respawns have been closed.
+
+# Ships health
+ships_health_detail_override Brigsloop13gun Britis 7500
+ships_health_detail_override Brigsloop13gun British 7500
+ships_health_detail_override Rocketboat French 1500
+ships_health_detail_override Rocketboat British 1500
+
+# Override Commands (This is a comment and will be ignored by the game)
+ships_spawn_detail_override Brigsloop13gun British NavalCaptain 1
+ships_spawn_detail_override Brigsloop13gun French NavalCaptain 1
+ships_spawn_detail_override Brigsloop13gun British NavalMarine 3
+ships_spawn_detail_override Brigsloop13gun French NavalMarine 3
+ships_spawn_detail_override Brigsloop13gun British NavalSailor 7
+ships_spawn_detail_override Brigsloop13gun French NavalSailor 7
+ships_spawn_detail_override Brigsloop13gun British NavalSailor2 2
+ships_spawn_detail_override Brigsloop13gun French NavalSailor2 2
+ships_spawn_detail_override Brigsloop13gun British Violinist 1
+ships_spawn_detail_override Brigsloop13gun French Violinist 1
+ships_spawn_detail_override Rocketboat French NavalSailor 3
+ships_spawn_detail_override Rocketboat French NavalMarine 1
+ships_spawn_detail_override Rocketboat British NavalSailor 3
+ships_spawn_detail_override Rocketboat British NavalMarine 1
+ships_spawn_detail_override Rocketboat British FlagBearer 1
+ships_spawn_detail_override Rocketboat French FlagBearer 1
+ships_spawn_detail_override Brigsloop13gun French FlagBearer 1
+ships_spawn_detail_override Brigsloop13gun British FlagBearer 1
+# Set ship_preset to 37 (doesn't spawn any ships)
+ships_preset 37
+# Spawn ships
+ships_spawn Brigsloop13gun 2 British 10
+ships_spawn Brigsloop13gun 2 French 8
+ships_spawn Rocketboat 3 French 8
+ships_spawn Rocketboat 3 British 10
+
+load_mod 2321979951 #QRR Flag
+
+!map_rotation end
+
+#4 = Navalniy4
+!map_rotation start
+map_name Caribbean
+game_type hardcore
+game_mode NavalAssault
+round_time_minutes 20
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 20
+allow_midround_spawning true
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+time_dynamic false
+weather_preset calm2
+weather_dynamic false
+wind_strength 1
+wind_direction east
+ships_respawn_time_seconds 9000
+rowboat_cooldown_timer 120
+rowboat_cooldown_while_sinking_timer 20
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+round_spawn_close_timer_seconds 600
+rc set characterRespawnTime 10
+rc delayed 600 set characterRespawntime 9999999999
+rc set lanternsAsProjectiles true
+
+#wind
+rc delayed 120 nature weather wind direction North
+rc delayed 260 nature weather wind direction SouthWest
+rc delayed 380 nature weather wind direction NorthEast
+rc delayed 620 nature weather wind direction East
+rc delayed 770 nature weather wind direction NorthWest
+rc delayed 970 nature weather wind direction South
+rc delayed 1060 nature weather wind direction SouthEast
+rc delayed 1180 nature weather wind direction North
+rc delayed 1300 nature weather wind direction West
+rc delayed 1550 nature weather wind direction SouthWest
+rc delayed 1800 nature weather wind direction NorthWest
+rc delayed 2040 nature weather wind direction NorthEast
+
+#Broadcasts
+rc delayed 630 broadcast Respawns Closing in 30 sec(ks)
+rc delayed 605 broadcast Respawns Closing in 5
+rc delayed 604 broadcast Respawns Closing in 4
+rc delayed 603 broadcast Respawns Closing in 3
+rc delayed 602 broadcast Respawns Closing in 2
+rc delayed 601 broadcast Respawns Closing in 1
+rc delayed 600 broadcast Respawns have been closed.
+
+# Ships health
+ships_health_detail_override Gunboat French 1000
+ships_health_detail_override Gunboat British 1000
+ships_health_detail_override Rocketboat French 1000
+ships_health_detail_override Rocketboat British 1000
+
+# Override Commands (This is a comment and will be ignored by the game)
+ships_spawn_detail_override Rocketboat French NavalSailor 2
+ships_spawn_detail_override Rocketboat French NavalMarine 1
+ships_spawn_detail_override Rocketboat British NavalSailor 2
+ships_spawn_detail_override Rocketboat British NavalMarine 1
+ships_spawn_detail_override Gunboat French NavalSailor 2
+ships_spawn_detail_override Gunboat French NavalMarine 1
+ships_spawn_detail_override Gunboat British NavalSailor 2
+ships_spawn_detail_override Gunboat British NavalMarine 1
+ships_spawn_detail_override Gunboat British FlagBearer 1
+ships_spawn_detail_override Gunboat French FlagBearer 1
+ships_spawn_detail_override Rocketboat French FlagBearer 1
+ships_spawn_detail_override Rocketboat British FlagBearer 1
+
+# Set ship_preset to 37 (doesn't spawn any ships)
+ships_preset 37
+# Spawn ships
+
+ships_spawn Rocketboat 2 French 9
+ships_spawn Rocketboat 2 British 1
+ships_spawn Gunboat 8 French 3
+ships_spawn Gunboat 8 British 6
+
+load_mod 2321979951 #QRR Flag
+
+!map_rotation end
+
+#5 = Navalniy5
+!map_rotation start
+map_name RandomWaters
+game_type hardcore
+game_mode NavalAssault
+round_time_minutes 20
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 20
+allow_midround_spawning true
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 18
+time_dynamic false
+weather_preset fog
+weather_dynamic false
+wind_strength 1
+wind_direction east
+ships_respawn_time_seconds 9000
+rowboat_cooldown_timer 120
+rowboat_cooldown_while_sinking_timer 20
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+round_spawn_close_timer_seconds 600
+ships_spacemode true
+rc set characterRespawnTime 10
+rc delayed 600 set characterRespawntime 9999999999
+rc set lanternsAsProjectiles true
+
+#wind
+rc delayed 120 nature weather wind direction North
+rc delayed 260 nature weather wind direction SouthWest
+rc delayed 380 nature weather wind direction NorthEast
+rc delayed 620 nature weather wind direction East
+rc delayed 770 nature weather wind direction NorthWest
+rc delayed 970 nature weather wind direction South
+rc delayed 1060 nature weather wind direction SouthEast
+rc delayed 1180 nature weather wind direction North
+rc delayed 1300 nature weather wind direction West
+rc delayed 1550 nature weather wind direction SouthWest
+rc delayed 1800 nature weather wind direction NorthWest
+rc delayed 2040 nature weather wind direction NorthEast
+
+#Broadcasts
+rc delayed 630 broadcast Respawns Closing in 30 sec(ks)
+rc delayed 605 broadcast Respawns Closing in 5
+rc delayed 604 broadcast Respawns Closing in 4
+rc delayed 603 broadcast Respawns Closing in 3
+rc delayed 602 broadcast Respawns Closing in 2
+rc delayed 601 broadcast Respawns Closing in 1
+rc delayed 600 broadcast Respawns have been closed.
+
+# Override Commands (This is a comment and will be ignored by the game)
+ships_spawn_detail_override Frigate50gun French NavalCaptain 1
+ships_spawn_detail_override Frigate50gun French NavalMarine 10
+ships_spawn_detail_override Frigate50gun British NavalCaptain 1
+ships_spawn_detail_override Frigate50gun British NavalMarine 10
+ships_spawn_detail_override Frigate50gun French NavalSailor 30
+ships_spawn_detail_override Frigate50gun British NavalSailor 30
+ships_spawn_detail_override Frigate50gun British NavalSailor2 3
+ships_spawn_detail_override Frigate50gun French NavalSailor2 3
+ships_spawn_detail_override Frigate50gun British Violinist 1
+ships_spawn_detail_override Frigate50gun French Violinist 1
+ships_spawn_detail_override Frigate50gun British FlagBearer 1
+ships_spawn_detail_override Frigate50gun French FlagBearer 1
+# Set ship_preset to 37 (doesn't spawn any ships)
+ships_preset 37
+# Spawn ships
+
+ships_spawn Frigate50gun 1 French 5
+ships_spawn Frigate50gun 1 British 3
+
+ships_health_detail_override Frigate50gun British 30000
+ships_health_detail_override Frigate50gun French 30000
+
+load_mod 2321979951 #QRR Flag
+
+!map_rotation end
+
+#6 = Navalniy6 EXPLOOOOSION
+!map_rotation start
+map_name RandomWaters
+game_type hardcore
+game_mode NavalAssault
+round_time_minutes 20
+max_player_respawns -1
+faction_balancing false
+faction_balancing_discrepancy_amount 20
+allow_midround_spawning true
+allow_faction_switching false
+allow_spectating true
+minimum_players -1
+maximum_players 200
+time_hour 8
+time_dynamic false
+weather_preset calm2
+weather_dynamic false
+wind_strength 1
+wind_direction west
+ships_respawn_time_seconds 9000
+rowboat_cooldown_timer 120
+rowboat_cooldown_while_sinking_timer 20
+faction_attacking british
+faction_defending french
+friendly_fire true
+friendly_fire_melee_bounce false
+damage_split 0
+class_system_orders false
+round_spawn_close_timer_seconds 600
+rc set characterRespawnTime 10
+rc delayed 600 set characterRespawntime 9999999999
+rc set characterExplosiveFirearms true
+rc set lanternsAsProjectiles true
+
+#wind
+rc delayed 120 nature weather wind direction North
+rc delayed 260 nature weather wind direction SouthWest
+rc delayed 380 nature weather wind direction NorthEast
+rc delayed 620 nature weather wind direction East
+rc delayed 770 nature weather wind direction NorthWest
+rc delayed 970 nature weather wind direction South
+rc delayed 1060 nature weather wind direction SouthEast
+rc delayed 1180 nature weather wind direction North
+rc delayed 1300 nature weather wind direction West
+rc delayed 1550 nature weather wind direction SouthWest
+rc delayed 1800 nature weather wind direction NorthWest
+rc delayed 2040 nature weather wind direction NorthEast
+
+#Broadcasts
+rc delayed 630 broadcast Respawns Closing in 30 sec(ks)
+rc delayed 605 broadcast Respawns Closing in 5
+rc delayed 604 broadcast Respawns Closing in 4
+rc delayed 603 broadcast Respawns Closing in 3
+rc delayed 602 broadcast Respawns Closing in 2
+rc delayed 601 broadcast Respawns Closing in 1
+rc delayed 600 broadcast Respawns have been closed.
+
+# Ships health
+ships_health_detail_override Gunboat French 700
+ships_health_detail_override Gunboat British 700
+ships_health_detail_override Rocketboat French 700
+ships_health_detail_override Rocketboat British 700
+
+# Override Commands (This is a comment and will be ignored by the game)
+ships_spawn_detail_override Rocketboat French NavalSailor 2
+ships_spawn_detail_override Rocketboat French NavalMarine 1
+ships_spawn_detail_override Rocketboat British NavalSailor 2
+ships_spawn_detail_override Rocketboat British NavalMarine 1
+ships_spawn_detail_override Gunboat French NavalSailor 2
+ships_spawn_detail_override Gunboat French NavalMarine 1
+ships_spawn_detail_override Gunboat British NavalSailor 2
+ships_spawn_detail_override Gunboat British NavalMarine 1
+ships_spawn_detail_override Gunboat British FlagBearer 1
+ships_spawn_detail_override Gunboat French FlagBearer 1
+ships_spawn_detail_override Rocketboat French FlagBearer 1
+ships_spawn_detail_override Rocketboat British FlagBearer 1
+
+# Set ship_preset to 37 (doesn't spawn any ships)
+ships_preset 37
+# Spawn ships
+
+ships_spawn Rocketboat 2 French 9
+ships_spawn Rocketboat 2 British 1
+ships_spawn Gunboat 8 French 3
+ships_spawn Gunboat 8 British 6
+
+load_mod 2321979951 #QRR Flag
+
+!map_rotation end

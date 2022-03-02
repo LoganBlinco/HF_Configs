@@ -1,0 +1,80 @@
+
+###- Server & Steam Ports (All 3 ports must be unique per server instance).
+
+server_port 16006
+steam_communications_port 16007
+steam_query_port 16008
+
+###- Server Settings
+
+server_name QRR elf test server
+server_welcome_message Welcome to the QRR public server!
+server_region europe
+server_admin_password admin
+server_password 
+
+network_broadcast_mode Realtime
+
+
+mods_installed 2525886257 #wrex mod
+
+
+mods_installed_server_only 2531692643
+#mods_installed 2531692643
+mod_variable Global Scope Variable 
+
+
+!map_rotation start
+map_name traininggrounds
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+
+load_mod_server_only 2531692643
+#load_mod 2531692643
+
+mod_variable this; , is; , a , test , <of> , | the variable system. and das=nig
+mod_variable this is also a variable
+!map_rotation end
+
+
+!map_rotation start
+map_name traininggrounds
+game_mode Armybattlefield
+round_time_minutes 60
+deathmatch_max_kills 500
+reinforcements_per_faction 20000
+wave_spawn_time_seconds 2
+max_player_respawns 3000
+faction_balancing false
+allow_midround_spawning true
+allow_faction_switching true
+allow_spectating true
+minimum_players 0
+maximum_players 200
+time_hour 11
+time_dynamic false
+weather_preset calm
+weather_dynamic false
+friendly_fire true
+faction_attacking french
+faction_defending british
+
+load_mod 2525886257
+!map_rotation end

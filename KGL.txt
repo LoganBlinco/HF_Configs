@@ -1,0 +1,3 @@
+server_port 39900
+steam_communications_port 8607
+steam_query_port 39902
